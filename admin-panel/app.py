@@ -3,390 +3,189 @@ from supabase import create_client, Client
 import os
 from datetime import datetime
 
-# Configuración de la página
-st.set_page_config(
-    page_title="WC2026 Admin Panel",
-    page_icon="⚽",
-    layout="wide"
-)
+# ============================================
+# CONFIGURACIÓN DE SUPABASE
+# ============================================
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
-# Conectar con Supabase
-@st.cache_resource
-def init_supabase() -> Client:
-    url = os.getenv("SUPABASE_URL", "https://ksiiidnvtktlowlhtebs.supabase.co")
-    key = os.getenv("SUPABASE_SERVICE_KEY", "")
-    return create_client(url, key)
+if not SUPABASE_URL or not SUPABASE_KEY:
+    st.error("⚠️ Faltan variables de entorno: SUPABASE_URL y SUPABASE_KEY")
+    st.stop()
 
-supabase = init_supabase()
-
-# Sidebar para navegación
-st.sidebar.title("⚽ WC2026 Admin")
-st.sidebar.markdown("---")
-page = st.sidebar.radio(
-    "Navegación",
-    ["🏠 Dashboard", "🏆 Equipos", "👤 Jugadores", "⚽ Partidos", "📰 Artículos"]
-)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ============================================
-# PÁGINA: DASHBOARD
+# FUNCIÓN: Obtener equipos de Supabase
 # ============================================
-if page == "🏠 Dashboard":
-    st.title("📊 Dashboard - Mundial 2026")
+@st.cache_data(ttl=300)  # Cache por 5 minutos
+def get_teams():
+    """Obtiene todos los equipos de la tabla teams"""
+    try:
+        response = supabase.table("teams").select("id, name, code, confederation").order("name").execute()
+        return response.data
+    except Exception as e:
+        st.error(f"Error al obtener equipos: {str(e)}")
+        return []
+
+# ============================================
+# FUNCIÓN: Crear jugador en Supabase
+# ============================================
+def create_player(player_data):
+    """Inserta un nuevo jugador en la tabla players"""
+    try:
+        response = supabase.table("players").insert(player_data).execute()
+        return True, response.data
+    except Exception as e:
+        return False, str(e)
+
+# ============================================
+# INTERFAZ DE STREAMLIT
+# ============================================
+st.title("⚽ Admin Panel - Mundial 2026")
+st.markdown("### Agregar Nuevo Jugador")
+
+# Obtener equipos
+teams = get_teams()
+
+if not teams:
+    st.warning("No hay equipos disponibles. Primero agrega equipos a la tabla 'teams'.")
+    st.stop()
+
+# Crear diccionario para el selectbox: nombre -> datos completos
+team_options = {f"{team['name']} ({team['code']}) - {team['confederation']}": team for team in teams}
+
+# ============================================
+# FORMULARIO DE JUGADOR
+# ============================================
+with st.form("player_form"):
+    st.subheader("📋 Información del Jugador")
     
-    col1, col2, col3, col4 = st.columns(4)
+    # DROPDOWN DE EQUIPOS (LO MÁS IMPORTANTE)
+    selected_team_label = st.selectbox(
+        "🏆 Equipo *",
+        options=list(team_options.keys()),
+        help="Selecciona el equipo del jugador"
+    )
+    
+    # Obtener el team_id del equipo seleccionado
+    selected_team = team_options[selected_team_label]
+    team_id = selected_team['id']
+    
+    # Mostrar info del equipo seleccionado
+    st.info(f"✅ Equipo seleccionado: **{selected_team['name']}** ({selected_team['code']}) - UUID: `{team_id[:8]}...`")
+    
+    # Resto de campos del formulario
+    col1, col2 = st.columns(2)
     
     with col1:
-        teams_count = supabase.table('teams').select('id', count='exact').execute()
-        st.metric("Equipos", teams_count.count)
+        name = st.text_input("👤 Nombre Completo *", placeholder="Lionel Messi")
+        number = st.number_input("🔢 Número de Camiseta *", min_value=1, max_value=99, value=10)
+        position = st.selectbox(
+            "📍 Posición *",
+            ["Portero", "Defensa", "Mediocampista", "Delantero", "Extremo derecho", "Extremo izquierdo"]
+        )
+        birth_date = st.date_input("🎂 Fecha de Nacimiento")
     
     with col2:
-        players_count = supabase.table('players').select('id', count='exact').execute()
-        st.metric("Jugadores", players_count.count)
+        club = st.text_input("🏟️ Club Actual", placeholder="Inter Miami CF")
+        height = st.number_input("📏 Altura (cm)", min_value=150, max_value=220, value=170)
+        weight = st.number_input("⚖️ Peso (kg)", min_value=50, max_value=120, value=70)
+        photo_url = st.text_input("📸 URL de Foto", placeholder="https://...")
     
-    with col3:
-        matches_count = supabase.table('matches').select('id', count='exact').execute()
-        st.metric("Partidos", matches_count.count)
+    # Estadísticas (opcional)
+    with st.expander("📊 Estadísticas (Opcional)"):
+        col3, col4, col5 = st.columns(3)
+        with col3:
+            goals = st.number_input("⚽ Goles", min_value=0, value=0)
+            assists = st.number_input("🎯 Asistencias", min_value=0, value=0)
+        with col4:
+            yellow_cards = st.number_input("🟨 Tarjetas Amarillas", min_value=0, value=0)
+            red_cards = st.number_input("🟥 Tarjetas Rojas", min_value=0, value=0)
+        with col5:
+            minutes_played = st.number_input("⏱️ Minutos Jugados", min_value=0, value=0)
     
-    with col4:
-        articles_count = supabase.table('articles').select('id', count='exact').execute()
-        st.metric("Artículos", articles_count.count)
+    # Botón de envío
+    submitted = st.form_submit_button("✅ Agregar Jugador", use_container_width=True)
     
-    st.markdown("---")
-    st.subheader("🎯 Próximos pasos")
-    st.info("""
-    - ✅ Base de datos configurada
-    - ✅ Admin panel funcional
-    - 📝 Agregar más equipos y jugadores
-    - 📝 Cargar calendario completo de partidos
-    - 📝 Crear contenido editorial
-    """)
-
-# ============================================
-# PÁGINA: EQUIPOS
-# ============================================
-elif page == "🏆 Equipos":
-    st.title("🏆 Gestión de Equipos")
-    
-    tab1, tab2 = st.tabs(["📋 Ver Equipos", "➕ Agregar Equipo"])
-    
-    with tab1:
-        teams = supabase.table('teams').select('*').order('name').execute()
-        
-        if teams.data:
-            for team in teams.data:
-                with st.expander(f"{team['name']} ({team['code']})"):
-                    col1, col2 = st.columns(2)
-                    with col1:
-                        st.write(f"**Confederación:** {team.get('confederation', 'N/A')}")
-                        st.write(f"**Grupo:** {team.get('group_letter', 'N/A')}")
-                        st.write(f"**Ranking FIFA:** {team.get('fifa_ranking', 'N/A')}")
-                    with col2:
-                        st.write(f"**Entrenador:** {team.get('coach_name', 'N/A')}")
-                        st.write(f"**Estadio:** {team.get('stadium_home', 'N/A')}")
+    if submitted:
+        # Validaciones
+        if not name:
+            st.error("❌ El nombre del jugador es obligatorio")
+        elif not number:
+            st.error("❌ El número de camiseta es obligatorio")
         else:
-            st.info("No hay equipos registrados")
-    
-    with tab2:
-        with st.form("add_team"):
-            st.subheader("Agregar Nuevo Equipo")
+            # Preparar datos para insertar
+            player_data = {
+                "team_id": team_id,  # 🎯 AQUÍ SE ASIGNA AUTOMÁTICAMENTE EL UUID
+                "name": name,
+                "number": number,
+                "position": position,
+                "birth_date": birth_date.isoformat() if birth_date else None,
+                "height": height if height > 0 else None,
+                "weight": weight if weight > 0 else None,
+                "club": club if club else None,
+                "photo_url": photo_url if photo_url else None,
+                "goals": goals,
+                "assists": assists,
+                "yellow_cards": yellow_cards,
+                "red_cards": red_cards,
+                "minutes_played": minutes_played
+            }
             
-            col1, col2 = st.columns(2)
+            # Insertar en Supabase
+            with st.spinner("Guardando jugador..."):
+                success, result = create_player(player_data)
             
-            with col1:
-                name = st.text_input("Nombre del equipo*")
-                code = st.text_input("Código FIFA (3 letras)*", max_chars=3)
-                confederation = st.selectbox(
-                    "Confederación*",
-                    ["CONCACAF", "CONMEBOL", "UEFA", "CAF", "AFC", "OFC"]
-                )
-                group_letter = st.selectbox(
-                    "Grupo",
-                    ["", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
-                )
-            
-            with col2:
-                coach_name = st.text_input("Nombre del entrenador")
-                stadium_home = st.text_input("Estadio local")
-                fifa_ranking = st.number_input("Ranking FIFA", min_value=1, max_value=211)
-                flag_url = st.text_input("URL de la bandera")
-            
-            submitted = st.form_submit_button("➕ Agregar Equipo")
-            
-            if submitted:
-                if name and code and confederation:
-                    try:
-                        data = {
-                            "name": name,
-                            "code": code.upper(),
-                            "confederation": confederation,
-                            "group_letter": group_letter if group_letter else None,
-                            "coach_name": coach_name if coach_name else None,
-                            "stadium_home": stadium_home if stadium_home else None,
-                            "fifa_ranking": fifa_ranking if fifa_ranking else None,
-                            "flag_url": flag_url if flag_url else None
-                        }
-                        supabase.table('teams').insert(data).execute()
-                        st.success(f"✅ Equipo {name} agregado exitosamente")
-                        st.rerun()
-                    except Exception as e:
-                        st.error(f"Error: {str(e)}")
-                else:
-                    st.error("Por favor completa los campos obligatorios (*)")
-
-# ============================================
-# PÁGINA: JUGADORES
-# ============================================
-elif page == "👤 Jugadores":
-    st.title("👤 Gestión de Jugadores")
-    
-    tab1, tab2 = st.tabs(["📋 Ver Jugadores", "➕ Agregar Jugador"])
-    
-    with tab1:
-        teams = supabase.table('teams').select('id, name, code').order('name').execute()
-        
-        if teams.data:
-            selected_team = st.selectbox(
-                "Filtrar por equipo",
-                options=[t['id'] for t in teams.data],
-                format_func=lambda x: next((t['name'] for t in teams.data if t['id'] == x), "")
-            )
-            
-            players = supabase.table('players').select('*').eq('team_id', selected_team).order('number').execute()
-            
-            if players.data:
-                for player in players.data:
-                    with st.expander(f"#{player['number']} - {player['name']}"):
-                        col1, col2, col3 = st.columns(3)
-                        with col1:
-                            st.write(f"**Posición:** {player.get('position', 'N/A')}")
-                            st.write(f"**Club:** {player.get('club', 'N/A')}")
-                        with col2:
-                            st.write(f"**Goles:** {player.get('goals', 0)}")
-                            st.write(f"**Asistencias:** {player.get('assists', 0)}")
-                        with col3:
-                            st.write(f"**🟨 Amarillas:** {player.get('yellow_cards', 0)}")
-                            st.write(f"**🟥 Rojas:** {player.get('red_cards', 0)}")
+            if success:
+                st.success(f"✅ ¡Jugador **{name}** agregado exitosamente!")
+                st.balloons()
+                st.json(result)
             else:
-                st.info("No hay jugadores registrados para este equipo")
-        else:
-            st.warning("Primero debes agregar equipos")
-    
-    with tab2:
-        teams = supabase.table('teams').select('id, name').order('name').execute()
-        
-        if teams.data:
-            with st.form("add_player"):
-                st.subheader("Agregar Nuevo Jugador")
-                
-                team_id = st.selectbox(
-                    "Equipo*",
-                    options=[t['id'] for t in teams.data],
-                    format_func=lambda x: next((t['name'] for t in teams.data if t['id'] == x), "")
-                )
-                
-                col1, col2 = st.columns(2)
-                
-                with col1:
-                    name = st.text_input("Nombre completo*")
-                    number = st.number_input("Número*", min_value=1, max_value=99)
-                    position = st.selectbox("Posición*", ["Portero", "Defensa", "Medio", "Delantero"])
-                    club = st.text_input("Club actual")
-                
-                with col2:
-                    birth_date = st.date_input("Fecha de nacimiento")
-                    height = st.number_input("Altura (cm)", min_value=150, max_value=220)
-                    weight = st.number_input("Peso (kg)", min_value=50, max_value=120)
-                    photo_url = st.text_input("URL de la foto")
-                
-                submitted = st.form_submit_button("➕ Agregar Jugador")
-                
-                if submitted:
-                    if name and number and position:
-                        try:
-                            data = {
-                                "team_id": team_id,
-                                "name": name,
-                                "number": number,
-                                "position": position,
-                                "club": club if club else None,
-                                "birth_date": str(birth_date) if birth_date else None,
-                                "height": height if height else None,
-                                "weight": weight if weight else None,
-                                "photo_url": photo_url if photo_url else None
-                            }
-                            supabase.table('players').insert(data).execute()
-                            st.success(f"✅ Jugador {name} agregado exitosamente")
-                            st.rerun()
-                        except Exception as e:
-                            st.error(f"Error: {str(e)}")
-                    else:
-                        st.error("Por favor completa los campos obligatorios (*)")
-        else:
-            st.warning("Primero debes agregar equipos")
+                st.error(f"❌ Error al guardar: {result}")
 
 # ============================================
-# PÁGINA: PARTIDOS
+# VISTA PREVIA DE EQUIPOS
 # ============================================
-elif page == "⚽ Partidos":
-    st.title("⚽ Gestión de Partidos")
-    
-    tab1, tab2 = st.tabs(["📋 Ver Partidos", "➕ Agregar Partido"])
-    
-    with tab1:
-        matches = supabase.table('matches').select('*, home_team:teams!home_team_id(name), away_team:teams!away_team_id(name)').order('match_date').execute()
-        
-        if matches.data:
-            for match in matches.data:
-                home = match.get('home_team', {}).get('name', 'TBD')
-                away = match.get('away_team', {}).get('name', 'TBD')
-                date = match.get('match_date', 'TBD')
-                status = match.get('status', 'scheduled')
-                
-                status_emoji = {'scheduled': '📅', 'live': '🔴', 'finished': '✅', 'postponed': '⏸️'}
-                
-                with st.expander(f"{status_emoji.get(status, '📅')} {home} vs {away} - {date}"):
-                    col1, col2, col3 = st.columns(3)
-                    with col1:
-                        st.write(f"**Fase:** {match.get('phase', 'N/A')}")
-                        st.write(f"**Estado:** {status}")
-                    with col2:
-                        st.write(f"**Estadio:** {match.get('stadium', 'N/A')}")
-                        st.write(f"**Ciudad:** {match.get('city', 'N/A')}")
-                    with col3:
-                        if status == 'finished':
-                            st.write(f"**Resultado:** {match.get('home_score', 0)} - {match.get('away_score', 0)}")
-        else:
-            st.info("No hay partidos registrados")
-    
-    with tab2:
-        teams = supabase.table('teams').select('id, name').order('name').execute()
-        
-        if teams.data:
-            with st.form("add_match"):
-                st.subheader("Agregar Nuevo Partido")
-                
-                col1, col2 = st.columns(2)
-                
-                with col1:
-                    home_team_id = st.selectbox(
-                        "Equipo Local*",
-                        options=[t['id'] for t in teams.data],
-                        format_func=lambda x: next((t['name'] for t in teams.data if t['id'] == x), "")
-                    )
-                    away_team_id = st.selectbox(
-                        "Equipo Visitante*",
-                        options=[t['id'] for t in teams.data],
-                        format_func=lambda x: next((t['name'] for t in teams.data if t['id'] == x), "")
-                    )
-                    match_date = st.date_input("Fecha del partido*")
-                    match_time = st.time_input("Hora del partido*")
-                
-                with col2:
-                    stadium = st.selectbox("Estadio*", ["Estadio Azteca", "Estadio Akron", "Estadio BBVA"])
-                    city = st.selectbox("Ciudad*", ["Ciudad de México", "Guadalajara", "Monterrey"])
-                    phase = st.selectbox("Fase*", ["Grupos", "Dieciseisavos", "Octavos", "Cuartos", "Semifinal", "Final"])
-                
-                submitted = st.form_submit_button("➕ Agregar Partido")
-                
-                if submitted:
-                    if home_team_id != away_team_id:
-                        try:
-                            match_datetime = datetime.combine(match_date, match_time)
-                            data = {
-                                "home_team_id": home_team_id,
-                                "away_team_id": away_team_id,
-                                "match_date": match_datetime.isoformat(),
-                                "stadium": stadium,
-                                "city": city,
-                                "phase": phase,
-                                "status": "scheduled"
-                            }
-                            supabase.table('matches').insert(data).execute()
-                            st.success("✅ Partido agregado exitosamente")
-                            st.rerun()
-                        except Exception as e:
-                            st.error(f"Error: {str(e)}")
-                    else:
-                        st.error("Los equipos deben ser diferentes")
-        else:
-            st.warning("Primero debes agregar equipos")
+st.markdown("---")
+st.subheader("🏆 Equipos Disponibles")
+
+# Mostrar tabla de equipos
+if st.checkbox("Ver todos los equipos"):
+    st.dataframe(
+        teams,
+        column_config={
+            "name": "Equipo",
+            "code": "Código FIFA",
+            "confederation": "Confederación",
+            "id": st.column_config.TextColumn("ID", width="small")
+        },
+        hide_index=True,
+        use_container_width=True
+    )
+    st.caption(f"Total de equipos: {len(teams)}")
 
 # ============================================
-# PÁGINA: ARTÍCULOS
+# INSTRUCCIONES
 # ============================================
-elif page == "📰 Artículos":
-    st.title("📰 Gestión de Artículos")
+with st.expander("ℹ️ Cómo usar este panel"):
+    st.markdown("""
+    ### Pasos para agregar un jugador:
     
-    tab1, tab2 = st.tabs(["📋 Ver Artículos", "➕ Crear Artículo"])
+    1. **Selecciona el equipo** del dropdown (los 31 equipos clasificados)
+    2. **Llena los campos obligatorios** (nombre, número, posición)
+    3. **Opcionalmente** agrega foto, estadísticas, etc.
+    4. Click en **"Agregar Jugador"**
     
-    with tab1:
-        articles = supabase.table('articles').select('*').order('created_at', desc=True).execute()
-        
-        if articles.data:
-            for article in articles.data:
-                published = "✅" if article.get('published_at') else "📝"
-                featured = "⭐" if article.get('is_featured') else ""
-                
-                with st.expander(f"{published} {featured} {article['title']}"):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.write(f"**Autor:** {article.get('author', 'N/A')}")
-                        st.write(f"**Categoría:** {article.get('category', 'N/A')}")
-                        st.write(f"**Excerpt:** {article.get('excerpt', 'N/A')}")
-                    with col2:
-                        st.write(f"**Vistas:** {article.get('views', 0)}")
-                        st.write(f"**Estado:** {'Publicado' if article.get('published_at') else 'Borrador'}")
-        else:
-            st.info("No hay artículos registrados")
+    ### ✅ Ventajas de este formulario:
+    - ✓ El `team_id` se asigna **automáticamente** al seleccionar el equipo
+    - ✓ No hay errores de UUID manual
+    - ✓ Validación de campos obligatorios
+    - ✓ Vista previa del equipo seleccionado
     
-    with tab2:
-        with st.form("add_article"):
-            st.subheader("Crear Nuevo Artículo")
-            
-            title = st.text_input("Título*")
-            slug = st.text_input("Slug (URL)*", help="Ejemplo: mundial-2026-mexico")
-            author = st.text_input("Autor*")
-            category = st.selectbox("Categoría*", ["Noticias", "Análisis", "Entrevistas", "Opinión", "Galería"])
-            excerpt = st.text_area("Resumen (excerpt)")
-            content = st.text_area("Contenido (Markdown)*", height=300)
-            
-            col1, col2 = st.columns(2)
-            with col1:
-                cover_image_url = st.text_input("URL imagen de portada")
-                is_featured = st.checkbox("Artículo destacado")
-            with col2:
-                publish_now = st.checkbox("Publicar inmediatamente")
-            
-            submitted = st.form_submit_button("📝 Crear Artículo")
-            
-            if submitted:
-                if title and slug and content and author:
-                    try:
-                        data = {
-                            "title": title,
-                            "slug": slug,
-                            "author": author,
-                            "category": category,
-                            "excerpt": excerpt if excerpt else None,
-                            "content": content,
-                            "cover_image_url": cover_image_url if cover_image_url else None,
-                            "is_featured": is_featured,
-                            "published_at": datetime.now().isoformat() if publish_now else None
-                        }
-                        supabase.table('articles').insert(data).execute()
-                        st.success("✅ Artículo creado exitosamente")
-                        st.rerun()
-                    except Exception as e:
-                        st.error(f"Error: {str(e)}")
-                else:
-                    st.error("Por favor completa los campos obligatorios (*)")
-
-# Footer
-st.sidebar.markdown("---")
-st.sidebar.markdown("### 🏆 Mundial 2026")
-st.sidebar.markdown("**Sedes en México:**")
-st.sidebar.markdown("- 🏟️ CDMX (5 partidos)")
-st.sidebar.markdown("- 🏟️ Guadalajara (4 partidos)")
-st.sidebar.markdown("- 🏟️ Monterrey (4 partidos)")
-st.sidebar.markdown("")
-st.sidebar.info("🚀 Admin Panel v1.0")
+    ### 🔧 Variables de entorno necesarias:
+    ```bash
+    SUPABASE_URL=tu_url_aqui
+    SUPABASE_KEY=tu_key_aqui
+    ```
+    """)
