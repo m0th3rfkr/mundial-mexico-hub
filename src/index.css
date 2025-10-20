@@ -8,106 +8,105 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* FIFA Blue Palette - Light Mode */
     --background: 0 0% 98%;
-    --foreground: 0 0% 10%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover-foreground: 222 47% 11%;
 
-    /* Mexican Green */
-    --primary: 158 100% 20%;
+    /* FIFA Blue Primary */
+    --primary: 207 100% 35%;
     --primary-foreground: 0 0% 100%;
 
-    /* Mexican Red */
-    --secondary: 351 93% 45%;
+    /* Purple Accent for Gradients */
+    --secondary: 252 56% 57%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Gold Accent */
-    --accent: 43 74% 49%;
-    --accent-foreground: 0 0% 10%;
+    /* Cyan/Turquoise for CTAs */
+    --accent: 190 100% 50%;
+    --accent-foreground: 222 47% 11%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 158 100% 20%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 207 100% 35%;
 
-    --radius: 0.75rem;
+    --radius: 1.5rem;
     
-    /* Custom gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
-    --gradient-card: linear-gradient(to bottom, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
+    /* FIFA Gradients */
+    --gradient-fifa: linear-gradient(135deg, hsl(207 100% 35%) 0%, hsl(252 56% 57%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(240 10% 12%) 0%, hsl(220 13% 18%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(207 100% 35%) 0%, hsl(252 56% 57%) 50%, hsl(190 100% 50%) 100%);
     
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    /* Shadows - FIFA Style */
+    --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 10px 24px 0 rgba(0, 0, 0, 0.2);
+    --shadow-xl: 0 20px 40px 0 rgba(0, 0, 0, 0.25);
+    --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.3);
     
     /* Transitions */
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.6, 1);
 
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 207 100% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 207 100% 35%;
   }
 
   .dark {
-    --background: 0 0% 8%;
+    /* FIFA Dark Mode - Dark Backgrounds */
+    --background: 222 47% 11%;
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 10%;
+    --card: 220 13% 18%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 10%;
+    --popover: 220 13% 18%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 158 100% 25%;
+    --primary: 207 100% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 351 93% 50%;
+    --secondary: 252 56% 62%;
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 43 74% 55%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 190 100% 50%;
+    --accent-foreground: 222 47% 11%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 217 19% 27%;
+    --muted-foreground: 215 20% 65%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 158 100% 30%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 217 19% 27%;
+    --input: 217 19% 27%;
+    --ring: 207 100% 45%;
+    
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 207 100% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 217 19% 27%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 217 19% 27%;
+    --sidebar-ring: 207 100% 45%;
   }
 }
 

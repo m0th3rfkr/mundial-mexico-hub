@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Calendar, MapPin, Clock } from "lucide-react";
+import { Calendar } from "lucide-react";
 import Navbar from "@/components/Navbar";
+import BottomNav from "@/components/BottomNav";
 import Footer from "@/components/Footer";
+import MatchCard from "@/components/cards/MatchCard";
 import { supabase } from "@/integrations/supabase/client";
 import { Tables } from "@/integrations/supabase/types";
-import { format } from "date-fns";
-import { es } from "date-fns/locale";
 
 type Match = Tables<"matches"> & {
   home_team: Tables<"teams"> | null;
@@ -59,18 +58,18 @@ const Matches = () => {
   const phases = [...new Set(matches.map((match) => match.phase))];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col pb-20">
       <Navbar />
 
       <main className="flex-1">
         {/* Header */}
-        <section className="bg-gradient-to-br from-secondary to-accent text-primary-foreground py-16 px-4">
+        <section className="bg-gradient-to-br from-primary via-secondary to-accent text-white py-12 px-4">
           <div className="container mx-auto text-center">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <Calendar className="h-12 w-12" />
-              <h1 className="text-4xl md:text-5xl font-bold">Partidos</h1>
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <Calendar className="h-10 w-10" />
+              <h1 className="text-3xl md:text-4xl font-black">Partidos</h1>
             </div>
-            <p className="text-lg opacity-90">
+            <p className="text-base opacity-90 font-medium">
               Calendario completo del Mundial 2026
             </p>
           </div>
@@ -98,87 +97,41 @@ const Matches = () => {
         </section>
 
         {/* Matches List */}
-        <section className="py-16 px-4">
+        <section className="py-12 px-4">
           <div className="container mx-auto">
             {loading ? (
-              <div className="text-center">
+              <div className="text-center py-12">
                 <p className="text-muted-foreground">Cargando partidos...</p>
               </div>
             ) : filteredMatches.length === 0 ? (
-              <div className="text-center">
+              <div className="text-center py-12">
                 <Calendar className="h-16 w-16 mx-auto text-muted-foreground mb-4" />
                 <p className="text-muted-foreground">No hay partidos programados</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredMatches.map((match) => (
-                  <Card key={match.id} className="hover:shadow-lg transition-all hover:scale-[1.02] border-2 hover:border-accent">
-                    <CardHeader className="pb-3">
-                      <CardDescription className="text-xs uppercase tracking-wide font-semibold text-primary">
-                        {match.phase}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex items-center justify-between mb-4">
-                        {/* Home Team */}
-                        <div className="flex flex-col items-center flex-1">
-                          {match.home_team?.flag_url ? (
-                            <img
-                              src={match.home_team.flag_url}
-                              alt={match.home_team.name}
-                              className="w-12 h-12 object-cover rounded-full mb-2 border-2 border-muted"
-                            />
-                          ) : (
-                            <div className="w-12 h-12 rounded-full bg-muted mb-2" />
-                          )}
-                          <p className="font-semibold text-sm text-center">
-                            {match.home_team?.name || "TBD"}
-                          </p>
-                        </div>
-
-                        {/* Score */}
-                        <div className="text-center px-4">
-                          {match.status === "completed" ? (
-                            <div className="text-2xl font-bold">
-                              {match.home_score} - {match.away_score}
-                            </div>
-                          ) : (
-                            <div className="text-lg font-semibold text-muted-foreground">VS</div>
-                          )}
-                        </div>
-
-                        {/* Away Team */}
-                        <div className="flex flex-col items-center flex-1">
-                          {match.away_team?.flag_url ? (
-                            <img
-                              src={match.away_team.flag_url}
-                              alt={match.away_team.name}
-                              className="w-12 h-12 object-cover rounded-full mb-2 border-2 border-muted"
-                            />
-                          ) : (
-                            <div className="w-12 h-12 rounded-full bg-muted mb-2" />
-                          )}
-                          <p className="font-semibold text-sm text-center">
-                            {match.away_team?.name || "TBD"}
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Match Info */}
-                      <div className="space-y-2 text-sm text-muted-foreground border-t pt-3">
-                        <div className="flex items-center gap-2">
-                          <Clock className="h-4 w-4" />
-                          <span>
-                            {format(new Date(match.match_date), "PPP 'a las' p", { locale: es })}
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <MapPin className="h-4 w-4" />
-                          <span>{match.stadium}, {match.city}</span>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <MatchCard
+                    key={match.id}
+                    homeTeam={{
+                      name: match.home_team?.name || "TBD",
+                      flag_url: match.home_team?.flag_url,
+                      code: match.home_team?.code || "TBD",
+                    }}
+                    awayTeam={{
+                      name: match.away_team?.name || "TBD",
+                      flag_url: match.away_team?.flag_url,
+                      code: match.away_team?.code || "TBD",
+                    }}
+                    matchDate={match.match_date}
+                    stadium={match.stadium}
+                    city={match.city}
+                    phase={match.phase}
+                    status={match.status || "scheduled"}
+                    homeScore={match.home_score || undefined}
+                    awayScore={match.away_score || undefined}
+                    isLive={match.status === "live"}
+                  />
                 ))}
               </div>
             )}
@@ -187,6 +140,7 @@ const Matches = () => {
       </main>
 
       <Footer />
+      <BottomNav />
     </div>
   );
 };

@@ -1,77 +1,37 @@
-import { Link, useLocation } from "react-router-dom";
-import { Trophy, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Trophy, Search, Bell, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
 
 const Navbar = () => {
-  const location = useLocation();
-  const [isOpen, setIsOpen] = useState(false);
-
-  const isActive = (path: string) => location.pathname === path;
-
-  const navItems = [
-    { path: "/", label: "Inicio" },
-    { path: "/teams", label: "Equipos" },
-    { path: "/matches", label: "Partidos" },
-    { path: "/news", label: "Noticias" },
-    { path: "/auth", label: "Mi Cuenta" },
-  ];
-
   return (
     <nav className="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
+          {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="p-2 rounded-lg bg-gradient-to-br from-primary to-accent transition-transform group-hover:scale-105">
-              <Trophy className="h-6 w-6 text-primary-foreground" />
+            <div className="p-2 rounded-xl bg-gradient-to-br from-primary to-secondary transition-transform group-hover:scale-105 shadow-md">
+              <Trophy className="h-6 w-6 text-white" />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent hidden sm:block">
               Mundial 2026
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-1">
-            {navItems.map((item) => (
-              <Link key={item.path} to={item.path}>
-                <Button
-                  variant={isActive(item.path) ? "default" : "ghost"}
-                  className="transition-all"
-                >
-                  {item.label}
-                </Button>
-              </Link>
-            ))}
+          {/* Right Icons */}
+          <div className="flex items-center gap-2">
+            <Button variant="ghost" size="icon" className="rounded-xl">
+              <Search className="h-5 w-5" />
+            </Button>
+            <Button variant="ghost" size="icon" className="rounded-xl">
+              <Bell className="h-5 w-5" />
+            </Button>
+            <Link to="/auth">
+              <Button variant="ghost" size="icon" className="rounded-xl">
+                <User className="h-5 w-5" />
+              </Button>
+            </Link>
           </div>
-
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
         </div>
-
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden pb-4 animate-fade-in">
-            <div className="flex flex-col gap-2">
-              {navItems.map((item) => (
-                <Link key={item.path} to={item.path} onClick={() => setIsOpen(false)}>
-                  <Button
-                    variant={isActive(item.path) ? "default" : "ghost"}
-                    className="w-full justify-start"
-                  >
-                    {item.label}
-                  </Button>
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
     </nav>
   );
