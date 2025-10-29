@@ -325,7 +325,14 @@ const Tourism = () => {
       ? `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=walking`
       : `https://www.google.com/maps/search/?api=1&query=${destination}`;
 
-    window.location.href = url;
+    // Crear un link temporal y hacer click (evita bloqueadores de pop-ups)
+    const link = document.createElement("a");
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
