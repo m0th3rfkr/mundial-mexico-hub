@@ -325,7 +325,7 @@ const Tourism = () => {
       ? `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=walking`
       : `https://www.google.com/maps/search/?api=1&query=${destination}`;
 
-    window.open(url, "_blank");
+    window.location.href = url;
   };
 
   return (
