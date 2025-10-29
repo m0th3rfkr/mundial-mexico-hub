@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import BottomNav from "@/components/BottomNav";
 import { 
   MapIcon, 
   List, 
@@ -26,10 +26,10 @@ import {
   saveToCache, 
   loadFromCache, 
   clearAllCache,
-  getCacheInfo,
   saveUserLocation,
   loadUserLocation
 } from "@/lib/offlineCache";
+import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 
 // Tipos para las ubicaciones turísticas
 interface TouristLocation {
@@ -177,62 +177,77 @@ const Tourism = () => {
       let allLocations: TouristLocation[] = [];
 
       if (activeTab === "all" || activeTab === "restaurantes") {
-        const { data: restaurantes } = await supabase
+        const { data: restaurantes } = await (supabase as any)
           .from("restaurantes")
-          .select("id, nombre, descripcion, latitud, longitud, corredor_id")
-          .not("latitud", "is", null)
-          .not("longitud", "is", null);
+          .select("id, nombre, descripcion, latitud, longitud, corredor_id");
         
         if (restaurantes) {
-          allLocations = [...allLocations, ...restaurantes.map(r => ({
-            ...r,
+          const filtered = restaurantes.filter((r: any) => r.latitud !== null && r.longitud !== null);
+          allLocations = [...allLocations, ...filtered.map((r: any) => ({
+            id: r.id,
+            nombre: r.nombre,
+            descripcion: r.descripcion,
+            latitud: r.latitud,
+            longitud: r.longitud,
+            corredor_id: r.corredor_id,
             categoria: "Restaurante"
           }))];
         }
       }
 
       if (activeTab === "all" || activeTab === "hoteles") {
-        const { data: hoteles } = await supabase
+        const { data: hoteles } = await (supabase as any)
           .from("hoteles")
-          .select("id, nombre, descripcion, latitud, longitud, corredor_id")
-          .not("latitud", "is", null)
-          .not("longitud", "is", null);
+          .select("id, nombre, descripcion, latitud, longitud, corredor_id");
         
         if (hoteles) {
-          allLocations = [...allLocations, ...hoteles.map(h => ({
-            ...h,
+          const filtered = hoteles.filter((h: any) => h.latitud !== null && h.longitud !== null);
+          allLocations = [...allLocations, ...filtered.map((h: any) => ({
+            id: h.id,
+            nombre: h.nombre,
+            descripcion: h.descripcion,
+            latitud: h.latitud,
+            longitud: h.longitud,
+            corredor_id: h.corredor_id,
             categoria: "Hotel"
           }))];
         }
       }
 
       if (activeTab === "all" || activeTab === "imperdibles") {
-        const { data: imperdibles } = await supabase
+        const { data: imperdibles } = await (supabase as any)
           .from("imperdibles")
-          .select("id, nombre, descripcion, latitud, longitud, corredor_id")
-          .not("latitud", "is", null)
-          .not("longitud", "is", null);
+          .select("id, nombre, descripcion, latitud, longitud, corredor_id");
         
         if (imperdibles) {
-          allLocations = [...allLocations, ...imperdibles.map(i => ({
-            ...i,
+          const filtered = imperdibles.filter((i: any) => i.latitud !== null && i.longitud !== null);
+          allLocations = [...allLocations, ...filtered.map((i: any) => ({
+            id: i.id,
+            nombre: i.nombre,
+            descripcion: i.descripcion,
+            latitud: i.latitud,
+            longitud: i.longitud,
+            corredor_id: i.corredor_id,
             categoria: "Imperdible"
           }))];
         }
       }
 
       if (activeTab === "all" || activeTab === "estacionamientos") {
-        const { data: estacionamientos } = await supabase
+        const { data: estacionamientos } = await (supabase as any)
           .from("estacionamientos")
-          .select("id, nombre, descripcion, latitud, longitud")
-          .not("latitud", "is", null)
-          .not("longitud", "is", null);
+          .select("id, nombre, descripcion, latitud, longitud");
         
         if (estacionamientos) {
-          allLocations = [...allLocations, ...estacionamientos.map(e => ({
-            ...e,
-            categoria: "Estacionamiento",
-            corredor_id: null
+          const filtered = estacionamientos.filter((e: any) => e.latitud !== null && e.longitud !== null);
+          allLocations = [...allLocations, ...filtered.map((e: any) => ({
+            id: e.id,
+            nombre: e.nombre,
+            descripcion: e.descripcion,
+            latitud: e.latitud,
+            longitud: e.longitud,
+            corredor_id: null,
+            categoria: "Estacionamiento"
           }))];
         }
       }
@@ -517,7 +532,7 @@ const Tourism = () => {
               ))}
             </div>
           ) : (
-            /* Vista de Mapa */
+            /* Vista de Mapa con Google Maps */
             <div className="space-y-4">
               <Card className="p-4">
                 <div className="flex items-center justify-between mb-4">
@@ -533,15 +548,35 @@ const Tourism = () => {
                 </div>
                 
                 <div className="w-full h-[600px] rounded-lg overflow-hidden border">
-                  <iframe
-                    src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120615.72!2d-99.19!3d19.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx`}
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    title="Mapa de ubicaciones"
-                  />
+                  <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
+                    <Map
+                      defaultCenter={{ lat: 19.4326, lng: -99.1332 }}
+                      defaultZoom={12}
+                      mapId="tourism-map"
+                      gestureHandling="greedy"
+                      disableDefaultUI={false}
+                    >
+                      {/* Marcador de ubicación del usuario */}
+                      {userLocation && (
+                        <Marker
+                          position={{ lat: userLocation.lat, lng: userLocation.lng }}
+                          title="Tu ubicación"
+                        />
+                      )}
+                      
+                      {/* Marcadores de ubicaciones turísticas */}
+                      {filteredLocations.map((location) => (
+                        location.latitud && location.longitud && (
+                          <Marker
+                            key={location.id}
+                            position={{ lat: Number(location.latitud), lng: Number(location.longitud) }}
+                            title={location.nombre}
+                            onClick={() => openNavigation(location)}
+                          />
+                        )
+                      ))}
+                    </Map>
+                  </APIProvider>
                 </div>
 
                 <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -581,7 +616,7 @@ const Tourism = () => {
         </section>
       </main>
 
-      <Footer />
+      <BottomNav />
     </div>
   );
 };
