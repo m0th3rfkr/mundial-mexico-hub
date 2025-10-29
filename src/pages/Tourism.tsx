@@ -322,8 +322,8 @@ const Tourism = () => {
     const origin = userLocation ? `${userLocation.lat},${userLocation.lng}` : "";
 
     const url = origin
-      ? `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=walking`
-      : `https://www.google.com/maps/search/?api=1&query=${destination}`;
+      ? `https://maps.google.com/?saddr=${origin}&daddr=${destination}`
+      : `https://maps.google.com/?q=${destination}`;
 
     // Crear un link temporal y hacer click (evita bloqueadores de pop-ups)
     const link = document.createElement("a");
