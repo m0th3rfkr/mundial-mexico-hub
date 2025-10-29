@@ -534,7 +534,7 @@ const Tourism = () => {
                 </div>
 
                 <div className="w-full h-[600px] rounded-lg overflow-hidden border">
-                  <APIProvider apiKey="AIzaSyDc7LvbPseXtm8ijOjYkJI2Fouw-bp-gNk">
+                  <APIProvider apiKey="AIzaSyAKa5EIO-wM7sPphCMqCHuXJTAQUREdJzs">
                     <Map
                       defaultCenter={{ lat: 19.4326, lng: -99.1332 }}
                       defaultZoom={12}
