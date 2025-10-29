@@ -8,27 +8,21 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
 import Navbar from "@/components/Navbar";
 import BottomNav from "@/components/BottomNav";
-import { 
-  MapIcon, 
-  List, 
-  Search, 
-  MapPin, 
-  Utensils, 
-  Hotel, 
-  Star, 
+import {
+  MapIcon,
+  List,
+  Search,
+  MapPin,
+  Utensils,
+  Hotel,
+  Star,
   Navigation,
   Wifi,
   WifiOff,
   RefreshCw,
-  Trash2
+  Trash2,
 } from "lucide-react";
-import { 
-  saveToCache, 
-  loadFromCache, 
-  clearAllCache,
-  saveUserLocation,
-  loadUserLocation
-} from "@/lib/offlineCache";
+import { saveToCache, loadFromCache, clearAllCache, saveUserLocation, loadUserLocation } from "@/lib/offlineCache";
 import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 
 // Tipos para las ubicaciones turísticas
@@ -74,12 +68,12 @@ const Tourism = () => {
       });
     };
 
-    window.addEventListener('online', handleOnline);
-    window.addEventListener('offline', handleOffline);
+    window.addEventListener("online", handleOnline);
+    window.addEventListener("offline", handleOffline);
 
     return () => {
-      window.removeEventListener('online', handleOnline);
-      window.removeEventListener('offline', handleOffline);
+      window.removeEventListener("online", handleOnline);
+      window.removeEventListener("offline", handleOffline);
     };
   }, []);
 
@@ -90,7 +84,7 @@ const Tourism = () => {
       const savedLocation = await loadUserLocation();
       if (savedLocation) {
         setUserLocation(savedLocation);
-        console.log('📍 Ubicación cargada del cache');
+        console.log("📍 Ubicación cargada del cache");
       }
 
       // Obtener ubicación actual
@@ -103,7 +97,7 @@ const Tourism = () => {
             };
             setUserLocation(newLocation);
             await saveUserLocation(newLocation.lat, newLocation.lng);
-            console.log('📍 Ubicación actualizada');
+            console.log("📍 Ubicación actualizada");
           },
           (error) => {
             console.error("Error obteniendo ubicación:", error);
@@ -114,7 +108,7 @@ const Tourism = () => {
                 variant: "destructive",
               });
             }
-          }
+          },
         );
       }
     };
@@ -136,12 +130,12 @@ const Tourism = () => {
       if (!forceRefresh) {
         const cacheKey = `tourism-${activeTab}`;
         const cachedData = await loadFromCache(cacheKey);
-        
+
         if (cachedData && cachedData.length > 0) {
           setLocations(cachedData);
           setUsingCache(true);
           setLoading(false);
-          
+
           toast({
             title: "📦 Datos del cache",
             description: `${cachedData.length} ubicaciones cargadas`,
@@ -157,7 +151,6 @@ const Tourism = () => {
 
       // Si no hay cache o es refresh, cargar de Supabase
       await fetchFromSupabase(true);
-
     } catch (error) {
       console.error("Error cargando ubicaciones:", error);
       toast({
@@ -180,18 +173,21 @@ const Tourism = () => {
         const { data: restaurantes } = await (supabase as any)
           .from("restaurantes")
           .select("id, nombre, descripcion, latitud, longitud, corredor_id");
-        
+
         if (restaurantes) {
           const filtered = restaurantes.filter((r: any) => r.latitud !== null && r.longitud !== null);
-          allLocations = [...allLocations, ...filtered.map((r: any) => ({
-            id: r.id,
-            nombre: r.nombre,
-            descripcion: r.descripcion,
-            latitud: r.latitud,
-            longitud: r.longitud,
-            corredor_id: r.corredor_id,
-            categoria: "Restaurante"
-          }))];
+          allLocations = [
+            ...allLocations,
+            ...filtered.map((r: any) => ({
+              id: r.id,
+              nombre: r.nombre,
+              descripcion: r.descripcion,
+              latitud: r.latitud,
+              longitud: r.longitud,
+              corredor_id: r.corredor_id,
+              categoria: "Restaurante",
+            })),
+          ];
         }
       }
 
@@ -199,18 +195,21 @@ const Tourism = () => {
         const { data: hoteles } = await (supabase as any)
           .from("hoteles")
           .select("id, nombre, descripcion, latitud, longitud, corredor_id");
-        
+
         if (hoteles) {
           const filtered = hoteles.filter((h: any) => h.latitud !== null && h.longitud !== null);
-          allLocations = [...allLocations, ...filtered.map((h: any) => ({
-            id: h.id,
-            nombre: h.nombre,
-            descripcion: h.descripcion,
-            latitud: h.latitud,
-            longitud: h.longitud,
-            corredor_id: h.corredor_id,
-            categoria: "Hotel"
-          }))];
+          allLocations = [
+            ...allLocations,
+            ...filtered.map((h: any) => ({
+              id: h.id,
+              nombre: h.nombre,
+              descripcion: h.descripcion,
+              latitud: h.latitud,
+              longitud: h.longitud,
+              corredor_id: h.corredor_id,
+              categoria: "Hotel",
+            })),
+          ];
         }
       }
 
@@ -218,18 +217,21 @@ const Tourism = () => {
         const { data: imperdibles } = await (supabase as any)
           .from("imperdibles")
           .select("id, nombre, descripcion, latitud, longitud, corredor_id");
-        
+
         if (imperdibles) {
           const filtered = imperdibles.filter((i: any) => i.latitud !== null && i.longitud !== null);
-          allLocations = [...allLocations, ...filtered.map((i: any) => ({
-            id: i.id,
-            nombre: i.nombre,
-            descripcion: i.descripcion,
-            latitud: i.latitud,
-            longitud: i.longitud,
-            corredor_id: i.corredor_id,
-            categoria: "Imperdible"
-          }))];
+          allLocations = [
+            ...allLocations,
+            ...filtered.map((i: any) => ({
+              id: i.id,
+              nombre: i.nombre,
+              descripcion: i.descripcion,
+              latitud: i.latitud,
+              longitud: i.longitud,
+              corredor_id: i.corredor_id,
+              categoria: "Imperdible",
+            })),
+          ];
         }
       }
 
@@ -237,18 +239,21 @@ const Tourism = () => {
         const { data: estacionamientos } = await (supabase as any)
           .from("estacionamientos")
           .select("id, nombre, descripcion, latitud, longitud");
-        
+
         if (estacionamientos) {
           const filtered = estacionamientos.filter((e: any) => e.latitud !== null && e.longitud !== null);
-          allLocations = [...allLocations, ...filtered.map((e: any) => ({
-            id: e.id,
-            nombre: e.nombre,
-            descripcion: e.descripcion,
-            latitud: e.latitud,
-            longitud: e.longitud,
-            corredor_id: null,
-            categoria: "Estacionamiento"
-          }))];
+          allLocations = [
+            ...allLocations,
+            ...filtered.map((e: any) => ({
+              id: e.id,
+              nombre: e.nombre,
+              descripcion: e.descripcion,
+              latitud: e.latitud,
+              longitud: e.longitud,
+              corredor_id: null,
+              categoria: "Estacionamiento",
+            })),
+          ];
         }
       }
 
@@ -265,10 +270,9 @@ const Tourism = () => {
           description: `${allLocations.length} ubicaciones cargadas`,
         });
       }
-
     } catch (error) {
       console.error("Error en Supabase:", error);
-      
+
       if (!isOnline) {
         toast({
           title: "⚠️ Sin conexión",
@@ -292,9 +296,10 @@ const Tourism = () => {
   };
 
   // Filtrar por búsqueda
-  const filteredLocations = locations.filter((loc) =>
-    loc.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    loc.descripcion?.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredLocations = locations.filter(
+    (loc) =>
+      loc.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      loc.descripcion?.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   // Función para obtener el ícono según la categoría
@@ -315,11 +320,11 @@ const Tourism = () => {
   const openNavigation = (location: TouristLocation) => {
     const destination = `${location.latitud},${location.longitud}`;
     const origin = userLocation ? `${userLocation.lat},${userLocation.lng}` : "";
-    
+
     const url = origin
       ? `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=walking`
       : `https://www.google.com/maps/search/?api=1&query=${destination}`;
-    
+
     window.open(url, "_blank");
   };
 
@@ -344,9 +349,7 @@ const Tourism = () => {
                   Offline
                 </Badge>
               )}
-              {usingCache && (
-                <Badge variant="secondary">📦 Cache</Badge>
-              )}
+              {usingCache && <Badge variant="secondary">📦 Cache</Badge>}
             </div>
           </div>
           <p className="text-muted-foreground text-lg">
@@ -389,14 +392,9 @@ const Tourism = () => {
               title="Actualizar"
               disabled={loading}
             >
-              <RefreshCw className={`h-4 w-4 ${loading ? 'animate-spin' : ''}`} />
+              <RefreshCw className={`h-4 w-4 ${loading ? "animate-spin" : ""}`} />
             </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={handleClearCache}
-              title="Limpiar cache"
-            >
+            <Button variant="outline" size="icon" onClick={handleClearCache} title="Limpiar cache">
               <Trash2 className="h-4 w-4" />
             </Button>
           </div>
@@ -439,7 +437,7 @@ const Tourism = () => {
             <CardContent className="pt-6">
               <div className="text-center">
                 <p className="text-3xl font-bold">
-                  {filteredLocations.filter(l => l.categoria === "Restaurante").length}
+                  {filteredLocations.filter((l) => l.categoria === "Restaurante").length}
                 </p>
                 <p className="text-sm text-muted-foreground">Restaurantes</p>
               </div>
@@ -448,9 +446,7 @@ const Tourism = () => {
           <Card>
             <CardContent className="pt-6">
               <div className="text-center">
-                <p className="text-3xl font-bold">
-                  {filteredLocations.filter(l => l.categoria === "Hotel").length}
-                </p>
+                <p className="text-3xl font-bold">{filteredLocations.filter((l) => l.categoria === "Hotel").length}</p>
                 <p className="text-sm text-muted-foreground">Hoteles</p>
               </div>
             </CardContent>
@@ -459,7 +455,7 @@ const Tourism = () => {
             <CardContent className="pt-6">
               <div className="text-center">
                 <p className="text-3xl font-bold">
-                  {filteredLocations.filter(l => l.categoria === "Imperdible").length}
+                  {filteredLocations.filter((l) => l.categoria === "Imperdible").length}
                 </p>
                 <p className="text-sm text-muted-foreground">Imperdibles</p>
               </div>
@@ -487,9 +483,7 @@ const Tourism = () => {
                           {location.nombre}
                         </CardTitle>
                         {location.descripcion && (
-                          <p className="text-sm text-muted-foreground mt-2 line-clamp-2">
-                            {location.descripcion}
-                          </p>
+                          <p className="text-sm text-muted-foreground mt-2 line-clamp-2">{location.descripcion}</p>
                         )}
                       </div>
                     </div>
@@ -498,9 +492,7 @@ const Tourism = () => {
                     <div className="flex items-center justify-between mb-3">
                       <Badge variant="outline">{location.categoria}</Badge>
                       {location.rating && (
-                        <span className="text-sm text-muted-foreground">
-                          ⭐ {location.rating.toFixed(1)}
-                        </span>
+                        <span className="text-sm text-muted-foreground">⭐ {location.rating.toFixed(1)}</span>
                       )}
                     </div>
                     <div className="flex gap-2">
@@ -511,18 +503,14 @@ const Tourism = () => {
                         onClick={() => {
                           window.open(
                             `https://www.google.com/maps?q=${location.latitud},${location.longitud}`,
-                            "_blank"
+                            "_blank",
                           );
                         }}
                       >
                         <MapPin className="h-3 w-3 mr-1" />
                         Ver
                       </Button>
-                      <Button
-                        size="sm"
-                        className="flex-1"
-                        onClick={() => openNavigation(location)}
-                      >
+                      <Button size="sm" className="flex-1" onClick={() => openNavigation(location)}>
                         <Navigation className="h-3 w-3 mr-1" />
                         Ir
                       </Button>
@@ -536,9 +524,7 @@ const Tourism = () => {
             <div className="space-y-4">
               <Card className="p-4">
                 <div className="flex items-center justify-between mb-4">
-                  <p className="text-sm text-muted-foreground">
-                    📍 {filteredLocations.length} ubicaciones
-                  </p>
+                  <p className="text-sm text-muted-foreground">📍 {filteredLocations.length} ubicaciones</p>
                   {userLocation && (
                     <Badge variant="outline" className="gap-1">
                       <Navigation className="h-3 w-3" />
@@ -546,9 +532,9 @@ const Tourism = () => {
                     </Badge>
                   )}
                 </div>
-                
+
                 <div className="w-full h-[600px] rounded-lg overflow-hidden border">
-                  <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
+                  <APIProvider apiKey="AIzaSyDc7LvbPseXtm8ijOjYkJI2Fouw-bp-gNk">
                     <Map
                       defaultCenter={{ lat: 19.4326, lng: -99.1332 }}
                       defaultZoom={12}
@@ -558,23 +544,22 @@ const Tourism = () => {
                     >
                       {/* Marcador de ubicación del usuario */}
                       {userLocation && (
-                        <Marker
-                          position={{ lat: userLocation.lat, lng: userLocation.lng }}
-                          title="Tu ubicación"
-                        />
+                        <Marker position={{ lat: userLocation.lat, lng: userLocation.lng }} title="Tu ubicación" />
                       )}
-                      
+
                       {/* Marcadores de ubicaciones turísticas */}
-                      {filteredLocations.map((location) => (
-                        location.latitud && location.longitud && (
-                          <Marker
-                            key={location.id}
-                            position={{ lat: Number(location.latitud), lng: Number(location.longitud) }}
-                            title={location.nombre}
-                            onClick={() => openNavigation(location)}
-                          />
-                        )
-                      ))}
+                      {filteredLocations.map(
+                        (location) =>
+                          location.latitud &&
+                          location.longitud && (
+                            <Marker
+                              key={location.id}
+                              position={{ lat: Number(location.latitud), lng: Number(location.longitud) }}
+                              title={location.nombre}
+                              onClick={() => openNavigation(location)}
+                            />
+                          ),
+                      )}
                     </Map>
                   </APIProvider>
                 </div>
@@ -607,9 +592,7 @@ const Tourism = () => {
               <div className="text-center">
                 <Search className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">No se encontraron ubicaciones</h3>
-                <p className="text-muted-foreground">
-                  Intenta con otra búsqueda o cambia los filtros
-                </p>
+                <p className="text-muted-foreground">Intenta con otra búsqueda o cambia los filtros</p>
               </div>
             </Card>
           )}
