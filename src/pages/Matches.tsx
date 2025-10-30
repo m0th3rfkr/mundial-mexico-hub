@@ -105,18 +105,16 @@ const Matches = () => {
           <div className="container mx-auto flex items-center justify-between">
             <h2 className="text-2xl font-bold text-gray-900">Explorar partidos</h2>
             
-            {liveMatchesCount > 0 && (
-              <button className="flex items-center gap-2 bg-white border-2 border-gray-200 rounded-full px-4 py-2 hover:border-red-500 transition-colors">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-                </span>
-                <span className="text-sm font-semibold text-gray-900">VIVO AHORA</span>
-                <span className="bg-gray-100 text-gray-900 text-xs font-bold px-2 py-0.5 rounded-full">
-                  {liveMatchesCount}
-                </span>
-              </button>
-            )}
+            <button className="flex items-center gap-2 bg-white border-2 border-gray-200 rounded-full px-4 py-2 hover:border-red-500 transition-colors">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+              </span>
+              <span className="text-sm font-semibold text-gray-900">VIVO AHORA</span>
+              <span className="bg-gray-100 text-gray-900 text-xs font-bold px-2 py-0.5 rounded-full">
+                {liveMatchesCount}
+              </span>
+            </button>
           </div>
         </section>
 
