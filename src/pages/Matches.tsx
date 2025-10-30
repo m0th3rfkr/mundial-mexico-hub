@@ -59,21 +59,8 @@ const Matches = () => {
   return (
     <div className="min-h-screen flex flex-col pb-20">
       <main className="flex-1">
-        {/* Header */}
-        <section className="bg-gradient-to-br from-primary via-secondary to-accent text-white py-12 px-4">
-          <div className="container mx-auto text-center">
-            <div className="flex items-center justify-center gap-3 mb-3">
-              <Calendar className="h-10 w-10" />
-              <h1 className="text-3xl md:text-4xl font-black">Partidos</h1>
-            </div>
-            <p className="text-base opacity-90 font-medium">
-              Calendario completo del Mundial 2026
-            </p>
-          </div>
-        </section>
-
         {/* Filters */}
-        <section className="py-8 px-4 bg-muted/50">
+        <section className="py-4 px-4 pt-6 bg-background">
           <div className="container mx-auto">
             <div className="flex justify-center">
               <Select value={selectedPhase} onValueChange={setSelectedPhase}>
