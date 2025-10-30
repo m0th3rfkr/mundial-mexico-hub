@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Search, SlidersHorizontal, Star, Calendar as CalendarIcon } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronDown, Search, SlidersHorizontal, Star, Calendar as CalendarIcon } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
 import Footer from "@/components/Footer";
 import { supabase } from "@/integrations/supabase/client";
@@ -7,6 +7,9 @@ import { Tables } from "@/integrations/supabase/types";
 import { format } from "date-fns";
 import { es } from "date-fns/locale";
 import { cn } from "@/lib/utils";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Calendar } from "@/components/ui/calendar";
 
 type Match = Tables<"matches"> & {
   home_team: Tables<"teams"> | null;
@@ -24,6 +27,8 @@ const Matches = () => {
   const [matches, setMatches] = useState<Match[]>([]);
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [loading, setLoading] = useState(true);
+  const [showCalendar, setShowCalendar] = useState(false);
+  const [tempDate, setTempDate] = useState<Date | undefined>(new Date());
 
   useEffect(() => {
     fetchMatches();
@@ -82,6 +87,36 @@ const Matches = () => {
     setSelectedDate(newDate);
   };
 
+  const handleGoToToday = () => {
+    const today = new Date();
+    setTempDate(today);
+    setSelectedDate(today);
+    setShowCalendar(false);
+  };
+
+  const handleApplyDate = () => {
+    if (tempDate) {
+      setSelectedDate(tempDate);
+      setShowCalendar(false);
+    }
+  };
+
+  const handlePreviousMonth = () => {
+    if (tempDate) {
+      const newDate = new Date(tempDate);
+      newDate.setMonth(newDate.getMonth() - 1);
+      setTempDate(newDate);
+    }
+  };
+
+  const handleNextMonth = () => {
+    if (tempDate) {
+      const newDate = new Date(tempDate);
+      newDate.setMonth(newDate.getMonth() + 1);
+      setTempDate(newDate);
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col pb-20 bg-gray-50">
       {/* Header - MATCH CENTER */}
@@ -128,12 +163,16 @@ const Matches = () => {
               <ChevronLeft className="h-5 w-5 text-[#0066b2]" />
             </button>
             
-            <div className="flex items-center gap-2 min-w-[240px] justify-center">
+            <button
+              onClick={() => setShowCalendar(true)}
+              className="flex items-center gap-2 hover:bg-gray-50 px-3 py-1.5 rounded-lg transition-colors"
+            >
               <CalendarIcon className="h-5 w-5 text-[#0066b2]" />
               <span className="text-[#0066b2] font-semibold">
                 Hoy, {format(selectedDate, "d MMM yyyy", { locale: es })}
               </span>
-            </div>
+              <ChevronDown className="h-4 w-4 text-[#0066b2]" />
+            </button>
             
             <button 
               onClick={handleNextDay}
@@ -263,6 +302,74 @@ const Matches = () => {
           </div>
         </section>
       </main>
+
+      {/* Calendar Modal */}
+      <Dialog open={showCalendar} onOpenChange={setShowCalendar}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-lg">
+              <CalendarIcon className="h-5 w-5" />
+              Cambiar de día
+            </DialogTitle>
+          </DialogHeader>
+          
+          <div className="space-y-4">
+            {/* Month Navigation */}
+            <div className="flex items-center justify-between px-4">
+              <button
+                onClick={handlePreviousMonth}
+                className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+              >
+                <ChevronLeft className="h-5 w-5 text-[#0066b2]" />
+              </button>
+              <h3 className="text-lg font-semibold text-[#0066b2]">
+                {tempDate && format(tempDate, "MMMM 'de' yyyy", { locale: es })}
+              </h3>
+              <button
+                onClick={handleNextMonth}
+                className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+              >
+                <ChevronRight className="h-5 w-5 text-[#0066b2]" />
+              </button>
+            </div>
+
+            {/* Calendar */}
+            <Calendar
+              mode="single"
+              selected={tempDate}
+              onSelect={setTempDate}
+              locale={es}
+              className="rounded-md border"
+            />
+
+            {/* Action Buttons */}
+            <div className="flex items-center justify-between gap-3 pt-2">
+              <Button
+                variant="ghost"
+                onClick={handleGoToToday}
+                className="flex-1 text-gray-600"
+              >
+                Ir a hoy
+              </Button>
+              <Button
+                onClick={handleApplyDate}
+                className="flex-1 bg-[#0066b2] hover:bg-[#0052a3]"
+              >
+                Solicitar
+              </Button>
+            </div>
+
+            {/* Cancel Button */}
+            <Button
+              variant="outline"
+              onClick={() => setShowCalendar(false)}
+              className="w-full"
+            >
+              Cancel
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
 
       <Footer />
       <BottomNav />
