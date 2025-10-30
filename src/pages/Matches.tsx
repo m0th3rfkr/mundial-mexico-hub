@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Calendar } from "lucide-react";
-import Navbar from "@/components/Navbar";
 import BottomNav from "@/components/BottomNav";
 import Footer from "@/components/Footer";
 import MatchCard from "@/components/cards/MatchCard";
@@ -59,8 +58,6 @@ const Matches = () => {
 
   return (
     <div className="min-h-screen flex flex-col pb-20">
-      <Navbar />
-
       <main className="flex-1">
         {/* Header */}
         <section className="bg-gradient-to-br from-primary via-secondary to-accent text-white py-12 px-4">
