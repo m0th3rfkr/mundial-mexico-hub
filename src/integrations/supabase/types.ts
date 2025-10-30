@@ -65,6 +65,735 @@ export type Database = {
         }
         Relationships: []
       }
+      corredores_turisticos: {
+        Row: {
+          activo: boolean | null
+          color_hex: string | null
+          created_at: string | null
+          descripcion: string | null
+          descripcion_corta: string | null
+          destacado: boolean | null
+          icono: string | null
+          id: string
+          imagen_portada_url: string | null
+          latitud: number | null
+          longitud: number | null
+          nombre: string
+          numero_corredor: number
+          orden: number | null
+          slug: string
+          updated_at: string | null
+          zoom_level: number | null
+        }
+        Insert: {
+          activo?: boolean | null
+          color_hex?: string | null
+          created_at?: string | null
+          descripcion?: string | null
+          descripcion_corta?: string | null
+          destacado?: boolean | null
+          icono?: string | null
+          id?: string
+          imagen_portada_url?: string | null
+          latitud?: number | null
+          longitud?: number | null
+          nombre: string
+          numero_corredor: number
+          orden?: number | null
+          slug: string
+          updated_at?: string | null
+          zoom_level?: number | null
+        }
+        Update: {
+          activo?: boolean | null
+          color_hex?: string | null
+          created_at?: string | null
+          descripcion?: string | null
+          descripcion_corta?: string | null
+          destacado?: boolean | null
+          icono?: string | null
+          id?: string
+          imagen_portada_url?: string | null
+          latitud?: number | null
+          longitud?: number | null
+          nombre?: string
+          numero_corredor?: number
+          orden?: number | null
+          slug?: string
+          updated_at?: string | null
+          zoom_level?: number | null
+        }
+        Relationships: []
+      }
+      estacionamientos: {
+        Row: {
+          abierto_24_horas: boolean | null
+          accesible_silla_ruedas: boolean | null
+          acepta_autos: boolean | null
+          acepta_camionetas: boolean | null
+          acepta_efectivo: boolean | null
+          acepta_motos: boolean | null
+          acepta_tarjetas: boolean | null
+          activo: boolean | null
+          alcaldia: string | null
+          altura_maxima_metros: number | null
+          camaras_seguridad: boolean | null
+          capacidad_total: number | null
+          codigo_postal: string | null
+          corredor_id: string
+          created_at: string | null
+          descripcion: string | null
+          descripcion_corta: string | null
+          destacado: boolean | null
+          direccion: string | null
+          email: string | null
+          espacios_discapacitados: number | null
+          espacios_disponibles: number | null
+          horarios: Json | null
+          id: string
+          imagen_principal_url: string | null
+          imagenes_galeria: Json | null
+          latitud: number
+          lavado_autos: boolean | null
+          longitud: number
+          nombre: string
+          numero_reviews: number | null
+          operador: string | null
+          orden: number | null
+          primer_hora_gratis: boolean | null
+          rating: number | null
+          sitio_web: string | null
+          tarifas: Json | null
+          techado: boolean | null
+          telefono: string | null
+          tipo: string | null
+          updated_at: string | null
+          valet_parking: boolean | null
+          vigilancia_24h: boolean | null
+        }
+        Insert: {
+          abierto_24_horas?: boolean | null
+          accesible_silla_ruedas?: boolean | null
+          acepta_autos?: boolean | null
+          acepta_camionetas?: boolean | null
+          acepta_efectivo?: boolean | null
+          acepta_motos?: boolean | null
+          acepta_tarjetas?: boolean | null
+          activo?: boolean | null
+          alcaldia?: string | null
+          altura_maxima_metros?: number | null
+          camaras_seguridad?: boolean | null
+          capacidad_total?: number | null
+          codigo_postal?: string | null
+          corredor_id: string
+          created_at?: string | null
+          descripcion?: string | null
+          descripcion_corta?: string | null
+          destacado?: boolean | null
+          direccion?: string | null
+          email?: string | null
+          espacios_discapacitados?: number | null
+          espacios_disponibles?: number | null
+          horarios?: Json | null
+          id?: string
+          imagen_principal_url?: string | null
+          imagenes_galeria?: Json | null
+          latitud: number
+          lavado_autos?: boolean | null
+          longitud: number
+          nombre: string
+          numero_reviews?: number | null
+          operador?: string | null
+          orden?: number | null
+          primer_hora_gratis?: boolean | null
+          rating?: number | null
+          sitio_web?: string | null
+          tarifas?: Json | null
+          techado?: boolean | null
+          telefono?: string | null
+          tipo?: string | null
+          updated_at?: string | null
+          valet_parking?: boolean | null
+          vigilancia_24h?: boolean | null
+        }
+        Update: {
+          abierto_24_horas?: boolean | null
+          accesible_silla_ruedas?: boolean | null
+          acepta_autos?: boolean | null
+          acepta_camionetas?: boolean | null
+          acepta_efectivo?: boolean | null
+          acepta_motos?: boolean | null
+          acepta_tarjetas?: boolean | null
+          activo?: boolean | null
+          alcaldia?: string | null
+          altura_maxima_metros?: number | null
+          camaras_seguridad?: boolean | null
+          capacidad_total?: number | null
+          codigo_postal?: string | null
+          corredor_id?: string
+          created_at?: string | null
+          descripcion?: string | null
+          descripcion_corta?: string | null
+          destacado?: boolean | null
+          direccion?: string | null
+          email?: string | null
+          espacios_discapacitados?: number | null
+          espacios_disponibles?: number | null
+          horarios?: Json | null
+          id?: string
+          imagen_principal_url?: string | null
+          imagenes_galeria?: Json | null
+          latitud?: number
+          lavado_autos?: boolean | null
+          longitud?: number
+          nombre?: string
+          numero_reviews?: number | null
+          operador?: string | null
+          orden?: number | null
+          primer_hora_gratis?: boolean | null
+          rating?: number | null
+          sitio_web?: string | null
+          tarifas?: Json | null
+          techado?: boolean | null
+          telefono?: string | null
+          tipo?: string | null
+          updated_at?: string | null
+          valet_parking?: boolean | null
+          vigilancia_24h?: boolean | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "estacionamientos_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "corredores_turisticos"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "estacionamientos_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "vista_resumen_corredores"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      estaciones_ecobici: {
+        Row: {
+          accesible_silla_ruedas: boolean | null
+          activa: boolean | null
+          alcaldia: string | null
+          bicicletas_disponibles: number | null
+          capacidad_total: number
+          codigo_postal: string | null
+          corredor_id: string
+          created_at: string | null
+          descripcion: string | null
+          destacado: boolean | null
+          direccion: string | null
+          disponible_24_horas: boolean | null
+          en_mantenimiento: boolean | null
+          espacios_vacios: number | null
+          fecha_ultimo_mantenimiento: string | null
+          horarios: Json | null
+          id: string
+          iluminada: boolean | null
+          imagen_principal_url: string | null
+          imagenes_galeria: Json | null
+          latitud: number
+          longitud: number
+          nombre: string
+          numero_estacion: string | null
+          orden: number | null
+          rampas_disponibles: boolean | null
+          referencias: string | null
+          techada: boolean | null
+          tiene_bomba_aire: boolean | null
+          tiene_kit_reparacion: boolean | null
+          tipo_estacion: string | null
+          ultima_actualizacion: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          accesible_silla_ruedas?: boolean | null
+          activa?: boolean | null
+          alcaldia?: string | null
+          bicicletas_disponibles?: number | null
+          capacidad_total: number
+          codigo_postal?: string | null
+          corredor_id: string
+          created_at?: string | null
+          descripcion?: string | null
+          destacado?: boolean | null
+          direccion?: string | null
+          disponible_24_horas?: boolean | null
+          en_mantenimiento?: boolean | null
+          espacios_vacios?: number | null
+          fecha_ultimo_mantenimiento?: string | null
+          horarios?: Json | null
+          id?: string
+          iluminada?: boolean | null
+          imagen_principal_url?: string | null
+          imagenes_galeria?: Json | null
+          latitud: number
+          longitud: number
+          nombre: string
+          numero_estacion?: string | null
+          orden?: number | null
+          rampas_disponibles?: boolean | null
+          referencias?: string | null
+          techada?: boolean | null
+          tiene_bomba_aire?: boolean | null
+          tiene_kit_reparacion?: boolean | null
+          tipo_estacion?: string | null
+          ultima_actualizacion?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          accesible_silla_ruedas?: boolean | null
+          activa?: boolean | null
+          alcaldia?: string | null
+          bicicletas_disponibles?: number | null
+          capacidad_total?: number
+          codigo_postal?: string | null
+          corredor_id?: string
+          created_at?: string | null
+          descripcion?: string | null
+          destacado?: boolean | null
+          direccion?: string | null
+          disponible_24_horas?: boolean | null
+          en_mantenimiento?: boolean | null
+          espacios_vacios?: number | null
+          fecha_ultimo_mantenimiento?: string | null
+          horarios?: Json | null
+          id?: string
+          iluminada?: boolean | null
+          imagen_principal_url?: string | null
+          imagenes_galeria?: Json | null
+          latitud?: number
+          longitud?: number
+          nombre?: string
+          numero_estacion?: string | null
+          orden?: number | null
+          rampas_disponibles?: boolean | null
+          referencias?: string | null
+          techada?: boolean | null
+          tiene_bomba_aire?: boolean | null
+          tiene_kit_reparacion?: boolean | null
+          tipo_estacion?: string | null
+          ultima_actualizacion?: string | null
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "estaciones_ecobici_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "corredores_turisticos"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "estaciones_ecobici_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "vista_resumen_corredores"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      hoteles: {
+        Row: {
+          accesible_silla_ruedas: boolean | null
+          acepta_efectivo: boolean | null
+          acepta_mascotas: boolean | null
+          acepta_tarjetas: boolean | null
+          activo: boolean | null
+          alberca: boolean | null
+          alcaldia: string | null
+          ascensores: boolean | null
+          bar: boolean | null
+          booking_url: string | null
+          cadena: string | null
+          categoria_estrellas: number | null
+          centro_negocios: boolean | null
+          certificaciones: Json | null
+          checkin_24_horas: boolean | null
+          codigo_postal: string | null
+          corredor_id: string
+          created_at: string | null
+          desayuno_incluido: boolean | null
+          descripcion: string | null
+          descripcion_corta: string | null
+          destacado: boolean | null
+          direccion: string | null
+          edad_minima_checkin: number | null
+          email: string | null
+          estacionamiento: boolean | null
+          estacionamiento_gratis: boolean | null
+          gimnasio: boolean | null
+          habitaciones_accesibles: number | null
+          hora_checkin: string | null
+          hora_checkout: string | null
+          id: string
+          imagen_principal_url: string | null
+          imagenes_galeria: Json | null
+          latitud: number
+          longitud: number
+          nombre: string
+          numero_habitaciones: number | null
+          numero_reviews: number | null
+          orden: number | null
+          politica_cancelacion: string | null
+          precio_promedio_noche: Json | null
+          premios: Json | null
+          rango_precios: string | null
+          rating: number | null
+          rating_limpieza: number | null
+          rating_precio_calidad: number | null
+          rating_servicio: number | null
+          rating_ubicacion: number | null
+          recomendado_familias: boolean | null
+          recomendado_negocios: boolean | null
+          recomendado_parejas: boolean | null
+          restaurante: boolean | null
+          room_service: boolean | null
+          salas_reuniones: boolean | null
+          servicio_lavanderia: boolean | null
+          sitio_web: string | null
+          spa: boolean | null
+          tarjetas_aceptadas: Json | null
+          telefono: string | null
+          telefono_reservaciones: string | null
+          tipo_alojamiento: string | null
+          tipos_habitaciones: Json | null
+          updated_at: string | null
+          video_tour_url: string | null
+          wifi_gratis: boolean | null
+        }
+        Insert: {
+          accesible_silla_ruedas?: boolean | null
+          acepta_efectivo?: boolean | null
+          acepta_mascotas?: boolean | null
+          acepta_tarjetas?: boolean | null
+          activo?: boolean | null
+          alberca?: boolean | null
+          alcaldia?: string | null
+          ascensores?: boolean | null
+          bar?: boolean | null
+          booking_url?: string | null
+          cadena?: string | null
+          categoria_estrellas?: number | null
+          centro_negocios?: boolean | null
+          certificaciones?: Json | null
+          checkin_24_horas?: boolean | null
+          codigo_postal?: string | null
+          corredor_id: string
+          created_at?: string | null
+          desayuno_incluido?: boolean | null
+          descripcion?: string | null
+          descripcion_corta?: string | null
+          destacado?: boolean | null
+          direccion?: string | null
+          edad_minima_checkin?: number | null
+          email?: string | null
+          estacionamiento?: boolean | null
+          estacionamiento_gratis?: boolean | null
+          gimnasio?: boolean | null
+          habitaciones_accesibles?: number | null
+          hora_checkin?: string | null
+          hora_checkout?: string | null
+          id?: string
+          imagen_principal_url?: string | null
+          imagenes_galeria?: Json | null
+          latitud: number
+          longitud: number
+          nombre: string
+          numero_habitaciones?: number | null
+          numero_reviews?: number | null
+          orden?: number | null
+          politica_cancelacion?: string | null
+          precio_promedio_noche?: Json | null
+          premios?: Json | null
+          rango_precios?: string | null
+          rating?: number | null
+          rating_limpieza?: number | null
+          rating_precio_calidad?: number | null
+          rating_servicio?: number | null
+          rating_ubicacion?: number | null
+          recomendado_familias?: boolean | null
+          recomendado_negocios?: boolean | null
+          recomendado_parejas?: boolean | null
+          restaurante?: boolean | null
+          room_service?: boolean | null
+          salas_reuniones?: boolean | null
+          servicio_lavanderia?: boolean | null
+          sitio_web?: string | null
+          spa?: boolean | null
+          tarjetas_aceptadas?: Json | null
+          telefono?: string | null
+          telefono_reservaciones?: string | null
+          tipo_alojamiento?: string | null
+          tipos_habitaciones?: Json | null
+          updated_at?: string | null
+          video_tour_url?: string | null
+          wifi_gratis?: boolean | null
+        }
+        Update: {
+          accesible_silla_ruedas?: boolean | null
+          acepta_efectivo?: boolean | null
+          acepta_mascotas?: boolean | null
+          acepta_tarjetas?: boolean | null
+          activo?: boolean | null
+          alberca?: boolean | null
+          alcaldia?: string | null
+          ascensores?: boolean | null
+          bar?: boolean | null
+          booking_url?: string | null
+          cadena?: string | null
+          categoria_estrellas?: number | null
+          centro_negocios?: boolean | null
+          certificaciones?: Json | null
+          checkin_24_horas?: boolean | null
+          codigo_postal?: string | null
+          corredor_id?: string
+          created_at?: string | null
+          desayuno_incluido?: boolean | null
+          descripcion?: string | null
+          descripcion_corta?: string | null
+          destacado?: boolean | null
+          direccion?: string | null
+          edad_minima_checkin?: number | null
+          email?: string | null
+          estacionamiento?: boolean | null
+          estacionamiento_gratis?: boolean | null
+          gimnasio?: boolean | null
+          habitaciones_accesibles?: number | null
+          hora_checkin?: string | null
+          hora_checkout?: string | null
+          id?: string
+          imagen_principal_url?: string | null
+          imagenes_galeria?: Json | null
+          latitud?: number
+          longitud?: number
+          nombre?: string
+          numero_habitaciones?: number | null
+          numero_reviews?: number | null
+          orden?: number | null
+          politica_cancelacion?: string | null
+          precio_promedio_noche?: Json | null
+          premios?: Json | null
+          rango_precios?: string | null
+          rating?: number | null
+          rating_limpieza?: number | null
+          rating_precio_calidad?: number | null
+          rating_servicio?: number | null
+          rating_ubicacion?: number | null
+          recomendado_familias?: boolean | null
+          recomendado_negocios?: boolean | null
+          recomendado_parejas?: boolean | null
+          restaurante?: boolean | null
+          room_service?: boolean | null
+          salas_reuniones?: boolean | null
+          servicio_lavanderia?: boolean | null
+          sitio_web?: string | null
+          spa?: boolean | null
+          tarjetas_aceptadas?: Json | null
+          telefono?: string | null
+          telefono_reservaciones?: string | null
+          tipo_alojamiento?: string | null
+          tipos_habitaciones?: Json | null
+          updated_at?: string | null
+          video_tour_url?: string | null
+          wifi_gratis?: boolean | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "hoteles_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "corredores_turisticos"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "hoteles_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "vista_resumen_corredores"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      imperdibles: {
+        Row: {
+          corredor_id: string | null
+          created_at: string | null
+          descripcion: string | null
+          direccion: string | null
+          horario: string | null
+          id: string
+          latitud: number | null
+          longitud: number | null
+          nombre: string
+        }
+        Insert: {
+          corredor_id?: string | null
+          created_at?: string | null
+          descripcion?: string | null
+          direccion?: string | null
+          horario?: string | null
+          id?: string
+          latitud?: number | null
+          longitud?: number | null
+          nombre: string
+        }
+        Update: {
+          corredor_id?: string | null
+          created_at?: string | null
+          descripcion?: string | null
+          direccion?: string | null
+          horario?: string | null
+          id?: string
+          latitud?: number | null
+          longitud?: number | null
+          nombre?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "imperdibles_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "corredores_turisticos"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "imperdibles_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "vista_resumen_corredores"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      imperdibles_turisticos: {
+        Row: {
+          accesible_silla_ruedas: boolean | null
+          activo: boolean | null
+          alcaldia: string | null
+          codigo_postal: string | null
+          corredor_id: string
+          created_at: string | null
+          descripcion: string | null
+          descripcion_corta: string | null
+          destacado: boolean | null
+          direccion: string | null
+          email: string | null
+          estacionamiento_disponible: boolean | null
+          guias_disponibles: boolean | null
+          historia: string | null
+          horarios: Json | null
+          id: string
+          imagen_principal_url: string | null
+          imagenes_galeria: Json | null
+          latitud: number
+          longitud: number
+          nombre: string
+          numero_reviews: number | null
+          orden: number | null
+          popularidad: number | null
+          precio_entrada: Json | null
+          rating: number | null
+          sitio_web: string | null
+          telefono: string | null
+          tiempo_visita_minutos: number | null
+          tipo: string | null
+          updated_at: string | null
+          wifi_disponible: boolean | null
+        }
+        Insert: {
+          accesible_silla_ruedas?: boolean | null
+          activo?: boolean | null
+          alcaldia?: string | null
+          codigo_postal?: string | null
+          corredor_id: string
+          created_at?: string | null
+          descripcion?: string | null
+          descripcion_corta?: string | null
+          destacado?: boolean | null
+          direccion?: string | null
+          email?: string | null
+          estacionamiento_disponible?: boolean | null
+          guias_disponibles?: boolean | null
+          historia?: string | null
+          horarios?: Json | null
+          id?: string
+          imagen_principal_url?: string | null
+          imagenes_galeria?: Json | null
+          latitud: number
+          longitud: number
+          nombre: string
+          numero_reviews?: number | null
+          orden?: number | null
+          popularidad?: number | null
+          precio_entrada?: Json | null
+          rating?: number | null
+          sitio_web?: string | null
+          telefono?: string | null
+          tiempo_visita_minutos?: number | null
+          tipo?: string | null
+          updated_at?: string | null
+          wifi_disponible?: boolean | null
+        }
+        Update: {
+          accesible_silla_ruedas?: boolean | null
+          activo?: boolean | null
+          alcaldia?: string | null
+          codigo_postal?: string | null
+          corredor_id?: string
+          created_at?: string | null
+          descripcion?: string | null
+          descripcion_corta?: string | null
+          destacado?: boolean | null
+          direccion?: string | null
+          email?: string | null
+          estacionamiento_disponible?: boolean | null
+          guias_disponibles?: boolean | null
+          historia?: string | null
+          horarios?: Json | null
+          id?: string
+          imagen_principal_url?: string | null
+          imagenes_galeria?: Json | null
+          latitud?: number
+          longitud?: number
+          nombre?: string
+          numero_reviews?: number | null
+          orden?: number | null
+          popularidad?: number | null
+          precio_entrada?: Json | null
+          rating?: number | null
+          sitio_web?: string | null
+          telefono?: string | null
+          tiempo_visita_minutos?: number | null
+          tipo?: string | null
+          updated_at?: string | null
+          wifi_disponible?: boolean | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "imperdibles_turisticos_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "corredores_turisticos"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "imperdibles_turisticos_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "vista_resumen_corredores"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       match_events: {
         Row: {
           created_at: string | null
@@ -112,6 +841,13 @@ export type Database = {
             columns: ["player_id"]
             isOneToOne: false
             referencedRelation: "players"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "match_events_player_id_fkey"
+            columns: ["player_id"]
+            isOneToOne: false
+            referencedRelation: "players_with_age"
             referencedColumns: ["id"]
           },
           {
@@ -209,7 +945,8 @@ export type Database = {
           id: string
           minutes_played: number | null
           name: string
-          number: number
+          nationality: string | null
+          number: number | null
           photo_url: string | null
           position: string | null
           red_cards: number | null
@@ -228,7 +965,8 @@ export type Database = {
           id?: string
           minutes_played?: number | null
           name: string
-          number: number
+          nationality?: string | null
+          number?: number | null
           photo_url?: string | null
           position?: string | null
           red_cards?: number | null
@@ -247,7 +985,8 @@ export type Database = {
           id?: string
           minutes_played?: number | null
           name?: string
-          number?: number
+          nationality?: string | null
+          number?: number | null
           photo_url?: string | null
           position?: string | null
           red_cards?: number | null
@@ -307,6 +1046,159 @@ export type Database = {
             columns: ["user_id"]
             isOneToOne: false
             referencedRelation: "users"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      restaurantes: {
+        Row: {
+          accesible_silla_ruedas: boolean | null
+          acepta_apps_pago: boolean | null
+          acepta_efectivo: boolean | null
+          acepta_reservaciones: boolean | null
+          acepta_tarjetas: boolean | null
+          activo: boolean | null
+          alcaldia: string | null
+          ambiente: string | null
+          capacidad_personas: number | null
+          codigo_postal: string | null
+          corredor_id: string
+          created_at: string | null
+          descripcion: string | null
+          descripcion_corta: string | null
+          destacado: boolean | null
+          direccion: string | null
+          email: string | null
+          especialidad: string | null
+          estacionamiento: boolean | null
+          horarios: Json | null
+          id: string
+          imagen_principal_url: string | null
+          imagenes_galeria: Json | null
+          latitud: number
+          longitud: number
+          mejor_para: string | null
+          menu_url: string | null
+          nombre: string
+          numero_reviews: number | null
+          orden: number | null
+          platillos_recomendados: Json | null
+          popularidad: number | null
+          precio_promedio_persona: Json | null
+          rango_precios: string | null
+          rating: number | null
+          sitio_web: string | null
+          telefono: string | null
+          telefono_reservaciones: string | null
+          terraza: boolean | null
+          tipo_cocina: string | null
+          updated_at: string | null
+          valet_parking: boolean | null
+          wifi_disponible: boolean | null
+        }
+        Insert: {
+          accesible_silla_ruedas?: boolean | null
+          acepta_apps_pago?: boolean | null
+          acepta_efectivo?: boolean | null
+          acepta_reservaciones?: boolean | null
+          acepta_tarjetas?: boolean | null
+          activo?: boolean | null
+          alcaldia?: string | null
+          ambiente?: string | null
+          capacidad_personas?: number | null
+          codigo_postal?: string | null
+          corredor_id: string
+          created_at?: string | null
+          descripcion?: string | null
+          descripcion_corta?: string | null
+          destacado?: boolean | null
+          direccion?: string | null
+          email?: string | null
+          especialidad?: string | null
+          estacionamiento?: boolean | null
+          horarios?: Json | null
+          id?: string
+          imagen_principal_url?: string | null
+          imagenes_galeria?: Json | null
+          latitud: number
+          longitud: number
+          mejor_para?: string | null
+          menu_url?: string | null
+          nombre: string
+          numero_reviews?: number | null
+          orden?: number | null
+          platillos_recomendados?: Json | null
+          popularidad?: number | null
+          precio_promedio_persona?: Json | null
+          rango_precios?: string | null
+          rating?: number | null
+          sitio_web?: string | null
+          telefono?: string | null
+          telefono_reservaciones?: string | null
+          terraza?: boolean | null
+          tipo_cocina?: string | null
+          updated_at?: string | null
+          valet_parking?: boolean | null
+          wifi_disponible?: boolean | null
+        }
+        Update: {
+          accesible_silla_ruedas?: boolean | null
+          acepta_apps_pago?: boolean | null
+          acepta_efectivo?: boolean | null
+          acepta_reservaciones?: boolean | null
+          acepta_tarjetas?: boolean | null
+          activo?: boolean | null
+          alcaldia?: string | null
+          ambiente?: string | null
+          capacidad_personas?: number | null
+          codigo_postal?: string | null
+          corredor_id?: string
+          created_at?: string | null
+          descripcion?: string | null
+          descripcion_corta?: string | null
+          destacado?: boolean | null
+          direccion?: string | null
+          email?: string | null
+          especialidad?: string | null
+          estacionamiento?: boolean | null
+          horarios?: Json | null
+          id?: string
+          imagen_principal_url?: string | null
+          imagenes_galeria?: Json | null
+          latitud?: number
+          longitud?: number
+          mejor_para?: string | null
+          menu_url?: string | null
+          nombre?: string
+          numero_reviews?: number | null
+          orden?: number | null
+          platillos_recomendados?: Json | null
+          popularidad?: number | null
+          precio_promedio_persona?: Json | null
+          rango_precios?: string | null
+          rating?: number | null
+          sitio_web?: string | null
+          telefono?: string | null
+          telefono_reservaciones?: string | null
+          terraza?: boolean | null
+          tipo_cocina?: string | null
+          updated_at?: string | null
+          valet_parking?: boolean | null
+          wifi_disponible?: boolean | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "restaurantes_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "corredores_turisticos"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "restaurantes_corredor_id_fkey"
+            columns: ["corredor_id"]
+            isOneToOne: false
+            referencedRelation: "vista_resumen_corredores"
             referencedColumns: ["id"]
           },
         ]
@@ -443,10 +1335,62 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      players_with_age: {
+        Row: {
+          age: number | null
+          assists: number | null
+          birth_date: string | null
+          club: string | null
+          confederation: string | null
+          created_at: string | null
+          display_nationality: string | null
+          goals: number | null
+          height: number | null
+          id: string | null
+          minutes_played: number | null
+          name: string | null
+          nationality: string | null
+          number: number | null
+          photo_url: string | null
+          position: string | null
+          red_cards: number | null
+          team_code: string | null
+          team_flag: string | null
+          team_id: string | null
+          team_name: string | null
+          updated_at: string | null
+          weight: number | null
+          yellow_cards: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "players_team_id_fkey"
+            columns: ["team_id"]
+            isOneToOne: false
+            referencedRelation: "teams"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      vista_resumen_corredores: {
+        Row: {
+          activo: boolean | null
+          icono: string | null
+          id: string | null
+          nombre: string | null
+          numero_corredor: number | null
+          slug: string | null
+          total_estacionamientos: number | null
+          total_estaciones_ecobici: number | null
+          total_hoteles: number | null
+          total_imperdibles: number | null
+          total_restaurantes: number | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
-      [_ in never]: never
+      calculate_age: { Args: { birth_date: string }; Returns: number }
     }
     Enums: {
       [_ in never]: never
