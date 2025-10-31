@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Newspaper, Eye, Calendar } from "lucide-react";
@@ -142,9 +143,11 @@ const News = () => {
                             {article.category}
                           </span>
                         )}
-                        <Button variant="ghost" size="sm" className="ml-auto">
-                          Leer más →
-                        </Button>
+                        <Link to={`/news/${article.slug}`}>
+                          <Button variant="ghost" size="sm" className="ml-auto">
+                            Leer más →
+                          </Button>
+                        </Link>
                       </div>
                     </CardContent>
                   </Card>
