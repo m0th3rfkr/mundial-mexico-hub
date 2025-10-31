@@ -1,0 +1,21 @@
+# ============================================
+# DEPENDENCIAS PARA IMPORTADOR ESPN RSS
+# ============================================
+
+# Supabase client
+supabase>=2.0.0
+
+# RSS parsing
+feedparser>=6.0.10
+
+# HTTP requests
+requests>=2.31.0
+
+# String utilities
+python-slugify>=8.0.1
+
+# Date/time utilities (incluido con Python 3)
+# datetime - Built-in
+
+# Opcional: Progress bar (si quieres agregar barras de progreso)
+# tqdm>=4.66.1
