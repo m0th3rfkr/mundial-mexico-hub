@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Teams from "./pages/Teams";
 import Matches from "./pages/Matches";
 import News from "./pages/News";
+import NewsArticle from "./pages/NewsArticle";
 import Auth from "./pages/Auth";
 import Tourism from "./pages/Tourism";
 import NotFound from "./pages/NotFound";
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/teams" element={<Teams />} />
           <Route path="/matches" element={<Matches />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/:slug" element={<NewsArticle />} />
           <Route path="/tourism" element={<Tourism />} />
           <Route path="/auth" element={<Auth />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
