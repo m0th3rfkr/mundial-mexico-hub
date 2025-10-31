@@ -28,6 +28,14 @@ const News = () => {
         .order("published_at", { ascending: false });
 
       if (error) throw error;
+      
+      // Debug logging
+      console.log('📰 Total articles:', data?.length);
+      data?.forEach((article, i) => {
+        console.log(`${i + 1}. ${article.title.substring(0, 40)}...`);
+        console.log(`   Image: ${article.cover_image_url ? '✅ ' + article.cover_image_url : '❌ NO IMAGE'}`);
+      });
+      
       setArticles(data || []);
     } catch (error) {
       console.error("Error fetching articles:", error);
@@ -79,11 +87,17 @@ const News = () => {
                     className="group hover:shadow-lg transition-all hover:scale-[1.02] flex flex-col"
                   >
                     {article.cover_image_url ? (
-                      <div className="h-48 overflow-hidden rounded-t-lg">
+                      <div className="h-48 overflow-hidden rounded-t-lg bg-muted">
                         <img
                           src={article.cover_image_url}
                           alt={article.title}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error('❌ Error loading image:', article.cover_image_url);
+                            e.currentTarget.style.display = 'none';
+                            e.currentTarget.parentElement!.innerHTML = '<div class="h-full flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary/50"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg></div>';
+                          }}
+                          onLoad={() => console.log('✅ Image loaded:', article.cover_image_url)}
                         />
                       </div>
                     ) : (
