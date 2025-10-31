@@ -162,11 +162,14 @@ def import_news_from_rss(supabase, rss_url, source_name):
     
     print(f"✅ {len(feed.entries)} entradas encontradas")
     
+    # LÍMITE: Solo importar últimas 200 noticias
+    MAX_ARTICLES = 200
+    
     imported_count = 0
     skipped_count = 0
     error_count = 0
     
-    for entry in feed.entries[:20]:  # Limitar a 20 por fuente
+    for entry in feed.entries[:MAX_ARTICLES]:  # LIMITADO A 200
         try:
             title = entry.get('title', 'Sin título').strip()
             if not title or len(title) < 10:
@@ -186,8 +189,28 @@ def import_news_from_rss(supabase, rss_url, source_name):
             
             # Extraer datos
             excerpt = entry.get('summary', '')[:500] if entry.get('summary') else None
-            content_raw = entry.get('content', [{}])[0].get('value', entry.get('summary', ''))
-            content = re.sub(r'<[^>]+>', '', content_raw)[:5000]  # Limpiar HTML
+            
+            # MEJORADO: Extraer contenido completo
+            content_raw = ''
+            
+            # Método 1: content field
+            if hasattr(entry, 'content') and entry.content:
+                content_raw = entry.content[0].get('value', '')
+            
+            # Método 2: summary como fallback
+            if not content_raw and hasattr(entry, 'summary'):
+                content_raw = entry.summary
+            
+            # Método 3: description
+            if not content_raw and hasattr(entry, 'description'):
+                content_raw = entry.description
+            
+            # Limpiar HTML y limitar a 10000 chars (suficiente para artículo completo)
+            content = re.sub(r'<[^>]+>', '', str(content_raw))[:10000]
+            
+            # Si el contenido es muy corto, usar excerpt
+            if len(content) < 100 and excerpt:
+                content = excerpt
             
             # Extraer imagen
             cover_image_url = extract_image_from_entry(entry)
