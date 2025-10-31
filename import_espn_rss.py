@@ -22,7 +22,7 @@ from slugify import slugify
 # CONFIGURACIÓN
 # ============================================
 
-# URLs de RSS de ESPN (en orden de prioridad)
+# URLs de RSS de ESPN y otras fuentes deportivas (en orden de prioridad)
 ESPN_RSS_FEEDS = [
     {
         "name": "ESPN Deportes - General",
@@ -35,9 +35,19 @@ ESPN_RSS_FEEDS = [
         "category": "Fútbol"
     },
     {
-        "name": "ESPN - Noticias Generales",
-        "url": "https://www.espn.com/espn/rss/news",
-        "category": "Noticias"
+        "name": "Marca - Fútbol",
+        "url": "https://e00-marca.uecdn.es/rss/futbol/primera.xml",
+        "category": "Fútbol"
+    },
+    {
+        "name": "AS - Fútbol",
+        "url": "https://as.com/rss/futbol/portada.xml",
+        "category": "Fútbol"
+    },
+    {
+        "name": "Goal.com - Internacional",
+        "url": "https://www.goal.com/feeds/es/news",
+        "category": "Fútbol"
     }
 ]
 
@@ -88,20 +98,52 @@ def extract_excerpt(content: str, max_length: int = 200) -> str:
     return truncated + "..."
 
 
-def extract_image_from_content(content: str) -> Optional[str]:
-    """Extrae URL de imagen del contenido HTML"""
-    if not content:
-        return None
+def extract_image_from_entry(entry: any, content: str = "") -> Optional[str]:
+    """
+    Extrae URL de imagen de un entry de RSS
+    Busca en múltiples fuentes: media:content, enclosure, links, content HTML
+    """
     
-    # Buscar tags <img>
-    img_match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', content)
-    if img_match:
-        return img_match.group(1)
+    # 1. Buscar en media:content (común en RSS de noticias)
+    if hasattr(entry, 'media_content') and entry.media_content:
+        for media in entry.media_content:
+            if 'url' in media:
+                url = media['url']
+                # Verificar que sea una imagen
+                if any(ext in url.lower() for ext in ['.jpg', '.jpeg', '.png', '.gif', '.webp']):
+                    return url
     
-    # Buscar URLs de imágenes directas
-    url_match = re.search(r'https?://[^\s<>"]+(?:jpg|jpeg|png|gif|webp)', content, re.IGNORECASE)
-    if url_match:
-        return url_match.group(0)
+    # 2. Buscar en media:thumbnail
+    if hasattr(entry, 'media_thumbnail') and entry.media_thumbnail:
+        for thumb in entry.media_thumbnail:
+            if 'url' in thumb:
+                return thumb['url']
+    
+    # 3. Buscar en enclosures
+    if hasattr(entry, 'enclosures') and entry.enclosures:
+        for enclosure in entry.enclosures:
+            if 'type' in enclosure and 'image' in enclosure['type']:
+                if 'href' in enclosure:
+                    return enclosure['href']
+    
+    # 4. Buscar en links
+    if hasattr(entry, 'links'):
+        for link in entry.links:
+            if link.get('type', '').startswith('image/'):
+                if 'href' in link:
+                    return link['href']
+    
+    # 5. Buscar en el contenido HTML
+    if content:
+        # Buscar tags <img>
+        img_match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', content)
+        if img_match:
+            return img_match.group(1)
+        
+        # Buscar URLs de imágenes directas
+        url_match = re.search(r'https?://[^\s<>"]+(?:jpg|jpeg|png|gif|webp)', content, re.IGNORECASE)
+        if url_match:
+            return url_match.group(0)
     
     return None
 
@@ -218,9 +260,15 @@ def import_from_espn_rss(supabase: Client, rss_config: Dict) -> Dict[str, int]:
             link = entry.link
             content = entry.get('summary', entry.get('description', ''))
             excerpt = extract_excerpt(content)
-            cover_image = extract_image_from_content(content)
+            cover_image = extract_image_from_entry(entry, content)
             category = parse_category_from_link(link, rss_config['category'])
             tags = determine_tags(title, content, link)
+            
+            # Determinar autor basado en la fuente
+            author = entry.get('author', None)
+            if not author:
+                # Usar solo el nombre de la fuente (sin la parte después del -)
+                author = rss_config['name'].split(' - ')[0]
             
             # Fecha de publicación
             published_at = None
@@ -239,7 +287,7 @@ def import_from_espn_rss(supabase: Client, rss_config: Dict) -> Dict[str, int]:
                 "content": clean_html(content),
                 "excerpt": excerpt,
                 "cover_image_url": cover_image,
-                "author": "ESPN",
+                "author": author,  # ← Cambio aquí
                 "category": category,
                 "tags": tags,
                 "published_at": published_at,
@@ -251,7 +299,8 @@ def import_from_espn_rss(supabase: Client, rss_config: Dict) -> Dict[str, int]:
             response = supabase.table("articles").insert(article_data).execute()
             
             if response.data:
-                print(f"✅ Importado: {title[:70]}...")
+                img_status = "🖼️" if cover_image else "📄"
+                print(f"✅ {img_status} Importado: {title[:65]}...")
                 stats["imported"] += 1
             else:
                 print(f"⚠️  Error al importar: {title[:50]}")
