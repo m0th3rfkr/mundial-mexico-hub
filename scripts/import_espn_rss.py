@@ -212,6 +212,9 @@ def import_news_from_rss(supabase, rss_url, source_name):
             if len(content) < 100 and excerpt:
                 content = excerpt
             
+            # NUEVO: Extraer URL del artículo original
+            source_url = entry.get('link', entry.get('id', ''))
+            
             # Extraer imagen
             cover_image_url = extract_image_from_entry(entry)
             
@@ -234,6 +237,7 @@ def import_news_from_rss(supabase, rss_url, source_name):
                 'content': content,
                 'excerpt': excerpt,
                 'cover_image_url': cover_image_url,
+                'source_url': source_url,  # NUEVO
                 'author': source_name,
                 'category': 'Deportes',
                 'tags': ['Mundial 2026', 'Fútbol'],
