@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Restaurantes CDMX - Mundial 2026</name>
+    <description>Restaurantes en corredores turísticos de Ciudad de México</description>
+
+    <Placemark>
+      <name>100 Montaditos</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/75c0b533-3150-4479-a32e-c27cb11baf3f/100-montaditos.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1561883,19.3437444,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Amor y Tacos desde 1958</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/2885bb70-61fb-4c01-907a-b764aff28590/amor-y-tacos-desde-1958.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.130744,19.4313851,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Aquí es Oaxaca</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/3052aa06-647b-46a6-a145-af62237439f7/aqui-es-oaxaca.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Oaxaqueña</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1271667,19.4324301,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Arroyo Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/143e3e10-1817-4800-9e26-f4ad8ff53607/arroyo-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1926388,19.3096813,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Azul Condesa Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/b1b57465-59b2-4ff1-b404-90e51b71427e/azul-condesa-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Gourmet</b><br/>💰 $$$<br/><br/>📍 Jardín Centenario 7]]></description>
+      <Point>
+        <coordinates>-99.171488,19.412863,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Azul Histórico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/1c4a54da-0305-4c5a-8f49-786ddc672ed3/azul-historico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Contemporánea</b><br/>💰 $$$<br/><p>Cocina mexicana gourmet en patio colonial hermoso. Creaciones del chef Ricardo Muñoz Zurita. Ambiente romántico con fuente. Carta de mezcales extensa. Reserva recomendada.</p>]]></description>
+      <Point>
+        <coordinates>-99.1360166,19.4328194,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>BAJEL</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/77f8385e-9ef0-462e-ad81-c7a049dedf5c/bajel.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 internacional</b><br/>💰 $$$<br/><p>Cocina de autor con maridaje</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1660403,19.4286826,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Barra de Café Casa Malanche</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/c8ec4aa4-e5b7-4dd4-a268-e794efecc003/barra-de-cafe-casa-malanche.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1599829,19.3475462,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Barrio Chino</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/f3849881-7624-4d51-87c7-0cfc0875d134/barrio-chino.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.142675,19.4320229,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Birriería Zaragoza</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/68d04f4f-4eae-4ebc-978d-3d97a88822ce/birrieria-zaragoza.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Birria</b><br/>💰 $<br/><br/>📍 Zaragoza 20]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Bisquets Obregón</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/0530fa63-7a16-4c40-b77c-0e88e8a4c021/bisquets-obregon.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Bistrot Arlequín</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/e4e69d3d-cbea-450b-9572-a3316c33244d/bistrot-arlequin.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1717393,19.4289108,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Blequele Oaxacan</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/bf9aaa5c-44f6-4356-80f9-094b4fc30c30/blequele-oaxacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1561883,19.3437444,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Cabo Coyote</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/0df6de9f-bebd-482c-813b-bdd4f5cbb1a4/cabo-coyote.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.163407,19.3487288,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Café de Tacuba</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/04f9a325-3648-4189-aafd-1a84709ee465/cafe-de-tacuba.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Tradicional</b><br/>💰 $$<br/><p>Restaurante histórico desde 1912. Tacos de canasta, enchiladas, tamales. Ambiente colonial con azulejos de Talavera. Música en vivo fines de semana. Institución del Centro.</p>]]></description>
+      <Point>
+        <coordinates>-99.1375946,19.4358935,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Café Del Atrio</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/559bcd80-36a5-4e2b-b865-bb80c98c31c9/cafe-del-atrio.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Cafetería</b><br/>💰 $<br/><br/>📍 Plaza Mariana]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Café Del Bosque</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/3bc5926b-1ba0-4394-94b2-221dd3ec009b/cafe-del-bosque.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Cafetería</b><br/>💰 Bajo<br/><br/>📍 Primera Sección Bosque]]></description>
+      <Point>
+        <coordinates>-99.1998007,19.4110786,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Café El Jarocho</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/842e0d75-5495-4b74-93e6-e5a430439816/cafe-el-jarocho.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Cafetería</b><br/>💰 $<br/><br/>📍 Cuauhtémoc 134]]></description>
+      <Point>
+        <coordinates>-99.1796545,19.3360554,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Café El Popular</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/62e548a2-a1ee-4182-b97e-23f7caa713bc/cafe-el-popular.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Cafetería Tradicional</b><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1355165,19.43433,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Café la Blanca</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/41a572f2-4ffb-4353-b164-d5226db43c35/cafe-la-blanca.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Cafetería/Mexicana</b><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1364057,19.4344111,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Café La Pagoda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/e012c9e5-0c8d-4d80-91b8-5c1481c7e003/cafe-la-pagoda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Cafetería</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1395449,19.4347688,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Café Michelangelo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/5f11de63-bb0e-4506-bc3e-c44b84102886/cafe-michelangelo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/><p>Café y repostería</p><br/>📍 Centro Histórico]]></description>
+      <Point>
+        <coordinates>-99.1031,19.2575,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Cancino Alameda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/1a50a7b3-a6c8-414e-a54a-abdea5f14f04/cancino-alameda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1462231,19.436269,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Cantina La 20</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/165360f1-8488-4e10-abf1-8f4ae99a3086/cantina-la-20.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 mexicana</b><br/>💰 $$<br/><p>Cantina tradicional mexicana con botanas</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Cantina La Bodeguita</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/e6e16bc2-c3f3-48e5-8b68-c4c059a8f005/cantina-la-bodeguita.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Cantina/Mexicana</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.129659,19.4332518,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Carajillo Roma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/b43c5d21-769d-4c91-a2da-a44110cb7728/carajillo-roma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 cafetería</b><br/>💰 $$<br/><p>Café de especialidad y brunch</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa Merlos</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/4b43b7a8-e779-4c90-9391-6972ca959647/casa-merlos.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana</b><br/>💰 Medio<br/><br/>📍 Av. Constituyentes 350]]></description>
+      <Point>
+        <coordinates>-99.1965597,19.4049084,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casino Español</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/3b2700cf-d306-4017-b89c-b5c3b38bd1b8/casino-espanol.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Española</b><br/>💰 $$$<br/><p>Comida española tradicional desde 1863. Paella valenciana, cochinillo, pulpo gallego. Salón art nouveau impresionante. Bar con historia. Servicio formal.</p>]]></description>
+      <Point>
+        <coordinates>-99.136557,19.4329532,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Cenaduria El Cardenal</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/c7035ad3-004f-4a81-a386-7111e2329c82/cenaduria-el-cardenal.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/><p>Antojitos y comida mexicana</p><br/>📍 Mercado de Xochimilco]]></description>
+      <Point>
+        <coordinates>-99.1032,19.2574,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Chili&apos;s Alameda Juárez</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/97c1336d-6ca3-4556-a520-448e559c11ce/chili-s-alameda-juarez.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1430742,19.4343898,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Churrería El Moro</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/df66c094-4d6a-449a-bc55-2fbc43e0a898/churreria-el-moro.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 mexicana</b><br/>💰 $<br/><p>Churros y chocolate tradicional desde 1935</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Churrería El Moro</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/b88cd4d5-a0b2-4385-955f-70976a61964e/churreria-el-moro.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Postres</b><br/>💰 $<br/><br/>📍 Allende 2]]></description>
+      <Point>
+        <coordinates>-99.1893037,19.3045935,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Comida mexicana</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/248e8e06-bca9-4850-a26a-a51e723ae942/comida-mexicana.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Comida rápida - Burger King</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/9a674acf-c07c-4e5d-8e2b-324f5ddd5215/comida-rapida-burger-king.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1178483,19.4822991,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Comida rápida - KFC</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/1fd7f5a5-186f-486b-a747-69af7062e66b/comida-rapida-kfc.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Comida rápida - Sam&apos;s Club</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/241dc365-1192-4d38-be0a-9a75634e584a/comida-rapida-sam-s-club.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Corazón De Maguey</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/6b566f4a-e1d2-473c-8434-ea2c289773b7/corazon-de-maguey.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Tradicional</b><br/>💰 $$<br/><br/>📍 Jardín Centenario 14]]></description>
+      <Point>
+        <coordinates>-99.1635572,19.3496897,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Deck / Burger/ Pizza &amp; Wings</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/8359cb08-ab68-439d-b929-4e772ab10114/deck-burger-pizza-wings.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1428912,19.4341758,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Diego Ramen Zona Rosa</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/614f0775-e0ea-43b0-ab73-449754240511/diego-ramen-zona-rosa.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 japonesa</b><br/>💰 $$<br/><p>Ramen artesanal japonés</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.16237,19.4272684,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Dorados Deli</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/724bba91-98b0-494b-9c1e-cac986aa64ad/dorados-deli.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Deli/Sándwiches</b><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1344475,19.431131,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Bajío Polanco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/62e83064-6ce9-4f97-8049-1b289d8c0988/el-bajio-polanco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Tradicional</b><br/>💰 Medio<br/><br/>📍 Alejandro Dumas 7]]></description>
+      <Point>
+        <coordinates>-99.1962469,19.427485,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Balcón del Zócalo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/fd264031-a884-44c0-8191-1f1521ac8f76/el-balcon-del-zocalo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana/Internacional</b><br/>💰 $$<br/><p>Terraza con vista directa al Zócalo. Desayunos buffet, comidas. Vista privilegiada de ceremonias y eventos. Ambiente turístico. Ideal para fotos panorámicas.</p>]]></description>
+      <Point>
+        <coordinates>-99.1342513,19.433874,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Caracol</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/2350ccca-9f94-4f3a-aa8c-b2f0df013c2e/el-caracol.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/><p>Antojitos mexicanos y mariscos</p><br/>📍 Embarcadero Nativitas]]></description>
+      <Point>
+        <coordinates>-99.1016,19.258,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Cardenal</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/b0917e44-80af-4809-9d75-4c37d4033c86/el-cardenal.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Tradicional</b><br/>💰 $$$<br/><p>Restaurante icónico desde 1969. Pan dulce casero, chocolate de metate. Desayunos típicos mexicanos, moles tradicionales. Atmósfera colonial elegante. Servicio de primera.</p>]]></description>
+      <Point>
+        <coordinates>-99.1400355,19.4361571,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Cardenal Alameda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/1932b155-e332-4645-8a4a-6788bdc4e9ab/el-cardenal-alameda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Tradicional</b><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1459658,19.4347737,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Cardenal Alameda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/0521a79e-8445-4786-b4c7-f4ef4a1bbe16/el-cardenal-alameda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Tradicional</b><br/>💰 $$$<br/><p>Sucursal frente a la Alameda. Cocina mexicana de alta calidad. Especialidades: pan de dulce, chocolate, tamales gourmet.</p>]]></description>
+      <Point>
+        <coordinates>-99.1459658,19.4347737,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Cardenal Tacuba</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/1aff8c04-a3b7-412c-9a39-296c669fd64d/el-cardenal-tacuba.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Tradicional</b><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1400355,19.4361571,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Cardenal Tacuba</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/b77711a0-1d72-471d-9c59-2ca7411d25f9/el-cardenal-tacuba.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1400355,19.4361571,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Cardenal Tepeyac</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/c02e7946-7746-460c-ab53-cd71393c1034/el-cardenal-tepeyac.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana</b><br/>💰 $$$<br/><br/>📍 Calzada de Guadalupe 28]]></description>
+      <Point>
+        <coordinates>-99.1176341,19.486213,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Caruso</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/c2ffa48b-99e6-49e3-8683-d78141b3d26c/el-caruso.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Italiana</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1278705,19.4283766,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Convento</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/2975ec02-4068-4a69-8e44-8c69177a74df/el-convento.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1587825,19.3458521,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>EL FOGÓN Y LA LEÑA</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/09c882f4-b8bc-4c5d-80e4-78c8c6e4126c/el-fogon-y-la-lena.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1222622,19.4763184,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El hijo del Cuervo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/91c1017d-b3b8-4534-952e-493f253ea0c0/el-hijo-del-cuervo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1638214,19.3498895,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Huequito</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/47c5ea25-01d1-4890-bd71-d8911c7e1180/el-huequito.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Tacos/Mexicana</b><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.131757,19.4357068,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Itakate</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/d9c9ce13-7798-420d-8a77-30329b90bcf6/el-itakate.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.124436,19.4782395,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Jardín Del Pulpo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/9282ff98-9f8b-4ee4-9338-6f4bf30bd5e3/el-jardin-del-pulpo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mariscos</b><br/>💰 $$<br/><br/>📍 Jardín Centenario]]></description>
+      <Point>
+        <coordinates>-99.1618731,19.3523857,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Lago</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/8ff822ee-9a18-4515-9057-ce20b06b5b05/el-lago.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Contemporánea</b><br/>💰 Alto<br/><br/>📍 Segunda Sección Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.1854059,19.4237837,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El lijo de Cuervo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/3dfc10d7-218d-461f-965c-85812e18790c/el-lijo-de-cuervo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1638214,19.3498895,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Mayor</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/eecb4364-2c7b-400f-b6e7-3ed3fcc959e3/el-mayor.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Contemporánea</b><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1316135,19.4358087,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Moro</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/e5eddede-5329-4397-bdf4-791ee57e92cb/el-moro.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Cafetería/Churros</b><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1411061,19.4313392,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Morral</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/9b72be7c-0746-4712-a8a1-ec3b0c54f89d/el-morral.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana</b><br/>💰 $<br/><br/>📍 Allende 2]]></description>
+      <Point>
+        <coordinates>-99.161758,19.3504,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Pescadito Centro Histórico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/9af7cbd5-5243-4be2-b884-44f4904e8417/el-pescadito-centro-historico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1453823,19.4335937,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Rincón Del Sabor</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/888016c1-0985-4f05-9d38-4efaf9e5ea84/el-rincon-del-sabor.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/><p>Comida casera mexicana</p><br/>📍 Barrio de La Santísima]]></description>
+      <Point>
+        <coordinates>-99.101,19.256,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Rincón Oaxaqueño</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/7c905f9c-1144-4442-9b5e-e0cd86df6c6a/el-rincon-oaxaqueno.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Oaxaqueña</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.135822,19.4309185,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Sombrero de Regina</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/ec0d29ee-eae1-4bde-93e1-c467bda18b3d/el-sombrero-de-regina.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1473395,19.3340399,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Flores Rosso Resto Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/90448a3b-0498-42fb-8122-fd134bd04aab/flores-rosso-resto-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1561883,19.3437444,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Fonda De La Virgen</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/481a588f-0ead-4108-a3b4-1abf2edaaa57/fonda-de-la-virgen.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Antojitos Mexicanos</b><br/>💰 $<br/><br/>📍 Mercado de La Villa]]></description>
+      <Point>
+        <coordinates>-99.11318,19.48465,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gorditas Doña Tota</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/86bbb284-4c25-4de5-95d1-aff6270a1732/gorditas-dona-tota.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Antojitos</b><br/>💰 $<br/><br/>📍 Calzada de Guadalupe]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gran Sur</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/25ad4f44-d8b3-4d4b-9ccf-320bb441ea45/gran-sur.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1655408,19.3047237,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Guadalajara de Noche</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/06265a05-35d1-4ca8-87e9-8f668ec7858e/guadalajara-de-noche.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1379428,19.4406821,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hamburguesas Central Grill &amp; Coffe</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/2f8075b2-d19d-4901-b7e9-79ac41d48e73/hamburguesas-central-grill-coffe.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1399807,19.3180778,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hostería de Santo Domingo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/4102313e-8275-4b5d-aee7-b95bdd5e739e/hosteria-de-santo-domingo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Tradicional</b><br/>💰 $$<br/><p>Restaurante más antiguo de México (1860). Famoso por chiles en nogada. Sopa de tortilla, mole. Ambiente colonial histórico. Tradición culinaria centenaria.</p>]]></description>
+      <Point>
+        <coordinates>-99.1349573,19.4380063,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hostería El Chocuyito</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/f2727f5d-eb63-4229-bfa5-5eea1ec91455/hosteria-el-chocuyito.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Tradicional</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1278705,19.4283766,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hosteria la Bota</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/7c7c9d7f-d313-4927-9b2b-0ff758aa616c/hosteria-la-bota.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Española</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1368578,19.4272166,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Il Ritrovo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/cd4c96b3-9cc9-4796-82ea-37eb2b8e3947/il-ritrovo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 italiana</b><br/>💰 $$<br/><p>Restaurante italiano auténtico</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.163902,19.4278611,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jekemir Café</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/60053911-0a8f-4592-878f-f320a0dfca06/jekemir-cafe.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Cafetería</b><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1383551,19.4280549,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Barca</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/decafc96-59ca-4415-a9fe-fed986d621ca/la-barca.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/><p>Especialidad en pescados y mariscos</p><br/>📍 Embarcadero Cuemanco]]></description>
+      <Point>
+        <coordinates>-99.077,19.2889,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Barra Biltoreña del 56</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/ed61857a-1804-4c5f-baad-e5443513d264/la-barra-biltorena-del-56.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mariscos</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.131757,19.4357068,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Carreta de Juana</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/05247871-33d4-42b1-87e9-1473c445e610/la-carreta-de-juana.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 mexicana</b><br/>💰 $<br/><p>Antojitos mexicanos tradicionales</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Casa de las Sirenas</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/40e00296-57e7-48c0-8134-44ed88e30255/la-casa-de-las-sirenas.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana/Internacional</b><br/>💰 $$$<br/><p>Terraza con vista privilegiada al Templo Mayor. Cocina mexicana e internacional. Ambiente romántico nocturno. Cócteles artesanales. Ideal para ocasiones especiales.</p>]]></description>
+      <Point>
+        <coordinates>-99.1323249,19.4350126,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Casa de las Tlacas Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/2994aedf-f936-46c4-8649-8c6e1e2fad72/la-casa-de-las-tlacas-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1561883,19.3437444,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Casa de los Abuelos</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/dead80aa-bf8f-4cbd-8791-270230a41d55/la-casa-de-los-abuelos.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 mexicana</b><br/>💰 $<br/><p>Comida mexicana casera y familiar</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1632054,19.4271774,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Casa de Toño</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/4695b72e-2fb2-47f0-8f91-832fc35987c8/la-casa-de-tono.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 mexicana</b><br/>💰 $<br/><p>Cadena de comida mexicana con pozole famoso</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Casa de Toño</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/06093a71-b5a5-461c-b261-9b37f245d803/la-casa-de-tono.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1464481,19.3431466,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Casa De Toño</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/9388c5e2-4156-49a6-a313-3b965173c498/la-casa-de-tono.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/><p>Comida mexicana tradicional</p><br/>📍 Av. Guadalupe I. Ramírez]]></description>
+      <Point>
+        <coordinates>-99.1028,19.2572,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Casa de Toño en Plaza Juárez</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/ca4a1f96-2a0a-4a1a-a3c0-2a173b71fb08/la-casa-de-tono-en-plaza-juarez.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.142953,19.4336493,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Celestina</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/e388595a-287f-450a-87cb-c372dd55de14/la-celestina.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1618222,19.3487342,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Guadalupana</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/4a97c0be-7edd-4775-987f-a418e5b9c285/la-guadalupana.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Tradicional</b><br/>💰 $$<br/><br/>📍 Plaza Mariana 2]]></description>
+      <Point>
+        <coordinates>-99.1162595,19.482129,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Hija Del Panadero</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/fe4354ba-8a11-4cbe-95f3-297940f27c87/la-hija-del-panadero.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Panadería y Café</b><br/>💰 Bajo<br/><br/>📍 Av. Constituyentes 180]]></description>
+      <Point>
+        <coordinates>-99.151499,19.4266259,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La isla del dragón</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/51fa84ea-883e-45d4-9d97-ba9fadbe9b9b/la-isla-del-dragon.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 China</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1393933,19.4342482,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Isla Del Dragón</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/ea8e21ea-616a-4cbc-95ae-65a16a3e1a76/la-isla-del-dragon.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1393933,19.4342482,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Joya Culinaria</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/b2b5c77c-5149-4aff-841c-17f6b64da167/la-joya-culinaria.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/><p>Comida internacional y mexicana</p><br/>📍 Calle Francisco I. Madero]]></description>
+      <Point>
+        <coordinates>-99.1033,19.2576,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Ópera</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/916bb175-3638-4962-b54f-78a13ec3a2a0/la-opera.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Internacional</b><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1395557,19.4347347,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Provoleta Roma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/c45e20e0-ce85-47cb-a669-ffab3f7c23ba/la-provoleta-roma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 argentina</b><br/>💰 $$<br/><p>Parrilla argentina y cortes de carne</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Terraza del Centro</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/fdb32452-8b0e-4e7e-9bf2-8e9b88efa330/la-terraza-del-centro.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Internacional</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1330039,19.4350736,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Limosneros</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/c27f3142-01da-4a39-a629-ce6719a3c60f/limosneros.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana de Autor</b><br/>💰 $$$$<br/><p>Alta cocina mexicana contemporánea. Chef Romain Le Cornu. Menú degustación de temporada. Ingredientes prehispánicos reinterpretados. Bodega de mezcal impresionante.</p>]]></description>
+      <Point>
+        <coordinates>-99.137811,19.436067,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Liverpool</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/5506f1d0-93ab-427f-9b05-a66f49f5c354/liverpool.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>lo de Julio</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/3b079778-1d3c-4523-8c54-2dcd623d25da/lo-de-julio.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 argentina</b><br/>💰 $$<br/><p>Empanadas y parrilla argentina</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Long Du - Restaurante cantonés</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/cb2d061f-486b-4a86-960a-8f8a6d1a4952/long-du-restaurante-cantones.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1550877,19.343722,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Los Danzantes</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/49f8572a-6573-4895-b596-b45ea1a7d3fd/los-danzantes.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Contemporánea</b><br/>💰 $$$<br/><br/>📍 Jardín Centenario 12]]></description>
+      <Point>
+        <coordinates>-99.163656,19.348755,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Los de Leono de Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/03455678-a250-457f-a6d5-89a1139cdc52/los-de-leono-de-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1715219,19.3536166,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Los Girasoles</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/5a32214e-0a4f-42a2-9e57-1065367d8f2e/los-girasoles.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana</b><br/>💰 $$<br/><p>Cocina mexicana en casona del siglo XVII. Especialidad en pre-colombina. Insectos comestibles (chapulines, escamoles). Patio central hermoso. Experiencia culinaria única.</p>]]></description>
+      <Point>
+        <coordinates>-99.1388816,19.4360189,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Los Olivos</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/4d26ba2a-6cba-414d-b2d9-a07b0efee2c3/los-olivos.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/><p>Barbacoa y comida mexicana</p><br/>📍 Centro de Xochimilco]]></description>
+      <Point>
+        <coordinates>-99.1029,19.2573,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Los Panchos Villa</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/378d509b-2e47-42fe-9d9c-354ebbb0cbf6/los-panchos-villa.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana</b><br/>💰 $$<br/><br/>📍 Calzada de Guadalupe 45]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Madonna Pizza</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/368f0fd3-0b11-40eb-927c-35b126664ec5/madonna-pizza.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 italiana</b><br/>💰 $$<br/><p>Pizzería artesanal al horno de leña</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mariscos El Puerto</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/775b18ec-f77f-4b7d-8e41-cc2cd51bf08f/mariscos-el-puerto.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/><p>Especialidad en mariscos frescos</p><br/>📍 Av. Nuevo León]]></description>
+      <Point>
+        <coordinates>-99.1022,19.2568,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mariscos La Villa</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/4f428e74-884b-47a0-b668-c6bfe9735a7e/mariscos-la-villa.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mariscos</b><br/>💰 $$<br/><br/>📍 Av. Insurgentes Norte 1425]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mayordomo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/a670e2ce-186b-43dc-8d75-e7ea4e399c14/mayordomo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Oaxaqueña</b><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1373352,19.4277115,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>McDonald&apos;s Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/f2168805-d61b-4511-bd16-fc64dd69ff4f/mcdonald-s-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 americana</b><br/>💰 $<br/><p>Comida rápida internacional</p><br/>📍 Av. Paseo de la Reforma, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1636718,19.428262,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mercado &quot;El Babar&quot;</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/9950acf2-3441-43da-b8e0-d52cae13a2c4/mercado-el-babar.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1729295,19.314117,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mercado Coyoacán - Tostadas Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/4295449c-2c5f-462f-80be-798f1c972379/mercado-coyoacan-tostadas-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Tostadas</b><br/>💰 $<br/><br/>📍 Ignacio Allende]]></description>
+      <Point>
+        <coordinates>-99.1615138,19.3527717,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mercado de San Camilio</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/9df45caf-84e6-4d7c-9d82-4e754d717a73/mercado-de-san-camilio.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mercado/Comida Tradicional</b><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1448495,19.4298927,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mercado San Camilito</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/005c9ae7-d875-4f38-95d1-1a07c10b4416/mercado-san-camilito.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana</b><br/>💰 $<br/><p>Mercado gastronómico tradicional. Antojitos mexicanos, pozole, birria, tamales. Ambiente familiar y popular. Música de mariachi en vivo.</p>]]></description>
+      <Point>
+        <coordinates>-99.1391525,19.4412237,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mesón del Molinero</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/9952c55e-6c8d-47ce-8873-cf441db193c3/meson-del-molinero.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1290816,19.4557946,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Miralto</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/65e249a8-0489-49bc-8b5c-dd767ef063b0/miralto.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1406097,19.4338818,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Miralto</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/38f03215-2e96-48e9-8ee1-da64eb28f5fc/miralto.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Internacional</b><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1406097,19.4338818,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo del Tequila y Mezcal</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/ff77568b-16d6-4d69-958d-0754aea53e69/museo-del-tequila-y-mezcal.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Bar/Museo</b><br/>💰 $$$<br/><p>Bar-museo con más de 400 variedades de tequila y mezcal. Degustaciones guiadas. Coctelería premium. Terraza con vista a Garibaldi.</p>]]></description>
+      <Point>
+        <coordinates>-99.1395574,19.4407088,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>niddo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/3bb5904d-2fb4-4283-8943-f3d726f5fd7b/niddo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 internacional</b><br/>💰 $$<br/><p>Cocina contemporánea con influencias globales</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>ORA Restaurante Coreano</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/46a9dfd0-aa1e-42e3-9309-3528978c02e5/ora-restaurante-coreano.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 coreana</b><br/>💰 $$<br/><p>Comida coreana contemporánea</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.163344,19.4277973,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>PANK Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/ee24546b-a8ff-449c-b257-a6d5edbd1f82/pank-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1561883,19.3437444,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Pastelería Ideal</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/693737f5-f140-4739-a474-453a9dfcb42e/pasteleria-ideal.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Panadería/Cafetería</b><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1355208,19.4304758,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Pastelería la Madrid</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/3faa632e-b214-41e3-815a-7afe24ed332c/pasteleria-la-madrid.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Panadería/Pastelería</b><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.131757,19.4357068,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Pepa Borla</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/c10f2640-a6f5-4ca3-8d1d-8eea69b53769/pepa-borla.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Cafetería/Postres</b><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.131757,19.4357068,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Pingo Grill</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/ef817136-dd79-4ac4-a040-fc296bd15635/pingo-grill.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.0943988,19.4393242,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Prime Steak Club</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/1782d76a-90f3-4f4d-bb09-387c8a1834a2/prime-steak-club.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 steakhouse</b><br/>💰 $$$<br/><p>Cortes premium y ambiente elegante</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Pulquería La Hermosa Hortensia</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/4936cc02-35a9-45e7-8484-1b693bc02439/pulqueria-la-hermosa-hortensia.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Pulquería</b><br/>💰 $<br/><p>Pulquería tradicional con curados de sabores. Ambiente bohemio y colorido. Botanas típicas. Experiencia auténtica de bebida prehispánica.</p>]]></description>
+      <Point>
+        <coordinates>-99.1385842,19.4409375,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Quintonil</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/84505637-387e-4eaf-aca5-7c4b7abde665/quintonil.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Alta Cocina Mexicana</b><br/>💰 Muy Alto<br/><br/>📍 Av. Isaac Newton 55]]></description>
+      <Point>
+        <coordinates>-99.1917115,19.4308408,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante Bar Chon</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/0dc0960d-fb4b-40b0-af08-4a7e71bf2f22/restaurante-bar-chon.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana Prehispánica</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1283541,19.4268705,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante Buenaventura</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/92d56897-2a8a-4fc6-82bf-f33e6eea97b9/restaurante-buenaventura.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1196156,19.506639,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante Catedral</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/59db3756-895b-42fe-9cc6-3f36c8276657/restaurante-catedral.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1331033,19.4358258,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante Coreano</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/72aadb9d-ca64-4a09-b3a5-b3312244a35e/restaurante-coreano.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 coreana</b><br/>💰 $$<br/><p>BBQ coreano y platos tradicionales</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.164613,19.4271052,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante Danubio</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/66c91f63-302c-4890-87bf-54fb6404e171/restaurante-danubio.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mariscos/Internacional</b><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1410103,19.431025,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante Del Museo De Antropología</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/88651d5b-c50a-49ee-96a2-184fd2be82dc/restaurante-del-museo-de-antropologia.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Internacional</b><br/>💰 Medio<br/><br/>📍 Museo Nacional de Antropología]]></description>
+      <Point>
+        <coordinates>-99.1862786,19.4260032,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante El Nuevo Mundo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/4de6aef9-c7ba-44ab-8992-71ea35676301/restaurante-el-nuevo-mundo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante La Villa</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/7102aebf-cbca-4182-a1d3-30ae073c1aab/restaurante-la-villa.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana</b><br/>💰 $$<br/><br/>📍 Calzada de los Misterios]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante Las Trajineras</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/cd595631-96bd-47a9-a96f-4bf2d9863006/restaurante-las-trajineras.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/><p>Cocina mexicana en ambiente tradicional</p><br/>📍 Embarcadero Nuevo Nativitas]]></description>
+      <Point>
+        <coordinates>-99.1013,19.2577,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>RESTAURANTE LEPANTO</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/7925775b-d0e8-42b2-9e11-d85f86d70289/restaurante-lepanto.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1171909,19.4805969,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante Mercaderes</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/7fd7a1ef-0398-47e7-bd20-2cf9aec12870/restaurante-mercaderes.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1348211,19.4338761,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante Peruano</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/44b44148-fb03-4b98-a9fa-bd13cdc15d51/restaurante-peruano.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 peruana</b><br/>💰 $$<br/><p>Ceviche y platos típicos peruanos</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante Río Blanco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/ce955b6f-dd02-40dd-b41c-ec578d1c1b7b/restaurante-rio-blanco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1234688,19.4777907,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante Zenón</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/a2458ecf-720e-42d0-b20e-c1cf0f5e5692/restaurante-zenon.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.117474,19.4828942,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Restaurante, Comida mexicana</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/175df771-7250-4cf0-86d1-6c63331bb356/restaurante-comida-mexicana.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1392564,19.440413,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Rinconada</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/ad9bea8c-24ce-4eb1-ab74-b32ea0570767/rinconada.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana</b><br/>💰 Medio<br/><br/>📍 Av. Constituyentes 700]]></description>
+      <Point>
+        <coordinates>-99.1845207,19.3451511,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sabor do Brasil</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/4a00236a-54a4-4e3c-b51f-712ccf654177/sabor-do-brasil.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1214502,19.4770696,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Salón Corona Madero</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/2d51bd32-56e0-435a-ae75-683e8d2e5f9f/salon-corona-madero.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1396987,19.4339407,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Salón Tenampa</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/25139d5a-84fc-431d-a425-8c2e1e9a8808/salon-tenampa.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Cantina/Mexicana</b><br/>💰 $$<br/><p>Cantina legendaria desde 1925. Cuna del mariachi en CDMX. Tequila, botanas mexicanas. Música en vivo toda la noche. Institución cultural de Garibaldi.</p>]]></description>
+      <Point>
+        <coordinates>-99.13895,19.4410361,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>San Ángel Inn Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/9409f958-e72b-4a2f-bd44-ffbbcf1ebeeb/san-angel-inn-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana de Lujo</b><br/>💰 $$$$<br/><br/>📍 Jardín Centenario 4]]></description>
+      <Point>
+        <coordinates>-99.19752,19.3498899,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sanborns Café Avenida Juárez</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/2524034f-5c23-4c65-ab1d-eb05a2c1d180/sanborns-cafe-avenida-juarez.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1416929,19.4341519,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sanborns de los Azulejos</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/f0cd9f56-b947-415c-9bee-a72c8e4a2235/sanborns-de-los-azulejos.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1401815,19.4342214,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sanborns Madero</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/7b20d529-b0e7-4cda-97aa-0469c6b58cec/sanborns-madero.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana/Internacional</b><br/>💰 $$<br/><p>Casa de los Azulejos. Patio colonial icónico con fuente. Desayunos, comidas mexicanas e internacionales. Panadería propia. Tienda de regalos. Experiencia turística clásica.</p>]]></description>
+      <Point>
+        <coordinates>-99.1372766,19.433616,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sanborns Madero</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/1b97b05b-9c1a-42b7-811c-1b78ec821438/sanborns-madero.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Mexicana/Internacional</b><br/>💰 $$<br/><p>Casa de los Azulejos. Edificio histórico del siglo XVI. Patio colonial con fuente. Comida mexicana e internacional. Museo y tienda.</p>]]></description>
+      <Point>
+        <coordinates>-99.1391089,19.4406739,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Shake Shack Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/899486c9-8c4f-4edf-827f-64af3067827b/shake-shack-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 americana</b><br/>💰 $$<br/><p>Hamburguesas gourmet de cadena neoyorquina</p><br/>📍 Av. Paseo de la Reforma, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1636718,19.428262,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sonora Majosos</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/605675f9-06d8-4c96-b575-9b51687e8c0a/sonora-majosos.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1712238,19.3600474,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sonora Prime Centro Histórico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/ed8b29da-dbcb-440c-88b5-3d7eebbaa9ce/sonora-prime-centro-historico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1402142,19.4311158,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>SUKIYA, Restaurante japonés</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/3c952624-c9e4-4844-97bb-d5e46aa7a484/sukiya-restaurante-japones.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1392564,19.440413,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Super Tacos Chupacabras</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/ca26038a-3e38-404d-9f42-bfbcca9db716/super-tacos-chupacabras.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Tacos</b><br/>💰 $<br/><br/>📍 Malintzin 107]]></description>
+      <Point>
+        <coordinates>-99.1878173,19.376648,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sushi Roll Centro Histórico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/8355782b-1e9d-49e6-95af-7adf95153f1e/sushi-roll-centro-historico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1391983,19.4344864,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Tacos &quot;El paraíso&quot;</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/4af1a3ee-c1ed-4a3f-9786-b20e911def19/tacos-el-paraiso.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1286469,19.4573157,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Tacos de Canasta Los Especiales</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/d820a9a5-943c-4503-8882-eb914a907de7/tacos-de-canasta-los-especiales.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.13459,19.4331589,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Tacos La Chula</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/368c716f-9406-4b2c-894a-5c7fb1d20368/tacos-la-chula.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 mexicana</b><br/>💰 $<br/><p>Tacos gourmet con sazón casero</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1616373,19.4252868,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Tacos Los Panchitos</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/16e54cea-d2b9-4dc4-8467-0d3d2ea46e6a/tacos-los-panchitos.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1325225,19.4470781,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Tahona Centro Histórico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/e5ef0163-5852-44b2-a618-5a0084401d77/tahona-centro-historico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1398862,19.4389085,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Taquería El Caifán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/2706cc53-47bb-45e7-9ba3-56b0f58e8c93/taqueria-el-caifan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1472139,19.4350229,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Taquería El Califa</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/75b740dc-1605-49f2-b2f8-dac53ce60631/taqueria-el-califa.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 mexicana</b><br/>💰 $<br/><p>Tacos de calidad en ambiente casual</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Taquería El Greco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/29b97c14-13b9-4703-bf2b-14cea1411635/taqueria-el-greco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Tacos</b><br/>💰 Bajo<br/><br/>📍 Horacio 95]]></description>
+      <Point>
+        <coordinates>-99.1774665,19.4110417,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Taquería El Peregrino</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/168b2fac-12b1-4cc5-bf94-ebf0b8a02c8b/taqueria-el-peregrino.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Tacos</b><br/>💰 $<br/><br/>📍 Calzada de los Misterios 50]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Taquería Orinoco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/f4b62cbc-579c-43e8-bfe9-1d9e4361160c/taqueria-orinoco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 mexicana</b><br/>💰 $<br/><p>Tacos al pastor reconocidos en la CDMX</p><br/>📍 Orinoco, Roma Norte, Cuauhtémoc, 06700 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.166708,19.4256885,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Terah</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/62e8ee24-6503-412f-b972-b469c59a13a6/terah.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1629131,19.3486926,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Terminal de Autobuses del Sur</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/b6b793ed-025a-428d-bb56-04f1dca15bd4/terminal-de-autobuses-del-sur.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1388828,19.3423133,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Terraza Catedral</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/470a018a-e744-40cb-9d22-7d7399dbf3b8/terraza-catedral.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Internacional</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.133609,19.435168,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Ticuchi</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/5c5c9057-b619-4c3c-9c77-5c6a3d6bef95/ticuchi.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Oaxaqueña</b><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1854677,19.4335785,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Toks Alameda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/c2a77268-9a95-44c6-9a24-702fda35d5be/toks-alameda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1436638,19.4344391,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Toks la Villa</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/64634f53-b2cc-4832-a40b-a6a0f6c7df3c/toks-la-villa.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1252073,19.464884,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Toks Tlalpantle</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/e5a4d60c-73ac-471b-bd5e-804b0d22d1dd/toks-tlalpantle.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1561883,19.3437444,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Tori-Tori Polanco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/745f6ef6-0659-4b4e-869a-ff31ab163f68/tori-tori-polanco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Japonesa</b><br/>💰 Alto<br/><br/>📍 Temístocles 61]]></description>
+      <Point>
+        <coordinates>-99.1894558,19.4194815,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>TORTAS GIGANTES SUR 12</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/caf7a2c2-e616-4110-8f8c-a8ecc0539415/tortas-gigantes-sur-12.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1561883,19.3437444,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Valiant</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/d2b3a7eb-2950-47b5-8ab6-eea73224814e/valiant.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1481731,19.4347506,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Villa Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/9974b845-4b7f-4ebb-b423-7cf6b5f303f8/villa-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1629131,19.3486926,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Vips Calzada de Guadalupe</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/28dc3be1-399e-41de-ac74-85273d2bcaa4/vips-calzada-de-guadalupe.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1171343,19.4833711,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Vips Tepeyac</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/cea564b7-31ce-49c7-b02d-ad0639e1051e/vips-tepeyac.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1216864,19.4725203,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Wingstop</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/6e737b77-802f-4a2e-93b4-ae6fc88d2b4b/wingstop.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 americana</b><br/>💰 $<br/><p>Alitas y boneless al estilo americano</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1647863,19.4241959,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Zéfiro</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/restaurantes/8c953ea4-bf1a-4c03-b678-ceddca4c0b41/zefiro.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🍴 Internacional</b><br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1381147,19.4273224,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
