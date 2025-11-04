@@ -2,11 +2,15 @@ import streamlit as st
 from supabase import create_client, Client
 import os
 from datetime import datetime
+import pytz  # 👈 NUEVO: Para manejar zonas horarias
 from transfermarkt_integration import add_transfermarkt_section
 from dotenv import load_dotenv  # 👈 AGREGAR ESTA LÍNEA
 
 # Cargar variables de entorno del archivo .env
 load_dotenv()  # 👈 AGREGAR ESTA LÍNEA
+
+# Definir zona horaria de México (CDMX)
+MEXICO_TZ = pytz.timezone('America/Mexico_City')  # 👈 NUEVO: Zona horaria de México
 
 # ============================================
 # ESTILOS CSS MEJORADOS - AGREGAR AQUÍ
