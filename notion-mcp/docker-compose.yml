@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  notion-mcp-server:
+    image: mcp/notion
+    container_name: mundial-notion-mcp
+    environment:
+      - NOTION_TOKEN=${NOTION_TOKEN}
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs

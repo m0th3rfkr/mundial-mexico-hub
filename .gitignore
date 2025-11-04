@@ -179,3 +179,20 @@ out/
 
 # Supabase generated files
 .supabase/
+# ============================================
+# MCP SERVERS - CREDENCIALES
+# ============================================
+# Notion MCP credentials
+notion-mcp/ntn_*
+notion-mcp/*.key
+notion-mcp/*.secret
+
+# n8n MCP credentials  
+n8n-mcp/.env
+n8n-mcp/*.key
+n8n-mcp/*.secret
+
+# Cualquier archivo de credenciales MCP
+**/ntn_*
+**/*.key
+**/*.secret
