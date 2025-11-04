@@ -964,7 +964,9 @@ elif page == "PARTIDOS":
 
                 if home_team_id != away_team_id:
                     try:
+                        # Crear datetime y localizarlo a zona horaria de México
                         match_datetime = datetime.combine(match_date, match_time)
+                        match_datetime = MEXICO_TZ.localize(match_datetime)
                         data = {
                             "home_team_id": home_team_id,
                             "away_team_id": away_team_id,
@@ -1096,7 +1098,9 @@ elif page == "PARTIDOS":
                         away_id = team_options[edit_away]
 
                         if home_id != away_id:
+                            # Crear datetime y localizarlo a zona horaria de México
                             match_datetime = datetime.combine(edit_date, edit_time)
+                            match_datetime = MEXICO_TZ.localize(match_datetime)
                             updated_data = {
                                 "home_team_id": home_id,
                                 "away_team_id": away_id,
