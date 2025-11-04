@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidos - Mundial 2026</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #e8eaed;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header con botón VIVO AHORA */
+        .header {
+            background: white;
+            padding: 16px;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .live-button {
+            background: #d32f2f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 auto 12px;
+            box-shadow: 0 2px 8px rgba(211, 47, 47, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .live-button.hidden {
+            display: none;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* Resto del CSS... */
+        .date-selector {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 16px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .date-nav-btn {
+            background: #f5f5f5;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .current-date {
+            background: #0066b2;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .matches-container {
+            padding: 16px;
+        }
+
+        .match-card {
+            background: white;
+            margin-bottom: 12px;
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 4px solid transparent;
+        }
+
+        .match-card.live {
+            border-left-color: #d32f2f;
+            background: #fff5f5;
+        }
+
+        .live-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #d32f2f;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .loading-spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #0066b2;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button id="live-button" class="live-button hidden">
+            <span class="live-dot"></span>
+            <span id="live-count">0</span> EN VIVO AHORA
+        </button>
+        <div class="date-selector">
+            <button class="date-nav-btn" onclick="previousDay()">←</button>
+            <div class="current-date" id="current-date"></div>
+            <button class="date-nav-btn" onclick="nextDay()">→</button>
+        </div>
+    </div>
+
+    <div id="loading" class="loading">
+        <div class="loading-spinner"></div>
+        <p>Cargando partidos...</p>
+    </div>
+
+    <div id="matches-container" class="matches-container"></div>
+
+    <script>
+        const SUPABASE_URL = 'https://ksiiidnvtktlowlhtebs.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjk0NzQzMjcsImV4cCI6MjA0NTA1MDMyN30.k_OyLuBGQCjMzQ0xdrvCVZYcxk0iAjzB8bm0W9WjyLY';
+        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        let selectedDate = new Date();
+        let allMatches = [];
+
+        // 🔥 DETECCIÓN AUTOMÁTICA DE PARTIDOS EN VIVO
+        function getMatchStatus(match) {
+            const now = new Date();
+            const matchDate = new Date(match.match_date);
+            const diffMinutes = (now - matchDate) / 1000 / 60;
+
+            // EN VIVO: desde -15 min antes hasta +120 min después
+            if (diffMinutes >= -15 && diffMinutes <= 120) {
+                return 'live';
+            }
+
+            // FINALIZADO: más de 2 horas
+            if (diffMinutes > 120) {
+                return 'finished';
+            }
+
+            return 'scheduled';
+        }
+
+        function formatDate(date) {
+            return date.toLocaleDateString('es-MX', { 
+                weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' 
+            });
+        }
+
+        function updateCurrentDate() {
+            document.getElementById('current-date').textContent = formatDate(selectedDate);
+        }
+
+        function previousDay() {
+            selectedDate.setDate(selectedDate.getDate() - 1);
+            updateCurrentDate();
+            loadMatches();
+        }
+
+        function nextDay() {
+            selectedDate.setDate(selectedDate.getDate() + 1);
+            updateCurrentDate();
+            loadMatches();
+        }
+
+        async function loadMatches() {
+            try {
+                const { data, error } = await supabase
+                    .from('matches')
+                    .select(`*, home_team:teams!home_team_id(name, code), away_team:teams!away_team_id(name, code)`)
+                    .order('match_date');
+
+                if (error) throw error;
+
+                // Asignar status automático
+                allMatches = (data || []).map(match => ({
+                    ...match,
+                    autoStatus: getMatchStatus(match)
+                }));
+
+                renderMatches();
+
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        function renderMatches() {
+            const container = document.getElementById('matches-container');
+            const loading = document.getElementById('loading');
+            
+            loading.style.display = 'none';
+            container.innerHTML = '';
+
+            // Filtrar por fecha
+            const dateStr = selectedDate.toISOString().split('T')[0];
+            const dayMatches = allMatches.filter(match => {
+                const matchDate = new Date(match.match_date).toISOString().split('T')[0];
+                return matchDate === dateStr;
+            });
+
+            // Contar partidos en vivo
+            const liveMatches = dayMatches.filter(m => m.autoStatus === 'live');
+            const liveBtn = document.getElementById('live-button');
+            const liveCount = document.getElementById('live-count');
+            
+            if (liveMatches.length > 0) {
+                liveBtn.classList.remove('hidden');
+                liveCount.textContent = liveMatches.length;
+            } else {
+                liveBtn.classList.add('hidden');
+            }
+
+            // Renderizar partidos
+            dayMatches.forEach(match => {
+                const card = document.createElement('div');
+                card.className = 'match-card';
+                
+                if (match.autoStatus === 'live') {
+                    card.classList.add('live');
+                }
+
+                const homeCode = match.home_team?.code || 'TBD';
+                const awayCode = match.away_team?.code || 'TBD';
+                
+                card.innerHTML = `
+                    ${match.autoStatus === 'live' ? '<div class="live-badge">🔴 EN VIVO</div>' : ''}
+                    <div style="margin-bottom:8px;">
+                        <strong>${match.phase || 'Fase'}</strong> - ${match.stadium}
+                    </div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                        <div>${homeCode} ${match.home_team?.name}</div>
+                        <div style="font-weight:700;font-size:20px;">
+                            ${match.autoStatus === 'finished' || match.autoStatus === 'live' 
+                                ? `${match.home_score || 0} - ${match.away_score || 0}`
+                                : new Date(match.match_date).toLocaleTimeString('es-MX', {hour:'2-digit',minute:'2-digit'})
+                            }
+                        </div>
+                        <div>${awayCode} ${match.away_team?.name}</div>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+
+            if (dayMatches.length === 0) {
+                container.innerHTML = '<div style="text-align:center;padding:40px;color:#666;">No hay partidos programados</div>';
+            }
+        }
+
+        // Inicializar
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCurrentDate();
+            loadMatches();
+            
+            // Actualizar cada minuto
+            setInterval(loadMatches, 60000);
+        });
+    </script>
+</body>
+</html>
