@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidos del Mundial 2026</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Sección de Botones de Estado */
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: white;
+            color: #667eea;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .filter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+        }
+
+        .filter-btn.live {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(255, 107, 107, 0);
+            }
+        }
+
+        .badge-count {
+            background: rgba(255,255,255,0.3);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+
+        /* Matches Grid */
+        .matches-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .match-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .match-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .match-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .match-status {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .match-status.live {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .match-date {
+            font-size: 14px;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        .match-body {
+            padding: 20px;
+        }
+
+        .teams {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .team {
+            text-align: center;
+            flex: 1;
+        }
+
+        .team-flag {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid #f0f0f0;
+        }
+
+        .team-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .vs {
+            font-size: 18px;
+            font-weight: bold;
+            color: #999;
+            margin: 0 10px;
+        }
+
+        .match-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .info-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-label {
+            color: #666;
+        }
+
+        .info-value {
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+        }
+
+        .spinner {
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .empty-state h3 {
+            color: #667eea;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .empty-state p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .matches-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-buttons {
+                flex-direction: column;
+            }
+            
+            .filter-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚽ Mundial 2026</h1>
+            <p>Partidos y Calendario</p>
+        </div>
+
+        <div class="filter-buttons" id="filterButtons">
+            <!-- Los botones se generarán dinámicamente -->
+        </div>
+
+        <div id="content">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Cargando partidos...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 🔑 CONFIGURACIÓN DE SUPABASE
+        const SUPABASE_URL = 'https://zqjyblwqothmxzfpujoj.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpxanlibHdxb3RobXh6ZnB1am9qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzA2Njk3MDQsImV4cCI6MjA0NjI0NTcwNH0.ePPp1WdUe6lmR4x6oNEexG1FNkbjueBm0KzGN3g-cXI';
+
+        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        let allMatches = [];
+        let currentFilter = 'todos';
+
+        // Estados disponibles y sus colores
+        const STATUS_CONFIG = {
+            'live': { label: 'VIVO AHORA', color: '#ff6b6b', emoji: '🔴' },
+            'programado': { label: 'Próximos', color: '#4CAF50', emoji: '📅' },
+            'finalizado': { label: 'Finalizados', color: '#9e9e9e', emoji: '✅' },
+            'cancelado': { label: 'Cancelados', color: '#f44336', emoji: '❌' }
+        };
+
+        // Nombres de meses y días en español
+        const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+        const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+
+        // 🔥 NUEVA FUNCIÓN: DETECTAR SI UN PARTIDO ESTÁ EN VIVO AUTOMÁTICAMENTE
+        function isMatchLive(match) {
+            if (!match.fecha_hora) return false;
+
+            const now = new Date();
+            const matchDate = new Date(match.fecha_hora);
+            
+            // Un partido está "en vivo" si:
+            // - Empezó hace menos de 2 horas (120 minutos)
+            // - O falta menos de 15 minutos para que empiece
+            const diffMinutes = (now - matchDate) / 1000 / 60;
+            
+            return diffMinutes >= -15 && diffMinutes <= 120;
+        }
+
+        // 🔥 FUNCIÓN MEJORADA: DETERMINAR ESTADO REAL DEL PARTIDO
+        function getMatchStatus(match) {
+            // Si tiene estado manual en la BD, respetarlo (excepto si debería estar en vivo)
+            if (match.estado === 'cancelado' || match.estado === 'finalizado') {
+                return match.estado;
+            }
+
+            // Detectar automáticamente si está en vivo
+            if (isMatchLive(match)) {
+                return 'live';
+            }
+
+            // Si no está en vivo y no tiene otro estado, es "programado"
+            return 'programado';
+        }
+
+        // Función para cargar los partidos desde Supabase
+        async function loadMatches() {
+            try {
+                console.log('🔍 Iniciando carga de partidos...');
+                console.log('📡 Supabase URL:', SUPABASE_URL);
+                console.log('🔑 Key configurada:', SUPABASE_ANON_KEY ? 'Sí ✅' : 'No ❌');
+
+                const { data, error } = await supabase
+                    .from('partidos')
+                    .select(`
+                        *,
+                        equipo_local:equipos!partidos_equipo_local_id_fkey(nombre, bandera_url),
+                        equipo_visitante:equipos!partidos_equipo_visitante_id_fkey(nombre, bandera_url),
+                        estadio:estadios(nombre, ciudad, pais)
+                    `)
+                    .order('fecha_hora', { ascending: true });
+
+                if (error) {
+                    console.error('❌ Error de Supabase:', error);
+                    throw error;
+                }
+
+                console.log('✅ Datos recibidos:', data ? data.length : 0, 'partidos');
+
+                if (!data || data.length === 0) {
+                    document.getElementById('content').innerHTML = `
+                        <div class="empty-state">
+                            <h3>No hay partidos</h3>
+                            <p>No se encontraron partidos en la base de datos.</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                // 🔥 AGREGAR ESTADO REAL A CADA PARTIDO
+                allMatches = data.map(match => ({
+                    ...match,
+                    estado_real: getMatchStatus(match)
+                }));
+
+                console.log('✅ Partidos procesados con estados:', allMatches.length);
+
+                createFilterButtons();
+                renderMatches();
+
+            } catch (error) {
+                console.error('❌ Error cargando partidos:', error);
+                document.getElementById('content').innerHTML = `
+                    <div class="empty-state">
+                        <h3>❌ Error al cargar</h3>
+                        <p><strong>Detalle:</strong> ${error.message || 'Error desconocido'}</p>
+                        <p style="font-size: 12px; margin-top: 10px; color: #999;">
+                            Revisa la consola del navegador para más detalles
+                        </p>
+                    </div>
+                `;
+            }
+        }
+
+        // Función para crear los botones de filtro dinámicamente
+        function createFilterButtons() {
+            const filterButtonsContainer = document.getElementById('filterButtons');
+            
+            // Contar partidos por estado REAL
+            const statusCounts = {
+                todos: allMatches.length,
+                live: allMatches.filter(m => m.estado_real === 'live').length,
+                programado: allMatches.filter(m => m.estado_real === 'programado').length,
+                finalizado: allMatches.filter(m => m.estado_real === 'finalizado').length,
+                cancelado: allMatches.filter(m => m.estado_real === 'cancelado').length
+            };
+
+            let buttonsHTML = `
+                <button class="filter-btn ${currentFilter === 'todos' ? 'active' : ''}" onclick="filterMatches('todos')">
+                    Todos <span class="badge-count">${statusCounts.todos}</span>
+                </button>
+            `;
+
+            // Botón especial para LIVE si hay partidos en vivo
+            if (statusCounts.live > 0) {
+                buttonsHTML += `
+                    <button class="filter-btn live ${currentFilter === 'live' ? 'active' : ''}" onclick="filterMatches('live')">
+                        🔴 VIVO AHORA <span class="badge-count">${statusCounts.live}</span>
+                    </button>
+                `;
+            }
+
+            // Botones para otros estados
+            Object.keys(STATUS_CONFIG).forEach(status => {
+                if (status === 'live') return; // Ya lo manejamos arriba
+                
+                const config = STATUS_CONFIG[status];
+                if (statusCounts[status] > 0) {
+                    buttonsHTML += `
+                        <button class="filter-btn ${currentFilter === status ? 'active' : ''}" onclick="filterMatches('${status}')">
+                            ${config.emoji} ${config.label} <span class="badge-count">${statusCounts[status]}</span>
+                        </button>
+                    `;
+                }
+            });
+
+            filterButtonsContainer.innerHTML = buttonsHTML;
+        }
+
+        // Función para filtrar partidos
+        window.filterMatches = function(filter) {
+            currentFilter = filter;
+            createFilterButtons();
+            renderMatches();
+        };
+
+        // Función para renderizar los partidos
+        function renderMatches() {
+            const contentDiv = document.getElementById('content');
+            
+            // Filtrar partidos según el estado REAL
+            let filteredMatches = currentFilter === 'todos' 
+                ? allMatches 
+                : allMatches.filter(match => match.estado_real === currentFilter);
+
+            if (filteredMatches.length === 0) {
+                contentDiv.innerHTML = `
+                    <div class="empty-state">
+                        <h3>No hay partidos</h3>
+                        <p>No se encontraron partidos en esta categoría.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const matchesHTML = filteredMatches.map(match => {
+                const matchDate = new Date(match.fecha_hora);
+                const estado = match.estado_real;
+                const statusConfig = STATUS_CONFIG[estado] || STATUS_CONFIG['programado'];
+
+                return `
+                    <div class="match-card">
+                        <div class="match-header">
+                            <div class="match-status ${estado}">${statusConfig.emoji} ${statusConfig.label}</div>
+                            <div class="match-date">
+                                ${dayNames[matchDate.getDay()]}, ${matchDate.getDate()} ${monthNames[matchDate.getMonth()]} ${matchDate.getFullYear()}
+                            </div>
+                        </div>
+                        <div class="match-body">
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="${match.equipo_local?.bandera_url || 'https://via.placeholder.com/60'}" 
+                                         alt="${match.equipo_local?.nombre}" 
+                                         class="team-flag"
+                                         onerror="this.src='https://via.placeholder.com/60?text=Flag'">
+                                    <div class="team-name">${match.equipo_local?.nombre || 'TBD'}</div>
+                                </div>
+                                <div class="vs">VS</div>
+                                <div class="team">
+                                    <img src="${match.equipo_visitante?.bandera_url || 'https://via.placeholder.com/60'}" 
+                                         alt="${match.equipo_visitante?.nombre}" 
+                                         class="team-flag"
+                                         onerror="this.src='https://via.placeholder.com/60?text=Flag'">
+                                    <div class="team-name">${match.equipo_visitante?.nombre || 'TBD'}</div>
+                                </div>
+                            </div>
+                            <div class="match-info">
+                                <div class="info-row">
+                                    <span class="info-label">⏰ Hora:</span>
+                                    <span class="info-value">${matchDate.toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit' })}</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">🏟️ Estadio:</span>
+                                    <span class="info-value">${match.estadio?.nombre || 'Por definir'}</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">📍 Ciudad:</span>
+                                    <span class="info-value">${match.estadio?.ciudad || 'Por definir'}, ${match.estadio?.pais || ''}</span>
+                                </div>
+                                ${match.fase ? `
+                                <div class="info-row">
+                                    <span class="info-label">🏆 Fase:</span>
+                                    <span class="info-value">${match.fase}</span>
+                                </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            contentDiv.innerHTML = `<div class="matches-grid">${matchesHTML}</div>`;
+        }
+
+        // 🔥 NUEVA FUNCIÓN: AUTO-REFRESH CADA 60 SEGUNDOS
+        function startAutoRefresh() {
+            setInterval(() => {
+                console.log('🔄 Auto-refresh: Actualizando estados de partidos...');
+                
+                // Recalcular estados sin hacer nueva petición a la BD
+                allMatches = allMatches.map(match => ({
+                    ...match,
+                    estado_real: getMatchStatus(match)
+                }));
+
+                // Re-renderizar
+                createFilterButtons();
+                renderMatches();
+            }, 60000); // 60 segundos
+        }
+
+        // Cargar partidos al iniciar
+        loadMatches();
+        
+        // 🔥 INICIAR AUTO-REFRESH
+        startAutoRefresh();
+    </script>
+</body>
+</html>
