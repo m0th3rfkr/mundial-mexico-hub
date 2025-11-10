@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corredor Turístico</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; 
+            background: #f5f5f5;
+            overflow-x: hidden;
+        }
+        
+        .hero-section { 
+            background: linear-gradient(135deg, #006847 0%, #00854d 100%); 
+            color: white; 
+            padding: 60px 20px 30px 20px; 
+            text-align: center;
+            position: relative;
+        }
+        .hero-section h1 { 
+            font-size: 32px; 
+            margin-bottom: 5px; 
+        }
+        .hero-section p { 
+            opacity: 0.9; 
+            font-size: 16px; 
+        }
+        
+        .back-btn {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+        
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateX(-3px);
+        }
+        
+        /* Filtros simples */
+        .filter-section {
+            background: white;
+            margin: 10px;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .filter-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .filter-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .filter-btn {
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+            font-size: 14px;
+        }
+        
+        .filter-btn:hover {
+            background: #f5f5f5;
+        }
+        
+        .filter-btn.active {
+            background: #006847;
+            color: white;
+            border-color: #006847;
+        }
+        
+        .filter-btn .emoji {
+            font-size: 18px;
+        }
+        
+        .filter-btn .count {
+            margin-left: auto;
+            background: #CE1126;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .filter-btn.active .count {
+            background: white;
+            color: #006847;
+        }
+        
+        .feed { 
+            padding: 0 20px 20px; 
+        }
+        .feed h2 { 
+            font-size: 18px; 
+            color: #333; 
+            margin-bottom: 15px; 
+        }
+        
+        .place-card { 
+            background: white; 
+            border-radius: 12px; 
+            margin-bottom: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            cursor: pointer; 
+            transition: transform 0.2s; 
+        }
+        .place-card:hover { 
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .place-card:active { 
+            transform: scale(0.98); 
+        }
+        .place-img { 
+            width: 100%; 
+            height: 180px; 
+            object-fit: cover; 
+            background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 48px; 
+        }
+        .place-info { 
+            padding: 15px; 
+        }
+        .place-type { 
+            display: inline-block; 
+            padding: 4px 10px; 
+            background: #006847; 
+            color: white; 
+            border-radius: 12px; 
+            font-size: 11px; 
+            font-weight: 600; 
+            margin-bottom: 8px; 
+        }
+        .place-name { 
+            font-size: 18px; 
+            font-weight: 700; 
+            color: #333; 
+            margin-bottom: 5px; 
+        }
+        .place-desc { 
+            font-size: 14px; 
+            color: #666; 
+            margin-bottom: 10px; 
+            line-height: 1.4; 
+        }
+        .place-address { 
+            font-size: 13px; 
+            color: #999; 
+        }
+        
+        .map-fab { 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            width: 56px; 
+            height: 56px; 
+            background: #006847; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 24px; 
+            box-shadow: 0 4px 12px rgba(0,104,71,0.4); 
+            cursor: pointer; 
+            z-index: 100;
+            text-decoration: none;
+            color: white;
+        }
+        .map-fab:hover {
+            background: #00854d;
+            transform: scale(1.1);
+        }
+        
+        .loading { 
+            text-align: center; 
+            padding: 40px 20px; 
+            color: #999; 
+        }
+        .error { 
+            text-align: center; 
+            padding: 20px; 
+            color: #d32f2f; 
+            background: #ffebee; 
+            border-radius: 8px; 
+            margin: 20px; 
+        }
+        
+        @media (max-width: 600px) {
+            .hero-section h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <button class="back-btn" onclick="goBack()">
+            <span>←</span>
+            <span>Volver</span>
+        </button>
+        <h1 id="corridorName">Cargando...</h1>
+        <p id="corridorDesc"></p>
+    </div>
+    
+    <!-- Filtros simplificados -->
+    <div class="filter-section">
+        <div class="filter-title">Filtrar por categoría</div>
+        <div class="filter-grid">
+            <button class="filter-btn active" onclick="setFilter('all')">
+                <span class="emoji">🗺️</span>
+                <span>Todos</span>
+                <span class="count" id="count-all">0</span>
+            </button>
+            <button class="filter-btn" onclick="setFilter('restaurantes')">
+                <span class="emoji">🍽️</span>
+                <span>Restaurantes</span>
+                <span class="count" id="count-restaurantes">0</span>
+            </button>
+            <button class="filter-btn" onclick="setFilter('hoteles')">
+                <span class="emoji">🏨</span>
+                <span>Hoteles</span>
+                <span class="count" id="count-hoteles">0</span>
+            </button>
+            <button class="filter-btn" onclick="setFilter('imperdibles')">
+                <span class="emoji">⭐</span>
+                <span>Imperdibles</span>
+                <span class="count" id="count-imperdibles">0</span>
+            </button>
+            <button class="filter-btn" onclick="setFilter('estacionamientos')">
+                <span class="emoji">🅿️</span>
+                <span>Parking</span>
+                <span class="count" id="count-estacionamientos">0</span>
+            </button>
+            <button class="filter-btn" onclick="setFilter('estaciones_ecobici')">
+                <span class="emoji">🚲</span>
+                <span>EcoBici</span>
+                <span class="count" id="count-estaciones_ecobici">0</span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="feed">
+        <h2 id="feedTitle">Todos los lugares</h2>
+        <div id="placesList" class="loading">Cargando lugares...</div>
+    </div>
+    
+    <a href="#" class="map-fab" onclick="openMap(); return false;">🗺️</a>
+    
+    <script>
+        const SUPABASE_URL = 'https://ksiiidnvtktlowlhtebs.supabase.co';
+        const ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4MTIxMzMsImV4cCI6MjA3NjM4ODEzM30.aNctRZSRaINDV4ehb00848g4Y-70UeFviNbsmS8jQUw';
+        
+        const corredores = {
+            'zona-rosa': { 
+                nombre: 'Zona Rosa', 
+                icon: '🌹', 
+                desc: 'Cultura y entretenimiento', 
+                id: '8aad43fc-9854-40d3-a73b-2558f42d14ad' 
+            },
+            'basilica': { 
+                nombre: 'Basílica', 
+                icon: '⛪', 
+                desc: 'Fe y tradición', 
+                id: 'b1663b4b-466f-433f-9f8a-9ea2508ad032' 
+            },
+            'centro-historico': { 
+                nombre: 'Centro Histórico', 
+                icon: '🏛️', 
+                desc: 'Corazón de CDMX', 
+                id: '1a607716-bad4-4982-ba13-99884c02a730' 
+            },
+            'chapultepec': { 
+                nombre: 'Chapultepec', 
+                icon: '🌳', 
+                desc: 'Pulmón verde', 
+                id: 'b90c50e9-027e-4394-ac13-57f29d4bc84f' 
+            },
+            'coyoacan': { 
+                nombre: 'Coyoacán', 
+                icon: '🎨', 
+                desc: 'Arte y bohemia', 
+                id: '97493529-0625-44c7-a514-0b41cf612903' 
+            },
+            'garibaldi': { 
+                nombre: 'Garibaldi', 
+                icon: '🎺', 
+                desc: 'Mariachi', 
+                id: '762ff70a-2f15-4422-82ad-96d271b09bd2' 
+            },
+            'xochimilco': { 
+                nombre: 'Xochimilco', 
+                icon: '🚣', 
+                desc: 'Trajineras', 
+                id: 'bc2c91a3-b564-4962-b74d-e13b6b7cb1b3' 
+            }
+        };
+        
+        const params = new URLSearchParams(window.location.search);
+        const corridorSlug = params.get('corredor') || 'zona-rosa';
+        const corredor = corredores[corridorSlug];
+        let allPlaces = [];
+        let currentFilter = 'all';
+        
+        // Actualizar título
+        document.getElementById('corridorName').innerHTML = corredor.icon + ' ' + corredor.nombre;
+        document.getElementById('corridorDesc').textContent = corredor.desc;
+        
+        async function loadPlaces() {
+            const container = document.getElementById('placesList');
+            try {
+                const tables = [
+                    { name: 'restaurantes', emoji: '🍽️' },
+                    { name: 'hoteles', emoji: '🏨' },
+                    { name: 'imperdibles', emoji: '⭐' },
+                    { name: 'estacionamientos', emoji: '🅿️' },
+                    { name: 'estaciones_ecobici', emoji: '🚲' }
+                ];
+                
+                const promises = tables.map(async table => {
+                    const url = `${SUPABASE_URL}/rest/v1/${table.name}?corredor_id=eq.${corredor.id}&select=*`;
+                    const response = await fetch(url, {
+                        headers: { 
+                            'apikey': ANON_KEY, 
+                            'Authorization': `Bearer ${ANON_KEY}`
+                        }
+                    });
+                    if (!response.ok) return [];
+                    const data = await response.json();
+                    return data.map(p => ({...p, tipo: table.name, emoji: table.emoji}));
+                });
+                
+                const results = await Promise.all(promises);
+                allPlaces = results.flat();
+                
+                updateCounters();
+                renderPlaces(allPlaces);
+            } catch (error) {
+                console.error('Error:', error);
+                container.innerHTML = '<div class="error">Error al cargar lugares. Por favor recarga la página.</div>';
+            }
+        }
+        
+        function updateCounters() {
+            const counts = {
+                restaurantes: allPlaces.filter(p => p.tipo === 'restaurantes').length,
+                hoteles: allPlaces.filter(p => p.tipo === 'hoteles').length,
+                imperdibles: allPlaces.filter(p => p.tipo === 'imperdibles').length,
+                estacionamientos: allPlaces.filter(p => p.tipo === 'estacionamientos').length,
+                estaciones_ecobici: allPlaces.filter(p => p.tipo === 'estaciones_ecobici').length
+            };
+            
+            document.getElementById('count-all').textContent = allPlaces.length;
+            document.getElementById('count-restaurantes').textContent = counts.restaurantes;
+            document.getElementById('count-hoteles').textContent = counts.hoteles;
+            document.getElementById('count-imperdibles').textContent = counts.imperdibles;
+            document.getElementById('count-estacionamientos').textContent = counts.estacionamientos;
+            document.getElementById('count-estaciones_ecobici').textContent = counts.estaciones_ecobici;
+        }
+        
+        function renderPlaces(places) {
+            const container = document.getElementById('placesList');
+            if (places.length === 0) {
+                container.innerHTML = '<p style="color: #999; text-align: center; padding: 40px;">No hay lugares en esta categoría</p>';
+                return;
+            }
+            
+            const typeLabels = { 
+                'restaurantes': '🍽️ Restaurante', 
+                'hoteles': '🏨 Hotel', 
+                'imperdibles': '⭐ Imperdible',
+                'estacionamientos': '🅿️ Estacionamiento',
+                'estaciones_ecobici': '🚲 EcoBici'
+            };
+            
+            container.innerHTML = places.map(place => {
+                const emoji = place.emoji || '📍';
+                const imageContent = place.imagen_principal_url 
+                    ? `<img src="${place.imagen_principal_url}" style="width:100%;height:100%;object-fit:cover;" alt="${place.nombre}">`
+                    : emoji;
+                    
+                return `<div class="place-card" onclick="openPlace('${place.id}', '${place.tipo}')">
+                    <div class="place-img">${imageContent}</div>
+                    <div class="place-info">
+                        <span class="place-type">${typeLabels[place.tipo] || place.tipo}</span>
+                        <div class="place-name">${place.nombre || 'Sin nombre'}</div>
+                        ${place.descripcion_corta ? `<div class="place-desc">${place.descripcion_corta.substring(0, 100)}...</div>` : ''}
+                        ${place.direccion ? `<div class="place-address">📍 ${place.direccion}</div>` : ''}
+                    </div>
+                </div>`;
+            }).join('');
+        }
+        
+        function setFilter(type) {
+            currentFilter = type;
+            
+            // Actualizar botones activos
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.closest('.filter-btn').classList.add('active');
+            
+            // Filtrar lugares
+            let filtered;
+            if (type === 'all') {
+                filtered = allPlaces;
+                document.getElementById('feedTitle').textContent = 'Todos los lugares';
+            } else {
+                filtered = allPlaces.filter(place => place.tipo === type);
+                document.getElementById('feedTitle').textContent = `Mostrando ${filtered.length} ${filtered.length === 1 ? 'lugar' : 'lugares'}`;
+            }
+            
+            renderPlaces(filtered);
+        }
+        
+        function openPlace(id, tipo) {
+            window.location.href = `goodbarber-place-detail.html?tipo=${tipo}&id=${id}&corredor=${corridorSlug}`;
+        }
+        
+        function openMap() {
+            window.location.href = `goodbarber-map.html?corredor=${corridorSlug}`;
+        }
+        
+        function goBack() {
+            window.location.href = 'goodbarber-7-rutas-widget-v2.html';
+        }
+        
+        loadPlaces();
+    </script>
+</body>
+</html>
