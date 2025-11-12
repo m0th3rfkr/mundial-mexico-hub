@@ -196,3 +196,6 @@ n8n-mcp/*.secret
 **/ntn_*
 **/*.key
 **/*.secret
+
+# Archived files
+archive/

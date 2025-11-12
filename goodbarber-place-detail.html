@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Lugar</title>
+    
+    <!-- Leaflet CSS para el mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #006847 0%, #00854d 100%);
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .back-button {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateX(-2px);
+        }
+
+        .header-title {
+            flex: 1;
+        }
+
+        .header-title h1 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .header-subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 4px;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Imagen Principal */
+        .main-image-container {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .main-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            position: relative;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Info Card */
+        .info-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .place-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #006847;
+            margin-bottom: 10px;
+        }
+
+        .category-badge {
+            display: inline-block;
+            background: #CE1126;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .info-icon {
+            width: 24px;
+            height: 24px;
+            background: #f0f0f0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .info-text {
+            flex: 1;
+            font-size: 15px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Mapa */
+        .map-container {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .map-header {
+            padding: 20px;
+            background: #fafafa;
+            border-bottom: 1px solid #eee;
+        }
+
+        .map-header h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        #map {
+            height: 300px;
+            width: 100%;
+        }
+
+        /* Botones de Acción */
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .action-button {
+            flex: 1;
+            background: #006847;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .action-button:hover {
+            background: #00854d;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,104,71,0.3);
+        }
+
+        .action-button.secondary {
+            background: white;
+            color: #006847;
+            border: 2px solid #006847;
+        }
+
+        .action-button.secondary:hover {
+            background: #f0f8f5;
+        }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #006847;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Error State */
+        .error-message {
+            background: #fee;
+            color: #c00;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            .place-name {
+                font-size: 24px;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <a href="#" class="back-button" onclick="goBack()">
+                <span>←</span>
+                <span>Volver</span>
+            </a>
+            <div class="header-title">
+                <h1 id="headerTitle">Cargando...</h1>
+                <div class="header-subtitle" id="headerSubtitle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="loading">
+            <div class="loading-spinner"></div>
+            <p>Cargando información del lugar...</p>
+        </div>
+    </div>
+
+    <!-- Leaflet JS para el mapa -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        // Configuración de Supabase
+        const SUPABASE_URL = 'https://ksiiidnvtktlowlhtebs.supabase.co';
+        const ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4MTIxMzMsImV4cCI6MjA3NjM4ODEzM30.aNctRZSRaINDV4ehb00848g4Y-70UeFviNbsmS8jQUw';
+
+        // Mapeo de corredores
+        const corridorNames = {
+            'zona-rosa': 'Zona Rosa',
+            'basilica': 'Basílica',
+            'centro-historico': 'Centro Histórico',
+            'chapultepec': 'Chapultepec',
+            'coyoacan': 'Coyoacán',
+            'garibaldi': 'Garibaldi',
+            'xochimilco': 'Xochimilco'
+        };
+
+        // Mapeo de categorías
+        const categoryNames = {
+            'restaurantes': 'Restaurante',
+            'hoteles': 'Hotel',
+            'imperdibles': 'Lugar Imperdible',
+            'estacionamientos': 'Estacionamiento',
+            'estaciones_ecobici': 'Estación EcoBici'
+        };
+
+        // Mapeo de emojis por categoría
+        const categoryEmojis = {
+            'restaurantes': '🍽️',
+            'hoteles': '🏨',
+            'imperdibles': '⭐',
+            'estacionamientos': '🅿️',
+            'estaciones_ecobici': '🚴'
+        };
+
+        let map = null;
+        let currentPlace = null;
+
+        // Obtener parámetros de URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                tipo: params.get('tipo'),
+                id: params.get('id'),
+                corredor: params.get('corredor')
+            };
+        }
+
+        // Cargar datos del lugar
+        async function loadPlaceData() {
+            const params = getQueryParams();
+            
+            if (!params.tipo || !params.id || !params.corredor) {
+                showError('Parámetros incorrectos. Por favor, vuelve a la lista.');
+                return;
+            }
+
+            // Actualizar header
+            document.getElementById('headerTitle').textContent = 'Detalle del Lugar';
+            document.getElementById('headerSubtitle').textContent = corridorNames[params.corredor] || params.corredor;
+
+            try {
+                // Hacer fetch a la tabla correspondiente
+                const response = await fetch(
+                    `${SUPABASE_URL}/rest/v1/${params.tipo}?id=eq.${params.id}`,
+                    {
+                        headers: {
+                            'apikey': ANON_KEY,
+                            'Authorization': `Bearer ${ANON_KEY}`
+                        }
+                    }
+                );
+
+                if (!response.ok) {
+                    throw new Error('Error al cargar los datos');
+                }
+
+                const data = await response.json();
+                
+                if (data.length === 0) {
+                    showError('No se encontró el lugar solicitado.');
+                    return;
+                }
+
+                currentPlace = data[0];
+                displayPlaceDetails(currentPlace, params.tipo);
+                
+            } catch (error) {
+                console.error('Error:', error);
+                showError('Error al cargar la información del lugar.');
+            }
+        }
+
+        // Mostrar detalles del lugar
+        function displayPlaceDetails(place, tipo) {
+            const emoji = categoryEmojis[tipo] || '📍';
+            const categoryName = categoryNames[tipo] || tipo;
+            
+            // Generar descripción si no existe
+            const descripcion = place.descripcion_corta || place.descripcion || 
+                               `${categoryName} ubicado en ${corridorNames[getQueryParams().corredor]}. Un lugar destacado para visitar durante tu estadía en la Ciudad de México.`;
+
+            const html = `
+                <div class="container">
+                    <!-- Imagen Principal -->
+                    <div class="main-image-container">
+                        <div class="main-image">
+                            ${place.imagen_principal_url ? 
+                              `<img src="${place.imagen_principal_url}" alt="${place.nombre}">` : 
+                              emoji}
+                        </div>
+                    </div>
+
+                    <!-- Info Card -->
+                    <div class="info-card">
+                        <h2 class="place-name">${place.nombre}</h2>
+                        <span class="category-badge">${emoji} ${categoryName}</span>
+                        
+                        <p class="description">${descripcion}</p>
+                        
+                        <div class="info-row">
+                            <div class="info-icon">📍</div>
+                            <div class="info-text">
+                                <strong>Dirección:</strong><br>
+                                ${place.direccion || 'Dirección no disponible'}
+                            </div>
+                        </div>
+
+                        ${place.capacidad ? `
+                        <div class="info-row">
+                            <div class="info-icon">🚲</div>
+                            <div class="info-text">
+                                <strong>Capacidad:</strong> ${place.capacidad} bicicletas
+                            </div>
+                        </div>
+                        ` : ''}
+                    </div>
+
+                    <!-- Mapa -->
+                    <div class="map-container">
+                        <div class="map-header">
+                            <h3>📍 Ubicación</h3>
+                        </div>
+                        <div id="map"></div>
+                    </div>
+
+                    <!-- Botones de Acción -->
+                    <div class="action-buttons">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=${place.latitud},${place.longitud}" 
+                           target="_blank" 
+                           class="action-button">
+                            <span>🗺️</span>
+                            <span>Cómo llegar</span>
+                        </a>
+                        <button onclick="goBack()" class="action-button secondary">
+                            <span>←</span>
+                            <span>Volver a la lista</span>
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('content').innerHTML = html;
+
+            // Inicializar mapa
+            if (place.latitud && place.longitud) {
+                initMap(place.latitud, place.longitud, place.nombre, emoji);
+            }
+        }
+
+        // Inicializar mapa
+        function initMap(lat, lng, nombre, emoji) {
+            // Crear el mapa
+            map = L.map('map').setView([lat, lng], 16);
+
+            // Agregar tiles de OpenStreetMap
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Crear un icono personalizado con el emoji
+            const customIcon = L.divIcon({
+                html: `<div style="
+                    background: white;
+                    border: 3px solid #006847;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 20px;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+                ">${emoji}</div>`,
+                iconSize: [40, 40],
+                iconAnchor: [20, 40],
+                popupAnchor: [0, -40],
+                className: 'custom-marker'
+            });
+
+            // Agregar marcador
+            L.marker([lat, lng], { icon: customIcon })
+                .addTo(map)
+                .bindPopup(`<b>${nombre}</b>`)
+                .openPopup();
+        }
+
+        // Función para volver
+        function goBack() {
+            const params = getQueryParams();
+            if (params.corredor) {
+                // Volver al nivel 2
+                window.location.href = `goodbarber-corredor-detail.html?corredor=${params.corredor}`;
+            } else {
+                // Volver al nivel 1
+                window.location.href = 'goodbarber-7-rutas-widget-v2.html';
+            }
+        }
+
+        // Mostrar error
+        function showError(message) {
+            document.getElementById('content').innerHTML = `
+                <div class="container">
+                    <div class="error-message">
+                        <h3>⚠️ Error</h3>
+                        <p>${message}</p>
+                        <br>
+                        <button onclick="goBack()" class="action-button">
+                            Volver
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Cargar datos al iniciar
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPlaceData();
+        });
+    </script>
+</body>
+</html>

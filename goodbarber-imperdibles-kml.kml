@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Imperdibles CDMX - Mundial 2026</name>
+    <description>Lugares imperdibles en Ciudad de México</description>
+
+    <Placemark>
+      <name>Alameda Central</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/2eb902b5-aff0-43cc-b5d8-8b59f8b89620/alameda-central.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque</b><br/><p>Parque más antiguo de la Ciudad de México</p><br/>📍 Av. Hidalgo s/n]]></description>
+      <Point>
+        <coordinates>-99.1392564,19.440413,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Ángel de la Independencia</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/aa1bbe6a-b0f7-45d2-8350-e009d26e7fd6/angel-de-la-independencia.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Monumento icónico de la Ciudad de México</p><br/>📍 Paseo de la Reforma, Cuauhtémoc]]></description>
+      <Point>
+        <coordinates>-99.1673301,19.4272232,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Antigua Azhozpisco/Casa del Diezmo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/5f56700e-41b8-43a8-95f2-c024fd22259c/antigua-azhozpisco-casa-del-diezmo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1269863,19.4317429,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Antigua Basílica de Guadalupe</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/523e1b5c-79a8-426c-9cf7-c9806bb547c4/antigua-basilica-de-guadalupe.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Templo barroco del siglo XVIII</p><br/>📍 Plaza Mariana]]></description>
+      <Point>
+        <coordinates>-99.1171456,19.4850554,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Antigua Escuela de Economía</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/8d3f4340-774e-43e6-875e-289ec28c0d1e/antigua-escuela-de-economia.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1344048,19.4370053,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Antiguo Colegio de San Ildefonso</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/51869c9e-ae77-4295-94a1-bab6dc422974/antiguo-colegio-de-san-ildefonso.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo con murales de Orozco, Rivera y Siqueiros</p><br/>📍 Justo Sierra 16]]></description>
+      <Point>
+        <coordinates>-99.1295,19.4365,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Antiguo Palacio del Ayuntamiento</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/ea9d68aa-180a-4f99-8d3b-4001151604d1/antiguo-palacio-del-ayuntamiento.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/><p>Edificio colonial, sede del gobierno CDMX</p><br/>📍 Plaza de la Constitución 2]]></description>
+      <Point>
+        <coordinates>-99.134,19.433,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Audiorama</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/10030169-3061-4a24-af56-dbcb26b44b3c/audiorama.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque</b><br/><p>Espacio tranquilo para escuchar música clásica</p><br/>📍 Primera Sección Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.1810771,19.4193179,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Avenida Reforma (Paseo)</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/45600c08-6004-4693-b76f-65829c22ea7e/avenida-reforma-paseo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 calle</b><br/><p>Avenida principal con monumentos y museos</p><br/>📍 Paseo de la Reforma, Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.1894558,19.4194815,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Barrio Chino</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/4fb91e43-aafb-4494-a845-d61a29e32ce6/barrio-chino.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 barrio</b><br/><p>Barrio chino de la Ciudad de México</p><br/>📍 Calle Dolores]]></description>
+      <Point>
+        <coordinates>-99.142675,19.4320229,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Basílica de Guadalupe Nueva</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/9a9dc3b7-fb92-4a09-be2f-e4c51d18b288/basilica-de-guadalupe-nueva.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Santuario moderno de la Virgen de Guadalupe</p><br/>📍 Plaza de las Américas 1]]></description>
+      <Point>
+        <coordinates>-99.1178742,19.4847897,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Biblioteca Guadalupana</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/d903c68f-3f9e-4374-b8b2-87136f1ee9fa/biblioteca-guadalupana.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 biblioteca</b><br/><p>Biblioteca especializada en guadalupanismo</p><br/>📍 Plaza Mariana]]></description>
+      <Point>
+        <coordinates>-99.1162595,19.482129,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Biblioteca México José Vasconcelos</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/3ba776e5-519e-4c51-bc86-8333a3ff8316/biblioteca-mexico-jose-vasconcelos.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 biblioteca</b><br/><p>Biblioteca pública con acervo especializado</p><br/>📍 Plaza de la Ciudadela 4]]></description>
+      <Point>
+        <coordinates>-99.1495796,19.4287673,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Biblioteca Octavio Paz</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/de0dda5b-6054-4d0e-a79f-f8394e58504e/biblioteca-octavio-paz.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 biblioteca</b><br/><p>Biblioteca pública en edificio histórico</p><br/>📍 Francisco Sosa]]></description>
+      <Point>
+        <coordinates>-99.1561883,19.3437444,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Calle Francisco Sosa</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/9cd74826-4269-4905-96a8-86f9862c092a/calle-francisco-sosa.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 calle</b><br/><p>Calle histórica con casonas coloniales</p><br/>📍 Francisco Sosa]]></description>
+      <Point>
+        <coordinates>-99.17254,19.3495162,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Calle Madero</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/7f1f1d7b-8289-413e-a0a4-02d3995c6aeb/calle-madero.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 calle</b><br/><p>Principal calle peatonal del Centro</p><br/>📍 Av. Madero]]></description>
+      <Point>
+        <coordinates>-99.138,19.4342,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Calle Moneda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/33697ee7-70d6-43aa-b8c8-1fc5a773dd3a/calle-moneda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 calle</b><br/><p>Calle colonial con museos</p><br/>📍 Moneda]]></description>
+      <Point>
+        <coordinates>-99.1305,19.432,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Capilla de Indios</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/337334fa-d1de-47f5-bc7c-0ef668f3746a/capilla-de-indios.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Primera capilla construida en el Tepeyac</p><br/>📍 Atrio de la Basílica]]></description>
+      <Point>
+        <coordinates>-99.1178742,19.4847897,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Capilla de la Virgen del Rosario</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/ca35d1ab-1e1e-42b9-b67d-59f8b97bfb9c/capilla-de-la-virgen-del-rosario.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Capilla lateral en la Antigua Basílica</p><br/>📍 Antigua Basílica]]></description>
+      <Point>
+        <coordinates>-99.1049784,19.2618876,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Capilla del Cerrito</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/e759ebcd-8dd0-4988-ae70-94c89386f7a4/capilla-del-cerrito.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Capilla en la cima del Tepeyac</p><br/>📍 Cerro del Tepeyac]]></description>
+      <Point>
+        <coordinates>-99.1144885,19.4837244,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Capilla del Pocito</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/521ebd55-f261-47d1-b090-1f8a60483039/capilla-del-pocito.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Capilla barroca sobre el manantial sagrado</p><br/>📍 Calzada de Guadalupe]]></description>
+      <Point>
+        <coordinates>-99.1150464,19.485431,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Capilla Del Rosario</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/5753bf4a-957b-426e-845c-3036537e6d6f/capilla-del-rosario.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Capilla histórica con murales religiosos</p><br/>📍 Barrio del Rosario]]></description>
+      <Point>
+        <coordinates>-99.102,19.2555,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Cárcamo de Dolores</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/e1c79c76-2443-4552-b0d7-ab875cd50767/carcamo-de-dolores.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Museo del Agua con mural de Diego Rivera</p><br/>📍 Segunda Sección Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.1979884,19.4128496,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Carillón de la Basílica</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/1e4a0495-d4dc-4ce9-b54d-e1786536a299/carillon-de-la-basilica.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Torre con 48 campanas monumentales</p><br/>📍 Atrio de la Basílica]]></description>
+      <Point>
+        <coordinates>-99.1162843,19.4841892,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa de Cortés</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c2dc12d8-ff4e-44cd-90ad-590aa1a8a985/casa-de-cortes.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/><p>Edificio colonial que alberga el gobierno de Coyoacán</p><br/>📍 Plaza Hidalgo]]></description>
+      <Point>
+        <coordinates>-99.1622585,19.3502583,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa de los Azulejos</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/e6d67e3a-1185-407f-90c0-708608340ab7/casa-de-los-azulejos.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/><p>Palacio barroco con fachada de talavera</p><br/>📍 Av. Madero 4]]></description>
+      <Point>
+        <coordinates>-99.1395,19.435,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa del Lago</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/d3b446fe-c9ac-4e05-a406-f27779f400d3/casa-del-lago.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 centro_cultural</b><br/><p>Centro cultural con actividades artísticas</p><br/>📍 Primera Sección Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.1864074,19.4225718,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa Gilardi</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/d531e09f-468c-4488-b6c2-70bd2323e974/casa-gilardi.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 arquitectura</b><br/><p>Obra maestra de arquitectura moderna mexicana</p><br/>📍 General León 82, Miguel Hidalgo]]></description>
+      <Point>
+        <coordinates>-99.1862322,19.4142415,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa Lamm</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/6803bda0-385e-43d6-a4b7-c2cd837339fb/casa-lamm.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 centro_cultural</b><br/><p>Centro cultural con exposiciones y librería</p><br/>📍 Álvaro Obregón 99]]></description>
+      <Point>
+        <coordinates>-99.1593322,19.4187131,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Castillo de Chapultepec</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/94d9051e-743c-497d-9442-5051f326a721/castillo-de-chapultepec.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Castillo histórico y Museo Nacional de Historia</p><br/>📍 Primera Sección Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.181935,19.4204397,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Catedral Metropolitana</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/acac7c23-e839-4f2d-b90d-b2c72b16b99f/catedral-metropolitana.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Catedral más grande de América</p><br/>📍 Plaza de la Constitución s/n]]></description>
+      <Point>
+        <coordinates>-99.133,19.434,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Centro Histórico De Xochimilco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/2cdc3530-fcc8-4c38-9609-7d74e0075ace/centro-historico-de-xochimilco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 centro_historico</b><br/><p>Centro histórico con arquitectura colonial</p><br/>📍 Centro de Xochimilco]]></description>
+      <Point>
+        <coordinates>-99.1031,19.2574,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Chinampas Tradicionales</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/64b43444-721a-42a6-92a1-636375fdaeed/chinampas-tradicionales.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 zona_agricola</b><br/><p>Sistema agrícola prehispánico aún en uso</p><br/>📍 Canales de Xochimilco]]></description>
+      <Point>
+        <coordinates>-99.1,19.26,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Cineteca Nacional</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/f4489d7f-9434-4ec4-9a47-2e9eb52aa197/cineteca-nacional.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 centro_cultural</b><br/><p>Complejo cinematográfico con archivos y salas</p><br/>📍 Av. México-Coyoacán 389]]></description>
+      <Point>
+        <coordinates>-99.1352257,19.3559633,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Convento de las Capuchinas</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/94c5914b-91b3-475d-b39a-15802b4151c6/convento-de-las-capuchinas.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 convento</b><br/><p>Convento histórico del siglo XVII</p><br/>📍 Calzada de Guadalupe]]></description>
+      <Point>
+        <coordinates>-99.164476,19.2881806,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Eje Central Peatonal</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/12809225-ead2-4740-b0dc-81734285699a/eje-central-peatonal.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 calle</b><br/><p>Avenida histórica revitalizada para peatones</p><br/>📍 Eje Central]]></description>
+      <Point>
+        <coordinates>-99.1391089,19.4406739,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>El Ahuehuete</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/671c5c26-dd13-49d4-8985-1cf705daabd9/el-ahuehuete.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque</b><br/><p>Árbol histórico y sagrado en Chapultepec</p><br/>📍 Bosque de Chapultepec I Secc, Miguel Hidalgo, 11580 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.133208,19.4326077,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Embarcadero Belem</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/d4dd9bc0-2d7a-41a0-9526-79b96f7fd629/embarcadero-belem.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 embarcadero</b><br/><p>Punto de embarque tradicional</p><br/>📍 Barrio Belem]]></description>
+      <Point>
+        <coordinates>-99.0985,19.2565,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Embarcadero Cuemanco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/383cd7bd-8565-497e-b2eb-0c7dca481e66/embarcadero-cuemanco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 embarcadero</b><br/><p>Punto de embarque para trajineras</p><br/>📍 Anillo Periférico]]></description>
+      <Point>
+        <coordinates>-99.0768,19.2891,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Embarcadero Nativitas</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/aa20907b-863a-4d46-a42e-2f277b9b5ce8/embarcadero-nativitas.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 embarcadero</b><br/><p>Principal punto de embarque turístico</p><br/>📍 Violeta S/N]]></description>
+      <Point>
+        <coordinates>-99.1018,19.258,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Escalinata del Cerrito</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/724f46f6-1d50-4ff1-89ad-e3b9926da42b/escalinata-del-cerrito.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Camino de peregrinación con 365 escalones</p><br/>📍 Cerro del Tepeyac]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estela de Luz</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/4fc40cfa-b123-4fa5-a6fb-2d9dd0250cb3/estela-de-luz.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Monumento moderno del Bicentenario de la Independencia</p><br/>📍 Av. Paseo de la Reforma s/n, Lomas de Chapultepec, Miguel Hidalgo, 11000 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1756764,19.4229704,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Ex Teresa Arte Actual</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/198b844f-a073-404a-a711-c1eb27a2b8e6/ex-teresa-arte-actual.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 galeria</b><br/><p>Arte contemporáneo en exconvento</p><br/>📍 Licenciado Primo Verdad 8]]></description>
+      <Point>
+        <coordinates>-99.1318,19.4352,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Fonoteca Nacional</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/7486cf66-d745-4767-884b-e1d1e30176bb/fonoteca-nacional.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 biblioteca</b><br/><p>Archivo de sonido y espacio cultural</p><br/>📍 Francisco Sosa 383]]></description>
+      <Point>
+        <coordinates>-99.1771262,19.3496882,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Fuente de Cibeles</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/97db7ae4-f053-498c-934a-dd5fb3fbbf13/fuente-de-cibeles.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Réplica de la fuente madrileña en Reforma</p><br/>📍 Av. Paseo de la Reforma, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1663115,19.4200098,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Fuente de Tláloc</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/45d94cf6-cc0b-4f38-bd4c-c3f1c292ab77/fuente-de-tlaloc.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Escultura monumental del dios azteca de la lluvia</p><br/>📍 Entrada Museo Nacional de Antropología]]></description>
+      <Point>
+        <coordinates>-99.1983951,19.4127114,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Glorieta de los Insurgentes</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/6d727d3e-d22d-4829-9928-f98e139d8cd0/glorieta-de-los-insurgentes.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/><p>Icónica estación de metro y punto de referencia</p><br/>📍 Av. Insurgentes]]></description>
+      <Point>
+        <coordinates>-99.1636274,19.4238101,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Huerto Roma Verde</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/0e34d1b2-8748-47c0-bb56-f9b534e978d4/huerto-roma-verde.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque</b><br/><p>Espacio comunitario de agricultura urbana</p><br/>📍 Jalapa 234]]></description>
+      <Point>
+        <coordinates>-99.1593255,19.4112175,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Isla De Las Muñecas</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c3c5d2ab-1346-49bb-8603-5b0a11ea23ce/isla-de-las-munecas.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 atraccion</b><br/><p>Atracción turística única con muñecas colgadas</p><br/>📍 Canales de Xochimilco]]></description>
+      <Point>
+        <coordinates>-99.0976,19.2903,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jardín Botánico De Xochimilco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/b0b06ad2-f749-44d2-b1bc-255c6c972cc1/jardin-botanico-de-xochimilco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 jardin_botanico</b><br/><p>Jardín con especies endémicas y en peligro</p><br/>📍 Parque Ecológico de Xochimilco]]></description>
+      <Point>
+        <coordinates>-99.0755,19.288,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jardín Botánico del Bosque de Chapultepec</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/d522dc54-3d43-4512-8e8a-5fcd2c8ae88a/jardin-botanico-del-bosque-de-chapultepec.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 jardin_botanico</b><br/><p>Colección de plantas mexicanas</p><br/>📍 Primera Sección Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.1819408,19.4239035,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jardín Centenario</name>
+      <description><![CDATA[<b>🎯 plaza</b><br/><p>Plaza principal de Coyoacán con fuentes</p><br/>📍 Plaza Hidalgo, Coyoacán]]></description>
+      <Point>
+        <coordinates>-99.1627,19.3491173,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jardín de la Tercera Edad</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/866b221f-9fe7-4066-9906-df8c80512a4d/jardin-de-la-tercera-edad.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque</b><br/><p>Espacio recreativo para adultos mayores</p><br/>📍 Primera Sección Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.133208,19.4326077,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jardín de las Rosas</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/437632ef-756d-4865-9d32-7f8223508d9e/jardin-de-las-rosas.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque</b><br/><p>Jardín ceremonial frente a la Antigua Basílica</p><br/>📍 Plaza Mariana]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jardín del Arte</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/330d841b-b0d6-4c51-86bf-43e629ff7ad8/jardin-del-arte.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 mercado</b><br/><p>Mercado de arte los fines de semana</p><br/>📍 Jardín Sullivan]]></description>
+      <Point>
+        <coordinates>-99.1933528,19.3418618,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jardín Hidalgo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c4b55597-1ca7-443a-ad94-be512a82fa26/jardin-hidalgo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/><p>Plaza histórica junto al Jardín Centenario</p><br/>📍 Plaza Hidalgo, Coyoacán]]></description>
+      <Point>
+        <coordinates>-99.1626379,19.3495086,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Diana Cazadora</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/3b2489f6-02ee-4411-a641-edebdfd78746/la-diana-cazadora.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Icónica fuente y escultura en Paseo de la Reforma</p><br/>📍 Av. Paseo de la Reforma, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.172356,19.425627,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Feria de Chapultepec</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/134103e6-56ca-4871-8686-27fb1efdcd31/la-feria-de-chapultepec.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque_diversiones</b><br/><p>Parque de diversiones histórico</p><br/>📍 Segunda Sección Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.1958758,19.4158433,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Lago de Chapultepec</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c77af407-a203-4c82-9947-27b556b68aa6/lago-de-chapultepec.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque</b><br/><p>Lago con renta de lanchas y áreas recreativas</p><br/>📍 Primera Sección Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.1854059,19.4237837,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mercado de Artesanías de la Ciudadela</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/4e1bafba-5669-48fb-99bd-c7f2bb7adef7/mercado-de-artesanias-de-la-ciudadela.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 mercado</b><br/><p>Mercado tradicional con artesanías de todo México</p><br/>📍 Plaza de la Ciudadela]]></description>
+      <Point>
+        <coordinates>-99.1495,19.430768,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mercado de Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/9f1a3005-bfd0-4a2f-b390-55d255079e28/mercado-de-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 mercado</b><br/><p>Mercado tradicional con comida y artesanías</p><br/>📍 Ignacio Allende]]></description>
+      <Point>
+        <coordinates>-99.1613632,19.3526533,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mercado de la Villa</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/3394d74a-5b32-411c-a7e0-c4d257b711af/mercado-de-la-villa.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 mercado</b><br/><p>Mercado tradicional con productos religiosos</p><br/>📍 Calzada de Guadalupe]]></description>
+      <Point>
+        <coordinates>-99.1178742,19.4847897,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mercado De Plantas Y Flores</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/bc361742-967f-4dad-90f7-54c538fb4c90/mercado-de-plantas-y-flores.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 mercado</b><br/><p>Mercado especializado en plantas ornamentales</p><br/>📍 Madreselva S/N]]></description>
+      <Point>
+        <coordinates>-99.1025,19.257,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mercado De Xochimilco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/59de6fce-35ac-4fa9-ad4c-1b4e69ea53da/mercado-de-xochimilco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 mercado</b><br/><p>Mercado tradicional con productos locales</p><br/>📍 Centro de Xochimilco]]></description>
+      <Point>
+        <coordinates>-99.1031,19.2574,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mercado San Juan</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/237d1505-56ac-40b3-a445-fb77f3374c4e/mercado-san-juan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 mercado</b><br/><p>Mercado gourmet con productos exóticos</p><br/>📍 Ernesto Pugibet 21]]></description>
+      <Point>
+        <coordinates>-99.1448495,19.4298927,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mirador del Tepeyac</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/e2a25e04-e381-4830-a604-36b9c2283b17/mirador-del-tepeyac.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 mirador</b><br/><p>Vista panorámica de la Ciudad de México</p><br/>📍 Cerro del Tepeyac]]></description>
+      <Point>
+        <coordinates>-99.1176341,19.486213,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Monumento a Cuauhtémoc</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/8ccdaa59-015b-4eb6-85a7-0a644eea9608/monumento-a-cuauhtemoc.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Estatua del último emperador azteca</p><br/>📍 Paseo de la Reforma]]></description>
+      <Point>
+        <coordinates>-99.1589791,19.431084,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Monumento a la Revolución</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/ce97c49b-81fa-4d37-a290-ad8845a2088f/monumento-a-la-revolucion.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Monumento icónico con mirador</p><br/>📍 Plaza de la República]]></description>
+      <Point>
+        <coordinates>-99.1546298,19.4362086,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Monumento a los Niños Héroes</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/b08f61ca-b625-44d1-8db1-e8a9f4333978/monumento-a-los-ninos-heroes.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Monumento conmemorativo de los cadetes de 1847</p><br/>📍 Entrada principal Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.1793096,19.4215104,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Arqueológico De Xochimilco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/bcf89ec2-9c16-47bf-a4d5-e74b67a2f4de/museo-arqueologico-de-xochimilco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo con piezas prehispánicas locales</p><br/>📍 Plaza Xochimilco]]></description>
+      <Point>
+        <coordinates>-99.1035,19.2575,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Caracol (Galería de Historia)</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/6976d88a-279c-4b0d-90f2-2303d11ca81c/museo-caracol-galeria-de-historia.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo sobre la historia de México</p><br/>📍 Rampa de acceso al Castillo]]></description>
+      <Point>
+        <coordinates>-99.1834349,19.4190145,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Casa de León Trotsky</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/33071069-5911-408d-8f09-539fffd1b03d/museo-casa-de-leon-trotsky.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Casa donde vivió y fue asesinado Trotsky</p><br/>📍 Río Churubusco 410]]></description>
+      <Point>
+        <coordinates>-99.1595799,19.3576775,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Casa Estudio Diego Rivera</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/74d7682a-faac-4535-b837-27da09821aff/museo-casa-estudio-diego-rivera.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Casas funcionalistas donde vivieron Rivera y Kahlo</p><br/>📍 Diego Rivera, San Ángel]]></description>
+      <Point>
+        <coordinates>-99.1973724,19.3496246,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo de Arte Moderno</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/1a4e67e5-1033-4157-bdee-6c4213c47144/museo-de-arte-moderno.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Arte mexicano e internacional del siglo XX</p><br/>📍 Paseo de la Reforma y Gandhi]]></description>
+      <Point>
+        <coordinates>-99.179689,19.4230042,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo de Arte Popular</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/58056535-da78-4f8b-82d7-865e3ed8af38/museo-de-arte-popular.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo de arte popular mexicano</p><br/>📍 Revillagigedo 11]]></description>
+      <Point>
+        <coordinates>-99.1462978,19.4337352,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo de Cera</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/fcb4f732-b234-496d-9a37-f3aa09a269e0/museo-de-cera.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Figuras de cera de personajes famosos</p><br/>📍 Londres 6, Cuauhtémoc]]></description>
+      <Point>
+        <coordinates>-99.1571679,19.428528,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo de Culturas Populares</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c7446b71-ae76-4bb0-9e34-a015ce0a2a4c/museo-de-culturas-populares.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Exposiciones de arte popular mexicano</p><br/>📍 Av. Hidalgo 289]]></description>
+      <Point>
+        <coordinates>-99.1606851,19.3498469,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo de Historia Natural</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/610f5c15-fe7f-497c-9cfe-9ce6d567cb96/museo-de-historia-natural.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo sobre biodiversidad y ciencias naturales</p><br/>📍 Segunda Sección Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.201519,19.409833,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo de la Basílica</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/41125bcc-6fcb-4a5f-b093-ec1b3e7b3de4/museo-de-la-basilica.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Colección de arte religioso colonial</p><br/>📍 Plaza Mariana]]></description>
+      <Point>
+        <coordinates>-99.1168024,19.4856922,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo de la Ciudad de México</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/cb2a0f89-053f-4063-b418-7c19e7370cb6/museo-de-la-ciudad-de-mexico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Historia de la Ciudad de México</p><br/>📍 Pino Suárez 30]]></description>
+      <Point>
+        <coordinates>-99.1315,19.4285,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo de la Secretaría de Hacienda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/62438930-8a92-408d-bffb-f0accaf1a803/museo-de-la-secretaria-de-hacienda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Arte mexicano en antiguo palacio</p><br/>📍 Moneda 4]]></description>
+      <Point>
+        <coordinates>-99.1312,19.433,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo de la Tortura</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/940510f2-5e75-4d82-83c8-4261373f58e5/museo-de-la-tortura.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Instrumentos de tortura de la Inquisición</p><br/>📍 Tacuba 15]]></description>
+      <Point>
+        <coordinates>-99.141,19.4354,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo del Calzado</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/0901cdf1-9900-4d08-9ba0-735e0710a988/museo-del-calzado.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Historia del calzado mexicano</p><br/>📍 Bolívar 27]]></description>
+      <Point>
+        <coordinates>-99.1405,19.4338,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo del Estanquillo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/292d2454-a962-4022-b6bc-4fcbe8d45e2b/museo-del-estanquillo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Colección de Carlos Monsiváis</p><br/>📍 Isabel La Católica 26]]></description>
+      <Point>
+        <coordinates>-99.1368,19.4332,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo del Tequila y el Mezcal</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/5c27ce14-70b0-4d8c-95d4-0554e49b3bf9/museo-del-tequila-y-el-mezcal.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo dedicado a las bebidas tradicionales</p><br/>📍 Plaza Garibaldi 12]]></description>
+      <Point>
+        <coordinates>-99.1395574,19.4407088,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Dolores Olmedo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/95068764-fe41-4ae0-9655-8a1bb373db7c/museo-dolores-olmedo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo de arte con obras de Diego Rivera y Frida Kahlo</p><br/>📍 Av. México 5843]]></description>
+      <Point>
+        <coordinates>-99.1057,19.2549,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Franz Mayer</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c1542eb2-dc69-4467-a2ea-53e5a649dd95/museo-franz-mayer.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo de artes decorativas en exconvento</p><br/>📍 Av. Hidalgo 45]]></description>
+      <Point>
+        <coordinates>-99.1431855,19.4368653,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Frida Kahlo (Casa Azul)</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/9c065d39-c9ae-41ac-a7f9-f233fb6b8f99/museo-frida-kahlo-casa-azul.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Casa museo de Frida Kahlo</p><br/>📍 Londres 247, Del Carmen]]></description>
+      <Point>
+        <coordinates>-99.1624636,19.3551806,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Interactivo de Economía</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/bd63caa4-4af3-44cf-a3d7-d498b68034a8/museo-interactivo-de-economia.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo de economía en exconvento</p><br/>📍 Tacuba 17]]></description>
+      <Point>
+        <coordinates>-99.1408,19.4352,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Memoria y Tolerancia</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/9bbc7d14-c7a9-46a2-ae0d-ceb4410a7501/museo-memoria-y-tolerancia.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo sobre derechos humanos y genocidios</p><br/>📍 Av. Juárez 8]]></description>
+      <Point>
+        <coordinates>-99.144525,19.4346095,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Nacional de Antropología</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/05d81673-ade1-43db-ac0e-3ef488805354/museo-nacional-de-antropologia.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo más importante de México con culturas prehispánicas</p><br/>📍 Av. Paseo de la Reforma y Calzada Gandhi]]></description>
+      <Point>
+        <coordinates>-99.1862786,19.4260032,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Nacional de Arte</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/f1a32248-261e-477a-b055-b9d9dea4cd1c/museo-nacional-de-arte.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo de arte mexicano siglos XVI al XX</p><br/>📍 Tacuba 8]]></description>
+      <Point>
+        <coordinates>-99.1393955,19.4362023,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Nacional de Arte Centro</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/45f2142c-da62-434b-9c1d-3e99218a3a1d/museo-nacional-de-arte-centro.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Arte mexicano del siglo XVI al XX</p><br/>📍 Tacuba 8]]></description>
+      <Point>
+        <coordinates>-99.1411,19.4358,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Nacional de Culturas Populares</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/e4483806-e451-4eb4-b873-dba5800864e8/museo-nacional-de-culturas-populares.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo de culturas tradicionales de México</p><br/>📍 Av. Hidalgo 289]]></description>
+      <Point>
+        <coordinates>-99.1606851,19.3498469,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Nacional de las Culturas</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/e11ad1b0-fb37-41dd-8fb2-cd0871001523/museo-nacional-de-las-culturas.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Culturas del mundo en palacio colonial</p><br/>📍 Moneda 13]]></description>
+      <Point>
+        <coordinates>-99.131,19.4318,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Nacional de San Carlos</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/5f49f869-caf8-4855-acc7-4e1326af2b60/museo-nacional-de-san-carlos.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Arte europeo en palacio neoclásico</p><br/>📍 Puente de Alvarado 50]]></description>
+      <Point>
+        <coordinates>-99.1520429,19.4380689,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Tamayo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/fc9e4a2e-3e9f-48fa-b1bf-7f3a9f2868aa/museo-tamayo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Arte contemporáneo internacional</p><br/>📍 Paseo de la Reforma 51, Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.181716,19.42572,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo UNAM Hoy - (Restos del Templo de Tezcatlipoca</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c1c59de8-2f72-48f4-bcc7-f0acd4b5edab/museo-unam-hoy-restos-del-templo-de-tezcatlipoca.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1317777,19.4336768,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio de Bellas Artes</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/998198c0-92f5-48b6-9549-224202cb64dd/palacio-de-bellas-artes.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Icónico recinto cultural con murales de Rivera</p><br/>📍 Av. Juárez s/n]]></description>
+      <Point>
+        <coordinates>-99.1412,19.4352,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio de Bellas Artes</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/36c72b20-ad19-4c3f-9250-13a53fec2a26/palacio-de-bellas-artes.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1412,19.4352,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio de Bellas Artes Centro</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/12c70ccf-6b88-483f-8f22-57250578aa35/palacio-de-bellas-artes-centro.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Icónico recinto cultural</p><br/>📍 Av. Juárez s/n]]></description>
+      <Point>
+        <coordinates>-99.1412,19.4352,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio de Correo de México</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/79103dd6-ed97-4abe-b38c-a50e55720421/palacio-de-correo-de-mexico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1402372,19.435559,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio de Iturbide</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/88a94c3f-4193-4658-bf11-962b5893a8bc/palacio-de-iturbide.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/><p>Palacio barroco, sede de Banamex</p><br/>📍 Av. Madero 17]]></description>
+      <Point>
+        <coordinates>-99.1390513,19.4337824,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio de la Escuela de Medicina de la UNAM</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c02584eb-14ad-48db-9552-f321330e6797/palacio-de-la-escuela-de-medicina-de-la-unam.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1330325,19.4379488,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio de La Escuela de Medicina, UNAM - (Nivel de Piso Original y Marca de Toponella Siglo XV)</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/9e18972f-2dc5-4f51-aefc-7509f58f983d/palacio-de-la-escuela-de-medicina-unam-nivel-de-piso-original-y-marca-de-toponella-siglo-xv.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1330325,19.4379488,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio de Minería</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/828e59d6-5fe2-4e4f-8354-1ca9c7a459ed/palacio-de-mineria.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1395603,19.4358454,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio de Minería - Fac. de Ingeniería, Quetrabarri</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/4b992c26-05e5-4e61-9f2e-b7cec156b48b/palacio-de-mineria-fac-de-ingenieria-quetrabarri.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1395603,19.4358454,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio Del Marqués De Prado Alegre</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/f0d6320c-2491-47ef-b442-6686c6093c49/palacio-del-marques-de-prado-alegre.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.131933,19.435483,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio Nacional</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c74ed467-5472-4d43-acd4-3962879cdfcd/palacio-nacional.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/><p>Sede del Poder Ejecutivo con murales de Rivera</p><br/>📍 Plaza de la Constitución]]></description>
+      <Point>
+        <coordinates>-99.1313531,19.4328868,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio Nacional - (Vestigios del Palacio de Moctezuma II)</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/bdd5e045-ac30-426b-a987-9ac2b1968849/palacio-nacional-vestigios-del-palacio-de-moctezuma-ii.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1313531,19.4328868,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio Postal</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/3e03b8de-9f13-4a05-854f-bea54e5451ee/palacio-postal.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1402372,19.435559,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Panteón del Tepeyac</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/e69ba98f-08cd-476d-b501-488f887d9d28/panteon-del-tepeyac.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 cementerio</b><br/><p>Cementerio histórico con tumbas notables</p><br/>📍 Calzada de los Misterios]]></description>
+      <Point>
+        <coordinates>-99.1176341,19.486213,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Papalote Museo del Niño</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/a7691f32-000e-4cd5-94e6-b25b47d58af1/papalote-museo-del-nino.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/><p>Museo interactivo para niños y familias</p><br/>📍 Av. Constituyentes 268, Segunda Sección]]></description>
+      <Point>
+        <coordinates>-99.1950216,19.4117008,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Parque Ecológico De Xochimilco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/d0afcf71-6de2-4990-8981-36f01ae36fd7/parque-ecologico-de-xochimilco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque</b><br/><p>Área natural protegida con actividades recreativas</p><br/>📍 Periférico Oriente]]></description>
+      <Point>
+        <coordinates>-99.0748,19.2891,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Parque España</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c3b4fdd3-3556-498e-84a3-f7fbad02698b/parque-espana.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque</b><br/><p>Parque moderno con fuente y espacios culturales</p><br/>📍 Parque España, Cuauhtémoc]]></description>
+      <Point>
+        <coordinates>-99.1712335,19.4160683,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Parque México</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/2ae599ac-f62f-4219-9682-1702c98d13af/parque-mexico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque</b><br/><p>Parque art déco con lago y áreas verdes</p><br/>📍 Av. México, Cuauhtémoc]]></description>
+      <Point>
+        <coordinates>-99.1695776,19.4122631,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Parroquia De San Bernardino De Siena</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/ccbb061c-cd32-444c-addd-c98ec3d6cbe0/parroquia-de-san-bernardino-de-siena.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Templo del siglo XVI con arquitectura colonial</p><br/>📍 Plaza San Bernardino]]></description>
+      <Point>
+        <coordinates>-99.104,19.2575,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Parroquia de San Juan Bautista</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/f4974719-bd62-4095-9302-dfde2cc92588/parroquia-de-san-juan-bautista.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Iglesia del siglo XVI en el corazón de Coyoacán</p><br/>📍 Plaza Hidalgo]]></description>
+      <Point>
+        <coordinates>-99.1623289,19.3489222,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Parroquia de San Juan de Dios</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/067b7424-ded9-4849-96f7-5c7e7c09ccd1/parroquia-de-san-juan-de-dios.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1436442,19.4369142,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Parroquia de Santa María la Redonda Cuepopan Atenco del Ateteco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/b9887951-a254-4d3b-868c-de4580e0721e/parroquia-de-santa-maria-la-redonda-cuepopan-atenco-del-ateteco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1408634,19.4410683,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Parroquia Santa María</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/80da25b5-ed86-4f23-a3af-f2887039d956/parroquia-santa-maria.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Templo moderno cerca de la Villa</p><br/>📍 Av. Insurgentes Norte]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Pasaje Pino Suárez</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/5fc11d81-f8b5-4c87-b615-b9b15035003b/pasaje-pino-suarez.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 pasaje</b><br/><p>Pasaje comercial art nouveau</p><br/>📍 Av. 16 de Septiembre]]></description>
+      <Point>
+        <coordinates>-99.1324742,19.4299316,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Paseo de la Reforma - Eje Histórico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/49abf918-39fb-49f7-b277-144f53554c02/paseo-de-la-reforma-eje-historico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 calle</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1453019,19.4383698,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza de la Conchita</name>
+      <description><![CDATA[<b>🎯 plaza</b><br/><p>Plaza colonial con capilla histórica</p><br/>📍 Fernández Leal]]></description>
+      <Point>
+        <coordinates>-99.1592021,19.3465998,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza de la Constitución (Antiguo Palacio del Arzobispado)</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/1608732e-ccb0-4a58-9d1f-e85cdfe8fb1c/plaza-de-la-constitucion-antiguo-palacio-del-arzobispado.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1312823,19.4335998,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza de la República</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/cef97efa-6950-45ac-9ef0-a29326c0a287/plaza-de-la-republica.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/><p>Plaza con el Monumento a la Revolución</p><br/>📍 Plaza de la República]]></description>
+      <Point>
+        <coordinates>-99.1542287,19.4367044,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza de la Santísima</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/91ac9ec4-4b9f-4610-ba1f-57911d7b25e5/plaza-de-la-santisima.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1271595,19.4341564,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza de la Soledad</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/dcd53b7a-711b-47d7-a727-152994bf5836/plaza-de-la-soledad.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1236248,19.4314447,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza de Regina</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/caa86e6f-70be-44b3-87cb-3c46b318806b/plaza-de-regina.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1371407,19.4275141,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Garibaldi</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c4299514-2fa7-4230-a076-cf0f81f9f219/plaza-garibaldi.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/><p>Plaza emblemática de los mariachis</p><br/>📍 Eje Central Lázaro Cárdenas]]></description>
+      <Point>
+        <coordinates>-99.1392564,19.440413,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Garibaldi</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/e551f7bb-139a-4f58-a0d3-bc6c0b79b68a/plaza-garibaldi.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.13929,19.4404005,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Garibaldi - Centro Artesanal</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/920f4c54-33fa-4b9d-8a96-d4c985a88de6/plaza-garibaldi-centro-artesanal.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.13929,19.4404005,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Juan José Baz, La Aguilita</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/e8d36776-639e-43b9-b520-ac72d371e5d8/plaza-juan-jose-baz-la-aguilita.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1277774,19.4269785,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Juárez</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/1575f89b-9b94-4e74-b64f-8b3fe5169de3/plaza-juarez.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1432832,19.4344248,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Loreto</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/811859f2-892e-4cd6-925c-2cf769d139e3/plaza-loreto.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1277393,19.4354939,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Luis Cabrera</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/45693209-6569-44a6-b2b4-f55c883d3334/plaza-luis-cabrera.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/><p>Plaza pública con jardines</p><br/>📍 Luis Cabrera, Cuauhtémoc]]></description>
+      <Point>
+        <coordinates>-99.1595401,19.4164003,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Mariana</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/4cd0b25c-c014-4a6a-b2bc-6b7d30e0308f/plaza-mariana.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/><p>Gran explanada ceremonial</p><br/>📍 Villa de Guadalupe]]></description>
+      <Point>
+        <coordinates>-99.1167572,19.4844098,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza México</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/0219b4ec-fbf7-43e5-bfb4-547467d05dc9/plaza-mexico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.131757,19.4357068,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Santa Catarina</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/e6d6b249-78bc-429c-b1cd-497a3f22f269/plaza-santa-catarina.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/><p>Plaza tranquila con capilla colonial</p><br/>📍 Arenal, Santa Catarina]]></description>
+      <Point>
+        <coordinates>-99.1702897,19.3455893,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Santo Domingo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/9552eb57-7a95-4077-9f15-8df1985aa8cc/plaza-santo-domingo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/><p>Plaza histórica con evangelistas</p><br/>📍 República de Brasil]]></description>
+      <Point>
+        <coordinates>-99.1338005,19.437295,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Primera Sede de la Real y Pontificia Universidad de México</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/db0f7429-e197-4365-b717-8a532c02f34d/primera-sede-de-la-real-y-pontificia-universidad-de-mexico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1317345,19.4337653,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Puerta de los Leones</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/ca7c53dd-9780-4227-a0b9-ddc0ed338c80/puerta-de-los-leones.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 monumento</b><br/><p>Entrada emblemática al Bosque de Chapultepec</p><br/>📍 Av. Paseo de la Reforma, Bosque de Chapultepec I Secc, Miguel Hidalgo, 11580 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1761696,19.422996,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Residual Monte de Piedad - (Palacio de Atayacatl)</name>
+      <description><![CDATA[<b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.134022,19.4340298,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Salón Los Ángeles</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/799aed5d-9423-4c13-ac28-183a9d89dc09/salon-los-angeles.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 salon_baile</b><br/><p>Salón de baile tradicional de danzón</p><br/>📍 Lerdo 206]]></description>
+      <Point>
+        <coordinates>-99.1418991,19.4506092,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Secretaría de Educación Pública</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/7ae8fe4e-948c-4f30-b2b0-e7ea63d1c41a/secretaria-de-educacion-publica.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/><p>Murales de Diego Rivera sobre la educación</p><br/>📍 República de Argentina 28]]></description>
+      <Point>
+        <coordinates>-99.1335771,19.4370438,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Suprema Corte de Justicia</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/3947d5d7-00ba-4a98-a4d1-3ac695e4f701/suprema-corte-de-justicia.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/><p>Edificio art déco con murales de Orozco</p><br/>📍 Pino Suárez 2]]></description>
+      <Point>
+        <coordinates>-99.1320151,19.4311644,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Teatro de la Ciudad Esperanza Iris</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/2f7a9872-5bc2-4091-9edd-47d770abffad/teatro-de-la-ciudad-esperanza-iris.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 teatro</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1372488,19.4366936,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Teatro Metropólitan Platas</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/1a590763-3b64-425b-9101-7a4c0d91f210/teatro-metropolitan-platas.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 teatro</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.146788,19.4334897,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Teatro Regina Hidalgo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/6f001b71-4636-43b3-b5e3-5404b57cdaaa/teatro-regina-hidalgo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 teatro</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1358379,19.4278771,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Templo de la Santísima Trinidad</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/9e5ac4af-8010-492f-ba98-7c0eef4e6160/templo-de-la-santisima-trinidad.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1268452,19.4331724,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Templo de San Agustin</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/dc782838-437b-4295-bfa8-c688e371bef1/templo-de-san-agustin.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1364265,19.4297415,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Templo de Santa Inés</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/9dd71439-1cb5-4141-879b-0287bc65709c/templo-de-santa-ines.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1291123,19.4334137,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Templo Expiatorio de Cristo Rey</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/33bdec7d-1703-4aa4-bd1c-2fa3d82dd5aa/templo-expiatorio-de-cristo-rey.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/><p>Iglesia neogótica cerca de la Basílica</p><br/>📍 Calzada de Guadalupe]]></description>
+      <Point>
+        <coordinates>-99.1169525,19.4850618,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Templo Mayor</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/eba712a3-e332-4443-88c4-ccc2682e64f6/templo-mayor.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 zona_arqueologica</b><br/><p>Ruinas del principal templo azteca</p><br/>📍 Seminario 8]]></description>
+      <Point>
+        <coordinates>-99.131881,19.4346038,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Templo y Convento de Jesús María</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/5e20b444-215c-428c-9591-30ae6a3df1bd/templo-y-convento-de-jesus-maria.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.131881,19.4346038,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Templo y Ex Convento de la Natividad de María Santísima Regina Coeli</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/f514e619-f88d-4357-9263-e70883d2ce32/templo-y-ex-convento-de-la-natividad-de-maria-santisima-regina-coeli.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 templo</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.138138,19.4279869,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Torre Latinoamericana</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/f5f60064-317a-488e-bb0b-cd609908e88b/torre-latinoamericana.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 mirador</b><br/><p>Mirador con vistas panorámicas de la ciudad</p><br/>📍 Eje Central 2]]></description>
+      <Point>
+        <coordinates>-99.1406428,19.433921,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Torre Latinoamericana Centro</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/4af02b1f-6695-4dd3-97fb-37f5d423fad6/torre-latinoamericana-centro.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 mirador</b><br/><p>Rascacielos con mirador panorámico</p><br/>📍 Eje Central 2]]></description>
+      <Point>
+        <coordinates>-99.1406428,19.433921,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Trajineras De Xochimilco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/ea6fb7dd-d57f-41b3-b9f4-5ad1d237524d/trajineras-de-xochimilco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 atraccion</b><br/><p>Paseo tradicional en trajinera por los canales</p><br/>📍 Embarcadero Nuevo Nativitas]]></description>
+      <Point>
+        <coordinates>-99.1015,19.2577,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Universidad del Claustro de Sor Juana</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/3361325b-dd81-45e6-bc7e-4b671c36e8b9/universidad-del-claustro-de-sor-juana.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 edificio_historico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1362293,19.4265844,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Veterana Arqueológica Gran Basamento</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/1aff89c8-99eb-4b09-bb58-3e5c03618c54/veterana-arqueologica-gran-basamento.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 zona_arqueologica</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1376835,19.4516856,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Veteranas Arqueológicas (Casa Del Marqués del Apartado)</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/74a0cf5e-173e-4017-b559-d6ffb097bf82/veteranas-arqueologicas-casa-del-marques-del-apartado.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 museo</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.131933,19.435483,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Viveros de Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/3ee797dd-063c-42da-89f4-257f6d96d84c/viveros-de-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 parque</b><br/><p>Gran parque con áreas verdes y pista para correr</p><br/>📍 Progreso 1]]></description>
+      <Point>
+        <coordinates>-99.1715219,19.3536166,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Zócalo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/c2f49bf6-d8c5-4eab-aace-0799f15e3756/zocalo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 plaza</b><br/><p>Plaza principal de México, una de las más grandes del mundo</p><br/>📍 Plaza de la Constitución]]></description>
+      <Point>
+        <coordinates>-99.134078,19.4324051,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Zonas Talavera</name>
+      <description><![CDATA[<b>🎯 zona</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1276477,19.4284396,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Zoológico de Chapultepec</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/imperdibles/b5513f01-8734-424d-ac6d-408b0d021b42/zoologico-de-chapultepec.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🎯 zoologico</b><br/><p>Zoológico más importante de México con pandas gigantes</p><br/>📍 Primera Sección Bosque de Chapultepec]]></description>
+      <Point>
+        <coordinates>-99.1895256,19.4232085,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

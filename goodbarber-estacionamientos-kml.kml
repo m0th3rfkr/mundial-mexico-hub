@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Estacionamientos CDMX - Mundial 2026</name>
+    <description>Estacionamientos en Ciudad de México</description>
+
+    <Placemark>
+      <name>Basílica de Guadalupe</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1178742,19.4847897,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Central Estacionamientos</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 90 autos<br/>]]></description>
+      <Point>
+        <coordinates>-99.1417966,19.4338369,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Centro Comercial Gran Sur</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1655408,19.3047237,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Corsa</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>🚗 Capacidad: 100 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento privado Corsa</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1628149,19.4268885,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Deprisa Garibaldi</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1395877,19.4403504,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Deprisa Isabel La Católica</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1363899,19.4320359,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Deprisa Plaza Juárez</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1433268,19.4333354,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Deprisa Plaza Juárez</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>🚗 Capacidad: 100 autos<br/>]]></description>
+      <Point>
+        <coordinates>-99.1433268,19.4333354,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1351947,19.431367,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1351947,19.431367,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento 24 Horas</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.149067,19.4346924,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento 24 hrs</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1374433,19.4306688,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento 5 de mayo</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1367928,19.4344387,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Atrio Norte</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 200 autos<br/>📍 Atrio Norte]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Auditorio Nacional</name>
+      <description><![CDATA[📍 Paseo de la Reforma 50]]></description>
+      <Point>
+        <coordinates>-99.1955151,19.4250468,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Basílica Principal</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 500 autos<br/>📍 Plaza de las Américas]]></description>
+      <Point>
+        <coordinates>-99.117956,19.4860834,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Bellas Artes</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 200 autos<br/>📍 Av. Juárez esquina Eje Central]]></description>
+      <Point>
+        <coordinates>-99.1430309,19.4332891,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Castillo De Chapultepec</name>
+      <description><![CDATA[📍 Rampa de Acceso al Castillo]]></description>
+      <Point>
+        <coordinates>-99.181935,19.4204397,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Centro Coyoacán</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>📍 Felipe Carrillo Puerto]]></description>
+      <Point>
+        <coordinates>-99.16409,19.35003,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Centro Xochimilco</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 100 autos<br/>📍 Plaza Principal]]></description>
+      <Point>
+        <coordinates>-99.103,19.2574,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Cerrito</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 100 autos<br/>📍 Cerro del Tepeyac]]></description>
+      <Point>
+        <coordinates>-99.116004,19.4861191,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Cineteca Nacional</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>📍 Av. México Coyoacán]]></description>
+      <Point>
+        <coordinates>-99.1634198,19.3603717,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Ciudadela</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1493964,19.430442,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Copernsa</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>🚗 Capacidad: 80 autos<br/>]]></description>
+      <Point>
+        <coordinates>-99.1302132,19.4264448,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Cuauhtémoc (Doctore Av. Juárez)</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1550845,19.4124321,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Deportivo Tepeyac</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 60 autos<br/>📍 Deportivo Tepeyac]]></description>
+      <Point>
+        <coordinates>-99.1176341,19.486213,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Embarcadero Belem</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 80 autos<br/>📍 Barrio Belem]]></description>
+      <Point>
+        <coordinates>-99.0984,19.2564,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Embarcadero Cuemanco</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 200 autos<br/>📍 Anillo Periférico]]></description>
+      <Point>
+        <coordinates>-99.0769,19.289,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Embarcadero Nativitas</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 150 autos<br/>📍 Violeta S/N]]></description>
+      <Point>
+        <coordinates>-99.1017,19.2581,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Francisco Sosa</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>📍 Francisco Sosa]]></description>
+      <Point>
+        <coordinates>-99.17254,19.3495162,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Jardín Centenario</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>📍 Jardín Centenario]]></description>
+      <Point>
+        <coordinates>-99.1627,19.3491173,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento La Merced</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 250 autos<br/>📍 Circunvalación esquina Anillo de Circunvalación]]></description>
+      <Point>
+        <coordinates>-99.1245,19.4252,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Lago Mayor</name>
+      <description><![CDATA[📍 Junto al Lago Mayor]]></description>
+      <Point>
+        <coordinates>-99.1987315,19.4177676,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Madero</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 120 autos<br/>📍 Calle Madero 30, Centro]]></description>
+      <Point>
+        <coordinates>-99.1385,19.4345,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Mercado Coyoacán</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>📍 Ignacio Allende]]></description>
+      <Point>
+        <coordinates>-99.1575649,19.3238173,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Mercado De Plantas</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 60 autos<br/>📍 Madreselva S/N]]></description>
+      <Point>
+        <coordinates>-99.1024,19.2569,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Metro La Villa</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 120 autos<br/>📍 Metro La Villa-Basílica]]></description>
+      <Point>
+        <coordinates>-99.1178742,19.4847897,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Museo Dolores Olmedo</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 80 autos<br/>📍 Av. México 5843]]></description>
+      <Point>
+        <coordinates>-99.1058,19.2548,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Museo Frida Kahlo</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>📍 Londres 247]]></description>
+      <Point>
+        <coordinates>-99.1624636,19.3551806,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Museo Nacional De Antropología</name>
+      <description><![CDATA[📍 Museo Nacional de Antropología]]></description>
+      <Point>
+        <coordinates>-99.1862786,19.4260032,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Papalote</name>
+      <description><![CDATA[📍 Av. Constituyentes 268]]></description>
+      <Point>
+        <coordinates>-99.1652534,19.4229547,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Parque Ecológico</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 120 autos<br/>📍 Periférico Oriente]]></description>
+      <Point>
+        <coordinates>-99.075,19.2892,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Plaza Del Carmen</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>📍 Av. Universidad]]></description>
+      <Point>
+        <coordinates>-99.1227977,19.30739,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Pocito</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 80 autos<br/>📍 Calzada de Guadalupe]]></description>
+      <Point>
+        <coordinates>-99.1150464,19.485431,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Polanco</name>
+      <description><![CDATA[📍 Av. Presidente Masaryk 111]]></description>
+      <Point>
+        <coordinates>-99.1894558,19.4194815,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Primera Sección</name>
+      <description><![CDATA[📍 Entrada principal Primera Sección]]></description>
+      <Point>
+        <coordinates>-99.2165176,19.3548789,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1608983,19.3494355,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1608983,19.3494355,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1608983,19.3494355,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1608983,19.3494355,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1608983,19.3494355,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1608983,19.3494355,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1608983,19.3494355,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1608983,19.3494355,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1608983,19.3494355,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público 1</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 50 autos<br/>]]></description>
+      <Point>
+        <coordinates>-99.1366486,19.4362542,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público 2</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 60 autos<br/>]]></description>
+      <Point>
+        <coordinates>-99.1366486,19.4362542,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público 3</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 50 autos<br/>]]></description>
+      <Point>
+        <coordinates>-99.1366486,19.4362542,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público 4</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 70 autos<br/>]]></description>
+      <Point>
+        <coordinates>-99.1366486,19.4362542,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público 5</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 60 autos<br/>]]></description>
+      <Point>
+        <coordinates>-99.1366486,19.4362542,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público 6</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 50 autos<br/>]]></description>
+      <Point>
+        <coordinates>-99.1254341,19.4285443,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Amberes</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 65 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento en calle Amberes</p><br/>📍 Amberes, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1652307,19.4254858,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Copenhague</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 55 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento en calle Copenhague</p><br/>📍 Copenhague, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.16369,19.4271942,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Florencia</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 65 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento en calle Florencia</p><br/>📍 Florencia, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1649154,19.4237669,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Génova</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 70 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento en calle Génova</p><br/>📍 Génova, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1648347,19.4273543,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Hamburgo</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 75 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento en calle Hamburgo</p><br/>📍 Hamburgo, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1672948,19.4252226,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Liverpool</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 60 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento en calle Liverpool</p><br/>📍 Liverpool, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1649154,19.4237669,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Londres</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 70 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento en calle Londres</p><br/>📍 Londres, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642137,19.425374,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Niza</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 60 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento en calle Niza</p><br/>📍 Niza, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1649154,19.4237669,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Praga</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 60 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento en calle Praga</p><br/>📍 Praga, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>14.4378005,50.0755381,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Reforma 1</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 120 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento sobre Paseo de la Reforma</p><br/>📍 Av. Paseo de la Reforma, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1704824,19.4249775,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Reforma 2</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 100 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento frente a monumentos</p><br/>📍 Av. Paseo de la Reforma, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1751062,19.4222609,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Reforma 3</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 110 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento zona hotelera</p><br/>📍 Av. Paseo de la Reforma, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1611399,19.4282813,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Torre Mayor</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 250 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento en Torre Mayor</p><br/>📍 Av. Paseo de la Reforma, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Varsovia</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 70 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento en calle Varsovia</p><br/>📍 Varsovia, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Zona Rosa 1</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 100 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento público en el corazón de Zona Rosa</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Zona Rosa 2</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 80 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento público cercano a hoteles</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Público Zona Rosa 3</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 90 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento público cerca de restaurantes</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Ranver</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>🚗 Capacidad: 150 autos<br/>📍 Av. Juárez 56, Centro]]></description>
+      <Point>
+        <coordinates>-99.1419307,19.4347496,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento República de Chile</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 90 autos<br/>📍 República de Chile 8, Centro]]></description>
+      <Point>
+        <coordinates>-99.1322,19.4362,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento San Bernardino</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 70 autos<br/>📍 Plaza San Bernardino]]></description>
+      <Point>
+        <coordinates>-99.1041,19.2576,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Segunda Sección</name>
+      <description><![CDATA[📍 Entrada Segunda Sección]]></description>
+      <Point>
+        <coordinates>-99.195497,19.4149803,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Villa 1</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 150 autos<br/>📍 Calzada de los Misterios]]></description>
+      <Point>
+        <coordinates>-99.1182949,19.484572,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Villa 2</name>
+      <description><![CDATA[<b>🅿️ público</b><br/>🚗 Capacidad: 150 autos<br/>📍 Av. Insurgentes Norte]]></description>
+      <Point>
+        <coordinates>-99.1182949,19.484572,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Viveros</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>📍 Progreso]]></description>
+      <Point>
+        <coordinates>-99.1686466,19.3532397,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Estacionamiento Zócalo</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 180 autos<br/>📍 Calle 5 de Febrero, Centro]]></description>
+      <Point>
+        <coordinates>-99.1328,19.4318,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Galería Plaza Reforma</name>
+      <description><![CDATA[<b>🅿️ comercial</b><br/>🚗 Capacidad: 200 autos<br/><p>Estacionamiento de centro comercial</p><br/>📍 Av. Paseo de la Reforma, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1678977,19.4248571,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Anahuacalli</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1439285,19.3231754,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Parque Alameda - Estacionamiento</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 200 autos<br/>📍 Av. Hidalgo, junto a la Alameda Central]]></description>
+      <Point>
+        <coordinates>-99.1467837,19.4342901,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Parque Tepeyac</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>PIRSA, S.A. de C.V.</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>🚗 Capacidad: 150 autos<br/>🕐 Abierto 24 horas<br/><p>Estacionamiento privado operado por PIRSA</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Garibaldi - Estacionamiento</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>🚗 Capacidad: 120 autos<br/>📍 Eje Central Lázaro Cárdenas, junto a Plaza Garibaldi]]></description>
+      <Point>
+        <coordinates>-99.13929,19.4404005,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza La Rosa</name>
+      <description><![CDATA[<b>🅿️ comercial</b><br/>🚗 Capacidad: 180 autos<br/><p>Estacionamiento de plaza comercial</p><br/>📍 Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1645133,19.4256244,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Misterios</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1267433,19.4619919,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Tepeyac</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1177961,19.4853107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma 222</name>
+      <description><![CDATA[<b>🅿️ comercial</b><br/>🚗 Capacidad: 300 autos<br/><p>Estacionamiento de complejo comercial y corporativo</p><br/>📍 Av. Paseo de la Reforma 222, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1616515,19.4288787,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Terminal de Autobuses del Sur</name>
+      <description><![CDATA[<b>🅿️ publico</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1388828,19.3423133,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Universidad del Valle de México Coyoacán</name>
+      <description><![CDATA[<b>🅿️ privado</b><br/>]]></description>
+      <Point>
+        <coordinates>-99.1397943,19.3116618,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

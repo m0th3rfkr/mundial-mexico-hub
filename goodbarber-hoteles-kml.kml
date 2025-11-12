@@ -1,0 +1,1439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Hoteles CDMX - Mundial 2026</name>
+    <description>Hoteles en corredores turísticos de Ciudad de México</description>
+
+    <Placemark>
+      <name>Antara Polanco by Marriott Alameda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/6f3f939c-4e26-4657-9cd8-74546bb4a55f/antara-polanco-by-marriott-alameda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.2038094,19.438107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Antiguo Mártire de San Jerónimo Hotel Boutique</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/cc980146-6ff6-4268-85bc-6b881b20be54/antiguo-martire-de-san-jeronimo-hotel-boutique.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1362599,19.4269295,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Best Western</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/ae349446-c3a9-4c0f-b7dd-eec915dded33/best-western.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1344097,19.4329684,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Best Western Hotel Majestic</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/48555ecf-3537-4070-b849-69798d801532/best-western-hotel-majestic.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1344097,19.4329684,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Best Western Hotel Majestic</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/b3b38827-a092-4ab8-877d-9a096c7b1cf6/best-western-hotel-majestic.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1344097,19.4329684,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa Amura CDMX</name>
+      <description><![CDATA[⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1561883,19.3437444,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa De Huéspedes La Villa</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/9d39d152-98fd-496c-b48b-007aab7dc77c/casa-de-huespedes-la-villa.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $<br/><br/>📍 Zaragoza 15]]></description>
+      <Point>
+        <coordinates>-99.114181,19.484233,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa De Huéspedes Xochimilco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/ddf4d515-1c25-4e6b-9ca6-b2d8dee75f24/casa-de-huespedes-xochimilco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 2 estrellas<br/>💰 $<br/><br/>📍 Centro Histórico]]></description>
+      <Point>
+        <coordinates>-99.1031,19.2574,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa de la Luz Hotel Boutique</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/71715997-db5d-4938-98d1-a63e8d74c7c4/casa-de-la-luz-hotel-boutique.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.133006,19.4296109,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa De Los Azulejos B&amp;B</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/665f83e3-2b7c-4ce1-bd1a-843d04ccc02f/casa-de-los-azulejos-b-b.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Abasolo 34]]></description>
+      <Point>
+        <coordinates>-99.1401815,19.4342214,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa Felipe Hostal Boutique</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/02da2ed6-03d8-4447-b2da-e541b2dc3a0f/casa-felipe-hostal-boutique.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1216506,19.4407731,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa Hammam Suites</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/08db489e-2f8c-4f72-9644-7d226ea9b1b2/casa-hammam-suites.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1355074,19.4337163,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa Jacinta Guest House</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/8eb51cbd-db48-4266-8b06-72aaf12d9c1c/casa-jacinta-guest-house.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Fernández Leal 116]]></description>
+      <Point>
+        <coordinates>-99.1661261,19.351938,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Casa Turo Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/7cd7dcb9-b51b-48b2-81c3-ecc27f9209be/casa-turo-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1468823,19.3090028,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Chalet Del Carmen</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/c854af9c-40d9-4422-badc-d6246668757b/chalet-del-carmen.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Fernando Montes de Oca 26]]></description>
+      <Point>
+        <coordinates>-99.1658404,19.3554739,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Círculo Mexicano</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/d536caa9-471f-44d4-a1ac-f0c11dd007e8/circulo-mexicano.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1327956,19.4351227,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>City Centro By Marriott</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/e5aa3f3b-7b7c-4cef-a586-2fedef0335d3/city-centro-by-marriott.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1379227,19.430581,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>City Express by Marriott</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/98926009-c499-4c08-8c94-a9ff4bdd4514/city-express-by-marriott.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.125633,19.463821,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>City Express by Marriott</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/8c7f24f3-eadf-401f-aab1-0cb6db08e8a7/city-express-by-marriott.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1442388,19.468113,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>City Express Plus Reforma El Ángel</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/06439afc-4f9d-437c-86fe-0cb45987877a/city-express-plus-reforma-el-angel.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 4 estrellas<br/>💰 $$$<br/><p>Hotel de negocios con excelente ubicación y servicios modernos</p><br/>📍 Av. Paseo de la Reforma 250, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1668093,19.426493,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>City Express Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/cc3d4a2d-d703-46a7-8061-122fbb607b82/city-express-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 3 estrellas<br/>💰 $<br/><p>Opción económica de cadena confiable</p><br/>📍 Av. Paseo de la Reforma, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1668093,19.426493,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>City Express Suites Downtown</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/39bbad23-9475-421d-a3e0-a9a4bffa9c3d/city-express-suites-downtown.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1371723,19.4348148,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Colmena Centro</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/20c3ed9c-505b-4daf-bb7e-0b789db3f833/colmena-centro.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.132668,19.436515,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Domingo Santo Hotel Boutique</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/02a11dd2-12ae-463d-bb40-4a4b53c9a43a/domingo-santo-hotel-boutique.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.134143,19.4369875,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Domingo Santo Hotel Boutique</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/3cdcd1b1-cdc8-421f-9e57-751d06b2e90b/domingo-santo-hotel-boutique.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.134143,19.4369875,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Downtown Mexico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/145cc1da-0cfa-4deb-abba-84e3051cdf09/downtown-mexico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/><br/>📍 Calle Isabel la Católica 30, Centro]]></description>
+      <Point>
+        <coordinates>-99.136213,19.4329306,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Downtown México DF</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/4a6cffbc-ab25-43ca-846a-89db9cc59b8e/downtown-mexico-df.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.136213,19.4329306,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Eurostars Zona Rosa Suites</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/c8c6939c-7493-4e89-bd03-5b827fd0e8ab/eurostars-zona-rosa-suites.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 4 estrellas<br/>💰 $$$<br/><p>Suites amplias en ubicación privilegiada</p><br/>📍 Londres 130, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1640341,19.4257026,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Exe Hotel Viaduct Centro Calma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/7b5cdc07-2f4b-4def-b08d-8f7831f9a4c1/exe-hotel-viaduct-centro-calma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1069995,19.4070102,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Fiesta Inn Centro Histórico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/4f80c2d9-da51-4f4f-80a5-831f486ca73d/fiesta-inn-centro-historico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1468299,19.434831,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Fiesta Inn Periférico Sur</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/321ac390-79ca-4b95-a288-88e22d63ab11/fiesta-inn-periferico-sur.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1657146,19.3023157,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Four Seasons</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/8c88950c-5b0a-4283-9070-e303c3bbcab8/four-seasons.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><p>Hotel de lujo con spa, alberca y restaurantes gourmet</p><br/>📍 Av. Paseo de la Reforma 500, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gran Hotel Ciudad de México</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/0bb98d9d-2596-4cf7-87ce-e7f9202b9395/gran-hotel-ciudad-de-mexico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$$<br/><br/>📍 Av. 16 de Septiembre 82, frente al Zócalo]]></description>
+      <Point>
+        <coordinates>-99.1346157,19.4321847,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gran Hotel Ciudad de México</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/28c67f44-6c3b-4a6f-8260-467f5f06c630/gran-hotel-ciudad-de-mexico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 5 estrellas<br/>💰 $$$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1346157,19.4321847,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gran Hotel de la Paz</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/160abe24-f6e0-4550-a2e3-648edca555c2/gran-hotel-de-la-paz.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1357829,19.4342897,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Grand Fiesta Americana Chapultepec</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/16423947-b2da-453b-be4d-c2b02dcdb0ef/grand-fiesta-americana-chapultepec.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 5 estrellas<br/>💰 $$$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.178145,19.4251816,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Grupo Hotel El Salvador</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/843daa13-5590-4031-aa73-a05350b102ba/grupo-hotel-el-salvador.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1405347,19.4304965,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hampton Inn &amp; Suites Mexico City - Centro Histórico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/32d7a842-31f2-416e-9bc8-861e7ccf10f2/hampton-inn-suites-mexico-city-centro-historico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.134506,19.4300318,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hilton Mexico City</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/8507eb81-1626-4613-96a5-f57352a67d34/hilton-mexico-city.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 5 estrellas<br/>💰 $$$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1461984,19.4345298,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hilton Mexico City Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/377d76ed-4f56-4bd7-a2b0-44fa31c53b2b/hilton-mexico-city-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><br/>📍 Av. Juárez 70, Centro]]></description>
+      <Point>
+        <coordinates>-99.1461984,19.4345298,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hilton Reforma México City</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/1632d8d5-5143-422b-927e-5cd57a91cb97/hilton-reforma-mexico-city.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><br/>📍 Av. Juárez 70, Centro]]></description>
+      <Point>
+        <coordinates>-99.1461984,19.4345298,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Holiday Inn Express</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/b8447d96-5813-4c00-8718-d8fa7f875a04/holiday-inn-express.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1290869,19.456101,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Holiday Inn Express Mexico Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/7e6bf55f-edc3-4d80-bc91-b6f6fd945f40/holiday-inn-express-mexico-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 4 estrellas<br/>💰 $$<br/><p>Hotel práctico con desayuno incluido y ubicación céntrica</p><br/>📍 Av. Paseo de la Reforma 445, Cuauhtémoc, 06500 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1616329,19.4291703,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hostal Centro Histórico Regina</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/430c76ac-02df-4221-9c9a-2444c1227d0a/hostal-centro-historico-regina.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Tres Cruces 23]]></description>
+      <Point>
+        <coordinates>-99.13512,19.4278072,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hostel Mundo Joven Catedral</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/5fde9a0f-302d-4650-9eb3-703cc676f687/hostel-mundo-joven-catedral.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 2 estrellas<br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1336584,19.4352885,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hostel Regina Down Town Mexico City</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/28cd81ce-9a85-4b3c-938e-e7566514a119/hostel-regina-down-town-mexico-city.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 2 estrellas<br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.13512,19.4278072,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Ambar</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/c5f8d51b-2e1c-4a77-94bd-3006d06f8eac/hotel-ambar.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.132774,19.4263992,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Amberes 64</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/7e1a1cb1-f08c-4db1-a3ba-7b84f3ea93ce/hotel-amberes-64.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 boutique</b><br/>⭐ 4 estrellas<br/>💰 $$<br/><p>Hotel boutique íntimo en el corazón de Zona Rosa</p><br/>📍 Amberes 64, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1646352,19.4245708,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Amigo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/60b9c97b-7589-46ef-afbf-3b33bd33de1f/hotel-amigo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1368716,19.430028,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Amigo Zócalo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/c0edeb41-da17-4ac4-804d-01f7467d8b49/hotel-amigo-zocalo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1328713,19.4368437,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Astoria</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/7ab37717-0a7f-4192-867e-339d93ea8770/hotel-astoria.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.131757,19.4357068,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Azores</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/4cb9ad56-a555-457f-b519-6e830aebb630/hotel-azores.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1334441,19.4364712,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Basílica</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/37eebbad-ae57-4758-9aed-f57f9be4e9ae/hotel-basilica.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $<br/><br/>📍 Plaza Mariana 10]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Bellas Artes</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/7e41264b-ab81-4f77-a13b-60a3deea1f52/hotel-bellas-artes.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.13962,19.434741,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Boston Plaza</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/939822d2-f7ca-479d-a67a-76e33c561313/hotel-boston-plaza.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1447787,19.3054336,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Boutique Anahuac</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/690580e2-1797-4ef7-957e-6809cb03eaa6/hotel-boutique-anahuac.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1097946,19.303382,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Boutique Anahuaco Periferico Sur</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/35258003-f38e-4b96-9034-98e132059ba1/hotel-boutique-anahuaco-periferico-sur.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1805685,19.3036228,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Boutique Catedral</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/5b3afad6-af15-44de-984b-bb3fb5d53f51/hotel-boutique-catedral.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Felipe Carrillo Puerto 93]]></description>
+      <Point>
+        <coordinates>-99.163063,19.3160783,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Boutique La Casa De Los Jazmines</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/74deda5b-5800-4b76-8652-8adf1593abce/hotel-boutique-la-casa-de-los-jazmines.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Malintzin 23]]></description>
+      <Point>
+        <coordinates>-99.1635974,19.3515708,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Boutique Las Chinampas</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/cecfb597-a7b7-4409-9532-e181f6543c82/hotel-boutique-las-chinampas.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/><br/>📍 Barrio La Santísima]]></description>
+      <Point>
+        <coordinates>-99.101,19.256,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Camino Real Polanco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/85d4fa0e-e062-4abe-9c35-7212cedab51a/hotel-camino-real-polanco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><br/>📍 Mariano Escobedo 700]]></description>
+      <Point>
+        <coordinates>-99.1793772,19.4279252,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Canada CDMX</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/a7afd20e-6d76-43b8-82cf-61c6d6db57f0/hotel-canada-cdmx.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1357014,19.4339789,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Catedral</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/9709f8f5-38d8-4fe1-bbcd-72b7bacacfbb/hotel-catedral.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1332049,19.4351036,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Catedral</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/263c88d6-de7b-48cb-899a-b46db35b43a6/hotel-catedral.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1332049,19.4351036,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Chamonix</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/1dcc9f02-549a-49cc-83b9-20f536ade1d7/hotel-chamonix.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.131757,19.4357068,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Cle</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/b2970a16-3841-4dc9-84c3-152a269bbee5/hotel-cle.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 3 estrellas<br/>💰 $<br/><p>Hotel boutique asequible en Zona Rosa</p><br/>📍 Florencia 39, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1657294,19.4237238,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Colonial del Alameda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/38a2ddb8-0a0c-4c81-865d-cc9218e11b26/hotel-colonial-del-alameda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1456585,19.4342202,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Consulado</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/6a573ba1-973f-4e55-8e7e-344c503955ae/hotel-consulado.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.131933,19.435483,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Dara-M</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/1b51e155-1bc2-4034-95bb-89518655d681/hotel-dara-m.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1313012,19.4396731,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Del Parque</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/3ae8dbbc-b1e4-4d53-b929-ffbbe31041e4/hotel-del-parque.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Periférico Sur]]></description>
+      <Point>
+        <coordinates>-99.074,19.2895,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Del Tepeyac</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/1cf57dfd-eceb-4567-8210-0acaa40cfdb6/hotel-del-tepeyac.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Calzada de Guadalupe 320]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Detroit</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/b0440543-991f-4520-9e9e-48589e93e715/hotel-detroit.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-83.0424533,42.3297182,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Diegovega</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/c280f8e9-c680-4161-b670-f65d3e864d85/hotel-diegovega.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1355074,19.4337163,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>HOTEL DILIGENCIAS</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/dfb4fa2b-09cb-46e8-865a-2cb87008f47a/hotel-diligencias.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1396421,19.4387718,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Ecológico Cuemanco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/20d28909-ec70-4381-b4c0-89278c6d1d6d/hotel-ecologico-cuemanco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Anillo Periférico]]></description>
+      <Point>
+        <coordinates>-99.0768,19.2891,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Exe Alameda Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/39806ba9-0bd3-44da-8507-2de962e00791/hotel-exe-alameda-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/><br/>📍 Av. Juárez 76, Centro]]></description>
+      <Point>
+        <coordinates>-99.1503532,19.4379557,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Fontan Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/a0e36749-90de-4e9f-bce6-a70d9f3fa76b/hotel-fontan-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1477558,19.4361783,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Fontan Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/f88c3a2a-0200-45e8-91aa-b7afff20bbd1/hotel-fontan-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1477558,19.4361783,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Garnica</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/9cb0d686-e24e-461b-8ba9-fa547a2c6549/hotel-garnica.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-2.6808403,43.311373,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Geneve</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/7a5056db-1cec-4c90-b0c2-db2bb72681f8/hotel-geneve.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1641947,19.4250928,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Geneve</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/12935812-0c53-4c92-bd77-d533f2d7d3d7/hotel-geneve.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 4 estrellas<br/>💰 $$<br/><p>Hotel clásico con historia en Zona Rosa</p><br/>📍 Londres 130, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1641947,19.4250928,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Gillow</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/0017b033-8aef-4eb7-a9c1-912803d73ba0/hotel-gillow.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1363246,19.4340378,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Guadalupe Inn</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/44692507-7ea7-45e7-a7c3-067f3fce57be/hotel-guadalupe-inn.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$<br/><br/>📍 Calzada de los Misterios 206]]></description>
+      <Point>
+        <coordinates>-99.185752,19.3585861,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Habana</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/2866074f-5b36-43e7-b6a3-599fe193c557/hotel-habana.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1353982,19.4369806,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Hampton Central</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/2a33847c-0b07-4a47-87d4-c10d305fa87a/hotel-hampton-central.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.134506,19.4300318,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Hampton Inn Central</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/4ceb032b-3680-49cc-a0d1-65401018c2e6/hotel-hampton-inn-central.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.134506,19.4300318,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Hidalgo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/5932d5e9-1c6c-4d23-ad37-9ed1105750f6/hotel-hidalgo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1421736,19.4373402,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Hidalgo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/caac4a3f-3e31-436b-897b-9b1b0b8cc8c9/hotel-hidalgo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1421736,19.4373402,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Histórico Central</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/446f1879-ca62-44a3-8ed3-c7ae2a411165/hotel-historico-central.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Calle Bolívar 28, Centro]]></description>
+      <Point>
+        <coordinates>-99.1381351,19.4331268,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Isabel Centro CDMX</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/ad8d2fff-b328-4d34-a0a8-d978e3c0b122/hotel-isabel-centro-cdmx.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1368834,19.4298247,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Juárez</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/02fd0b83-c492-42c4-8465-5dfb75eb54f8/hotel-juarez.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1356904,19.4345039,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel La Luna</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/690313b3-e1f3-4244-b4c7-243e2b239b42/hotel-la-luna.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.15273,19.296797,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel La Nueva Toluca</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/0d5b58ea-560e-47f1-8639-5f383e6f4864/hotel-la-nueva-toluca.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1262257,19.4270323,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Madero</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/9a1d129c-36cb-4735-829f-5e666118fa9f/hotel-madero.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1146382,19.4824143,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Majestic</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/ed97fda7-d26e-4cc3-b201-4d50a87b8ddc/hotel-majestic.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1344097,19.4329684,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Manaca</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/56db3d52-ccf5-4ef4-b09f-a2a188c51ea4/hotel-manaca.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1181131,19.3066066,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Marlowe</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/d9e6889f-e6f3-4e0b-b1c6-9911769d96ce/hotel-marlowe.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1336986,19.4282573,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Marlowe</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/2ea71c81-2af2-4b19-8530-b2f2ab0d1a7e/hotel-marlowe.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1423939,19.4332111,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Marquis Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/38f87ade-e9e2-4a10-a41e-433cbf2d657f/hotel-marquis-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><p>Hotel boutique de lujo en plena Zona Rosa</p><br/>📍 Av. Paseo de la Reforma 465, Cuauhtémoc, 06500 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1636718,19.428262,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Metropol</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/e26fe7ce-a0cc-4675-81fc-0d53e2b45b50/hotel-metropol.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1451955,19.4330949,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Modelo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/960a398f-06de-4b46-91c6-72e78d1e562c/hotel-modelo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1260582,19.4682973,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Montevideo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/76615d2d-20e3-4b5a-8068-c6c08682f7d0/hotel-montevideo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1206252,19.4860579,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel MX</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/65c46ac8-9a5c-4967-acab-71143904fad8/hotel-mx.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1340767,19.4302748,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel MX Garibaldi</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/208ea98a-af54-4f1f-bc39-8a53c6cc0040/hotel-mx-garibaldi.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1378108,19.4404866,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel MX Garibaldi</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/4b945898-7777-4a08-be27-1a37963a2f19/hotel-mx-garibaldi.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Calle República de Honduras, cerca de Garibaldi]]></description>
+      <Point>
+        <coordinates>-99.1378108,19.4404866,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel MX lagunilla</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/91422c31-1d38-4277-b089-e5c3dd3cab63/hotel-mx-lagunilla.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1400068,19.4425828,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel MX Lagunilla</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/4315aa50-c63d-4487-8a36-bc8819ec1c8e/hotel-mx-lagunilla.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1400068,19.4425828,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel MX Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/ec0ee051-7ce0-42dc-b0c3-2d2f1aefb13d/hotel-mx-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 4 estrellas<br/>💰 $$$<br/><p>Hotel boutique con diseño contemporáneo mexicano</p><br/>📍 Av. Paseo de la Reforma 360, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1663846,19.4269943,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel MX Zócalo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/9a5f9e7a-852c-49d7-b042-4589e04cdb8e/hotel-mx-zocalo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1355382,19.4337772,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel NH México City</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/6cfe2520-430a-45ab-b309-5c84afe19276/hotel-nh-mexico-city.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1294032,19.4371312,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Panorama</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/a00eafb8-0b70-4e11-960f-da48df35dcb3/hotel-panorama.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1273313,19.4577216,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Peregrino</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/cfbada86-a643-4b2e-9472-137b63300395/hotel-peregrino.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $<br/><br/>📍 Av. Insurgentes Norte 1440]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel PF</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/d883ed81-d282-475e-9ee7-fdae86e42d18/hotel-pf.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 4 estrellas<br/>💰 $$<br/><p>Cadena mexicana de hoteles con buen servicio</p><br/>📍 Reforma, Zona Rosa, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1662218,19.4238119,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Polanco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/e6a1cad7-ebfb-4194-b11d-f21f9c561d58/hotel-polanco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Edgar Allan Poe 8]]></description>
+      <Point>
+        <coordinates>-99.1894558,19.4194815,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Principal</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/aae4ac60-25fe-4187-89f7-bee786c4c12e/hotel-principal.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1386489,19.4329333,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Puerto NG</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/1afeeeac-4eab-4526-a6f1-bdae2c1fcb6d/hotel-puerto-ng.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1410093,19.4311518,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Quinte</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/a4c638fd-dfb6-4acc-86f8-43794e70d31b/hotel-quinte.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1532422,19.2964586,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Regis</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/2b87393c-46a8-45f8-b206-e59769ad699a/hotel-regis.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1348019,19.4277022,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Rest Del Sur</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/0b9a8c44-8fc3-48cd-a20c-a25a0fca184f/hotel-rest-del-sur.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1292495,19.3295012,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Rioja</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/1dbbd41d-c139-4ca1-8ed3-de643f8da395/hotel-rioja.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1358652,19.434001,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel San Bernardino</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/8419e62a-c1e5-4f16-af48-6bfbe1bc4f2e/hotel-san-bernardino.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Plaza San Bernardino]]></description>
+      <Point>
+        <coordinates>-99.104,19.2575,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel San Fernando</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/ad943e8b-56b2-4369-9ffe-736b48bce328/hotel-san-fernando.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1477992,19.4386477,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel San Francisco Centro Histórico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/88705d45-129f-4aee-aada-6ce77de9c988/hotel-san-francisco-centro-historico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1450182,19.4342382,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel San Marcos</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/8162e5cc-8f37-4af0-8c2e-068afc749a21/hotel-san-marcos.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1279525,19.4278736,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Santa Fe</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/296e9420-4e90-49ad-8bea-8f10f83d3333/hotel-santa-fe.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1894558,19.4194815,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Santiago</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/906d4d0f-85a3-4322-b2dc-16e8aa7cef6c/hotel-santiago.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1220643,19.4862129,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Santuario</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/820cd677-0d40-4302-8097-6d3e52626733/hotel-santuario.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$<br/><br/>📍 Calzada de Guadalupe 250]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Templo Mayor</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/6ea8d36a-52c5-44c4-9ad3-88f383f044a4/hotel-templo-mayor.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1296539,19.4361744,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Templo Mayor</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/556b6747-4c70-4f73-a8d2-3c802de96268/hotel-templo-mayor.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1296539,19.4361744,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Unión</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/8637cca9-c7d9-4209-b964-6f64052c40b2/hotel-union.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1064899,19.4804432,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Villa Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/9127ed53-aff5-44d0-a30e-f67c5315b821/hotel-villa-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Av. México 69]]></description>
+      <Point>
+        <coordinates>-99.1629131,19.3486926,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Villa De Guadalupe</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/2074139a-c6f9-4466-8119-ee6fc8efdaa5/hotel-villa-de-guadalupe.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $<br/><br/>📍 Calzada de Guadalupe 431]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Villa de Madrid</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/fb4fd260-298a-44d9-9f97-543659f0d902/hotel-villa-de-madrid.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1257198,19.4620447,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Villa del Mar</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/e1d754e3-c198-4f83-9f1f-b06badbd2e33/hotel-villa-del-mar.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.12849,19.4569211,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Villa Express</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/26965d93-d88c-4889-897b-97a664d11f8d/hotel-villa-express.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $<br/><br/>📍 Calzada de los Misterios 180]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Vista Alegre</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/c07959d9-dc15-42a6-821c-e6eaf3fa6a6d/hotel-vista-alegre.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1203463,19.4776518,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Washington</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/f5fd500f-0cbd-4d49-a84d-1fa9b9acfcfa/hotel-washington.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1352766,19.4342737,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Xochitl</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/1c901924-d920-4b8b-ad8f-4ed63d990931/hotel-xochitl.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Av. Prolongación División del Norte]]></description>
+      <Point>
+        <coordinates>-99.1045,19.258,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Zócalo Central</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/ce8d2bae-6688-41dc-a249-35c946058297/hotel-zocalo-central.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/><br/>📍 Av. 5 de Mayo 61, Centro]]></description>
+      <Point>
+        <coordinates>-99.134525,19.4338384,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hotel Zócalo Ciudad De México</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/3864c688-ec22-4f3b-8232-b397650398c6/hotel-zocalo-ciudad-de-mexico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1333215,19.432642,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hyatt Regency Mexico City</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/4c8e72b9-bdb5-4d97-8c5a-f685df867119/hyatt-regency-mexico-city.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/><br/>📍 Campos Elíseos 204]]></description>
+      <Point>
+        <coordinates>-99.1927585,19.427554,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>HZ | Hospedaje Boutique</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/09771ca0-ab15-4fc7-aaca-253145bbeb7d/hz-hospedaje-boutique.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1699531,19.3026935,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>ibis Mexico Alameda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/bd00a8b1-cc1f-462c-a28d-c315975c3681/ibis-mexico-alameda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.133208,19.4326077,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>ibis Styles Mexico Zona Rosa</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/3f2ec494-7692-402a-ac7d-80ec99cb93d6/ibis-styles-mexico-zona-rosa.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 3 estrellas<br/>💰 $<br/><p>Hotel económico moderno con buen diseño</p><br/>📍 Amberes 64, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1629684,19.4250433,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Ignacia Guest House Boutique Histórico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/78ba0753-193a-4006-9564-44a926039612/ignacia-guest-house-boutique-historico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1597634,19.4133047,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>InterContinental Presidente Mexico City</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/752c540c-5307-428b-92bb-59c3679230bc/intercontinental-presidente-mexico-city.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><br/>📍 Campos Elíseos 218]]></description>
+      <Point>
+        <coordinates>-99.1933191,19.4272658,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>JW Marriott Mexico City Polanco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/f9fb0221-76a8-4a51-9153-db525495d047/jw-marriott-mexico-city-polanco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><br/>📍 Andrés Bello 29]]></description>
+      <Point>
+        <coordinates>-99.1947727,19.4273539,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kin Milano Alameda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/4f2b39dd-9285-4b77-95ae-f7de668b1c39/kin-milano-alameda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1456585,19.4342202,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kin San Jerónimo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/64fe16a6-a7f8-47e5-8906-5bd6bd81787d/kin-san-jeronimo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1362599,19.4269295,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Las Alcobas</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/7c175da6-581c-4190-a7c8-e461b40540ef/las-alcobas.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><br/>📍 Av. Presidente Masaryk 390]]></description>
+      <Point>
+        <coordinates>-99.197875,19.431584,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Lemon Dove Condohotel by Hilton</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/abec7b42-c6e3-4a31-a313-615663239b09/lemon-dove-condohotel-by-hilton.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1240323,19.4307727,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Living - Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/2b72e927-ff0d-4144-a2e0-857d13005ba5/living-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1579586,19.3448845,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Marriott Mexico City Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/148dc85b-934a-4bdd-939a-cb475a49e786/marriott-mexico-city-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><p>Hotel moderno con excelentes instalaciones para negocios</p><br/>📍 Av. Paseo de la Reforma 276, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642669,19.4280191,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>México Plaza Central Hotel Texcoco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/ad278230-4be7-47e0-b8e6-685967ff057c/mexico-plaza-central-hotel-texcoco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1295923,19.4363695,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Misión Xochimilco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/664723c1-fe6e-47fe-b9b3-038be844848f/mision-xochimilco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/><br/>📍 Calle Francisco I. Madero]]></description>
+      <Point>
+        <coordinates>-99.1033,19.2576,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>MyPlace Donceles</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/f5ebeb75-9cbe-4462-8cac-885d12a336c4/myplace-donceles.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1392024,19.4369832,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>MyPlace Santo Domingo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/6be356ce-ae8b-4636-948a-4066ea09e8d9/myplace-santo-domingo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1340296,19.4396634,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>MyPlace Zócalo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/682f4b78-6679-421c-9887-4b80617e1b6e/myplace-zocalo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1312355,19.4364639,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>NH Collection Mexico City Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/333b10bc-b25b-4c58-af09-f4d3aa565e66/nh-collection-mexico-city-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 4 estrellas<br/>💰 $$$<br/><p>Hotel moderno con estilo europeo en Zona Rosa</p><br/>📍 Liverpool 155, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.16489,19.424031,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>One Ciudad de México Alameda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/bd53c1a6-2ef3-4163-918e-1a94f0f9841e/one-ciudad-de-mexico-alameda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1478115,19.4350555,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>One Ciudad De México Alameda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/6ca45ff5-6982-45c2-9e8e-f7eda1a919ce/one-ciudad-de-mexico-alameda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1478115,19.4350555,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>One Ciudad de México Centro Histórico</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/08dcb8e7-b225-4574-8272-56b7fb787ed3/one-ciudad-de-mexico-centro-historico.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1478115,19.4350555,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Posada Nativitas</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/94ca5247-bc3a-4546-bd46-512b812baa85/posada-nativitas.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 2 estrellas<br/>💰 $<br/><br/>📍 Embarcadero Nativitas]]></description>
+      <Point>
+        <coordinates>-99.1018,19.258,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Regency Alameda Zócalo</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/0276ef24-50cb-4845-bc24-fdae6b110b32/regency-alameda-zocalo.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/>]]></description>
+      <Point>
+        <coordinates>-99.134078,19.4324051,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Royal Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/1c716406-be3b-40ba-bf96-70a061941c11/royal-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 4 estrellas<br/>💰 $$<br/><p>Hotel tradicional con buena relación calidad-precio</p><br/>📍 Amberes 78, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1641973,19.4239073,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sheraton María Isabel</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/303be7c5-e9f4-4cbf-9c02-d5c9375d0c6a/sheraton-maria-isabel.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><p>Hotel clásico frente al Ángel de la Independencia</p><br/>📍 Av. Paseo de la Reforma 325, Cuauhtémoc, 06500 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1669354,19.4279881,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sofitel Mexico City Reforma</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/717bf816-1735-4991-86d2-80d1964f22fa/sofitel-mexico-city-reforma.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><p>Elegancia francesa con vista panorámica de la ciudad</p><br/>📍 Av. Paseo de la Reforma 404, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1659622,19.4285207,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>St. Regis Mexico City</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/a30952fc-3e17-4b30-91bb-269caa92f6c7/st-regis-mexico-city.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><br/>📍 Paseo de la Reforma 439]]></description>
+      <Point>
+        <coordinates>-99.1720892,19.4256338,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Suites Coyoacán</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/81778a07-3d63-431a-b473-4bc40c3cdcad/suites-coyoacan.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 3 estrellas<br/>💰 $$<br/><br/>📍 Av. División del Norte]]></description>
+      <Point>
+        <coordinates>-99.1720609,19.3611882,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>The Green Park Hotel</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/afca5a81-fcd5-48c5-abea-a2f7b12f563c/the-green-park-hotel.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1848683,19.4152212,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>The Ritz-Carlton</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/9a216336-f657-4a67-9967-11bd0b98c546/the-ritz-carlton.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><p>Hotel de lujo en Paseo de la Reforma con servicio excepcional</p><br/>📍 Av. Paseo de la Reforma 509, Cuauhtémoc, 06500 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1642971,19.4266945,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>The St. Regis Mexico City</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/001b4cb1-1ce6-4310-bb3e-66079edd7ce7/the-st-regis-mexico-city.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/><b>🏨 hotel</b><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><p>Elegancia y sofisticación en el corazón de la ciudad</p><br/>📍 Av. Paseo de la Reforma 439, Cuauhtémoc, 06500 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1720892,19.4256338,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>V. Madid Boutique</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/fb353e84-e670-4d53-9489-8049382d7872/v-madid-boutique.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.163063,19.3160783,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Vialero CDMX Centro Hostel</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/fa4918e8-2dcf-4f10-810c-dc961a09480c/vialero-cdmx-centro-hostel.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 2 estrellas<br/>💰 $<br/>]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Villa Real De Santa Linda</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/dbe7ebd8-5890-42fe-94b8-ea508062692f/villa-real-de-santa-linda.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.182218,19.3278554,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Villas y Suites Real Azteca</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/0178d2f2-1460-4b6a-a17f-84b44aff5f79/villas-y-suites-real-azteca.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1464254,19.3032213,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>W Mexico City</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/377c5fa8-8f59-4753-8183-2666b00e887e/w-mexico-city.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 5 estrellas<br/>💰 $$$$<br/><br/>📍 Campos Elíseos 252]]></description>
+      <Point>
+        <coordinates>-99.1953773,19.4272927,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Wyndham Garden Mexico City Polanco</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/af393170-45b9-4d90-bb8e-de97502d9802/wyndham-garden-mexico-city-polanco.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.1775919,19.4249988,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Zócalo Central Hotel</name>
+      <description><![CDATA[<img src="https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/tourism-images/hoteles/d4927b96-1d19-4b1b-8054-3de34f6bd411/zocalo-central-hotel.jpg" width="300" style="border-radius: 8px; margin-bottom: 10px;"/><br/>⭐ 4 estrellas<br/>💰 $$$<br/>]]></description>
+      <Point>
+        <coordinates>-99.134525,19.4338384,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

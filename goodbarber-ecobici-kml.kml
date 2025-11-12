@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>EcoBici CDMX - Mundial 2026</name>
+    <description>Estaciones EcoBici en Ciudad de México</description>
+
+    <Placemark>
+      <name>5 de Mayo - Bolívar</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-55<br/>📊 Capacidad: 26<br/>]]></description>
+      <Point>
+        <coordinates>-99.1426654,19.4039388,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Andrés Bello - George Eliot</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-237-238<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.1942977,19.4269264,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Auditorio Nacional</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 40<br/>📍 Paseo de la Reforma 50]]></description>
+      <Point>
+        <coordinates>-99.1949256,19.4248097,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Av. Juárez - Balderas</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-260<br/>📊 Capacidad: 26<br/>]]></description>
+      <Point>
+        <coordinates>-99.14756,19.43517,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Bellas Artes - Eje Central</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: 42<br/>📊 Capacidad: 32<br/>]]></description>
+      <Point>
+        <coordinates>-99.1412,19.4352,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Calzada De Guadalupe</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 35<br/>📍 Calzada de Guadalupe]]></description>
+      <Point>
+        <coordinates>-99.1237377,19.4682949,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Campos Elíseos - Goldsmith</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-451<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.2010509,19.4289951,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Campos Elíseos - La Fontaine</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-228<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.199051,19.427731,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Campos Elíseos - Moliere</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-235-236<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.2027562,19.4296143,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Campos Elíseos-Polanco</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 32<br/>📍 Campos Elíseos]]></description>
+      <Point>
+        <coordinates>-99.1933694,19.4280388,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-029 Reforma - Bucareli</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Reforma - Bucareli]]></description>
+      <Point>
+        <coordinates>-99.1522418,19.4346719,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-041 Reforma - Av. de la República</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 32<br/>📍 Reforma - Av. de la República]]></description>
+      <Point>
+        <coordinates>-99.1452914,19.4388817,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-043 Revillagigedo - Juárez</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Revillagigedo - Juárez]]></description>
+      <Point>
+        <coordinates>-99.1464407,19.4319538,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-048 Independencia - Azueta</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 26<br/>📍 Independencia - Azueta]]></description>
+      <Point>
+        <coordinates>-99.1465854,19.4350041,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-052 Hidalgo - Trujano</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Hidalgo - Trujano]]></description>
+      <Point>
+        <coordinates>-99.1477993,19.4374244,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-055 5 De Mayo - Bolívar</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 32<br/>📍 5 De Mayo - Bolívar]]></description>
+      <Point>
+        <coordinates>-99.1349046,19.4339494,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-065 Marconi - Tacuba</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 32<br/>📍 Marconi - Tacuba]]></description>
+      <Point>
+        <coordinates>-99.1399037,19.4362726,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-082 Independencia - Marroquí</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 Independencia - Marroquí]]></description>
+      <Point>
+        <coordinates>-99.1437891,19.4307097,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-087 Gante - Venustiano Carranza</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Gante - Venustiano Carranza]]></description>
+      <Point>
+        <coordinates>-99.1395588,19.4319211,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-088 2a Cerrada de 5 de Mayo - Palma</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 2a Cerrada de 5 de Mayo - Palma]]></description>
+      <Point>
+        <coordinates>-99.0366964,19.3426039,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-089 República de Guatemala - Monte de Piedad</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 35<br/>📍 República de Guatemala - Monte de Piedad]]></description>
+      <Point>
+        <coordinates>-99.1321677,19.4348911,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-090 José María Pino Suárez - Corregidora</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 32<br/>📍 José María Pino Suárez - Corregidora]]></description>
+      <Point>
+        <coordinates>-99.1323564,19.4322484,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-091 República de Cuba-Allende</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 República de Cuba - Allende]]></description>
+      <Point>
+        <coordinates>-99.1348512,19.4368175,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-092 San Ildefonso-República de Argentina</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 San Ildefonso - República de Argentina]]></description>
+      <Point>
+        <coordinates>-99.1276457,19.4360517,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-093 Palma Norte-República de Cuba</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Palma Norte - República de Cuba]]></description>
+      <Point>
+        <coordinates>-99.1347291,19.4369804,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-094 Lic. Verdad-Moneda</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Lic. Verdad - Moneda]]></description>
+      <Point>
+        <coordinates>-99.1306793,19.4336305,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-095 20 de Noviembre-Venustiano Carranza</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 20 de Noviembre - Venustiano Carranza]]></description>
+      <Point>
+        <coordinates>-99.1342298,19.4274538,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-096 López-Ayuntamiento</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 López - Ayuntamiento]]></description>
+      <Point>
+        <coordinates>-99.1424629,19.4295471,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-097 República de Salvador-Pino Suárez</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 República de Salvador - Pino Suárez]]></description>
+      <Point>
+        <coordinates>-99.1349039,19.429335,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-098 Emilio Dondé-Av. Balderas</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 26<br/>📍 Emilio Dondé - Av. Balderas]]></description>
+      <Point>
+        <coordinates>-99.1487444,19.4303405,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-099 Ernesto Pugibet-Luis Moya</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 Ernesto Pugibet - Luis Moya]]></description>
+      <Point>
+        <coordinates>-99.1432222,19.429588,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-100 20 de Noviembre-Mesones</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 20 de Noviembre - Mesones]]></description>
+      <Point>
+        <coordinates>-99.1339897,19.4280687,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-102 Echeveste-Bolivar</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Echeveste - Bolivar]]></description>
+      <Point>
+        <coordinates>-99.1395829,19.428267,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-104 San Jerónimo-Isabel la Católica</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 32<br/>📍 San Jerónimo - Isabel la Católica]]></description>
+      <Point>
+        <coordinates>-99.1330658,19.4267183,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-260 Av. Juárez-Balderas</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 Av. Juárez - Balderas]]></description>
+      <Point>
+        <coordinates>-99.1477632,19.4353659,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>CE-262 República de Cuba-República de Brasil</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 32<br/>📍 República de Cuba - República de Brasil]]></description>
+      <Point>
+        <coordinates>-99.1336623,19.4368507,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Cerrito Del Tepeyac</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 25<br/>📍 Acceso al Cerrito]]></description>
+      <Point>
+        <coordinates>-99.1140113,19.4907285,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Cineteca Nacional</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Av. México Coyoacán]]></description>
+      <Point>
+        <coordinates>-99.1385,19.3495,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Circuito Mahatma Gandhi - Reforma</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-194<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.1904239,19.4256206,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Constituyentes-Papalote</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 Av. Constituyentes 268]]></description>
+      <Point>
+        <coordinates>-99.1913831,19.4117112,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Coyoacán-Centenario</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Jardín Centenario]]></description>
+      <Point>
+        <coordinates>-99.1625,19.3495,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Cozumel - Puebla</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-038<br/>📊 Capacidad: 25<br/><p>Cerca de restaurantes</p><br/>📍 Cozumel esquina Puebla, Roma Norte, Cuauhtémoc, 06700 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1713679,19.4207383,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Deportivo Tepeyac</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 Deportivo Tepeyac]]></description>
+      <Point>
+        <coordinates>-99.1200213,19.4716575,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>División Del Norte</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 35<br/>📍 Av. División del Norte]]></description>
+      <Point>
+        <coordinates>-99.1545,19.3525,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>EcoBici Embarcadero Belem</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 10<br/>📍 Barrio Belem]]></description>
+      <Point>
+        <coordinates>-99.101617,19.2596489,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>EcoBici Embarcadero Cuemanco</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 15<br/>📍 Anillo Periférico]]></description>
+      <Point>
+        <coordinates>-99.1021725,19.2868829,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>EcoBici Embarcadero Nativitas</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 15<br/>📍 Violeta S/N]]></description>
+      <Point>
+        <coordinates>-99.1018,19.258,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>EcoBici Jardín Botánico</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 10<br/>📍 Parque Ecológico]]></description>
+      <Point>
+        <coordinates>-99.0755,19.288,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>EcoBici Mercado De Plantas</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 12<br/>📍 Madreselva S/N]]></description>
+      <Point>
+        <coordinates>-99.1025,19.257,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>EcoBici Mercado Xochimilco</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 18<br/>📍 Av. Guadalupe I. Ramírez]]></description>
+      <Point>
+        <coordinates>-99.1028,19.2572,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>EcoBici Museo Dolores Olmedo</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 12<br/>📍 Av. México 5843]]></description>
+      <Point>
+        <coordinates>-99.1057,19.2549,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>EcoBici Parque Ecológico</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 18<br/>📍 Periférico Oriente]]></description>
+      <Point>
+        <coordinates>-99.0748,19.2891,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>EcoBici San Bernardino</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 14<br/>📍 Plaza San Bernardino]]></description>
+      <Point>
+        <coordinates>-99.104,19.2575,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>EcoBici Xochimilco Centro</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 20<br/>📍 Plaza Principal]]></description>
+      <Point>
+        <coordinates>-99.1031,19.2574,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Francisco Sosa</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 25<br/>📍 Francisco Sosa]]></description>
+      <Point>
+        <coordinates>-99.168,19.3475,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Frida Kahlo</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 Londres y Allende]]></description>
+      <Point>
+        <coordinates>-99.1628,19.3548,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gandhi-Tamayo</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 Reforma y Gandhi]]></description>
+      <Point>
+        <coordinates>-99.1423348,19.4607762,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>General Anaya</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Av. General Anaya]]></description>
+      <Point>
+        <coordinates>-99.136,19.3595,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hamburgo - Amberes</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-030<br/>📊 Capacidad: 25<br/><p>Centro comercial</p><br/>📍 Hamburgo esquina Amberes, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1654408,19.4259021,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hamburgo - Insurgentes</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-031<br/>📊 Capacidad: 30<br/><p>Esquina importante</p><br/>📍 Hamburgo esquina Insurgentes, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1609233,19.4280438,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Hidalgo - Trujano</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-052<br/>📊 Capacidad: 26<br/>]]></description>
+      <Point>
+        <coordinates>-99.1435707,19.4384225,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Independencia - Azueta</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-048<br/>📊 Capacidad: 24<br/>]]></description>
+      <Point>
+        <coordinates>-99.1466906,19.4344147,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Independencia - Márroquí</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-082<br/>📊 Capacidad: 24<br/>]]></description>
+      <Point>
+        <coordinates>-99.143312,19.4328563,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Insurgentes-Tepeyac</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 32<br/>📍 Av. Insurgentes Norte]]></description>
+      <Point>
+        <coordinates>-99.1220962,19.4855507,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jalapa - Puebla</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-126<br/>📊 Capacidad: 25<br/><p>Zona de bares</p><br/>📍 Jalapa esquina Puebla, Roma Norte, Cuauhtémoc, 06700 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1622148,19.4224113,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jardín Hidalgo</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 28<br/>📍 Plaza Hidalgo]]></description>
+      <Point>
+        <coordinates>-99.1612,19.3508,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>La Villa-Basílica</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 40<br/>📍 Plaza Mariana]]></description>
+      <Point>
+        <coordinates>-99.11837,19.48174,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Lago Mayor Chapultepec</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 24<br/>📍 Lago Mayor]]></description>
+      <Point>
+        <coordinates>-99.1987315,19.4177676,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Lieja-Polanco</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Av. Ejército Nacional y Lieja]]></description>
+      <Point>
+        <coordinates>-99.1748505,19.422183,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Lindavista-Villa</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 32<br/>📍 Av. Insurgentes Norte]]></description>
+      <Point>
+        <coordinates>-99.1324282,19.5037694,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Liverpool - Génova</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-034<br/>📊 Capacidad: 25<br/><p>Zona de compras</p><br/>📍 Liverpool esquina Génova, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.163192,19.4247433,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Londres - Florencia</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-033<br/>📊 Capacidad: 25<br/><p>Zona de restaurantes</p><br/>📍 Londres esquina Florencia, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>11.2576706,43.7699685,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Londres - Sevilla</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-032<br/>📊 Capacidad: 25<br/><p>Centro de Zona Rosa</p><br/>📍 Londres esquina Sevilla, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1702776,19.4225395,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Madero - Isabel la Católica</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: 45<br/>📊 Capacidad: 28<br/>]]></description>
+      <Point>
+        <coordinates>-99.1362593,19.4334639,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Marconî - Tacuba</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-065<br/>📊 Capacidad: 28<br/>]]></description>
+      <Point>
+        <coordinates>-99.1399509,19.4359816,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Metro La Villa</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 38<br/>📍 Metro La Villa-Basílica]]></description>
+      <Point>
+        <coordinates>-99.11837,19.48174,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Miguel Ángel De Quevedo</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 40<br/>📍 Av. Miguel Ángel de Quevedo]]></description>
+      <Point>
+        <coordinates>-99.174,19.3428,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Misterios Norte</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Calzada de los Misterios]]></description>
+      <Point>
+        <coordinates>-99.208552,19.378487,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Moliere-Polanco</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 30<br/>📍 Molière y Homero]]></description>
+      <Point>
+        <coordinates>-99.2017855,19.4333954,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Molino del Rey - Av. Constituyentes</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-711<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.2079066,19.4027468,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Molino del Rey - Glorieta de la Lealtad</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-710<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.1928126,19.4173003,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Montes Urales - Monte Pelvoux</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-454<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.2041693,19.4256099,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo De Antropología</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 32<br/>📍 Reforma y Calzada Gandhi]]></description>
+      <Point>
+        <coordinates>-99.1862786,19.4260032,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Museo Rufino Tamayo</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 26<br/>📍 Reforma y Guillermo González Camarena]]></description>
+      <Point>
+        <coordinates>-99.181716,19.42572,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Oaxaca - Puebla</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-040<br/>📊 Capacidad: 25<br/><p>Zona residencial</p><br/>📍 Oaxaca esquina Puebla, Roma Norte, Cuauhtémoc, 06700 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.133208,19.4326077,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Palacio Nacional - Correo Mayor</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: 89<br/>📊 Capacidad: 26<br/>]]></description>
+      <Point>
+        <coordinates>-99.1313531,19.4328868,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Pedregal - Ferrocarril De Cuernavaca</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-455<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.2192939,19.3135357,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Pedregal - Teapa</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-453<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.2037039,19.4254022,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Plaza Madrid - Medellín</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-047<br/>📊 Capacidad: 25<br/><p>Zona comercial</p><br/>📍 Plaza Madrid esquina Medellín, Roma Norte, Cuauhtémoc, 06700 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-75.5658153,6.2476376,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Pocito</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 26<br/>📍 Capilla del Pocito]]></description>
+      <Point>
+        <coordinates>-99.1828896,19.4545929,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Polanco-Masaryk</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 35<br/>📍 Av. Presidente Masaryk]]></description>
+      <Point>
+        <coordinates>-99.1967724,19.4316765,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Puebla - Medellín</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-039<br/>📊 Capacidad: 25<br/><p>Zona de cafés</p><br/>📍 Puebla esquina Medellín, Roma Norte, Cuauhtémoc, 06700 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-75.5658153,6.2476376,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Av. de la República</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-41<br/>📊 Capacidad: 24<br/>]]></description>
+      <Point>
+        <coordinates>-99.1498741,19.4357242,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Bucareli</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-029<br/>📊 Capacidad: 28<br/>]]></description>
+      <Point>
+        <coordinates>-99.1498108,19.4353182,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Circuito Mahatma Gandhi</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-195<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.193699,19.4259699,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Dublín</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-021<br/>📊 Capacidad: 30<br/><p>Zona hotelera</p><br/>📍 Av. Paseo de la Reforma esquina Dublín, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1723008,19.4243834,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Estocolmo</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-025<br/>📊 Capacidad: 30<br/><p>Zona financiera</p><br/>📍 Av. Paseo de la Reforma esquina Estocolmo, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1662171,19.426443,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Havre</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-027<br/>📊 Capacidad: 30<br/><p>Zona turística</p><br/>📍 Av. Paseo de la Reforma esquina Havre, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1624793,19.4290107,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Manchester</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-022<br/>📊 Capacidad: 30<br/><p>Zona de oficinas</p><br/>📍 Av. Paseo de la Reforma esquina Manchester, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.133208,19.4326077,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Praga</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-023<br/>📊 Capacidad: 30<br/><p>Cerca del Ángel</p><br/>📍 Av. Paseo de la Reforma esquina Praga, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1701199,19.4254092,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Río de Plata</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-014<br/>📊 Capacidad: 30<br/><p>Frente a oficinas</p><br/>📍 Av. Paseo de la Reforma esquina Río de Plata, Cuauhtémoc, 06500 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1730969,19.4247892,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Río Mississippi</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-013<br/>📊 Capacidad: 30<br/><p>Cerca de hoteles</p><br/>📍 Av. Paseo de la Reforma esquina Río Mississippi, Cuauhtémoc, 06500 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1718773,19.4255964,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Río Rhin</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-019<br/>📊 Capacidad: 30<br/><p>Zona empresarial</p><br/>📍 Av. Paseo de la Reforma esquina Río Rhin, Cuauhtémoc, 06500 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1639931,19.429382,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Río Támesis</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-020<br/>📊 Capacidad: 30<br/><p>Frente al Ángel</p><br/>📍 Av. Paseo de la Reforma esquina Río Támesis, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1603992,19.4308699,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Río Tiber</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-017<br/>📊 Capacidad: 30<br/><p>Zona turística</p><br/>📍 Av. Paseo de la Reforma esquina Río Tiber, Cuauhtémoc, 06500 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1680707,19.4277598,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Reforma - Varsovia</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-024<br/>📊 Capacidad: 30<br/><p>Frente a edificios</p><br/>📍 Av. Paseo de la Reforma esquina Varsovia, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.16885,19.42628,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>República de Argentina - Justo Sierra</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: 92<br/>📊 Capacidad: 24<br/>]]></description>
+      <Point>
+        <coordinates>-99.1317303,19.4357078,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>República de Cuba-Allende</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-091<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.137766,19.4374084,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Revillagigedo - Juárez</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-043<br/>📊 Capacidad: 26<br/>]]></description>
+      <Point>
+        <coordinates>-99.1465884,19.4312267,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Rubén Darío - Reforma</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-192-193<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.1913444,19.4257872,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Toledo - Tokio</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-028<br/>📊 Capacidad: 25<br/><p>Zona comercial</p><br/>📍 Toledo esquina Tokio, Juárez, Cuauhtémoc, 06600 Ciudad de México]]></description>
+      <Point>
+        <coordinates>-99.1723917,19.4234805,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Tres Picos - Arquímides</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: CE-234<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.1917345,19.4277911,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Universidad-Copilco</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 32<br/>📍 Av. Universidad]]></description>
+      <Point>
+        <coordinates>-99.175,19.3385,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Villa Guadalupe Centro</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 35<br/>📍 Centro de La Villa]]></description>
+      <Point>
+        <coordinates>-99.1135903,19.4838854,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Viveros-Coyoacán</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>📊 Capacidad: 35<br/>📍 Viveros de Coyoacán]]></description>
+      <Point>
+        <coordinates>-99.1708,19.359,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Zócalo - Monte de Piedad</name>
+      <description><![CDATA[<b>🚲 Estación EcoBici</b><br/>#️⃣ Estación: 88<br/>📊 Capacidad: 30<br/>]]></description>
+      <Point>
+        <coordinates>-99.1333215,19.432642,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

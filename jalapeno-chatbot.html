@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌶️ Jalapeño - ChatBot Mundial 2026</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #2c5530, #1a472a);
+            min-height: 100vh;
+        }
+        .chat-container {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            color: #2c5530;
+            font-size: 24px;
+        }
+        .header p {
+            margin: 5px 0 0 0;
+            color: #666;
+            font-size: 14px;
+        }
+        .messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        .message {
+            margin: 10px 0;
+            padding: 12px 16px;
+            border-radius: 18px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        .user-message {
+            background: #2c5530;
+            color: white;
+            margin-left: auto;
+            text-align: right;
+        }
+        .bot-message {
+            background: #f1f1f1;
+            color: #333;
+            margin-right: auto;
+        }
+        .input-container {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        #messageInput {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+        }
+        #messageInput:focus {
+            border-color: #2c5530;
+        }
+        #sendButton {
+            background: #2c5530;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            min-width: 80px;
+        }
+        #sendButton:hover {
+            background: #1a472a;
+        }
+        #sendButton:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .loading {
+            color: #666;
+            font-style: italic;
+        }
+        .suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0;
+        }
+        .suggestion {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 15px;
+            padding: 6px 12px;
+            font-size: 12px;
+            cursor: pointer;
+            color: #495057;
+        }
+        .suggestion:hover {
+            background: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h1>🌶️ Jalapeño</h1>
+            <p>Tu asistente oficial del Mundial 2026 en CDMX</p>
+        </div>
+        
+        <div class="suggestions">
+            <div class="suggestion" onclick="sendSuggestion('¿Dónde puedo comer tacos en Zona Rosa?')">🌮 Tacos en Zona Rosa</div>
+            <div class="suggestion" onclick="sendSuggestion('¿Qué hoteles recomiendas en Centro Histórico?')">🏨 Hoteles Centro</div>
+            <div class="suggestion" onclick="sendSuggestion('¿Cuáles son los partidos de hoy?')">⚽ Partidos hoy</div>
+            <div class="suggestion" onclick="sendSuggestion('¿Qué lugares visitar en Coyoacán?')">🎨 Turismo Coyoacán</div>
+        </div>
+        
+        <div class="messages" id="messages">
+            <div class="message bot-message">
+                ¡Hola! 👋 Soy Jalapeño, tu asistente oficial del Mundial 2026 en Ciudad de México. 
+                Puedo ayudarte con información sobre partidos, restaurantes, hoteles y lugares turísticos en los 7 corredores de CDMX. 
+                ¿En qué te puedo ayudar? 🌶️
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <input type="text" id="messageInput" placeholder="Escribe tu pregunta aquí..." onkeypress="handleKeyPress(event)">
+            <button id="sendButton" onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        function addMessage(content, isUser = false) {
+            const messages = document.getElementById('messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+            messageDiv.textContent = content;
+            messages.appendChild(messageDiv);
+            messages.scrollTop = messages.scrollHeight;
+        }
+        
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+        
+        function sendSuggestion(text) {
+            document.getElementById('messageInput').value = text;
+            sendMessage();
+        }
+        
+        async function getSupabaseData(query) {
+            try {
+                const response = await fetch(`https://ksiiidnvtktlowlhtebs.supabase.co/rest/v1/${query}`, {
+                    headers: {
+                        'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MDgxMjEzMywiZXhwIjoyMDc2Mzg4MTMzfQ.z2qoL9pYqyFvYzO_wW-WRknxx-fo0Z7o69M-PezTOH0',
+                        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MDgxMjEzMywiZXhwIjoyMDc2Mzg4MTMzfQ.z2qoL9pYqyFvYzO_wW-WRknxx-fo0Z7o69M-PezTOH0'
+                    }
+                });
+                return await response.json();
+            } catch (error) {
+                return null;
+            }
+        }
+        
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const sendButton = document.getElementById('sendButton');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            // Add user message
+            addMessage(message, true);
+            
+            // Clear input and disable button
+            input.value = '';
+            sendButton.disabled = true;
+            sendButton.textContent = 'Enviando...';
+            
+            // Add loading message
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'message bot-message loading';
+            loadingDiv.textContent = 'Jalapeño está pensando... 🤔';
+            document.getElementById('messages').appendChild(loadingDiv);
+            
+            try {
+                // Get context from Supabase if needed
+                let context = '';
+                const lowerMessage = message.toLowerCase();
+                
+                if (lowerMessage.includes('equipo') || lowerMessage.includes('team')) {
+                    const teams = await getSupabaseData('teams?select=name,code&limit=5');
+                    if (teams) context += `Equipos disponibles: ${teams.map(t => t.name).join(', ')}. `;
+                }
+                
+                if (lowerMessage.includes('restaurante') || lowerMessage.includes('comer') || lowerMessage.includes('taco')) {
+                    const restaurants = await getSupabaseData('restaurantes?select=name,corredor&limit=3');
+                    if (restaurants) context += `Restaurantes: ${restaurants.map(r => `${r.name} en ${r.corredor}`).join(', ')}. `;
+                }
+                
+                if (lowerMessage.includes('hotel') || lowerMessage.includes('hospedar')) {
+                    const hotels = await getSupabaseData('hoteles?select=name,corredor&limit=3');
+                    if (hotels) context += `Hoteles: ${hotels.map(h => `${h.name} en ${h.corredor}`).join(', ')}. `;
+                }
+                
+                // Call OpenAI with context
+                const systemPrompt = `Eres Jalapeño, el asistente oficial del Mundial 2026 en Ciudad de México. Tu misión es ayudar a fanáticos y turistas con información sobre: partidos del mundial, restaurantes, hoteles, lugares turísticos en los 7 corredores de CDMX (Zona Rosa, Centro Histórico, Coyoacán, Garibaldi, Xochimilco, Basílica de Guadalupe, Chapultepec). Responde de forma amigable, concisa y útil. Usa 1-2 emojis por respuesta. ${context ? 'Información actual de la base de datos: ' + context : ''}`;
+                
+                const response = await fetch('https://api.openai.com/v1/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer YOUR_OPENAI_API_KEY_HERE',
+                    },
+                    body: JSON.stringify({
+                        model: 'gpt-4',
+                        messages: [
+                            {
+                                role: 'system',
+                                content: systemPrompt
+                            },
+                            {
+                                role: 'user',
+                                content: message
+                            }
+                        ],
+                        temperature: 0.7
+                    })
+                });
+                
+                // Remove loading message
+                loadingDiv.remove();
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    const botMessage = data.choices[0].message.content;
+                    addMessage(botMessage);
+                } else {
+                    addMessage('Lo siento, hubo un problema. ¿Puedes intentar de nuevo? 😅');
+                }
+            } catch (error) {
+                loadingDiv.remove();
+                addMessage('Hubo un error de conexión. Por favor intenta de nuevo. 🔌');
+            }
+            
+            // Re-enable button
+            sendButton.disabled = false;
+            sendButton.textContent = 'Enviar';
+            input.focus();
+        }
+    </script>
+</body>
+</html>

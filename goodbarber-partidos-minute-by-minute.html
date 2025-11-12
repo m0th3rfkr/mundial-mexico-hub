@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidos Mundial 2026</title>
+    <style>
+        :root {
+            --bg: #1a301c;
+            --card: #323232;
+            --text: #fdfdfd;
+            --muted: #f2f2f2;
+            --accent: #962044;
+            --border: rgba(255,255,255,0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 16px;
+        }
+
+        /* HEADER */
+        header {
+            background: rgba(0,0,0,0.3);
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        /* BOTÓN VIVO AHORA */
+        .live-button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            transition: opacity 0.2s;
+        }
+
+        .live-button:active {
+            opacity: 0.8;
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* FILTROS */
+        .filters {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .filter-btn {
+            background: var(--card);
+            color: var(--text);
+            border: 1px solid var(--border);
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-btn.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .filter-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* SELECTOR DE FECHA */
+        .date-selector {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .date-nav-btn {
+            background: transparent;
+            border: none;
+            color: var(--text);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0 12px;
+        }
+
+        .date-nav-btn:active {
+            opacity: 0.6;
+        }
+
+        .current-date {
+            flex: 1;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* LISTA DE PARTIDOS */
+        .matches-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .match-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 16px;
+            transition: transform 0.2s;
+        }
+
+        .match-card:active {
+            transform: scale(0.98);
+        }
+
+        .match-status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .match-status.scheduled {
+            background: rgba(242,242,242,0.1);
+            color: var(--muted);
+        }
+
+        .match-status.live {
+            background: var(--accent);
+            color: white;
+        }
+
+        .match-status.finished {
+            background: rgba(242,242,242,0.2);
+            color: var(--muted);
+        }
+
+        .match-teams {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .team {
+            flex: 1;
+            text-align: center;
+        }
+
+        .team-flag {
+            font-size: 48px;
+            margin-bottom: 8px;
+        }
+
+        .team-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text);
+        }
+
+        .team-code {
+            font-size: 12px;
+            color: var(--muted);
+            opacity: 0.7;
+            margin-top: 4px;
+        }
+
+        .vs {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--muted);
+            opacity: 0.5;
+            margin: 0 16px;
+        }
+
+        .score {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 0 8px;
+        }
+
+        .match-info {
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            font-size: 14px;
+        }
+
+        .info-label {
+            color: var(--muted);
+            opacity: 0.7;
+        }
+
+        .info-value {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        /* PHASE HEADER */
+        .phase-header {
+            background: rgba(150,32,68,0.2);
+            padding: 12px;
+            border-radius: 8px;
+            margin: 16px 0 12px 0;
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--accent);
+        }
+
+        /* LOADING & EMPTY */
+        .loading, .empty {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        .loading {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>⚽ Calendario de Partidos</h1>
+        
+        <!-- Botón Vivo Ahora (solo visible cuando hay partidos en vivo) -->
+        <button id="liveButton" class="live-button" style="display:none;">
+            <span class="live-dot"></span>
+            <span>VIVO AHORA <span id="liveCount">0</span></span>
+        </button>
+
+        <!-- Filtros -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="scheduled">Próximos</button>
+            <button class="filter-btn" data-filter="live">En Vivo</button>
+            <button class="filter-btn" data-filter="finished">Finalizados</button>
+        </div>
+
+        <!-- Selector de Fecha -->
+        <div class="date-selector">
+            <button class="date-nav-btn" id="prevDay">←</button>
+            <div class="current-date" id="currentDate">Hoy</div>
+            <button class="date-nav-btn" id="nextDay">→</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="matchesList" class="matches-list">
+            <div class="loading">Cargando partidos...</div>
+        </div>
+        <div id="emptyState" class="empty" style="display:none;">No hay partidos para esta fecha</div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+        // CONFIGURACIÓN SUPABASE
+        const SUPABASE_URL = 'https://ksiiidnvtktlowlhtebs.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4MTIxMzMsImV4cCI6MjA3NjM4ODEzM30.aNctRZSRaINDV4ehb00848g4Y-70UeFviNbsmS8jQUw';
+        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        // VARIABLES GLOBALES
+        let allMatches = [];
+        let currentFilter = 'all';
+        let currentDate = new Date();
+        const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+        const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+
+        // FLAGS EMOJI POR CÓDIGO DE PAÍS
+        const countryFlags = {
+            'MEX': '🇲🇽', 'USA': '🇺🇸', 'CAN': '🇨🇦', 'ARG': '🇦🇷', 'BRA': '🇧🇷',
+            'GER': '🇩🇪', 'ESP': '🇪🇸', 'FRA': '🇫🇷', 'ENG': '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'ITA': '🇮🇹',
+            'POR': '🇵🇹', 'NED': '🇳🇱', 'BEL': '🇧🇪', 'URU': '🇺🇾', 'COL': '🇨🇴',
+            'CHI': '🇨🇱', 'PER': '🇵🇪', 'ECU': '🇪🇨', 'PAR': '🇵🇾', 'BOL': '🇧🇴',
+            'VEN': '🇻🇪', 'CRC': '🇨🇷', 'HON': '🇭🇳', 'JAM': '🇯🇲', 'PAN': '🇵🇦',
+            'JPN': '🇯🇵', 'KOR': '🇰🇷', 'AUS': '🇦🇺', 'IRN': '🇮🇷', 'SAU': '🇸🇦',
+            'QAT': '🇶🇦', 'EGY': '🇪🇬', 'MAR': '🇲🇦', 'TUN': '🇹🇳', 'CMR': '🇨🇲',
+            'GHA': '🇬🇭', 'NGA': '🇳🇬', 'SEN': '🇸🇳', 'ALG': '🇩🇿', 'KSA': '🇸🇦'
+        };
+
+        // DETECTAR ESTADO DEL PARTIDO
+        function getMatchStatus(match) {
+            const now = new Date();
+            const matchDate = new Date(match.match_date);
+            const matchEnd = new Date(matchDate.getTime() + (120 * 60000)); // +2 horas
+
+            if (now >= matchDate && now <= matchEnd) {
+                return 'live';
+            } else if (now > matchEnd) {
+                return 'finished';
+            } else {
+                return 'scheduled';
+            }
+        }
+
+        // CARGAR PARTIDOS
+        async function loadMatches() {
+            try {
+                const { data, error } = await supabase
+                    .from('matches')
+                    .select(`
+                        *,
+                        home_team:teams!matches_home_team_id_fkey(id, name, code),
+                        away_team:teams!matches_away_team_id_fkey(id, name, code)
+                    `)
+                    .order('match_date', { ascending: true });
+
+                if (error) throw error;
+
+                allMatches = data.map(match => ({
+                    ...match,
+                    status: getMatchStatus(match)
+                }));
+
+                updateLiveButton();
+                renderMatches();
+            } catch (error) {
+                console.error('Error cargando partidos:', error);
+                document.getElementById('matchesList').innerHTML = 
+                    '<div class="empty">Error al cargar partidos</div>';
+            }
+        }
+
+        // ACTUALIZAR BOTÓN VIVO
+        function updateLiveButton() {
+            const liveMatches = allMatches.filter(m => m.status === 'live');
+            const liveButton = document.getElementById('liveButton');
+            const liveCount = document.getElementById('liveCount');
+
+            if (liveMatches.length > 0) {
+                liveButton.style.display = 'inline-flex';
+                liveCount.textContent = liveMatches.length;
+            } else {
+                liveButton.style.display = 'none';
+            }
+        }
+
+        // RENDERIZAR PARTIDOS
+        function renderMatches() {
+            const filtered = allMatches.filter(match => {
+                // Filtro de status
+                if (currentFilter !== 'all' && match.status !== currentFilter) {
+                    return false;
+                }
+
+                // Filtro de fecha
+                const matchDate = new Date(match.match_date);
+                return matchDate.toDateString() === currentDate.toDateString();
+            });
+
+            const matchesList = document.getElementById('matchesList');
+            const emptyState = document.getElementById('emptyState');
+
+            if (filtered.length === 0) {
+                matchesList.innerHTML = '';
+                emptyState.style.display = 'block';
+                return;
+            }
+
+            emptyState.style.display = 'none';
+
+            // Agrupar por fase
+            const grouped = filtered.reduce((acc, match) => {
+                const phase = match.phase || 'General';
+                if (!acc[phase]) acc[phase] = [];
+                acc[phase].push(match);
+                return acc;
+            }, {});
+
+            matchesList.innerHTML = Object.entries(grouped).map(([phase, matches]) => `
+                <div class="phase-header">${phase}</div>
+                ${matches.map(match => createMatchCard(match)).join('')}
+            `).join('');
+        }
+
+        // CREAR CARD DE PARTIDO
+        function createMatchCard(match) {
+            const matchDate = new Date(match.match_date);
+            const homeTeam = match.home_team || { name: 'TBD', code: '???' };
+            const awayTeam = match.away_team || { name: 'TBD', code: '???' };
+
+            const statusLabels = {
+                'scheduled': '📅 Programado',
+                'live': '🔴 EN VIVO',
+                'finished': '✅ Finalizado'
+            };
+
+            return `
+                <div class="match-card">
+                    <div class="match-status ${match.status}">
+                        ${statusLabels[match.status]}
+                    </div>
+                    
+                    <div class="match-teams">
+                        <div class="team">
+                            <div class="team-flag">${countryFlags[homeTeam.code] || '🏳️'}</div>
+                            <div class="team-name">${homeTeam.name}</div>
+                            <div class="team-code">${homeTeam.code}</div>
+                        </div>
+                        
+                        ${match.status === 'live' || match.status === 'finished' ? `
+                            <div class="score">${match.home_score || 0}</div>
+                            <div class="vs">-</div>
+                            <div class="score">${match.away_score || 0}</div>
+                        ` : `
+                            <div class="vs">VS</div>
+                        `}
+                        
+                        <div class="team">
+                            <div class="team-flag">${countryFlags[awayTeam.code] || '🏳️'}</div>
+                            <div class="team-name">${awayTeam.name}</div>
+                            <div class="team-code">${awayTeam.code}</div>
+                        </div>
+                    </div>
+
+                    <div class="match-info">
+                        <div class="info-row">
+                            <span class="info-label">⏰ Hora:</span>
+                            <span class="info-value">${matchDate.toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit' })}</span>
+                        </div>
+                        ${match.stadium ? `
+                        <div class="info-row">
+                            <span class="info-label">🏟️ Estadio:</span>
+                            <span class="info-value">${match.stadium}</span>
+                        </div>
+                        ` : ''}
+                        ${match.city ? `
+                        <div class="info-row">
+                            <span class="info-label">📍 Ciudad:</span>
+                            <span class="info-value">${match.city}</span>
+                        </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        // ACTUALIZAR FECHA DISPLAY
+        function updateDateDisplay() {
+            const today = new Date();
+            const isToday = currentDate.toDateString() === today.toDateString();
+            const display = document.getElementById('currentDate');
+
+            if (isToday) {
+                display.textContent = 'Hoy';
+            } else {
+                display.textContent = `${dayNames[currentDate.getDay()]}, ${currentDate.getDate()} ${monthNames[currentDate.getMonth()]}`;
+            }
+        }
+
+        // EVENT LISTENERS
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.filter;
+                renderMatches();
+            });
+        });
+
+        document.getElementById('liveButton').addEventListener('click', function() {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector('[data-filter="live"]').classList.add('active');
+            currentFilter = 'live';
+            renderMatches();
+        });
+
+        document.getElementById('prevDay').addEventListener('click', function() {
+            currentDate.setDate(currentDate.getDate() - 1);
+            updateDateDisplay();
+            renderMatches();
+        });
+
+        document.getElementById('nextDay').addEventListener('click', function() {
+            currentDate.setDate(currentDate.getDate() + 1);
+            updateDateDisplay();
+            renderMatches();
+        });
+
+        // AUTO-REFRESH CADA 60 SEGUNDOS
+        function startAutoRefresh() {
+            setInterval(() => {
+                console.log('🔄 Auto-refresh: Actualizando estados...');
+                allMatches = allMatches.map(match => ({
+                    ...match,
+                    status: getMatchStatus(match)
+                }));
+                updateLiveButton();
+                renderMatches();
+            }, 60000);
+        }
+
+        // INICIALIZAR
+        updateDateDisplay();
+        loadMatches();
+        startAutoRefresh();
+    </script>
+</body>
+</html>

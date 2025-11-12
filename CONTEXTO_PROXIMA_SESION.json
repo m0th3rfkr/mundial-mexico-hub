@@ -1,0 +1,162 @@
+{
+  "ultima_sesion": "2025-11-10",
+  "proyecto": "Mundial México Hub - WC2025",
+  "plataforma": "GoodBarber + GitHub Pages",
+  
+  "estado_actual": {
+    "github_repo": "m0th3rfkr/corredores-turisticos",
+    "archivos_principales": [
+      "index.html - Menú de 7 corredores con imágenes",
+      "corredor.html - Detalle de corredor con filtros",
+      "place.html - Detalle individual de lugar",
+      "mapa.html - Mapa del corredor"
+    ],
+    "navegacion": "✅ FUNCIONAL - 3 niveles completos",
+    "imagenes": "✅ EN SUPABASE - bucket: imagenes-menu-corredores",
+    "mapas": "✅ CREADOS - EcoBici y Estacionamientos"
+  },
+  
+  "logros_sesion": [
+    "✅ Corregida navegación entre archivos (nombres incorrectos)",
+    "✅ Agregadas imágenes de fondo a menú principal",
+    "✅ Creada sección de mapas interactivos (EcoBici + Parking)",
+    "✅ Optimizado código para compatibilidad (sin ES6)",
+    "✅ Diseño UI/UX mejorado (overlay, centrado, botones)"
+  ],
+  
+  "archivos_github": {
+    "index.html": {
+      "estado": "✅ Actualizado",
+      "cambios": "Imágenes de fondo + overlay verde 0.65",
+      "url_imagenes": "https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/imagenes-menu-corredores/"
+    },
+    "corredor.html": {
+      "estado": "✅ Corregido",
+      "cambios": "Rutas actualizadas: place.html, mapa.html, index.html"
+    },
+    "place.html": {
+      "estado": "✅ Funcional",
+      "cambios": "Sin cambios esta sesión"
+    },
+    "mapa.html": {
+      "estado": "✅ Funcional",
+      "cambios": "Sin cambios esta sesión"
+    }
+  },
+  
+  "nueva_seccion_mapas": {
+    "ubicacion": "GoodBarber Custom Code Section",
+    "nombre": "Ecoboci Home",
+    "funcionalidad": [
+      "Botón 1: Ver EcoBici (127 estaciones)",
+      "Botón 2: Ver Estacionamientos (múltiples)",
+      "Mapas con Leaflet.js + clustering",
+      "Popups con info completa",
+      "UI limpia con título centrado y botón X circular"
+    ],
+    "tecnologias": [
+      "Leaflet.js 1.9.4",
+      "Leaflet MarkerCluster 1.4.1",
+      "Supabase API",
+      "Vanilla JavaScript (ES5 compatible)"
+    ]
+  },
+  
+  "supabase": {
+    "url": "https://ksiiidnvtktlowlhtebs.supabase.co",
+    "anon_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4MTIxMzMsImV4cCI6MjA3NjM4ODEzM30.aNctRZSRaINDV4ehb00848g4Y-70UeFviNbsmS8jQUw",
+    "storage_bucket": "imagenes-menu-corredores",
+    "tablas_activas": [
+      "estaciones_ecobici",
+      "estacionamientos",
+      "restaurantes",
+      "hoteles",
+      "imperdibles"
+    ]
+  },
+  
+  "corredores_turisticos": [
+    {
+      "id": "zona-rosa",
+      "nombre": "Zona Rosa",
+      "emoji": "🌹",
+      "desc": "Cultura y entretenimiento",
+      "uuid": "8aad43fc-9854-40d3-a73b-2558f42d14ad",
+      "imagen": "zona-rosa.jpg"
+    },
+    {
+      "id": "basilica",
+      "nombre": "Basílica",
+      "emoji": "⛪",
+      "desc": "Fe y tradición",
+      "uuid": "b1663b4b-466f-433f-9f8a-9ea2508ad032",
+      "imagen": "basilica.jpg"
+    },
+    {
+      "id": "centro-historico",
+      "nombre": "Centro Histórico",
+      "emoji": "🏛️",
+      "desc": "Corazón de CDMX",
+      "uuid": "1a607716-bad4-4982-ba13-99884c02a730",
+      "imagen": "centro-historico.jpg",
+      "nota": "Necesita más datos según memoria"
+    },
+    {
+      "id": "chapultepec",
+      "nombre": "Chapultepec",
+      "emoji": "🌳",
+      "desc": "Pulmón verde",
+      "uuid": "b90c50e9-027e-4394-ac13-57f29d4bc84f",
+      "imagen": "chapultepec.jpg"
+    },
+    {
+      "id": "coyoacan",
+      "nombre": "Coyoacán",
+      "emoji": "🎨",
+      "desc": "Arte y bohemia",
+      "uuid": "97493529-0625-44c7-a514-0b41cf612903",
+      "imagen": "coyoacan.jpg"
+    },
+    {
+      "id": "garibaldi",
+      "nombre": "Garibaldi",
+      "emoji": "🎺",
+      "desc": "Mariachi",
+      "uuid": "762ff70a-2f15-4422-82ad-96d271b09bd2",
+      "imagen": "garibaldi.jpg"
+    },
+    {
+      "id": "xochimilco",
+      "nombre": "Xochimilco",
+      "emoji": "🚣",
+      "desc": "Trajineras",
+      "uuid": "bc2c91a3-b564-4962-b74d-e13b6b7cb1b3",
+      "imagen": "xochimilco.png"
+    }
+  ],
+  
+  "pendientes": [
+    "Testing completo en móviles",
+    "Validar datos completos en Centro Histórico",
+    "Considerar agregar más mapas (hoteles, restaurantes)",
+    "Optimizar imágenes si hay problemas de carga",
+    "Reunión con Televisa/Alejandro para definir alcance final"
+  ],
+  
+  "proxima_sesion": {
+    "prioridad": [
+      "Revisar feedback de uso en GoodBarber",
+      "Completar datos faltantes",
+      "Preparar demo para stakeholders"
+    ]
+  },
+  
+  "metricas": {
+    "tokens_usados": "159,000 / 190,000",
+    "archivos_modificados": 2,
+    "archivos_nuevos": 1,
+    "imagenes_subidas": 7,
+    "funcionalidades_agregadas": 2,
+    "bugs_resueltos": 7
+  }
+}
