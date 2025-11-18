@@ -1,0 +1,115 @@
+%% DIAGRAMA 2: FLUJO COMPLETO - 7 CORREDORES TURÍSTICOS
+%% Sistema de 3 Niveles con Filtros y Geolocalización
+
+graph TB
+    Start([Usuario en Tab<br/>⭐ 7 CORREDORES])
+    
+    %% NIVEL 1: SELECTOR DE CORREDORES
+    Start --> Level1[NIVEL 1<br/>Selector de Corredores]
+    
+    Level1 --> Header1[🗺️ 7 RUTAS TURÍSTICAS<br/>Descubre la Ciudad de México]
+    
+    Header1 --> Card1[🌹 Zona Rosa<br/>Cultura y entretenimiento<br/>110 lugares]
+    Header1 --> Card2[⛪ Basílica<br/>Fe y tradición<br/>95 lugares]
+    Header1 --> Card3[🏛️ Centro Histórico<br/>Corazón de CDMX<br/>134 lugares]
+    Header1 --> Card4[🎨 Coyoacán<br/>Arte y bohemia<br/>88 lugares]
+    Header1 --> Card5[🎺 Garibaldi<br/>Música y tradición<br/>76 lugares]
+    Header1 --> Card6[🚣 Xochimilco<br/>Naturaleza y trajineras<br/>82 lugares]
+    Header1 --> Card7[🌳 Chapultepec<br/>Bosque y cultura<br/>105 lugares]
+    
+    %% NIVEL 2: DENTRO DEL CORREDOR
+    Card1 --> Level2[NIVEL 2<br/>Detalle Corredor - Zona Rosa]
+    Card2 --> Level2
+    Card3 --> Level2
+    Card4 --> Level2
+    Card5 --> Level2
+    Card6 --> Level2
+    Card7 --> Level2
+    
+    Level2 --> BackBtn[[← Volver a Corredores]]
+    Level2 --> CorredorTitle[🌹 Zona Rosa<br/>Cultura y entretenimiento]
+    
+    CorredorTitle --> Filters[FILTRAR POR CATEGORÍA]
+    
+    Filters --> FilterAll[🗺️ Todos<br/>110 lugares]
+    Filters --> FilterRest[🍽️ Restaurantes<br/>27 lugares]
+    Filters --> FilterHotel[🏨 Hoteles<br/>21 lugares]
+    Filters --> FilterImp[⭐ Imperdibles<br/>18 lugares]
+    Filters --> FilterPark[🅿️ Parking<br/>22 lugares]
+    Filters --> FilterBici[🚲 EcoBici<br/>22 estaciones]
+    
+    FilterAll --> PlaceList[LISTA DE LUGARES<br/>Ordenados por cercanía]
+    FilterRest --> PlaceList
+    FilterHotel --> PlaceList
+    FilterImp --> PlaceList
+    FilterPark --> PlaceList
+    FilterBici --> PlaceList
+    
+    PlaceList --> GPS[📍 Geolocalización GPS<br/>Calcula distancia]
+    GPS --> Sort[ORDER BY distance ASC]
+    
+    PlaceList --> Place1[BAJEL<br/>🍽️ Restaurante<br/>1.2 km<br/>Cocina de autor...]
+    PlaceList --> Place2[Casa Gilardi<br/>⭐ Imperdible<br/>1.1 km<br/>Arquitectura moderna...]
+    PlaceList --> Place3[Hotel Boutique<br/>🏨 Hotel<br/>0.8 km<br/>$$$ Lujo...]
+    PlaceList --> PlaceMore[... más lugares]
+    
+    Level2 --> MapBtn[🗺️ MOSTRAR MAPA<br/>Botón fijo abajo]
+    MapBtn --> MapView[Vista de Mapa<br/>Todos los pins de categoría]
+    
+    %% NIVEL 3: DETALLE DE LUGAR
+    Place1 --> Level3[NIVEL 3<br/>Detalle de Lugar]
+    Place2 --> Level3
+    Place3 --> Level3
+    PlaceMore --> Level3
+    
+    MapView --> PinClick[Click en Pin del Mapa]
+    PinClick --> Level3
+    
+    Level3 --> BackBtn2[[← Volver]]
+    Level3 --> ShareBtn[🔗 Compartir]
+    Level3 --> FavBtn[❤️ Guardar Favorito]
+    
+    Level3 --> PlacePhoto[📸 FOTO PRINCIPAL<br/>1.1 km badge]
+    Level3 --> PlaceName[Casa Gilardi]
+    Level3 --> DirectionsBtn[📍 DIRECCIONES]
+    
+    DirectionsBtn --> GoogleMaps[Abre Google Maps<br/>con ruta desde ubicación actual]
+    
+    Level3 --> PlaceCategory[🎯 arquitectura]
+    Level3 --> PlaceDesc[Descripción:<br/>Obra maestra de arquitectura<br/>moderna mexicana...]
+    Level3 --> PlaceAddress[📍 General León 82,<br/>Miguel Hidalgo]
+    Level3 --> PlaceMap[🗺️ MAPA<br/>Pin en ubicación específica]
+    
+    %% ACCIONES ESPECIALES
+    FavBtn --> FavSystem[(Sistema de Favoritos<br/>Guarda en Supabase)]
+    ShareBtn --> ShareOptions[Compartir en:<br/>WhatsApp/Facebook/X/Copy Link]
+    
+    %% BACKEND
+    Backend[(SUPABASE DATABASE)]
+    Backend --> RestTable[restaurantes<br/>52 registros]
+    Backend --> HotelTable[hoteles<br/>38 registros]
+    Backend --> ImpTable[imperdibles<br/>126 registros]
+    Backend --> ParkTable[estacionamientos<br/>154 registros]
+    Backend --> BiciTable[ecobici<br/>242 estaciones]
+    
+    PlaceList -.Fetch Data.-> Backend
+    MapView -.Fetch Coordinates.-> Backend
+    Level3 -.Fetch Details.-> Backend
+    
+    %% DATOS TÉCNICOS
+    TechInfo[DATOS TÉCNICOS<br/>• 922+ ubicaciones geocoded<br/>• 7 corredores turísticos<br/>• 5 categorías por corredor<br/>• Geolocalización en tiempo real<br/>• Mapas Leaflet.js<br/>• Clustering de markers]
+    
+    %% STYLING
+    classDef nivel1 fill:#93284F,stroke:#2C5530,stroke-width:4px,color:#fff,font-weight:bold
+    classDef nivel2 fill:#2C5530,stroke:#93284F,stroke-width:3px,color:#fff
+    classDef nivel3 fill:#FFD700,stroke:#93284F,stroke-width:3px,color:#333
+    classDef filter fill:#f0f0f0,stroke:#93284F,stroke-width:2px,color:#333
+    classDef backend fill:#e8f4f8,stroke:#2C5530,stroke-width:2px,color:#333
+    classDef action fill:#fff,stroke:#93284F,stroke-width:2px,color:#93284F,stroke-dasharray: 5 5
+    
+    class Level1,Header1 nivel1
+    class Level2,CorredorTitle,PlaceList nivel2
+    class Level3,PlacePhoto,PlaceName,PlaceDesc nivel3
+    class Filters,FilterAll,FilterRest,FilterHotel,FilterImp,FilterPark,FilterBici filter
+    class Backend,RestTable,HotelTable,ImpTable,ParkTable,BiciTable,FavSystem backend
+    class MapBtn,DirectionsBtn,ShareBtn,FavBtn,BackBtn,BackBtn2 action

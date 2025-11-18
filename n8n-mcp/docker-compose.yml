@@ -1,0 +1,11 @@
+services:
+  n8n-mcp-server:
+    build: .
+    container_name: mundial-n8n-mcp
+    ports:
+      - "3000:3000"
+    environment:
+      - N8N_URL=https://mthrfkr.app.n8n.cloud
+      - N8N_API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzMmIyZDA5ZC1lNjY3LTQ0ZjYtOTU2YS04NzM2YTJmNzI1ZTYiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzYzNDg2NzQ4fQ.ef1X5QDcZyAHFSSxh9uKtKPC-bAU_aZoQbXuJSZYuOY
+      - PORT=3000
+    restart: unless-stopped

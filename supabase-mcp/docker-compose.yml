@@ -1,0 +1,8 @@
+services:
+  supabase-mcp-server:
+    build: .
+    container_name: mundial-supabase-mcp
+    environment:
+      - SUPABASE_URL=https://ksiiidnvtktlowlhtebs.supabase.co
+      - SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4MTIxMzMsImV4cCI6MjA3NjM4ODEzM30.aNctRZSRaINDV4ehb00848g4Y-70UeFviNbsmS8jQUw
+    restart: unless-stopped

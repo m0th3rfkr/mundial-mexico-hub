@@ -1,0 +1,165 @@
+%% DIAGRAMA 3: FLUJO COMPLETO - PARTIDOS + EQUIPOS
+%% Sistema Core para Mundial 2026 con Live Matches
+
+graph TB
+    Start([Usuario en Mundial 2026 App])
+    
+    %% SECCIÓN PARTIDOS
+    Start --> PartidosTab[📅 TAB: PARTIDOS]
+    
+    PartidosTab --> MatchScreen[EXPLORAR PARTIDOS<br/>Nivel 1]
+    
+    MatchScreen --> DatePicker[📅 Date Picker<br/>◀ 6 nov 2025 ▶]
+    DatePicker --> DateLogic{Fecha seleccionada}
+    
+    DateLogic --> ShowMatches[Mostrar partidos<br/>de esa fecha]
+    
+    MatchScreen --> LiveDetection{¿Hay partidos<br/>EN VIVO?}
+    LiveDetection -->|SÍ| LiveFilter[🔴 LIVE FILTER<br/>Auto-activa]
+    LiveDetection -->|NO| NoLive[Sin filtro live]
+    
+    LiveFilter --> FilteredList[Lista solo partidos LIVE<br/>Ordenados por fase]
+    NoLive --> AllList[Todos los partidos del día<br/>Ordenados por hora]
+    
+    ShowMatches --> MatchCard1[CARD: Cuartos de Final<br/>Estadio Azteca, CDMX]
+    MatchCard1 --> Match1[🇬🇭 GHA  01:15  MEX 🇲🇽<br/>Ghana vs México<br/>⭐ Favorito]
+    
+    ShowMatches --> MatchCard2[CARD: Semifinal<br/>Estadio BBVA, Monterrey]
+    MatchCard2 --> Match2[🇧🇷 BRA  19:00  ARG 🇦🇷<br/>Brasil vs Argentina]
+    
+    ShowMatches --> MoreMatches[... más partidos]
+    
+    %% DETALLE DE PARTIDO
+    Match1 --> MatchDetail[DETALLE PARTIDO<br/>Nivel 2]
+    Match2 --> MatchDetail
+    MoreMatches --> MatchDetail
+    
+    MatchDetail --> MatchInfo[Información Completa]
+    MatchInfo --> TeamFlags[🇬🇭 Ghana vs México 🇲🇽]
+    MatchInfo --> MatchTime[🕐 Hora: 01:15 CDMX]
+    MatchInfo --> Stadium[🏟️ Estadio Azteca<br/>Ciudad de México]
+    MatchInfo --> Phase[Fase: Cuartos de Final]
+    
+    MatchDetail --> LiveCheck{¿Partido<br/>EN VIVO?}
+    LiveCheck -->|SÍ| LiveBadge[🔴 LIVE<br/>Minuto 67']
+    LiveCheck -->|NO| NoLiveBadge[Próximamente<br/>o Finalizado]
+    
+    LiveBadge --> FutureFeature[FUTURO:<br/>Updates minute-by-minute<br/>desde API-Football]
+    
+    MatchDetail --> TableBtn[Ver Tabla de Grupo]
+    TableBtn --> GroupTable[Tabla de Posiciones<br/>Grupo seleccionado]
+    GroupTable --> BackToMatch[[← Volver a Partido]]
+    
+    MatchDetail --> FavMatch[⭐ Guardar Favorito]
+    FavMatch --> FavDB[(Sistema Favoritos<br/>Supabase)]
+    
+    %% SECCIÓN EQUIPOS
+    Start --> EquiposMenu[⚽ MENÚ → EQUIPOS]
+    
+    EquiposMenu --> TeamScreen[EQUIPOS<br/>Nivel 1]
+    
+    TeamScreen --> TeamFilters[FILTROS CONFEDERACIONES]
+    TeamFilters --> FilterAll[Todos - 32 equipos]
+    TeamFilters --> FilterUEFA[UEFA - Europa]
+    TeamFilters --> FilterCONMEBOL[CONMEBOL - Sudamérica]
+    TeamFilters --> FilterCONCACAF[CONCACAF - Norteamérica]
+    
+    FilterAll --> TeamGrid[GRID 2x2<br/>Lista de Equipos]
+    FilterUEFA --> TeamGrid
+    FilterCONMEBOL --> TeamGrid
+    FilterCONCACAF --> TeamGrid
+    
+    TeamGrid --> Team1[🇩🇪 Alemania GER]
+    TeamGrid --> Team2[🇸🇦 Arabia Saudita KSA]
+    TeamGrid --> Team3[🇩🇿 Argelia ALG]
+    TeamGrid --> Team4[🇦🇷 Argentina ARG]
+    TeamGrid --> Team5[🇦🇺 Australia AUS]
+    TeamGrid --> Team6[🇧🇷 Brasil BRA]
+    TeamGrid --> MoreTeams[... 26 equipos más]
+    
+    %% DETALLE DE EQUIPO
+    Team4 --> TeamDetail[DETALLE EQUIPO<br/>Nivel 2]
+    
+    TeamDetail --> BackToTeams[[← Volver a Equipos]]
+    TeamDetail --> TeamHeader[🇦🇷 Argentina<br/>CONMEBOL • Grupo -]
+    
+    TeamHeader --> PlayerSection[JUGADORES]
+    
+    PlayerSection --> Player1[CARD #4<br/>Carlitos Munguía<br/>📸 Medio - wtfk<br/>⚽ 0  🟥 0]
+    PlayerSection --> Player2[CARD #11<br/>Ángel Di María<br/>📸 Extremo derecho<br/>Rosario Central<br/>⚽ 0  🟥 0]
+    PlayerSection --> Player3[CARD #10<br/>Lionel Messi<br/>📸 Delantero<br/>Inter Miami<br/>⚽ 15  🟥 2]
+    PlayerSection --> MorePlayers[... más jugadores]
+    
+    %% DETALLE DE JUGADOR
+    Player2 --> PlayerDetail[DETALLE JUGADOR<br/>Nivel 3]
+    Player3 --> PlayerDetail
+    
+    PlayerDetail --> BackToTeam[[← Volver al Equipo]]
+    PlayerDetail --> PlayerPhoto[📸 FOTO GRANDE]
+    PlayerDetail --> PlayerName[Ángel Di María]
+    PlayerDetail --> PlayerPos[Extremo derecho]
+    
+    PlayerDetail --> PlayerInfo[INFORMACIÓN]
+    PlayerInfo --> Age[EDAD: 37]
+    PlayerInfo --> Club[CLUB: Rosario Central]
+    PlayerInfo --> Height[ALTURA: 178 cm]
+    PlayerInfo --> Weight[PESO: 70 kg]
+    
+    PlayerDetail --> Stats[ESTADÍSTICAS WC2026]
+    Stats --> Goals[⚽ 0 Goles]
+    Stats --> Assists[🎯 0 Asistencias]
+    Stats --> Minutes[⏱️ 0 Minutos jugados]
+    Stats --> Yellow[🟨 0 Amarillas]
+    Stats --> Red[🟥 0 Rojas]
+    
+    %% BACKEND Y LÓGICA
+    Backend[(SUPABASE DATABASE)]
+    Backend --> MatchesTable[matches<br/>• 64 partidos WC2026<br/>• kick_off_time<br/>• stadium<br/>• phase]
+    Backend --> TeamsTable[teams<br/>• 32 equipos<br/>• confederation<br/>• group<br/>• flag]
+    Backend --> PlayersTable[players<br/>• ~736 jugadores<br/>• team_id<br/>• position<br/>• stats]
+    
+    MatchScreen -.Fetch.-> MatchesTable
+    TeamGrid -.Fetch.-> TeamsTable
+    PlayerSection -.Fetch.-> PlayersTable
+    
+    %% LÓGICA LIVE MATCH
+    LiveLogic[LÓGICA PARTIDO EN VIVO]
+    LiveLogic --> CheckTime{IF match.kick_off_time<br/><= NOW<br/>AND<br/>NOW <= kick_off + 120min}
+    CheckTime -->|TRUE| DisplayLive[Display: 🔴 LIVE badge<br/>Update: Minute counter<br/>Filter: Show in Live filter]
+    CheckTime -->|FALSE| DisplayNormal[Display: Normal<br/>Sin badge live]
+    
+    %% API INTEGRATIONS
+    API[INTEGRACIONES API]
+    API --> APIFootball[API-Football<br/>Live match data<br/>Events/Goals/Cards]
+    API --> FootballData[Football-Data.org<br/>Teams/Players info]
+    API --> ProxyService[Proxy Service<br/>live-service-v2.onrender.com]
+    
+    FutureFeature -.-> ProxyService
+    ProxyService -.-> APIFootball
+    ProxyService -.-> FootballData
+    
+    %% FEATURES ADICIONALES
+    Features[CARACTERÍSTICAS ESPECIALES]
+    Features --> AutoRefresh[Auto-refresh<br/>durante partidos live]
+    Features --> PushNotif[FUTURO: Push notifications<br/>para favoritos]
+    Features --> MinByMin[FUTURO: Min-by-min feed<br/>Goals, cards, substitutions]
+    
+    %% DATOS TÉCNICOS
+    TechData[DATOS TÉCNICOS<br/>• 64 partidos totales WC2026<br/>• 13 partidos en México<br/>• 32 selecciones<br/>• ~736 jugadores<br/>• 3 sedes México: CDMX, GDL, MTY<br/>• Detección live automática<br/>• Filtros por confederación<br/>• Sistema de favoritos<br/>• Integración APIs externas]
+    
+    %% STYLING
+    classDef partidosStyle fill:#93284F,stroke:#2C5530,stroke-width:4px,color:#fff,font-weight:bold
+    classDef equiposStyle fill:#2C5530,stroke:#93284F,stroke-width:4px,color:#fff,font-weight:bold
+    classDef liveStyle fill:#ff0000,stroke:#fff,stroke-width:3px,color:#fff,font-weight:bold
+    classDef detailStyle fill:#FFD700,stroke:#93284F,stroke-width:2px,color:#333
+    classDef backendStyle fill:#e8f4f8,stroke:#2C5530,stroke-width:2px,color:#333
+    classDef apiStyle fill:#f0e6ff,stroke:#93284F,stroke-width:2px,color:#333
+    classDef actionStyle fill:#fff,stroke:#93284F,stroke-width:2px,color:#93284F,stroke-dasharray: 5 5
+    
+    class PartidosTab,MatchScreen,MatchCard1,MatchCard2 partidosStyle
+    class EquiposMenu,TeamScreen,TeamGrid equiposStyle
+    class LiveFilter,LiveBadge,LiveLogic,DisplayLive liveStyle
+    class MatchDetail,TeamDetail,PlayerDetail,MatchInfo,PlayerInfo,Stats detailStyle
+    class Backend,MatchesTable,TeamsTable,PlayersTable,FavDB backendStyle
+    class API,APIFootball,FootballData,ProxyService apiStyle
+    class TableBtn,FavMatch,BackToMatch,BackToTeams,BackToTeam actionStyle

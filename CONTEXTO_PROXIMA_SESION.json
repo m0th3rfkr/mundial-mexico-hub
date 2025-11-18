@@ -1,162 +1,186 @@
 {
-  "ultima_sesion": "2025-11-10",
-  "proyecto": "Mundial México Hub - WC2025",
-  "plataforma": "GoodBarber + GitHub Pages",
-  
+  "fecha_actualizacion": "2025-11-18T19:30:00-06:00",
+  "sesion_anterior": {
+    "fecha": "2025-11-18",
+    "actividades": [
+      "Creación de 3 diagramas Mermaid completos",
+      "Actualización Propuesta Técnica V3.0 sección por sección",
+      "Inventario completo de documentación en Notion",
+      "Bitácora 18 Nov 2025 creada"
+    ],
+    "tokens_utilizados": 125550,
+    "duracion_aproximada": "3 horas"
+  },
   "estado_actual": {
-    "github_repo": "m0th3rfkr/corredores-turisticos",
-    "archivos_principales": [
-      "index.html - Menú de 7 corredores con imágenes",
-      "corredor.html - Detalle de corredor con filtros",
-      "place.html - Detalle individual de lugar",
-      "mapa.html - Mapa del corredor"
-    ],
-    "navegacion": "✅ FUNCIONAL - 3 niveles completos",
-    "imagenes": "✅ EN SUPABASE - bucket: imagenes-menu-corredores",
-    "mapas": "✅ CREADOS - EcoBici y Estacionamientos"
-  },
-  
-  "logros_sesion": [
-    "✅ Corregida navegación entre archivos (nombres incorrectos)",
-    "✅ Agregadas imágenes de fondo a menú principal",
-    "✅ Creada sección de mapas interactivos (EcoBici + Parking)",
-    "✅ Optimizado código para compatibilidad (sin ES6)",
-    "✅ Diseño UI/UX mejorado (overlay, centrado, botones)"
-  ],
-  
-  "archivos_github": {
-    "index.html": {
-      "estado": "✅ Actualizado",
-      "cambios": "Imágenes de fondo + overlay verde 0.65",
-      "url_imagenes": "https://ksiiidnvtktlowlhtebs.supabase.co/storage/v1/object/public/imagenes-menu-corredores/"
+    "mvp": "GoodBarber mobile app FUNCIONANDO",
+    "corredores_turisticos": {
+      "total": 7,
+      "completados": 7,
+      "ubicaciones_geocodificadas": 922,
+      "estado": "100% completo",
+      "requiere_revision": ["Centro Histórico (134 lugares)"]
     },
-    "corredor.html": {
-      "estado": "✅ Corregido",
-      "cambios": "Rutas actualizadas: place.html, mapa.html, index.html"
+    "mundial_2026": {
+      "partidos": "Sección funcional",
+      "equipos": "Estructura lista, pendiente datos oficiales",
+      "live_detection": "Sistema automatizado funcionando",
+      "sedes": ["CDMX", "Guadalajara", "Monterrey"]
     },
-    "place.html": {
-      "estado": "✅ Funcional",
-      "cambios": "Sin cambios esta sesión"
+    "chatbot_ai": {
+      "jalapeno": "Funcionando en GoodBarber",
+      "rag_n8n": "Work in Progress"
     },
-    "mapa.html": {
-      "estado": "✅ Funcional",
-      "cambios": "Sin cambios esta sesión"
+    "integraciones": {
+      "rss_feeds": ["ESPN", "Yahoo Sports", "The Guardian"],
+      "google_maps_api": "Geocoding 100%",
+      "kml_generation": "35+ funciones",
+      "supabase": "ksiiidnvtktlowlhtebs"
     }
   },
-  
-  "nueva_seccion_mapas": {
-    "ubicacion": "GoodBarber Custom Code Section",
-    "nombre": "Ecoboci Home",
-    "funcionalidad": [
-      "Botón 1: Ver EcoBici (127 estaciones)",
-      "Botón 2: Ver Estacionamientos (múltiples)",
-      "Mapas con Leaflet.js + clustering",
-      "Popups con info completa",
-      "UI limpia con título centrado y botón X circular"
-    ],
-    "tecnologias": [
-      "Leaflet.js 1.9.4",
-      "Leaflet MarkerCluster 1.4.1",
-      "Supabase API",
-      "Vanilla JavaScript (ES5 compatible)"
-    ]
+  "stack_tecnologico": {
+    "frontend_mvp": {
+      "nombre": "GoodBarber",
+      "estado": "Implementado y funcionando",
+      "widgets": "8+ HTML personalizados",
+      "features": [
+        "Sistema navegación 3 niveles",
+        "KML feeds para mapas",
+        "Detección LIVE partidos",
+        "Estilo FIFA oficial",
+        "922+ ubicaciones"
+      ]
+    },
+    "frontend_evaluacion": {
+      "nombre": "Lovable (React/TypeScript)",
+      "estado": "En evaluación",
+      "accion": "Prueba de concepto planificada"
+    },
+    "backend": {
+      "supabase": {
+        "project_id": "ksiiidnvtktlowlhtebs",
+        "tablas": 11,
+        "registros": "922+",
+        "edge_functions": "35+",
+        "real_time": "Activo"
+      }
+    },
+    "admin_panel": {
+      "nombre": "Streamlit",
+      "puerto": 8502,
+      "features": [
+        "CRUD completo",
+        "Geocoding automatizado",
+        "Detección duplicados",
+        "Sincronización real-time"
+      ]
+    }
   },
-  
-  "supabase": {
-    "url": "https://ksiiidnvtktlowlhtebs.supabase.co",
-    "anon_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4MTIxMzMsImV4cCI6MjA3NjM4ODEzM30.aNctRZSRaINDV4ehb00848g4Y-70UeFviNbsmS8jQUw",
-    "storage_bucket": "imagenes-menu-corredores",
-    "tablas_activas": [
-      "estaciones_ecobici",
-      "estacionamientos",
-      "restaurantes",
-      "hoteles",
-      "imperdibles"
-    ]
+  "documentacion": {
+    "notion": {
+      "propuesta_tecnica": {
+        "url": "https://www.notion.so/290eaf9b74d480e98649d7b7bee33e7c",
+        "version": "3.0",
+        "ultima_actualizacion": "2025-11-18"
+      },
+      "diagramas_mermaid": {
+        "url": "https://www.notion.so/2aaeaf9b74d4819ba750dbc71fc3459a",
+        "archivos": [
+          "diagrama-1-arquitectura-general.mmd",
+          "diagrama-2-corredores-turisticos.mmd",
+          "diagrama-3-partidos-equipos.mmd"
+        ]
+      },
+      "bitacoras": {
+        "url": "https://www.notion.so/297eaf9b74d48071a41cfef400d9cb0b",
+        "ultima": "2025-11-18",
+        "total": "30+"
+      }
+    },
+    "repositorio": {
+      "github": "https://github.com/m0th3rfkr/mundial-mexico-hub",
+      "readme": "331 líneas",
+      "archivos_clave": [
+        "/admin-panel - Streamlit CMS",
+        "/supabase - Edge Functions",
+        "/scripts - Geocoding y utilidades",
+        "*.html - Widgets GoodBarber",
+        "*.kml - Feeds de mapas"
+      ]
+    }
   },
-  
-  "corredores_turisticos": [
+  "pendientes_criticos": [
     {
-      "id": "zona-rosa",
-      "nombre": "Zona Rosa",
-      "emoji": "🌹",
-      "desc": "Cultura y entretenimiento",
-      "uuid": "8aad43fc-9854-40d3-a73b-2558f42d14ad",
-      "imagen": "zona-rosa.jpg"
+      "item": "Revisar y limpiar datos Centro Histórico",
+      "prioridad": "Alta",
+      "ubicaciones": 134,
+      "accion": "Validar información y eliminar duplicados"
     },
     {
-      "id": "basilica",
-      "nombre": "Basílica",
-      "emoji": "⛪",
-      "desc": "Fe y tradición",
-      "uuid": "b1663b4b-466f-433f-9f8a-9ea2508ad032",
-      "imagen": "basilica.jpg"
+      "item": "Junta Televisa/Alejandro",
+      "prioridad": "Alta",
+      "objetivo": "Definir features finales y alcance",
+      "accion": "Agendar reunión"
     },
     {
-      "id": "centro-historico",
-      "nombre": "Centro Histórico",
-      "emoji": "🏛️",
-      "desc": "Corazón de CDMX",
-      "uuid": "1a607716-bad4-4982-ba13-99884c02a730",
-      "imagen": "centro-historico.jpg",
-      "nota": "Necesita más datos según memoria"
+      "item": "Completar RAG Chatbot n8n",
+      "prioridad": "Media",
+      "estado": "Work in Progress",
+      "accion": "Integrar embeddings vectoriales + OpenAI"
     },
     {
-      "id": "chapultepec",
-      "nombre": "Chapultepec",
-      "emoji": "🌳",
-      "desc": "Pulmón verde",
-      "uuid": "b90c50e9-027e-4394-ac13-57f29d4bc84f",
-      "imagen": "chapultepec.jpg"
+      "item": "Recibir datos oficiales equipos/jugadores",
+      "prioridad": "Media",
+      "fuente": "Televisa o FIFA",
+      "accion": "Solicitar información oficial"
     },
     {
-      "id": "coyoacan",
-      "nombre": "Coyoacán",
-      "emoji": "🎨",
-      "desc": "Arte y bohemia",
-      "uuid": "97493529-0625-44c7-a514-0b41cf612903",
-      "imagen": "coyoacan.jpg"
-    },
-    {
-      "id": "garibaldi",
-      "nombre": "Garibaldi",
-      "emoji": "🎺",
-      "desc": "Mariachi",
-      "uuid": "762ff70a-2f15-4422-82ad-96d271b09bd2",
-      "imagen": "garibaldi.jpg"
-    },
-    {
-      "id": "xochimilco",
-      "nombre": "Xochimilco",
-      "emoji": "🚣",
-      "desc": "Trajineras",
-      "uuid": "bc2c91a3-b564-4962-b74d-e13b6b7cb1b3",
-      "imagen": "xochimilco.png"
+      "item": "Evaluar Lovable vs GoodBarber",
+      "prioridad": "Media",
+      "accion": "Prueba de concepto Lovable",
+      "decision": "Diciembre 2025"
     }
   ],
-  
-  "pendientes": [
-    "Testing completo en móviles",
-    "Validar datos completos en Centro Histórico",
-    "Considerar agregar más mapas (hoteles, restaurantes)",
-    "Optimizar imágenes si hay problemas de carga",
-    "Reunión con Televisa/Alejandro para definir alcance final"
+  "decisiones_pendientes": [
+    "Stack frontend final (GoodBarber vs Lovable)",
+    "Gamificación features",
+    "Notificaciones push",
+    "Modo offline",
+    "Multiidioma (inglés)",
+    "Estrategia contenido editorial"
   ],
-  
+  "metricas_clave": {
+    "ubicaciones_totales": 922,
+    "corredores": 7,
+    "categorias_por_corredor": 5,
+    "widgets_goodbarber": 8,
+    "edge_functions": 35,
+    "rss_feeds": 3,
+    "tablas_db": 11
+  },
   "proxima_sesion": {
-    "prioridad": [
-      "Revisar feedback de uso en GoodBarber",
-      "Completar datos faltantes",
-      "Preparar demo para stakeholders"
+    "prioridad_1": "Revisar Centro Histórico",
+    "prioridad_2": "Continuar RAG Chatbot",
+    "prioridad_3": "Preparar junta Televisa",
+    "revisar_archivos": [
+      "/mnt/project/INSTRUCCIONES_PROYECTO_WC2025.md",
+      "/mnt/project/WORKFLOW_LOVABLE_GITHUB.md",
+      "CONTEXTO_PROXIMA_SESION.json"
+    ],
+    "recordatorios": [
+      "Supabase Project ID: ksiiidnvtktlowlhtebs",
+      "Google Maps API Key: AIzaSyAKa5EIO-wM7sPphCMqCHuXJTAQUREdJzs",
+      "Admin Panel: localhost:8502",
+      "Mundial inicia: 11 Junio 2026"
     ]
   },
-  
-  "metricas": {
-    "tokens_usados": "159,000 / 190,000",
-    "archivos_modificados": 2,
-    "archivos_nuevos": 1,
-    "imagenes_subidas": 7,
-    "funcionalidades_agregadas": 2,
-    "bugs_resueltos": 7
-  }
+  "notas_importantes": [
+    "GoodBarber es el MVP ACTUAL funcionando, no Lovable",
+    "Lovable está EN EVALUACIÓN, no implementado",
+    "Centro Histórico tiene 134 lugares y requiere revisión",
+    "RAG Chatbot con n8n está en progreso, no completado",
+    "Datos de equipos/jugadores pendientes de fuente oficial",
+    "Los 3 diagramas Mermaid están en /Users/tonym/Code/mundial-mexico-hub/",
+    "Propuesta Técnica V3.0 actualizada hoy sección por sección",
+    "Bitácora de hoy creada en Notion"
+  ]
 }

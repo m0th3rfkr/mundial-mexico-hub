@@ -1,0 +1,15 @@
+{
+  "name": "notion-mcp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Notion MCP Server for Mundial 2026 project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "@notionhq/client": "^2.2.15"
+  }
+}

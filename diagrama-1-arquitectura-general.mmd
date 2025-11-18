@@ -1,0 +1,105 @@
+%% DIAGRAMA 1: ARQUITECTURA GENERAL - Mundial México Hub App
+%% Bottom Navigation + 5 Tabs Principales
+
+graph TB
+    Start([App Mundial México Hub<br/>WC2026])
+    
+    Start --> BottomNav[Bottom Navigation Bar<br/>Siempre Visible]
+    
+    BottomNav --> Tab1[🏠 HOME]
+    BottomNav --> Tab2[⭐ 7 CORREDORES]
+    BottomNav --> Tab3[📅 PARTIDOS]
+    BottomNav --> Tab4[🌶️ JALAPEÑO AI]
+    BottomNav --> Tab5[⋯ MENÚ]
+    
+    %% TAB 1: HOME
+    Tab1 --> Home1[Dashboard Principal]
+    Home1 --> HomeCarousel[Carousel Hero<br/>Noticias/Contenido]
+    Home1 --> HomeCounter[⏱️ Contador Regresivo<br/>Patada Inicial]
+    Home1 --> HomeRSS[📰 RSS Yahoo]
+    Home1 --> HomeSections[Secciones<br/>Imperdibles/Eventos/Hoteles]
+    
+    Home1 --> ProfileBtn[👤 Perfil]
+    Home1 --> FavBtn[❤️ Favoritos]
+    
+    ProfileBtn --> Profile[Editar Perfil<br/>Redes Sociales]
+    FavBtn --> FavList[Lista de Favoritos<br/>Mix de contenido]
+    
+    %% TAB 2: 7 CORREDORES
+    Tab2 --> Corr1[Lista 7 Corredores]
+    Corr1 --> CorrDetail[Detalle Corredor<br/>Filtros por Categoría]
+    CorrDetail --> PlaceDetail[Detalle de Lugar<br/>Mapa + Direcciones]
+    
+    Corr1 --> CorrZR[🌹 Zona Rosa]
+    Corr1 --> CorrBas[⛪ Basílica]
+    Corr1 --> CorrCH[🏛️ Centro Histórico]
+    Corr1 --> CorrCoy[🎨 Coyoacán]
+    Corr1 --> CorrGar[🎺 Garibaldi]
+    Corr1 --> CorrXoch[🚣 Xochimilco]
+    Corr1 --> CorrChap[🌳 Chapultepec]
+    
+    %% TAB 3: PARTIDOS
+    Tab3 --> MatchList[Lista de Partidos<br/>📅 Date Picker]
+    MatchList --> LiveFilter[🔴 LIVE Filter<br/>Auto-activa]
+    MatchList --> MatchDetail[Detalle Partido<br/>Equipos/Estadio/Hora]
+    MatchDetail --> MatchTable[Ver Tabla de Grupo]
+    
+    %% TAB 4: JALAPEÑO
+    Tab4 --> Chatbot[Chatbot AI<br/>Powered by OpenAI]
+    Chatbot --> QuickActions[Quick Actions<br/>Hoteles/Restaurantes/Equipos]
+    Chatbot --> ChatHistory[Historial Conversación]
+    Chatbot --> ChatDB[(Consulta Supabase<br/>+ OpenAI API)]
+    
+    %% TAB 5: MENÚ
+    Tab5 --> Menu[Menú Principal]
+    Menu --> MenuEquipos[⚽ Equipos]
+    Menu --> MenuFanFest[🎉 Fan Fest]
+    Menu --> MenuNoticias[📰 Noticias]
+    Menu --> MenuInfo[ℹ️ Info CDMX]
+    Menu --> MenuEmerg[🚨 Emergencias]
+    Menu --> MenuTips[📝 Your Tips]
+    Menu --> MenuLocal[⭐ Local Tips]
+    Menu --> MenuChatRAG[🤖 Chatbot RAG]
+    Menu --> MenuLocatel[💬 Locatel WhatsApp]
+    
+    MenuEquipos --> TeamList[Lista Equipos<br/>UEFA/CONMEBOL/CONCACAF]
+    TeamList --> PlayerList[Lista Jugadores]
+    PlayerList --> PlayerDetail[Detalle Jugador<br/>Stats/Club/Física]
+    
+    MenuFanFest --> EventList[Lista Eventos<br/>Filtros por Categoría]
+    EventList --> EventDetail[Detalle Evento<br/>Fecha/Lugar/Entradas]
+    
+    MenuNoticias --> NewsSource[Selector Fuentes<br/>RSS/ESPN/Guardian]
+    NewsSource --> NewsFeed[Feed Noticias]
+    NewsFeed --> NewsDetail[Detalle Noticia]
+    
+    MenuEmerg --> EmergList[Contactos Emergencia<br/>Policía/Bomberos/Cruz Roja]
+    EmergList --> EmergCall[📞 Llamar<br/>📍 Enviar Ubicación]
+    
+    %% BACKEND
+    Backend[(SUPABASE<br/>PostgreSQL)]
+    Backend --> Teams[teams]
+    Backend --> Matches[matches]
+    Backend --> Players[players]
+    Backend --> Articles[articles]
+    Backend --> Tourism[tourism_data<br/>922+ locations]
+    
+    Corr1 -.-> Backend
+    MatchList -.-> Backend
+    TeamList -.-> Backend
+    EventList -.-> Backend
+    Chatbot -.-> Backend
+    
+    Admin[STREAMLIT ADMIN<br/>Port 8502]
+    Admin -.-> Backend
+    
+    %% STYLING
+    classDef tabStyle fill:#93284F,stroke:#2C5530,stroke-width:3px,color:#fff
+    classDef detailStyle fill:#2C5530,stroke:#93284F,stroke-width:2px,color:#fff
+    classDef backendStyle fill:#FFD700,stroke:#93284F,stroke-width:2px,color:#333
+    classDef actionStyle fill:#f9f9f9,stroke:#93284F,stroke-width:2px,color:#333
+    
+    class Tab1,Tab2,Tab3,Tab4,Tab5 tabStyle
+    class PlaceDetail,MatchDetail,PlayerDetail,EventDetail,NewsDetail detailStyle
+    class Backend,Admin,ChatDB backendStyle
+    class ProfileBtn,FavBtn,LiveFilter,QuickActions,EmergCall actionStyle
