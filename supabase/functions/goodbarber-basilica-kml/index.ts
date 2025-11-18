@@ -92,12 +92,13 @@ ${placemarks}
 
   } catch (error) {
     console.error('Error:', error)
+    const errorMsg = error instanceof Error ? error.message : 'Unknown error'
     return new Response(
       `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>Error</name>
-    <description>Error: ${error.message}</description>
+    <description>Error: ${errorMsg}</description>
   </Document>
 </kml>`,
       { 
