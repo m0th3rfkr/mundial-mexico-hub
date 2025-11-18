@@ -12,159 +12,128 @@ serve(async (req) => {
   }
 
   try {
-    const { query, table, limit = 10, similarity_threshold = 0.7 } = await req.json()
-
-    if (!query) {
-      return new Response(
-        JSON.stringify({ error: 'Query parameter is required' }),
-        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-      )
-    }
-
-    const supabaseClient = createClient(
+    const { message } = await req.json()
+    
+    // Crear cliente Supabase
+    const supabase = createClient(
       Deno.env.get('SUPABASE_URL') ?? '',
-      Deno.env.get('SUPABASE_ANON_KEY') ?? '',
+      Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
     )
 
-    let results = []
-
-    // Query different tables based on the query content
-    if (!table || table === 'teams') {
-      const { data: teams } = await supabaseClient
-        .from('teams')
-        .select('*')
-        .or(`name.ilike.%${query}%,code.ilike.%${query}%,confederation.ilike.%${query}%`)
-        .limit(limit)
-
-      if (teams) {
-        results.push(...teams.map(team => ({
-          type: 'team',
-          data: team,
-          relevance: calculateRelevance(query, [team.name, team.code, team.confederation])
-        })))
-      }
+    // Buscar documentos relevantes con múltiples estrategias
+    let documents = []
+    
+    // Estrategia 1: Búsqueda por palabras clave
+    const keywords = message.toLowerCase()
+    let query = supabase
+      .from('rag_documents')
+      .select('content, metadata')
+    
+    if (keywords.includes('argentina') || keywords.includes('messi')) {
+      query = query.eq('metadata->>country', 'ARG')
+    } else if (keywords.includes('brasil') || keywords.includes('brazil')) {
+      query = query.eq('metadata->>country', 'BRA')
+    } else if (keywords.includes('méxico') || keywords.includes('mexico')) {
+      query = query.eq('metadata->>country', 'MEX')
+    } else if (keywords.includes('francia') || keywords.includes('france')) {
+      query = query.eq('metadata->>country', 'FRA')
+    } else if (keywords.includes('españa') || keywords.includes('spain')) {
+      query = query.eq('metadata->>country', 'ESP')
+    } else if (keywords.includes('qatar 2022') || keywords.includes('campeón') || keywords.includes('ganó')) {
+      query = query.eq('metadata->>champion', true)
+    } else if (keywords.includes('anfitrion') || keywords.includes('host') || keywords.includes('2026')) {
+      query = query.or('metadata->>host.eq.true,metadata->>year.eq.2026')
+    } else {
+      // Búsqueda general por contenido
+      query = query.textSearch('content', message, { type: 'websearch' })
     }
 
-    if (!table || table === 'players') {
-      const { data: players } = await supabaseClient
-        .from('players')
-        .select(`
-          *,
-          teams:team_id (
-            name,
-            code,
-            flag_url
-          )
-        `)
-        .or(`name.ilike.%${query}%,position.ilike.%${query}%,club.ilike.%${query}%`)
-        .limit(limit)
-
-      if (players) {
-        results.push(...players.map(player => ({
-          type: 'player',
-          data: player,
-          relevance: calculateRelevance(query, [player.name, player.position, player.club])
-        })))
-      }
+    const { data: searchResults, error } = await query.limit(5)
+    
+    if (error) {
+      console.error('Error searching documents:', error)
     }
 
-    if (!table || table === 'matches') {
-      const { data: matches } = await supabaseClient
-        .from('matches')
-        .select(`
-          *,
-          home_team:home_team_id (name, code, flag_url),
-          away_team:away_team_id (name, code, flag_url),
-          venue:venue_id (name, city, country)
-        `)
-        .limit(limit)
+    documents = searchResults || []
 
-      if (matches) {
-        results.push(...matches.map(match => ({
-          type: 'match',
-          data: match,
-          relevance: calculateRelevance(query, [
-            match.home_team?.name || '',
-            match.away_team?.name || '',
-            match.venue?.name || ''
-          ])
-        })))
-      }
+    // Si no encontramos nada específico, buscar todos los documentos
+    if (documents.length === 0) {
+      const { data: allDocs } = await supabase
+        .from('rag_documents')
+        .select('content, metadata')
+        .limit(3)
+      documents = allDocs || []
     }
 
-    if (!table || table === 'articles') {
-      const { data: articles } = await supabaseClient
-        .from('articles')
-        .select('*')
-        .or(`title.ilike.%${query}%,content.ilike.%${query}%,tags.ilike.%${query}%`)
-        .limit(limit)
-
-      if (articles) {
-        results.push(...articles.map(article => ({
-          type: 'article',
-          data: article,
-          relevance: calculateRelevance(query, [article.title, article.content, article.tags])
-        })))
-      }
+    // Crear contexto para la IA
+    let context = "Información disponible sobre el Mundial de Fútbol:\n"
+    if (documents.length > 0) {
+      context += documents.map(doc => `- ${doc.content}`).join('\n')
+    } else {
+      context += "- No se encontró información específica en la base de datos."
     }
 
-    // Sort by relevance and apply similarity threshold
-    results = results
-      .filter(result => result.relevance >= similarity_threshold)
-      .sort((a, b) => b.relevance - a.relevance)
-      .slice(0, limit)
+    // Llamar a OpenAI con el contexto
+    const openaiResponse = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${Deno.env.get('OPENAI_API_KEY')}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'gpt-3.5-turbo',
+        messages: [
+          {
+            role: 'system',
+            content: `Eres Jalapeño 🌶️, un asistente experto del Mundial de Fútbol 2026. 
+            Responde en español de forma amigable y concisa usando SOLO la información proporcionada.
+            Si la información está disponible, úsala exactamente como se proporciona.
+            Si no tienes información específica, di que no la tienes pero ofrece ayuda general.
+            
+            ${context}`
+          },
+          {
+            role: 'user',
+            content: message
+          }
+        ],
+        max_tokens: 300,
+        temperature: 0.7
+      })
+    })
+
+    const aiData = await openaiResponse.json()
+    const response = aiData.choices?.[0]?.message?.content || 'Lo siento, no pude procesar tu pregunta.'
 
     return new Response(
-      JSON.stringify({
-        query,
-        results,
-        total: results.length,
-        similarity_threshold
+      JSON.stringify({ 
+        response,
+        debug: {
+          documentsFound: documents.length,
+          searchQuery: message
+        }
       }),
-      { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      { 
+        headers: { 
+          ...corsHeaders, 
+          'Content-Type': 'application/json' 
+        } 
+      }
     )
 
   } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred'
+    console.error('Error:', error)
     return new Response(
-      JSON.stringify({ error: errorMessage }),
-      { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      JSON.stringify({ 
+        response: 'Lo siento, hubo un error. Intenta de nuevo.' 
+      }),
+      { 
+        headers: { 
+          ...corsHeaders, 
+          'Content-Type': 'application/json' 
+        },
+        status: 500 
+      }
     )
   }
 })
-
-function calculateRelevance(query: string, fields: string[]): number {
-  const queryLower = query.toLowerCase()
-  let maxRelevance = 0
-
-  for (const field of fields) {
-    if (!field) continue
-    
-    const fieldLower = field.toLowerCase()
-    
-    // Exact match
-    if (fieldLower === queryLower) {
-      return 1.0
-    }
-    
-    // Contains query
-    if (fieldLower.includes(queryLower)) {
-      const relevance = queryLower.length / fieldLower.length
-      maxRelevance = Math.max(maxRelevance, relevance)
-    }
-    
-    // Word match
-    const queryWords = queryLower.split(' ')
-    const fieldWords = fieldLower.split(' ')
-    const matchingWords = queryWords.filter(word => 
-      fieldWords.some(fieldWord => fieldWord.includes(word))
-    )
-    
-    if (matchingWords.length > 0) {
-      const wordRelevance = matchingWords.length / queryWords.length * 0.8
-      maxRelevance = Math.max(maxRelevance, wordRelevance)
-    }
-  }
-
-  return maxRelevance
-}

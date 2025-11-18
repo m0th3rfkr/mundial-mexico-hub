@@ -1,0 +1,168 @@
+{
+  "name": "Chatbot Mundial RAG + n8n",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "chatbot-mundial-rag",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-trigger",
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://ksiiidnvtktlowlhtebs.supabase.co/rest/v1/rag_documents",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "supabaseApi",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "select",
+              "value": "content,metadata"
+            },
+            {
+              "name": "limit",
+              "value": "5"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4MTIxMzMsImV4cCI6MjA3NjM4ODEzM30.aNctRZSRaINDV4ehb00848g4Y-70UeFviNbsmS8jQUw"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4MTIxMzMsImV4cCI6MjA3NjM4ODEzM30.aNctRZSRaINDV4ehb00848g4Y-70UeFviNbsmS8jQUw"
+            }
+          ]
+        }
+      },
+      "id": "supabase-rag-query",
+      "name": "Supabase RAG Query",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Procesar mensaje del usuario y buscar en RAG\nconst userMessage = $input.first().json.body.message.toLowerCase();\nconst ragDocuments = $input.last().json;\n\n// Filtrar documentos relevantes\nlet relevantDocs = [];\n\nif (ragDocuments && ragDocuments.length > 0) {\n  relevantDocs = ragDocuments.filter(doc => {\n    const content = doc.content.toLowerCase();\n    const metadata = doc.metadata || {};\n    \n    // Búsqueda por palabras clave\n    if (userMessage.includes('argentina') || userMessage.includes('messi')) {\n      return metadata.country === 'ARG';\n    }\n    if (userMessage.includes('brasil') || userMessage.includes('brazil')) {\n      return metadata.country === 'BRA';\n    }\n    if (userMessage.includes('méxico') || userMessage.includes('mexico')) {\n      return metadata.country === 'MEX';\n    }\n    if (userMessage.includes('francia') || userMessage.includes('france')) {\n      return metadata.country === 'FRA';\n    }\n    if (userMessage.includes('españa') || userMessage.includes('spain')) {\n      return metadata.country === 'ESP';\n    }\n    if (userMessage.includes('qatar 2022') || userMessage.includes('campeón') || userMessage.includes('ganó')) {\n      return metadata.champion === true;\n    }\n    if (userMessage.includes('anfitrion') || userMessage.includes('host') || userMessage.includes('2026')) {\n      return metadata.host === true || metadata.year === 2026;\n    }\n    \n    // Búsqueda general en contenido\n    return content.includes(userMessage.split(' ')[0]) || \n           content.includes(userMessage.split(' ')[1]) ||\n           content.includes('mundial') || content.includes('fútbol');\n  });\n}\n\n// Si no encontramos documentos específicos, tomar los primeros 3\nif (relevantDocs.length === 0 && ragDocuments && ragDocuments.length > 0) {\n  relevantDocs = ragDocuments.slice(0, 3);\n}\n\n// Crear contexto para OpenAI\nlet context = \"Información disponible sobre el Mundial de Fútbol:\\n\";\nif (relevantDocs.length > 0) {\n  context += relevantDocs.map(doc => `- ${doc.content}`).join('\\n');\n} else {\n  context += \"- No se encontró información específica en la base de datos.\";\n}\n\nreturn {\n  userMessage: $input.first().json.body.message,\n  context: context,\n  documentsFound: relevantDocs.length\n};"
+      },
+      "id": "process-rag-context",
+      "name": "Process RAG Context",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "model": "gpt-3.5-turbo",
+        "messages": {
+          "messageValues": [
+            {
+              "role": "system",
+              "content": "Eres Jalapeño 🌶️, un asistente experto del Mundial de Fútbol 2026 creado con n8n + RAG. Responde en español de forma amigable y concisa usando SOLO la información proporcionada. Si la información está disponible, úsala exactamente como se proporciona. Si no tienes información específica, di que no la tienes pero ofrece ayuda general.\n\n{{ $json.context }}"
+            },
+            {
+              "role": "user", 
+              "content": "={{ $json.userMessage }}"
+            }
+          ]
+        },
+        "options": {
+          "maxTokens": 300,
+          "temperature": 0.7
+        }
+      },
+      "id": "openai-chat",
+      "name": "OpenAI Chat",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.3,
+      "position": [900, 300],
+      "credentials": {
+        "openAiApi": {
+          "id": "tu_openai_credential_id",
+          "name": "OpenAI API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": {
+          "response": "={{ $json.message.content }}",
+          "source": "n8n + RAG",
+          "documentsFound": "={{ $('Process RAG Context').first().json.documentsFound }}"
+        }
+      },
+      "id": "respond-webhook",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1120, 300]
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Supabase RAG Query",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Supabase RAG Query": {
+      "main": [
+        [
+          {
+            "node": "Process RAG Context",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process RAG Context": {
+      "main": [
+        [
+          {
+            "node": "OpenAI Chat",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-11-18T20:12:00.000Z",
+  "versionId": "1"
+}
