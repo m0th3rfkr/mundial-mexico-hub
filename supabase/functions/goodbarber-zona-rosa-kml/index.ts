@@ -97,7 +97,7 @@ ${placemarks}
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>Error</name>
-    <description>Error: ${error.message}</description>
+    <description>Error: ${error instanceof Error ? error.message : "Unknown error"}</description>
   </Document>
 </kml>`,
       { 
