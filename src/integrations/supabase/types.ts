@@ -26,6 +26,7 @@ export type Database = {
           is_featured: boolean | null
           published_at: string | null
           slug: string
+          source_url: string | null
           tags: string[] | null
           title: string
           updated_at: string | null
@@ -42,6 +43,7 @@ export type Database = {
           is_featured?: boolean | null
           published_at?: string | null
           slug: string
+          source_url?: string | null
           tags?: string[] | null
           title: string
           updated_at?: string | null
@@ -58,6 +60,7 @@ export type Database = {
           is_featured?: boolean | null
           published_at?: string | null
           slug?: string
+          source_url?: string | null
           tags?: string[] | null
           title?: string
           updated_at?: string | null
@@ -122,6 +125,27 @@ export type Database = {
           slug?: string
           updated_at?: string | null
           zoom_level?: number | null
+        }
+        Relationships: []
+      }
+      documents: {
+        Row: {
+          content: string | null
+          embedding: string | null
+          id: number
+          metadata: Json | null
+        }
+        Insert: {
+          content?: string | null
+          embedding?: string | null
+          id?: number
+          metadata?: Json | null
+        }
+        Update: {
+          content?: string | null
+          embedding?: string | null
+          id?: number
+          metadata?: Json | null
         }
         Relationships: []
       }
@@ -934,6 +958,66 @@ export type Database = {
           },
         ]
       }
+      news: {
+        Row: {
+          author: string | null
+          categories: string[] | null
+          content: string | null
+          created_at: string | null
+          description: string | null
+          id: string
+          image_url: string | null
+          is_featured: boolean | null
+          is_published: boolean | null
+          link: string
+          published_at: string
+          source: string | null
+          thumbnail_url: string | null
+          title: string
+          updated_at: string | null
+          video_url: string | null
+          view_count: number | null
+        }
+        Insert: {
+          author?: string | null
+          categories?: string[] | null
+          content?: string | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          is_featured?: boolean | null
+          is_published?: boolean | null
+          link: string
+          published_at: string
+          source?: string | null
+          thumbnail_url?: string | null
+          title: string
+          updated_at?: string | null
+          video_url?: string | null
+          view_count?: number | null
+        }
+        Update: {
+          author?: string | null
+          categories?: string[] | null
+          content?: string | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          is_featured?: boolean | null
+          is_published?: boolean | null
+          link?: string
+          published_at?: string
+          source?: string | null
+          thumbnail_url?: string | null
+          title?: string
+          updated_at?: string | null
+          video_url?: string | null
+          view_count?: number | null
+        }
+        Relationships: []
+      }
       players: {
         Row: {
           assists: number | null
@@ -1391,6 +1475,15 @@ export type Database = {
     }
     Functions: {
       calculate_age: { Args: { birth_date: string }; Returns: number }
+      match_documents: {
+        Args: { filter?: Json; match_count?: number; query_embedding: string }
+        Returns: {
+          content: string
+          id: number
+          metadata: Json
+          similarity: number
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never
