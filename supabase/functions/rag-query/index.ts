@@ -12,13 +12,52 @@ serve(async (req) => {
   }
 
   try {
-    const { message } = await req.json()
+    const { message, action } = await req.json()
     
     // Crear cliente Supabase
     const supabase = createClient(
       Deno.env.get('SUPABASE_URL') ?? '',
       Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
     )
+
+    // Generar embeddings para todos los documentos
+    if (action === 'generate_embeddings') {
+      const { data: documents } = await supabase
+        .from('rag_documents')
+        .select('id, content')
+
+      let processed = 0
+      for (const doc of documents || []) {
+        const embeddingResponse = await fetch('https://api.openai.com/v1/embeddings', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${Deno.env.get('OPENAI_API_KEY')}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            model: 'text-embedding-ada-002',
+            input: doc.content,
+          }),
+        })
+
+        const embeddingData = await embeddingResponse.json()
+        const embedding = embeddingData.data[0].embedding
+
+        await supabase
+          .from('rag_embeddings')
+          .upsert({
+            document_id: doc.id,
+            embedding: embedding
+          })
+        
+        processed++
+      }
+
+      return new Response(
+        JSON.stringify({ response: `✅ Embeddings generados para ${processed} documentos` }),
+        { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
 
     // Buscar documentos relevantes con múltiples estrategias
     let documents = []
