@@ -62,6 +62,6 @@ ${placemarks}
 </kml>`
     return new Response(kml, { headers: corsHeaders })
   } catch (error) {
-    return new Response(`<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Error</name><description>Error: ${error.message}</description></Document></kml>`, { status: 500, headers: corsHeaders })
+    return new Response(`<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Error</name><description>Error: ${error instanceof Error ? error.message : "Unknown error"}</description></Document></kml>`, { status: 500, headers: corsHeaders })
   }
 })
