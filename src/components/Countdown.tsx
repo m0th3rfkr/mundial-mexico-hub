@@ -33,13 +33,13 @@ const Countdown = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
       {timeUnits.map((unit) => (
-        <Card key={unit.label} className="p-6 text-center bg-gradient-to-br from-card to-muted/50 border-2 hover:border-accent transition-all hover:scale-105">
-          <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        <Card key={unit.label} className="p-3 text-center bg-gradient-to-br from-card to-muted/50 border-2 hover:border-accent transition-all hover:scale-105">
+          <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             {unit.value}
           </div>
-          <div className="text-sm text-muted-foreground mt-2 uppercase tracking-wider">
+          <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">
             {unit.label}
           </div>
         </Card>
