@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { MapPin, Calendar, Newspaper, ChevronRight, Trophy, Utensils, Bookmark } from "lucide-react";
+import { MapPin, Calendar, Newspaper, ChevronRight, Trophy, Utensils, Bookmark, Bed } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -23,6 +23,7 @@ const Index = () => {
   const [articles, setArticles] = useState<any[]>([]);
   const [rssArticles, setRssArticles] = useState<any[]>([]);
   const [restaurants, setRestaurants] = useState<any[]>([]);
+  const [hotels, setHotels] = useState<any[]>([]);
   const [events] = useState([
     {
       id: "1",
@@ -158,6 +159,15 @@ const Index = () => {
         .order("destacado", { ascending: false })
         .limit(6);
       if (restaurantsData) setRestaurants(restaurantsData);
+
+      // Load hotels
+      const { data: hotelsData } = await supabase
+        .from("hoteles")
+        .select("id, nombre, imagen_principal_url, latitud, longitud, destacado")
+        .eq("activo", true)
+        .order("destacado", { ascending: false })
+        .limit(6);
+      if (hotelsData) setHotels(hotelsData);
     } catch (error) {
       console.error("Error loading data:", error);
     }
@@ -432,6 +442,68 @@ const Index = () => {
                 );
               })}
             </div>
+          </div>
+        </section>
+
+        {/* Hoteles */}
+        <section className="py-12">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-3">
+                <Bed className="h-6 w-6 text-primary" />
+                <h2 className="text-2xl md:text-3xl font-bold">Hoteles</h2>
+              </div>
+              <Link to="/tourism">
+                <Button variant="ghost" size="sm" className="gap-2">
+                  Ver todos <ChevronRight className="h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+            
+            <Card className="bg-[#962044] border-0 overflow-hidden">
+              <CardContent className="p-0">
+                {hotels.map((hotel, index) => {
+                  const distances = ["886 m", "1.2 km", "1.5 km", "2.1 km", "750 m", "3.2 km"];
+                  const distance = distances[index % distances.length];
+                  
+                  return (
+                    <div key={hotel.id}>
+                      <div className="flex items-center gap-4 p-4 hover:bg-white/5 transition-colors cursor-pointer">
+                        {/* Hotel Image */}
+                        <div className="relative flex-shrink-0 w-[120px] h-[80px] rounded-lg overflow-hidden">
+                          <div 
+                            className="absolute inset-0 bg-cover bg-center"
+                            style={{ 
+                              backgroundImage: hotel.imagen_principal_url 
+                                ? `url(${hotel.imagen_principal_url})` 
+                                : 'url(https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400)'
+                            }}
+                          />
+                          {/* Distance Badge */}
+                          <div className="absolute bottom-2 left-2">
+                            <Badge className="bg-white/90 text-foreground border-0 backdrop-blur-sm text-xs font-semibold">
+                              {distance}
+                            </Badge>
+                          </div>
+                        </div>
+                        
+                        {/* Hotel Name */}
+                        <div className="flex-1">
+                          <h3 className="text-white font-semibold text-base md:text-lg line-clamp-2">
+                            {hotel.nombre}
+                          </h3>
+                        </div>
+                      </div>
+                      
+                      {/* Divider - not for last item */}
+                      {index < hotels.length - 1 && (
+                        <div className="h-px bg-white/20 mx-4" />
+                      )}
+                    </div>
+                  );
+                })}
+              </CardContent>
+            </Card>
           </div>
         </section>
 
