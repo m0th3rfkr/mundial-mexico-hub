@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { MapPin, Calendar, Newspaper, ChevronRight, Trophy, Utensils, Bookmark, Bed } from "lucide-react";
+import { MapPin, Calendar, Newspaper, ChevronRight, Trophy, Utensils, Bookmark, Bed, Bike, ParkingCircle } from "lucide-react";
+import { MapModal } from "@/components/MapModal";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -24,6 +25,8 @@ const Index = () => {
   const [rssArticles, setRssArticles] = useState<any[]>([]);
   const [restaurants, setRestaurants] = useState<any[]>([]);
   const [hotels, setHotels] = useState<any[]>([]);
+  const [isMapOpen, setIsMapOpen] = useState(false);
+  const [mapType, setMapType] = useState<"ecobici" | "estacionamientos">("ecobici");
   const [events] = useState([
     {
       id: "1",
@@ -507,6 +510,42 @@ const Index = () => {
           </div>
         </section>
 
+        {/* EcoBici / Estacionamientos */}
+        <section className="py-12">
+          <div className="container mx-auto px-4">
+            <Card className="bg-[#006847] border-0">
+              <CardContent className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <Button
+                    variant="secondary"
+                    size="lg"
+                    className="w-full bg-white hover:bg-white/90 text-[#006847] font-semibold text-lg h-14"
+                    onClick={() => {
+                      setMapType("ecobici");
+                      setIsMapOpen(true);
+                    }}
+                  >
+                    <Bike className="mr-2 h-5 w-5" />
+                    Ver EcoBici
+                  </Button>
+                  <Button
+                    variant="secondary"
+                    size="lg"
+                    className="w-full bg-white hover:bg-white/90 text-[#006847] font-semibold text-lg h-14"
+                    onClick={() => {
+                      setMapType("estacionamientos");
+                      setIsMapOpen(true);
+                    }}
+                  >
+                    <ParkingCircle className="mr-2 h-5 w-5" />
+                    Ver Estacionamientos
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Partidos Destacados */}
         <section className="py-12 bg-card/50">
           <div className="container mx-auto px-4">
@@ -619,6 +658,12 @@ const Index = () => {
       </main>
 
       <BottomNav />
+      
+      <MapModal 
+        isOpen={isMapOpen}
+        onClose={() => setIsMapOpen(false)}
+        mapType={mapType}
+      />
     </div>
   );
 };
