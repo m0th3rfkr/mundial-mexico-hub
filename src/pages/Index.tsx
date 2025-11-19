@@ -15,7 +15,6 @@ import MatchCard from "@/components/cards/MatchCard";
 import EventCard from "@/components/cards/EventCard";
 import { supabase } from "@/integrations/supabase/client";
 import { Link } from "react-router-dom";
-import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
   const [routes, setRoutes] = useState<any[]>([]);
@@ -151,14 +150,7 @@ const Index = () => {
       <main className="pt-16">
         {/* Hero Carousel */}
         <section className="relative">
-          <Carousel
-            plugins={[
-              Autoplay({
-                delay: 5000,
-              }),
-            ]}
-            className="w-full"
-          >
+          <Carousel className="w-full">
             <CarouselContent>
               {heroSlides.map((slide) => (
                 <CarouselItem key={slide.id}>
