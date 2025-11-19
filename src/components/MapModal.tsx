@@ -160,43 +160,42 @@ export const MapModal = ({ isOpen, onClose, mapType }: MapModalProps) => {
       </div>
 
       {/* Map */}
-      {!loading && markers.length > 0 && (
-        <MapContainer
-          center={[19.4326, -99.1332]} // Mexico City center
-          zoom={12}
-          style={{ height: "100%", width: "100%" }}
-          className="z-0"
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          {markers.map((marker) => (
-            <Marker
-              key={marker.id}
-              position={[marker.latitud, marker.longitud]}
-              icon={createCustomIcon()}
-            >
-              <Popup>
-                <div className="p-2">
-                  <h3 className="font-bold text-sm mb-1">{marker.nombre}</h3>
-                  {marker.direccion && (
-                    <p className="text-xs text-muted-foreground mb-1">{marker.direccion}</p>
-                  )}
-                  {marker.capacidad_total && (
-                    <p className="text-xs">
-                      <strong>Capacidad:</strong> {marker.capacidad_total}
-                    </p>
-                  )}
-                  {marker.descripcion && (
-                    <p className="text-xs mt-1">{marker.descripcion}</p>
-                  )}
-                </div>
-              </Popup>
-            </Marker>
-          ))}
-        </MapContainer>
-      )}
+      <MapContainer
+        center={[19.4326, -99.1332]} // Mexico City center
+        zoom={12}
+        style={{ height: "100%", width: "100%", position: "absolute", top: 0, left: 0 }}
+        className="z-0"
+        key={`${mapType}-${isOpen}`}
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        {!loading && markers.map((marker) => (
+          <Marker
+            key={marker.id}
+            position={[marker.latitud, marker.longitud]}
+            icon={createCustomIcon()}
+          >
+            <Popup>
+              <div className="p-2">
+                <h3 className="font-bold text-sm mb-1">{marker.nombre}</h3>
+                {marker.direccion && (
+                  <p className="text-xs text-muted-foreground mb-1">{marker.direccion}</p>
+                )}
+                {marker.capacidad_total && (
+                  <p className="text-xs">
+                    <strong>Capacidad:</strong> {marker.capacidad_total}
+                  </p>
+                )}
+                {marker.descripcion && (
+                  <p className="text-xs mt-1">{marker.descripcion}</p>
+                )}
+              </div>
+            </Popup>
+          </Marker>
+        ))}
+      </MapContainer>
 
       {loading && (
         <div className="absolute inset-0 flex items-center justify-center bg-background/80 z-[10000]">
