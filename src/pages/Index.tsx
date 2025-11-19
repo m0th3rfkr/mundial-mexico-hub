@@ -21,6 +21,7 @@ const Index = () => {
   const [routes, setRoutes] = useState<any[]>([]);
   const [matches, setMatches] = useState<any[]>([]);
   const [articles, setArticles] = useState<any[]>([]);
+  const [rssArticles, setRssArticles] = useState<any[]>([]);
   const [events] = useState([
     {
       id: "1",
@@ -139,6 +140,15 @@ const Index = () => {
         .order("published_at", { ascending: false })
         .limit(3);
       if (articlesData) setArticles(articlesData);
+
+      // Load RSS articles for horizontal scroll
+      const { data: rssData } = await supabase
+        .from("articles")
+        .select("id, title, excerpt, cover_image_url, published_at")
+        .eq("is_featured", true)
+        .order("published_at", { ascending: false })
+        .limit(6);
+      if (rssData) setRssArticles(rssData);
     } catch (error) {
       console.error("Error loading data:", error);
     }
@@ -212,6 +222,68 @@ const Index = () => {
               </Link>
             </CardContent>
           </Card>
+        </section>
+
+        {/* RSS Yahoo News - Horizontal Scroll */}
+        <section className="py-12 mt-6">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold">RSS Yahoo</h2>
+              <Link to="/news">
+                <Button variant="ghost" size="sm" className="gap-2">
+                  Ver todas <ChevronRight className="h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+            
+            <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
+              {rssArticles.map((article) => (
+                <Card key={article.id} className="flex-none w-[300px] snap-start overflow-hidden hover:shadow-xl transition-all cursor-pointer">
+                  <div className="relative h-48 overflow-hidden">
+                    <div 
+                      className="absolute inset-0 bg-cover bg-center"
+                      style={{ 
+                        backgroundImage: article.cover_image_url 
+                          ? `url(${article.cover_image_url})` 
+                          : 'url(https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800)'
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  </div>
+                  <CardContent className="p-4">
+                    <p className="text-xs text-muted-foreground mb-2">
+                      {article.published_at ? new Date(article.published_at).toLocaleDateString('es-MX', { 
+                        year: 'numeric', 
+                        month: 'short', 
+                        day: 'numeric' 
+                      }) : "Próximamente"}
+                    </p>
+                    <h3 className="font-bold text-base mb-2 line-clamp-2">
+                      {article.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
+                      {article.excerpt || "Lee más sobre esta noticia"}
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <Link to={`/news/${article.id}`}>
+                        <Button variant="link" className="p-0 h-auto text-primary">
+                          Leer más →
+                        </Button>
+                      </Link>
+                      <Button 
+                        variant="ghost" 
+                        size="sm" 
+                        className="h-8 w-8 p-0"
+                        onClick={() => console.log("Saved:", article.id)}
+                      >
+                        <Newspaper className="h-4 w-4" />
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* Próximos Eventos - Horizontal Scroll */}
