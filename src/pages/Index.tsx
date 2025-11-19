@@ -1,8 +1,13 @@
 import { useState, useEffect } from "react";
-import { MapPin, Calendar, Newspaper, ChevronRight } from "lucide-react";
+import { MapPin, Calendar, Newspaper, ChevronRight, Trophy } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 import Navbar from "@/components/Navbar";
 import BottomNav from "@/components/BottomNav";
 import Countdown from "@/components/Countdown";
@@ -10,6 +15,7 @@ import MatchCard from "@/components/cards/MatchCard";
 import EventCard from "@/components/cards/EventCard";
 import { supabase } from "@/integrations/supabase/client";
 import { Link } from "react-router-dom";
+import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
   const [routes, setRoutes] = useState<any[]>([]);
@@ -44,6 +50,33 @@ const Index = () => {
       category: "Gastronomía"
     }
   ]);
+
+  const heroSlides = [
+    {
+      id: 1,
+      title: "Descubre la CDMX",
+      subtitle: "Explora lo mejor de la capital",
+      image: "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=1200",
+      buttonText: "RUTAS TURÍSTICAS",
+      buttonLink: "/tourism"
+    },
+    {
+      id: 2,
+      title: "Mundial 2026",
+      subtitle: "Vive la experiencia del fútbol",
+      image: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1200",
+      buttonText: "VER PARTIDOS",
+      buttonLink: "/matches"
+    },
+    {
+      id: 3,
+      title: "Equipos del Mundo",
+      subtitle: "Conoce a las selecciones participantes",
+      image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200",
+      buttonText: "VER EQUIPOS",
+      buttonLink: "/teams"
+    }
+  ];
 
   useEffect(() => {
     loadData();
@@ -116,27 +149,73 @@ const Index = () => {
       <Navbar />
       
       <main className="pt-16">
-        {/* Hero Section with Countdown */}
-        <section className="relative h-[70vh] min-h-[600px] overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=2000')] bg-cover bg-center" />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-secondary/90 to-accent/85" />
-          
-          <div className="container mx-auto px-4 h-full relative z-10 flex flex-col items-center justify-center text-center text-white">
-            <Badge className="mb-4 bg-accent text-accent-foreground border-0 px-6 py-2 text-sm">
-              Mundial de Fútbol 2026
-            </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold mb-4">
-              México Host
-            </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-2xl opacity-90">
-              Descubre rutas turísticas, partidos y eventos del Mundial 2026
-            </p>
-            <Countdown />
-          </div>
+        {/* Hero Carousel */}
+        <section className="relative">
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}
+            className="w-full"
+          >
+            <CarouselContent>
+              {heroSlides.map((slide) => (
+                <CarouselItem key={slide.id}>
+                  <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
+                    <div 
+                      className="absolute inset-0 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${slide.image})` }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+                    
+                    <div className="container mx-auto px-4 h-full relative z-10 flex flex-col items-center justify-center text-center text-white">
+                      <h2 className="text-4xl md:text-6xl font-bold mb-4">
+                        {slide.title}
+                      </h2>
+                      <p className="text-lg md:text-xl mb-8 opacity-90">
+                        {slide.subtitle}
+                      </p>
+                      <Link to={slide.buttonLink}>
+                        <Button 
+                          size="lg" 
+                          className="bg-[#006847] hover:bg-[#00854d] text-white font-bold px-8 py-6 text-base rounded-full"
+                        >
+                          {slide.buttonText}
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </section>
+
+        {/* Countdown Card - Burgundy Style */}
+        <section className="container mx-auto px-4 -mt-16 relative z-20">
+          <Card className="overflow-hidden bg-[#962044] border-0 shadow-2xl">
+            <CardContent className="p-8 text-center text-white">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Trophy className="h-8 w-8 text-yellow-400" />
+                <h3 className="text-2xl md:text-3xl font-bold">PATADA INICIAL</h3>
+              </div>
+              <p className="text-lg mb-6 opacity-90">Faltan</p>
+              <Countdown />
+              <Link to="/matches">
+                <Button 
+                  variant="link" 
+                  className="text-yellow-400 hover:text-yellow-300 mt-6 text-lg font-semibold"
+                >
+                  Ver Inauguración →
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
         </section>
 
         {/* Próximos Eventos - Horizontal Scroll */}
-        <section className="py-12 bg-card/50">
+        <section className="py-12 bg-card/50 mt-12">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl md:text-3xl font-bold">Próximos Eventos</h2>
