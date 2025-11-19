@@ -222,7 +222,7 @@ const Index = () => {
         </section>
 
         {/* Countdown Card - Burgundy Style */}
-        <section className="container mx-auto px-4 -mt-12 relative z-20">
+        <section className="container mx-auto px-4 mt-8 relative z-20">
           <Card className="overflow-hidden bg-[#962044] border-0 shadow-2xl">
             <CardContent className="p-4 text-center text-white">
               <div className="flex items-center justify-center gap-2 mb-3">
