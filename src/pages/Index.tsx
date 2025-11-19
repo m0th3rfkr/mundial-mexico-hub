@@ -145,7 +145,6 @@ const Index = () => {
       const { data: rssData } = await supabase
         .from("articles")
         .select("id, title, excerpt, cover_image_url, published_at")
-        .eq("is_featured", true)
         .order("published_at", { ascending: false })
         .limit(6);
       if (rssData) setRssArticles(rssData);
