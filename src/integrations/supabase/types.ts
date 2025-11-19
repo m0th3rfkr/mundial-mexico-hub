@@ -26,6 +26,7 @@ export type Database = {
           is_featured: boolean | null
           published_at: string | null
           slug: string
+          source_url: string | null
           tags: string[] | null
           title: string
           updated_at: string | null
@@ -42,6 +43,7 @@ export type Database = {
           is_featured?: boolean | null
           published_at?: string | null
           slug: string
+          source_url?: string | null
           tags?: string[] | null
           title: string
           updated_at?: string | null
@@ -58,6 +60,7 @@ export type Database = {
           is_featured?: boolean | null
           published_at?: string | null
           slug?: string
+          source_url?: string | null
           tags?: string[] | null
           title?: string
           updated_at?: string | null
@@ -122,6 +125,27 @@ export type Database = {
           slug?: string
           updated_at?: string | null
           zoom_level?: number | null
+        }
+        Relationships: []
+      }
+      documents: {
+        Row: {
+          content: string | null
+          embedding: string | null
+          id: number
+          metadata: Json | null
+        }
+        Insert: {
+          content?: string | null
+          embedding?: string | null
+          id?: number
+          metadata?: Json | null
+        }
+        Update: {
+          content?: string | null
+          embedding?: string | null
+          id?: number
+          metadata?: Json | null
         }
         Relationships: []
       }
@@ -934,6 +958,66 @@ export type Database = {
           },
         ]
       }
+      news: {
+        Row: {
+          author: string | null
+          categories: string[] | null
+          content: string | null
+          created_at: string | null
+          description: string | null
+          id: string
+          image_url: string | null
+          is_featured: boolean | null
+          is_published: boolean | null
+          link: string
+          published_at: string
+          source: string | null
+          thumbnail_url: string | null
+          title: string
+          updated_at: string | null
+          video_url: string | null
+          view_count: number | null
+        }
+        Insert: {
+          author?: string | null
+          categories?: string[] | null
+          content?: string | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          is_featured?: boolean | null
+          is_published?: boolean | null
+          link: string
+          published_at: string
+          source?: string | null
+          thumbnail_url?: string | null
+          title: string
+          updated_at?: string | null
+          video_url?: string | null
+          view_count?: number | null
+        }
+        Update: {
+          author?: string | null
+          categories?: string[] | null
+          content?: string | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          is_featured?: boolean | null
+          is_published?: boolean | null
+          link?: string
+          published_at?: string
+          source?: string | null
+          thumbnail_url?: string | null
+          title?: string
+          updated_at?: string | null
+          video_url?: string | null
+          view_count?: number | null
+        }
+        Relationships: []
+      }
       players: {
         Row: {
           assists: number | null
@@ -1046,6 +1130,62 @@ export type Database = {
             columns: ["user_id"]
             isOneToOne: false
             referencedRelation: "users"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      rag_documents: {
+        Row: {
+          content: string
+          created_at: string | null
+          id: number
+          metadata: Json | null
+          source_id: string | null
+          source_table: string | null
+        }
+        Insert: {
+          content: string
+          created_at?: string | null
+          id?: number
+          metadata?: Json | null
+          source_id?: string | null
+          source_table?: string | null
+        }
+        Update: {
+          content?: string
+          created_at?: string | null
+          id?: number
+          metadata?: Json | null
+          source_id?: string | null
+          source_table?: string | null
+        }
+        Relationships: []
+      }
+      rag_embeddings: {
+        Row: {
+          created_at: string | null
+          document_id: number | null
+          embedding: string | null
+          id: number
+        }
+        Insert: {
+          created_at?: string | null
+          document_id?: number | null
+          embedding?: string | null
+          id?: number
+        }
+        Update: {
+          created_at?: string | null
+          document_id?: number | null
+          embedding?: string | null
+          id?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "rag_embeddings_document_id_fkey"
+            columns: ["document_id"]
+            isOneToOne: false
+            referencedRelation: "rag_documents"
             referencedColumns: ["id"]
           },
         ]
@@ -1391,6 +1531,46 @@ export type Database = {
     }
     Functions: {
       calculate_age: { Args: { birth_date: string }; Returns: number }
+      match_documents:
+        | {
+            Args: {
+              match_count: number
+              match_threshold: number
+              query_embedding: string
+            }
+            Returns: {
+              content: string
+              document_id: number
+              id: number
+              similarity: number
+            }[]
+          }
+        | {
+            Args: {
+              filter?: Json
+              match_count?: number
+              query_embedding: string
+            }
+            Returns: {
+              content: string
+              id: number
+              metadata: Json
+              similarity: number
+            }[]
+          }
+      match_rag_documents: {
+        Args: {
+          match_count?: number
+          match_threshold?: number
+          query_embedding: string
+        }
+        Returns: {
+          content: string
+          id: number
+          metadata: Json
+          similarity: number
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never
