@@ -90,16 +90,13 @@ const Index = () => {
 
   const loadData = async () => {
     try {
-      // Load tourist routes - using teams as placeholder for now
+      // Load imperdibles turisticos
       const { data: routesData } = await supabase
-        .from("teams")
-        .select("id, name, code, flag_url")
+        .from("imperdibles_turisticos")
+        .select("id, nombre, descripcion_corta, imagen_principal_url")
+        .eq("activo", true)
         .limit(4);
-      if (routesData) setRoutes(routesData.map(t => ({ 
-        id: t.id, 
-        nombre: t.name, 
-        descripcion: `Equipo nacional de ${t.name}` 
-      })));
+      if (routesData) setRoutes(routesData);
 
       // Load featured matches with teams
       const { data: matchesData } = await supabase
@@ -358,7 +355,9 @@ const Index = () => {
                     <div 
                       className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-300"
                       style={{ 
-                        backgroundImage: 'url(https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=800)'
+                        backgroundImage: route.imagen_principal_url 
+                          ? `url(${route.imagen_principal_url})` 
+                          : 'url(https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=800)'
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
@@ -371,7 +370,7 @@ const Index = () => {
                   </div>
                   <CardContent className="p-4">
                     <p className="text-sm text-muted-foreground line-clamp-2">
-                      {route.descripcion || "Explora este lugar"}
+                      {route.descripcion_corta || "Explora este lugar"}
                     </p>
                     <Button variant="link" className="mt-2 p-0 h-auto text-primary">
                       Explorar →
