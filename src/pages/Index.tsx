@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { MapPin, Calendar, Newspaper, ChevronRight, Trophy } from "lucide-react";
+import { MapPin, Calendar, Newspaper, ChevronRight, Trophy, Utensils, Bookmark } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -22,6 +22,7 @@ const Index = () => {
   const [matches, setMatches] = useState<any[]>([]);
   const [articles, setArticles] = useState<any[]>([]);
   const [rssArticles, setRssArticles] = useState<any[]>([]);
+  const [restaurants, setRestaurants] = useState<any[]>([]);
   const [events] = useState([
     {
       id: "1",
@@ -148,6 +149,15 @@ const Index = () => {
         .order("published_at", { ascending: false })
         .limit(6);
       if (rssData) setRssArticles(rssData);
+
+      // Load restaurants
+      const { data: restaurantsData } = await supabase
+        .from("restaurantes")
+        .select("id, nombre, imagen_principal_url, latitud, longitud, destacado")
+        .eq("activo", true)
+        .order("destacado", { ascending: false })
+        .limit(6);
+      if (restaurantsData) setRestaurants(restaurantsData);
     } catch (error) {
       console.error("Error loading data:", error);
     }
@@ -313,7 +323,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Rutas Turísticas */}
+        {/* Lugares Imperdibles */}
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between mb-6">
@@ -356,6 +366,71 @@ const Index = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Dónde Comer */}
+        <section className="py-12 bg-card/50">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-3">
+                <Utensils className="h-6 w-6 text-primary" />
+                <h2 className="text-2xl md:text-3xl font-bold">Dónde Comer</h2>
+              </div>
+              <Link to="/tourism">
+                <Button variant="ghost" size="sm" className="gap-2">
+                  Ver todos <ChevronRight className="h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+              {restaurants.map((restaurant, index) => {
+                // Generate mock distance (in future, calculate from user location)
+                const distances = ["886 m", "1.2 km", "1.5 km", "2.1 km", "750 m", "3.2 km"];
+                const distance = distances[index % distances.length];
+                
+                return (
+                  <Card key={restaurant.id} className="group overflow-hidden hover:shadow-xl transition-all cursor-pointer">
+                    <div className="relative h-48 overflow-hidden">
+                      <div 
+                        className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-300"
+                        style={{ 
+                          backgroundImage: restaurant.imagen_principal_url 
+                            ? `url(${restaurant.imagen_principal_url})` 
+                            : 'url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800)'
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                      
+                      {/* Distance Badge - Bottom Left */}
+                      <div className="absolute bottom-3 left-3">
+                        <Badge className="bg-white/90 text-foreground border-0 backdrop-blur-sm font-semibold">
+                          {distance}
+                        </Badge>
+                      </div>
+                      
+                      {/* Bookmark Icon - Top Right */}
+                      <button 
+                        className="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          console.log("Saved restaurant:", restaurant.id);
+                        }}
+                      >
+                        <Bookmark className="h-4 w-4 text-foreground" />
+                      </button>
+                    </div>
+                    
+                    <CardContent className="p-3">
+                      <h3 className="font-bold text-sm md:text-base line-clamp-2 min-h-[2.5rem]">
+                        {restaurant.nombre}
+                      </h3>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </section>
