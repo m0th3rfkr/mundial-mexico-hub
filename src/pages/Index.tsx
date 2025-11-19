@@ -15,6 +15,7 @@ import MatchCard from "@/components/cards/MatchCard";
 import EventCard from "@/components/cards/EventCard";
 import { supabase } from "@/integrations/supabase/client";
 import { Link } from "react-router-dom";
+import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
   const [routes, setRoutes] = useState<any[]>([]);
@@ -150,11 +151,18 @@ const Index = () => {
       <main className="pt-16">
         {/* Hero Carousel */}
         <section className="relative">
-          <Carousel className="w-full">
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}
+            className="w-full"
+          >
             <CarouselContent>
               {heroSlides.map((slide) => (
                 <CarouselItem key={slide.id}>
-                  <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
+                  <div className="relative h-[40vh] overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center"
                       style={{ backgroundImage: `url(${slide.image})` }}
@@ -185,19 +193,19 @@ const Index = () => {
         </section>
 
         {/* Countdown Card - Burgundy Style */}
-        <section className="container mx-auto px-4 -mt-16 relative z-20">
+        <section className="container mx-auto px-4 -mt-12 relative z-20">
           <Card className="overflow-hidden bg-[#962044] border-0 shadow-2xl">
-            <CardContent className="p-8 text-center text-white">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Trophy className="h-8 w-8 text-yellow-400" />
-                <h3 className="text-2xl md:text-3xl font-bold">PATADA INICIAL</h3>
+            <CardContent className="p-4 text-center text-white">
+              <div className="flex items-center justify-center gap-2 mb-3">
+                <Trophy className="h-6 w-6 text-yellow-400" />
+                <h3 className="text-xl md:text-2xl font-bold">PATADA INICIAL</h3>
               </div>
-              <p className="text-lg mb-6 opacity-90">Faltan</p>
+              <p className="text-base mb-4 opacity-90">Faltan</p>
               <Countdown />
               <Link to="/matches">
                 <Button 
                   variant="link" 
-                  className="text-yellow-400 hover:text-yellow-300 mt-6 text-lg font-semibold"
+                  className="text-yellow-400 hover:text-yellow-300 mt-4 text-base font-semibold"
                 >
                   Ver Inauguración →
                 </Button>
