@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import MarkerClusterGroup from "react-leaflet-cluster";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { X, Bike, ParkingCircle, Facebook, Twitter, Instagram } from "lucide-react";
@@ -172,54 +171,30 @@ export const MapModal = ({ isOpen, onClose, mapType }: MapModalProps) => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <MarkerClusterGroup
-            chunkedLoading
-            iconCreateFunction={(cluster) => {
-              const count = cluster.getChildCount();
-              return L.divIcon({
-                html: `<div style="
-                  background-color: #006847;
-                  color: white;
-                  border-radius: 50%;
-                  width: 40px;
-                  height: 40px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-weight: bold;
-                  border: 3px solid white;
-                  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-                ">${count}</div>`,
-                className: "custom-cluster-icon",
-                iconSize: [40, 40],
-              });
-            }}
-          >
-            {markers.map((marker) => (
-              <Marker
-                key={marker.id}
-                position={[marker.latitud, marker.longitud]}
-                icon={createCustomIcon()}
-              >
-                <Popup>
-                  <div className="p-2">
-                    <h3 className="font-bold text-sm mb-1">{marker.nombre}</h3>
-                    {marker.direccion && (
-                      <p className="text-xs text-muted-foreground mb-1">{marker.direccion}</p>
-                    )}
-                    {marker.capacidad_total && (
-                      <p className="text-xs">
-                        <strong>Capacidad:</strong> {marker.capacidad_total}
-                      </p>
-                    )}
-                    {marker.descripcion && (
-                      <p className="text-xs mt-1">{marker.descripcion}</p>
-                    )}
-                  </div>
-                </Popup>
-              </Marker>
-            ))}
-          </MarkerClusterGroup>
+          {markers.map((marker) => (
+            <Marker
+              key={marker.id}
+              position={[marker.latitud, marker.longitud]}
+              icon={createCustomIcon()}
+            >
+              <Popup>
+                <div className="p-2">
+                  <h3 className="font-bold text-sm mb-1">{marker.nombre}</h3>
+                  {marker.direccion && (
+                    <p className="text-xs text-muted-foreground mb-1">{marker.direccion}</p>
+                  )}
+                  {marker.capacidad_total && (
+                    <p className="text-xs">
+                      <strong>Capacidad:</strong> {marker.capacidad_total}
+                    </p>
+                  )}
+                  {marker.descripcion && (
+                    <p className="text-xs mt-1">{marker.descripcion}</p>
+                  )}
+                </div>
+              </Popup>
+            </Marker>
+          ))}
         </MapContainer>
       )}
 
