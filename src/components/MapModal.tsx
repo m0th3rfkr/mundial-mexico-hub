@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import MarkerClusterGroup from "react-leaflet-markercluster";
+import MarkerClusterGroup from "react-leaflet-cluster";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import "react-leaflet-markercluster/dist/styles.min.css";
 import { X, Bike, ParkingCircle, Facebook, Twitter, Instagram } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -174,9 +173,7 @@ export const MapModal = ({ isOpen, onClose, mapType }: MapModalProps) => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <MarkerClusterGroup
-            maxClusterRadius={50}
-            spiderfyOnMaxZoom={true}
-            showCoverageOnHover={false}
+            chunkedLoading
             iconCreateFunction={(cluster) => {
               const count = cluster.getChildCount();
               return L.divIcon({
