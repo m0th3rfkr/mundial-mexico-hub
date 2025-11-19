@@ -1134,6 +1134,62 @@ export type Database = {
           },
         ]
       }
+      rag_documents: {
+        Row: {
+          content: string
+          created_at: string | null
+          id: number
+          metadata: Json | null
+          source_id: string | null
+          source_table: string | null
+        }
+        Insert: {
+          content: string
+          created_at?: string | null
+          id?: number
+          metadata?: Json | null
+          source_id?: string | null
+          source_table?: string | null
+        }
+        Update: {
+          content?: string
+          created_at?: string | null
+          id?: number
+          metadata?: Json | null
+          source_id?: string | null
+          source_table?: string | null
+        }
+        Relationships: []
+      }
+      rag_embeddings: {
+        Row: {
+          created_at: string | null
+          document_id: number | null
+          embedding: string | null
+          id: number
+        }
+        Insert: {
+          created_at?: string | null
+          document_id?: number | null
+          embedding?: string | null
+          id?: number
+        }
+        Update: {
+          created_at?: string | null
+          document_id?: number | null
+          embedding?: string | null
+          id?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "rag_embeddings_document_id_fkey"
+            columns: ["document_id"]
+            isOneToOne: false
+            referencedRelation: "rag_documents"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       restaurantes: {
         Row: {
           accesible_silla_ruedas: boolean | null
@@ -1475,8 +1531,39 @@ export type Database = {
     }
     Functions: {
       calculate_age: { Args: { birth_date: string }; Returns: number }
-      match_documents: {
-        Args: { filter?: Json; match_count?: number; query_embedding: string }
+      match_documents:
+        | {
+            Args: {
+              match_count: number
+              match_threshold: number
+              query_embedding: string
+            }
+            Returns: {
+              content: string
+              document_id: number
+              id: number
+              similarity: number
+            }[]
+          }
+        | {
+            Args: {
+              filter?: Json
+              match_count?: number
+              query_embedding: string
+            }
+            Returns: {
+              content: string
+              id: number
+              metadata: Json
+              similarity: number
+            }[]
+          }
+      match_rag_documents: {
+        Args: {
+          match_count?: number
+          match_threshold?: number
+          query_embedding: string
+        }
         Returns: {
           content: string
           id: number
