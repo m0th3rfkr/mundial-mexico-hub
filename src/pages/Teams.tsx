@@ -10,6 +10,19 @@ import { Tables } from "@/integrations/supabase/types";
 
 type Team = Tables<"teams">;
 
+// Helper function to convert country code to flag emoji
+const getFlagEmoji = (countryCode: string): string => {
+  if (!countryCode || countryCode.length !== 3) return "";
+  
+  const codePoints = countryCode
+    .substring(0, 2) // Use first 2 letters of ISO 3166-1 alpha-3 code
+    .toUpperCase()
+    .split("")
+    .map((char) => 127397 + char.charCodeAt(0));
+  
+  return String.fromCodePoint(...codePoints);
+};
+
 const Teams = () => {
   const [teams, setTeams] = useState<Team[]>([]);
   const [filteredTeams, setFilteredTeams] = useState<Team[]>([]);
@@ -143,20 +156,21 @@ const Teams = () => {
                     className="group hover:shadow-lg transition-all hover:scale-105 border-2 hover:border-primary cursor-pointer"
                   >
                     <CardHeader className="text-center">
-                      {team.flag_url ? (
-                        <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-muted group-hover:border-accent transition-colors">
+                      <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-muted group-hover:border-accent transition-colors bg-gradient-to-br from-background to-muted flex items-center justify-center">
+                        {team.flag_url ? (
                           <img
                             src={team.flag_url}
                             alt={`Bandera de ${team.name}`}
                             className="w-full h-full object-cover"
                           />
-                        </div>
-                      ) : (
-                        <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center border-4 border-muted group-hover:border-accent transition-colors">
-                          <Shield className="h-12 w-12 text-primary" />
-                        </div>
-                      )}
-                      <CardTitle className="group-hover:text-primary transition-colors">
+                        ) : (
+                          <span className="text-5xl" role="img" aria-label={`Bandera de ${team.name}`}>
+                            {getFlagEmoji(team.code)}
+                          </span>
+                        )}
+                      </div>
+                      <CardTitle className="group-hover:text-primary transition-colors flex items-center justify-center gap-2">
+                        <span className="text-2xl">{getFlagEmoji(team.code)}</span>
                         {team.name}
                       </CardTitle>
                       <CardDescription>

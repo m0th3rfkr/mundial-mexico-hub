@@ -1558,6 +1558,19 @@ export type Database = {
               similarity: number
             }[]
           }
+      match_documents_with_images: {
+        Args: {
+          match_count?: number
+          match_threshold?: number
+          query_embedding: string
+        }
+        Returns: {
+          content: string
+          id: number
+          metadata: Json
+          similarity: number
+        }[]
+      }
       match_rag_documents: {
         Args: {
           match_count?: number
