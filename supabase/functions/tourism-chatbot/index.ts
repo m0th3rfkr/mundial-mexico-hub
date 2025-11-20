@@ -12,11 +12,15 @@ serve(async (req) => {
   }
 
   try {
-    const { query } = await req.json()
+    const { query, message } = await req.json()
+    const userQuery = query || message
 
-    if (!query) {
-      throw new Error('Query es requerida')
+    if (!userQuery) {
+      throw new Error('Query o message es requerida')
     }
+
+    console.log('=== NUEVA CONSULTA ===')
+    console.log('Mensaje:', userQuery)
 
     const supabaseClient = createClient(
       Deno.env.get('SUPABASE_URL') ?? '',
@@ -32,33 +36,48 @@ serve(async (req) => {
       },
       body: JSON.stringify({
         model: 'text-embedding-ada-002',
-        input: query,
+        input: userQuery,
       }),
     })
 
-    const { data: embeddingData } = await openaiResponse.json()
-    const embedding = embeddingData[0].embedding
+    if (!openaiResponse.ok) {
+      throw new Error(`OpenAI Embeddings error: ${openaiResponse.status}`)
+    }
 
-    // 2. Buscar documentos
-    const { data: documents, error } = await supabaseClient.rpc('match_documents', {
+    const embeddingData = await openaiResponse.json()
+    const embedding = embeddingData.data[0].embedding
+
+    console.log('Embedding generado, dimensión:', embedding.length)
+
+    // 2. Buscar documentos CON IMÁGENES
+    const { data: documents, error } = await supabaseClient.rpc('match_documents_with_images', {
       query_embedding: embedding,
       match_threshold: 0.7,
       match_count: 5
     })
 
-    if (error) throw error
+    if (error) {
+      console.error('Error en match_documents_with_images:', error)
+      throw error
+    }
 
-    // DEBUG: Log para ver qué devuelve
-    console.log('Documents found:', documents?.length || 0)
-    console.log('First doc metadata:', documents?.[0]?.metadata)
+    console.log('Documentos encontrados:', documents?.length || 0)
+    
+    if (documents && documents.length > 0) {
+      console.log('Primer documento:', documents[0]?.metadata?.nombre)
+    }
 
-    // 3. Construir contexto
-    const context = documents.map((doc: any) => {
+    // 3. Construir contexto con marcadores
+    const context = documents.map((doc: any, idx: number) => {
       const meta = doc.metadata || {}
-      return `${doc.content}
-[Imagen: ${meta.imagen_url || 'No disponible'}]
-[Ubicación: ${meta.direccion || 'No disponible'}]`
+      return `[LUGAR-${idx}]
+Nombre: ${meta.nombre || 'Sin nombre'}
+${doc.content}
+Ubicación: ${meta.direccion || 'No disponible'}
+Tipo: ${meta.type || 'No especificado'}`
     }).join('\n\n---\n\n')
+
+    console.log('Contexto construido, longitud:', context.length)
 
     // 4. Generar respuesta con GPT
     const gptResponse = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -72,45 +91,68 @@ serve(async (req) => {
         messages: [
           {
             role: 'system',
-            content: `Eres un asistente turístico de CDMX para el Mundial 2026. 
-Responde en español de forma amigable.
-Al mencionar lugares, di "📍 Ver en mapa" pero NO escribas el URL completo.`
+            content: `Eres un asistente turístico experto de CDMX para el Mundial 2026. 
+
+REGLAS:
+1. NO menciones URLs, imágenes ni "Ver en mapa"
+2. Después de cada lugar, agrega: [VER-LUGAR-X] en nueva línea
+3. Sé detallado con precios, servicios y categorías
+
+FORMATO:
+1. **Nombre del Lugar**
+   - Categoría: X estrellas
+   - Descripción detallada
+   - Precio: $$
+   - Ubicación: Dirección completa
+[VER-LUGAR-0]
+
+2. **Otro Lugar**
+   - Información completa...
+[VER-LUGAR-1]
+
+Contexto:
+${context}`
           },
           {
             role: 'user',
-            content: `Contexto:\n${context}\n\nPregunta: ${query}`
+            content: userQuery
           }
         ],
         temperature: 0.7,
-        max_tokens: 500
+        max_tokens: 600
       }),
     })
+
+    if (!gptResponse.ok) {
+      throw new Error(`OpenAI error: ${gptResponse.status}`)
+    }
 
     const gptData = await gptResponse.json()
     const answer = gptData.choices[0].message.content
 
-    // 5. Extraer imágenes CON VALIDACIÓN
+    console.log('Respuesta GPT generada')
+
+    // 5. Extraer imágenes con ID
     const images = documents
-      .filter((doc: any) => {
-        const hasImageUrl = doc.metadata?.imagen_url
-        console.log('Doc has imagen_url:', hasImageUrl, doc.metadata?.nombre)
-        return hasImageUrl
-      })
-      .map((doc: any) => {
+      .filter((doc: any) => doc.metadata?.imagen_url)
+      .map((doc: any, idx: number) => {
         const meta = doc.metadata
         const lat = meta.latitude || meta.lat
         const lng = meta.longitude || meta.lng || meta.lon
         
         return {
+          id: idx,
           url: meta.imagen_url,
           nombre: meta.nombre,
           tipo: meta.type,
           map_url: lat && lng ? `https://www.google.com/maps?q=${lat},${lng}` : null,
-          direccion: meta.direccion
+          direccion: meta.direccion,
+          categoria_estrellas: meta.categoria_estrellas,
+          rango_precios: meta.rango_precios
         }
       })
 
-    console.log('Images array length:', images.length)
+    console.log('Imágenes procesadas:', images.length)
 
     return new Response(
       JSON.stringify({
@@ -133,7 +175,8 @@ Al mencionar lugares, di "📍 Ver en mapa" pero NO escribas el URL completo.`
     )
 
   } catch (error) {
-    console.error('Error:', error)
+    console.error('ERROR:', error.message)
+    
     return new Response(
       JSON.stringify({
         response: 'Lo siento, hubo un problema. 🔌',

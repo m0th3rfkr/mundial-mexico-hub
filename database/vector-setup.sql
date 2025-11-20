@@ -39,3 +39,30 @@ AS $$
     ORDER BY documents.embedding <=> query_embedding
     LIMIT match_count;
 $$;
+
+-- Function to search similar documents WITH IMAGES ONLY
+CREATE OR REPLACE FUNCTION match_documents_with_images(
+    query_embedding vector(1536),
+    match_threshold float DEFAULT 0.7,
+    match_count int DEFAULT 10
+)
+RETURNS TABLE (
+    id uuid,
+    content text,
+    metadata jsonb,
+    similarity float
+)
+LANGUAGE sql STABLE
+AS $$
+    SELECT
+        documents.id,
+        documents.content,
+        documents.metadata,
+        1 - (documents.embedding <=> query_embedding) AS similarity
+    FROM documents
+    WHERE 1 - (documents.embedding <=> query_embedding) > match_threshold
+      AND documents.metadata->>'imagen_url' IS NOT NULL
+      AND documents.metadata->>'has_images' = 'true'
+    ORDER BY documents.embedding <=> query_embedding
+    LIMIT match_count;
+$$;
