@@ -4,10 +4,10 @@ from openai import OpenAI
 from tqdm import tqdm
 import time
 
-# Configuración
-SUPABASE_URL = "https://ksiiidnvtktlowlhtebs.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaWlpZG52dGt0bG93bGh0ZWJzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MDgxMjEzMywiZXhwIjoyMDc2Mzg4MTMzfQ.z2qoL9pYqyFvYzO_wW-WRknxx-fo0Z7o69M-PezTOH0"
-OPENAI_API_KEY = "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"
+# Configuración - usar variables de entorno
+SUPABASE_URL = os.getenv("SUPABASE_URL", "https://ksiiidnvtktlowlhtebs.supabase.co")
+SUPABASE_KEY = os.getenv("SUPABASE_SERVICE_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Inicializar clientes
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)

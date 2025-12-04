@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Contenido - WC2025</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap');
+        :root {
+            --primary: #006847;
+            --secondary: #CE1126;
+            --accent: #F7B633;
+            --dark: #1a1a2e;
+            --received: #4CAF50;
+            --pending: #FF9800;
+            --missing: #f44336;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Outfit', system-ui, sans-serif;
+            background: linear-gradient(135deg, var(--dark) 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; border-bottom: 3px solid var(--accent); padding-bottom: 2rem; }
+        h1 { font-size: 2.5rem; font-weight: 800; background: linear-gradient(90deg, var(--primary), var(--accent), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.2rem; color: #888; font-weight: 400; }
+        .section { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; border: 1px solid rgba(247, 182, 51, 0.25); }
+        .section.critical { border: 2px solid var(--secondary); }
+        .section h3 { color: var(--accent); margin-bottom: 1.5rem; font-size: 1.3rem; }
+        .section.critical h3 { color: var(--secondary); }
+        .summary-text { line-height: 1.8; font-size: 1.05rem; color: #e0e0e0; }
+        .summary-text strong.accent { color: var(--accent); }
+        .summary-text strong.warning { color: var(--secondary); }
+        .summary-text strong.primary { color: var(--primary); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .card { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.1); }
+        .card.critical { border: 2px solid var(--secondary); }
+        .card.success { border: 2px solid var(--received); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+        .card-header h4 { font-size: 1.1rem; margin: 0; }
+        .badge { padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+        .badge.critical { background: var(--secondary); }
+        .badge.high { background: var(--accent); color: #000; }
+        .badge.medium { background: var(--primary); }
+        .badge.waiting { background: #9C27B0; }
+        .badge.success { background: var(--received); }
+        .badge.review { background: var(--pending); color: #000; }
+        .progress-bar { height: 24px; background: #333; border-radius: 12px; overflow: hidden; display: flex; margin-bottom: 1rem; }
+        .progress-received { background: var(--received); }
+        .progress-pending { background: var(--pending); }
+        .progress-missing { background: var(--missing); }
+        .progress-labels { display: flex; justify-content: space-between; font-size: 0.85rem; flex-wrap: wrap; gap: 0.5rem; }
+        .dot-received { color: var(--received); }
+        .dot-pending { color: var(--pending); }
+        .dot-missing { color: var(--missing); }
+        .card-note { margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.05); border-radius: 8px; font-size: 0.85rem; color: #aaa; border-left: 3px solid var(--accent); }
+        table { width: 100%; border-collapse: collapse; }
+        th { text-align: left; padding: 12px; color: var(--accent); border-bottom: 2px solid var(--accent); }
+        th:nth-child(2) { text-align: center; }
+        td { padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        td:nth-child(2) { text-align: center; }
+        .percent-badge { display: inline-block; padding: 4px 16px; border-radius: 20px; font-weight: 600; }
+        .percent-badge.low { background: var(--missing); }
+        .percent-badge.partial { background: var(--pending); }
+        .percent-badge.good { background: var(--received); }
+        .status-missing { color: var(--missing); }
+        .status-partial { color: var(--pending); }
+        .status-good { color: var(--received); }
+        .problem-list { display: grid; gap: 1rem; }
+        .problem-item { display: flex; justify-content: space-between; align-items: center; background: rgba(244,67,54,0.1); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--secondary); }
+        .problem-count { background: var(--secondary); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
+        .idiomas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+        .idioma-card { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1rem; text-align: center; border: 2px solid transparent; }
+        .idioma-card.active { border-color: var(--received); }
+        .idioma-flag { font-size: 2rem; margin-bottom: 0.5rem; }
+        .idioma-name { font-weight: 600; margin-bottom: 0.5rem; }
+        .idioma-percent { display: inline-block; padding: 2px 10px; border-radius: 10px; font-size: 0.8rem; font-weight: 600; }
+        .idioma-percent.complete { background: var(--received); }
+        .idioma-percent.pending { background: var(--missing); }
+        .idiomas-note { text-align: center; color: #aaa; font-size: 0.9rem; }
+        .chart-container { height: 300px; }
+        footer { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); color: #888; }
+        @media (max-width: 768px) { body { padding: 1rem; } h1 { font-size: 1.8rem; } .grid { grid-template-columns: 1fr; } .problem-item { flex-direction: column; gap: 0.5rem; text-align: center; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📊 Análisis de Contenido del Cliente</h1>
+        <h2>Mundial México Hub - WC2025 | Televisa / Cocolab</h2>
+    </header>
+    <section class="section">
+        <h3>📋 Resumen Ejecutivo</h3>
+        <p class="summary-text">
+            Se recibieron <strong class="accent">2 documentos</strong> del cliente para el proyecto Mundial México Hub.<br><br>
+            ✅ <strong class="primary">Manual de Branding FIFA</strong> está <strong class="accent">100% completo</strong> con toda la identidad gráfica oficial.<br><br>
+            ⚠️ <strong class="warning">Corredores Turísticos</strong> tiene información <strong class="warning">muy limitada</strong> - solo nombres de lugares y ubicación en mapas.<br><br>
+            📌 <strong class="warning">Falta el 75%</strong> de la información de rutas turísticas: descripciones, GPS, fotos, horarios, precios y contactos.<br><br>
+            ⚽ <strong>Información de Fútbol</strong> llegará después del <strong class="accent">5 de diciembre 2025</strong> (confirmación de 48 equipos).
+        </p>
+    </section>
+    <section class="section">
+        <h3>📈 Estado por Área del Proyecto</h3>
+        <div class="grid">
+            <div class="card success">
+                <div class="card-header"><h4>🎨 Identidad Gráfica / Branding</h4><span class="badge success">COMPLETO</span></div>
+                <div class="progress-bar"><div class="progress-received" style="width: 100%"></div></div>
+                <div class="progress-labels"><span><span class="dot-received">●</span> Recibido: 100%</span></div>
+                <div class="card-note">✅ Manual FIFA completo: logos, colores (#006847, #CE1126, #F7B633), slogan "WE ARE 26™", tipografía, templates</div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h4>📁 Editables</h4><span class="badge review">EN REVISIÓN</span></div>
+                <div class="progress-bar"><div class="progress-pending" style="width: 100%"></div></div>
+                <div class="progress-labels"><span><span class="dot-pending">●</span> En revisión: 100%</span></div>
+                <div class="card-note">🔄 Archivos editables recibidos, actualmente en proceso de revisión.</div>
+            </div>
+            <div class="card critical">
+                <div class="card-header"><h4>🗺️ Rutas Turísticas</h4><span class="badge critical">CRÍTICO</span></div>
+                <div class="progress-bar"><div class="progress-received" style="width: 25%"></div><div class="progress-missing" style="width: 75%"></div></div>
+                <div class="progress-labels"><span><span class="dot-received">●</span> Recibido: 25%</span><span><span class="dot-missing">●</span> Faltante: 75%</span></div>
+                <div class="card-note">⚠️ Solo nombres + mapas. Falta: descripciones, GPS, fotos, horarios, precios, contactos.</div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h4>⚽ Fútbol (Equipos/Partidos)</h4><span class="badge waiting">ESPERANDO</span></div>
+                <div class="progress-bar"><div class="progress-missing" style="width: 100%"></div></div>
+                <div class="progress-labels"><span><span class="dot-missing">●</span> Pendiente: 100%</span></div>
+                <div class="card-note">📅 Fecha clave: <strong>5 de diciembre 2025</strong> - Confirmación de 48 equipos finalistas.</div>
+            </div>
+            <div class="card critical">
+                <div class="card-header"><h4>📝 Contenido Editorial</h4><span class="badge critical">CRÍTICO</span></div>
+                <div class="progress-bar"><div class="progress-pending" style="width: 6%"></div><div class="progress-missing" style="width: 94%"></div></div>
+                <div class="progress-labels"><span><span class="dot-pending">●</span> Placeholders: 6%</span><span><span class="dot-missing">●</span> Faltante: 94%</span></div>
+                <div class="card-note">⚠️ Solo contenido placeholder. Se requiere contenido real.</div>
+            </div>
+        </div>
+    </section>
+    <section class="section critical">
+        <h3>🗺️ Detalle - Rutas Turísticas (ÁREA MÁS IMPORTANTE)</h3>
+        <table>
+            <thead><tr><th>Campo Requerido</th><th>% Recibido</th><th>Estado / Calidad</th></tr></thead>
+            <tbody>
+                <tr><td>Nombres de lugares</td><td><span class="percent-badge partial">85%</span></td><td class="status-partial">⚠️ BAJA CALIDAD - Muchos genéricos</td></tr>
+                <tr><td>Ubicación en mapas</td><td><span class="percent-badge good">100%</span></td><td class="status-good">✅ Mapas incluidos en PDF</td></tr>
+                <tr><td>Descripciones</td><td><span class="percent-badge low">0%</span></td><td class="status-missing">❌ NO ENTREGADO</td></tr>
+                <tr><td>Coordenadas GPS exactas</td><td><span class="percent-badge low">0%</span></td><td class="status-missing">❌ NO ENTREGADO</td></tr>
+                <tr><td>Fotos/Imágenes</td><td><span class="percent-badge low">0%</span></td><td class="status-missing">❌ NO ENTREGADO</td></tr>
+                <tr><td>Horarios</td><td><span class="percent-badge low">0%</span></td><td class="status-missing">❌ NO ENTREGADO</td></tr>
+                <tr><td>Precios</td><td><span class="percent-badge low">0%</span></td><td class="status-missing">❌ NO ENTREGADO</td></tr>
+                <tr><td>Teléfonos/Web</td><td><span class="percent-badge low">0%</span></td><td class="status-missing">❌ NO ENTREGADO</td></tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="section">
+        <h3>⚠️ Problemas Detectados en PDF de Rutas</h3>
+        <div class="problem-list">
+            <div class="problem-item"><span>"Estacionamiento público" repetido sin nombre específico</span><span class="problem-count">+15 ocurrencias</span></div>
+            <div class="problem-item"><span>Nombres incompletos o mal escritos</span><span class="problem-count">~10% de registros</span></div>
+            <div class="problem-item"><span>Sin categorización clara en algunos casos</span><span class="problem-count">~5% de registros</span></div>
+            <div class="problem-item"><span>Falta consistencia en formato de direcciones</span><span class="problem-count">Generalizado</span></div>
+        </div>
+    </section>
+    <section class="section">
+        <h3>🌍 Estado por Idioma (Mínimo 4 requeridos)</h3>
+        <div class="idiomas-grid">
+            <div class="idioma-card active"><div class="idioma-flag">🇲🇽</div><div class="idioma-name">Español</div><span class="idioma-percent complete">100%</span></div>
+            <div class="idioma-card"><div class="idioma-flag">🇺🇸</div><div class="idioma-name">Inglés</div><span class="idioma-percent pending">0%</span></div>
+            <div class="idioma-card"><div class="idioma-flag">🇫🇷</div><div class="idioma-name">Francés</div><span class="idioma-percent pending">0%</span></div>
+            <div class="idioma-card"><div class="idioma-flag">🇧🇷</div><div class="idioma-name">Portugués</div><span class="idioma-percent pending">0%</span></div>
+        </div>
+        <p class="idiomas-note">💡 Todo el contenido está en español. Se requiere traducción a 3 idiomas adicionales.</p>
+    </section>
+    <section class="section">
+        <h3>📊 Comparativa de Avance por Área</h3>
+        <div class="chart-container"><canvas id="areaChart"></canvas></div>
+    </section>
+    <section class="section" style="border: 2px solid var(--accent);">
+        <h3>📋 Resumen de Documentos Recibidos</h3>
+        <table>
+            <thead><tr><th>Documento</th><th style="text-align: center;">Tamaño</th><th>Contenido</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Manual FIFA Branding WC2026</strong></td><td style="text-align: center;">114 KB</td><td class="status-good">✅ Logos, colores, slogan "WE ARE 26™", tipografía, templates</td></tr>
+                <tr><td><strong>Corredores Turísticos PDF</strong></td><td style="text-align: center;">4.6 MB</td><td class="status-partial">⚠️ Solo nombres + mapas (7 corredores CDMX)</td></tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <p>Generado para presentación a Televisa/Cocolab | Mundial México Hub WC2025</p>
+        <p style="margin-top: 1rem; color: #888;">Última actualización: Diciembre 2025</p>
+    </footer>
+    <script>
+        const ctx = document.getElementById('areaChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Identidad Gráfica', 'Editables', 'Rutas Turísticas', 'Fútbol', 'Contenido Editorial'],
+                datasets: [
+                    { label: 'Recibido', data: [100, 0, 25, 0, 0], backgroundColor: '#4CAF50', borderRadius: 4 },
+                    { label: 'En Revisión / Placeholders', data: [0, 100, 0, 0, 6], backgroundColor: '#FF9800', borderRadius: 4 },
+                    { label: 'Faltante / Pendiente', data: [0, 0, 75, 100, 94], backgroundColor: '#f44336', borderRadius: 4 }
+                ]
+            },
+            options: {
+                indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+                scales: {
+                    x: { stacked: true, max: 100, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#888', callback: v => v + '%' } },
+                    y: { stacked: true, grid: { display: false }, ticks: { color: '#fff' } }
+                },
+                plugins: { legend: { position: 'bottom', labels: { color: '#fff', padding: 20 } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.raw + '%' } } }
+            }
+        });
+    </script>
+</body>
+</html>
