@@ -69,6 +69,7 @@
         .status-missing { color: var(--missing); }
         .status-partial { color: var(--pending); }
         .status-good { color: var(--received); }
+        .status-pending { color: var(--pending); }
         .problem-list { display: grid; gap: 1rem; }
         .problem-item { display: flex; justify-content: space-between; align-items: center; background: rgba(244,67,54,0.1); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--secondary); }
         .problem-count { background: var(--secondary); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
@@ -89,12 +90,12 @@
 <body>
     <header>
         <h1>📊 Análisis de Contenido del Cliente</h1>
-        <h2>Mundial México Hub - WC2025 | Televisa / Cocolab</h2>
+        <h2>Host City Guía CDMX - WC2026 | Televisa / Cocolab</h2>
     </header>
     <section class="section">
         <h3>📋 Resumen Ejecutivo</h3>
         <p class="summary-text">
-            Se recibieron <strong class="accent">2 documentos</strong> del cliente para el proyecto Mundial México Hub.<br><br>
+            Se recibieron <strong class="accent">4 documentos y 1 carpeta</strong> del cliente para el proyecto Host City Guía CDMX.<br><br>
             ✅ <strong class="primary">Manual de Branding FIFA</strong> está <strong class="accent">100% completo</strong> con toda la identidad gráfica oficial.<br><br>
             ⚠️ <strong class="warning">Corredores Turísticos</strong> tiene información <strong class="warning">muy limitada</strong> - solo nombres de lugares y ubicación en mapas.<br><br>
             📌 <strong class="warning">Falta el 75%</strong> de la información de rutas turísticas: descripciones, GPS, fotos, horarios, precios y contactos.<br><br>
@@ -178,15 +179,18 @@
     <section class="section" style="border: 2px solid var(--accent);">
         <h3>📋 Resumen de Documentos Recibidos</h3>
         <table>
-            <thead><tr><th>Documento</th><th style="text-align: center;">Tamaño</th><th>Contenido</th></tr></thead>
+            <thead><tr><th>Documento / Carpeta</th><th style="text-align: center;">Tipo</th><th>Contenido</th></tr></thead>
             <tbody>
-                <tr><td><strong>Manual FIFA Branding WC2026</strong></td><td style="text-align: center;">114 KB</td><td class="status-good">✅ Logos, colores, slogan "WE ARE 26™", tipografía, templates</td></tr>
-                <tr><td><strong>Corredores Turísticos PDF</strong></td><td style="text-align: center;">4.6 MB</td><td class="status-partial">⚠️ Solo nombres + mapas (7 corredores CDMX)</td></tr>
+                <tr><td><strong>WC2026_Host_City_Brand_Manual_Edicion10.pdf</strong></td><td style="text-align: center;">PDF</td><td class="status-good">✅ Logos, colores, slogan "WE ARE 26™", tipografía, templates</td></tr>
+                <tr><td><strong>FINALES - CORREDORES TURISTICOS - 18 JULIO 2025.pdf</strong></td><td style="text-align: center;">PDF</td><td class="status-partial">⚠️ Solo nombres + mapas (7 corredores CDMX)</td></tr>
+                <tr><td><strong>Guía Mundial 2026.pptx</strong></td><td style="text-align: center;">PPTX</td><td class="status-pending">🔄 En revisión</td></tr>
+                <tr><td><strong>CMNX_CDMX_ESP.ai</strong></td><td style="text-align: center;">AI</td><td class="status-pending">🔄 Archivo editable Illustrator</td></tr>
+                <tr><td><strong>📁 __Identidad Gráfica Host City__</strong></td><td style="text-align: center;">Carpeta</td><td class="status-pending">🔄 Assets de identidad gráfica</td></tr>
             </tbody>
         </table>
     </section>
     <footer>
-        <p>Generado para presentación a Televisa/Cocolab | Mundial México Hub WC2025</p>
+        <p>Generado para presentación a Televisa/Cocolab | Host City Guía CDMX - WC2026</p>
         <p style="margin-top: 1rem; color: #888;">Última actualización: Diciembre 2025</p>
     </footer>
     <script>
